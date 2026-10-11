@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.DS_Store
+# Browser-saved pages may include account/submission state; only extracted questions ship.
+sources/*.html
+sources/*_files/

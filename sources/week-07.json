@@ -1,0 +1,334 @@
+{
+  "week": 7,
+  "title": "Week 7",
+  "topic": "Learning & Instruction",
+  "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=74&assessmentId=212",
+  "sourceFile": "sources/week-07-question-images/",
+  "sourceNote": "Questions and accepted answers from the current course quiz. The linked 2025 solution PDF differs and is not used for this week.",
+  "questions": [
+    {
+      "id": "w07-q01",
+      "number": 1,
+      "sourceNumber": 1,
+      "type": "single-choice",
+      "prompt": "Simon defined learning as changes in a system that result in ___ over time on tasks similar to those done previously.",
+      "options": [
+        {
+          "id": "A",
+          "text": "boredom"
+        },
+        {
+          "id": "B",
+          "text": "decreased anxiety"
+        },
+        {
+          "id": "C",
+          "text": "improved performance"
+        },
+        {
+          "id": "D",
+          "text": "reduced performance"
+        }
+      ],
+      "correctOptionIds": [
+        "C"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "C",
+      "sourceAnswerText": "improved performance",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q02",
+      "number": 2,
+      "sourceNumber": 2,
+      "type": "single-choice",
+      "prompt": "Robert Gagne defined learning as ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "a change in human disposition or capacity"
+        },
+        {
+          "id": "B",
+          "text": "a change that persists over a period of time"
+        },
+        {
+          "id": "C",
+          "text": "a change not simply ascribable to processes of growth"
+        },
+        {
+          "id": "D",
+          "text": "all of the given"
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "all of the given",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q03",
+      "number": 3,
+      "sourceNumber": 3,
+      "type": "single-choice",
+      "prompt": "Psychomotor skills are ___ skills.",
+      "options": [
+        {
+          "id": "A",
+          "text": "cognitive"
+        },
+        {
+          "id": "B",
+          "text": "spiritual"
+        },
+        {
+          "id": "C",
+          "text": "mental"
+        },
+        {
+          "id": "D",
+          "text": "physical"
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "physical",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q04",
+      "number": 4,
+      "sourceNumber": 4,
+      "type": "single-choice",
+      "prompt": "Returning to experience refers to ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "attending to feelings"
+        },
+        {
+          "id": "B",
+          "text": "re-examining experience in the light of one’s intent and existing knowledge"
+        },
+        {
+          "id": "C",
+          "text": "using helpful feelings and removing obstructive ones"
+        },
+        {
+          "id": "D",
+          "text": "recalling or detailing salient events"
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "recalling or detailing salient events",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q05",
+      "number": 5,
+      "sourceNumber": 5,
+      "type": "single-choice",
+      "prompt": "Which of the following assumptions does not come under the behaviorist orientation to learning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Differences between individuals are important as they will affect learning"
+        },
+        {
+          "id": "B",
+          "text": "Observable behavior rather than internal thought processes are the focus of study."
+        },
+        {
+          "id": "C",
+          "text": "Environment shapes one’s behavior"
+        },
+        {
+          "id": "D",
+          "text": "The principle of contiguity is central"
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "A",
+      "sourceAnswerText": "Differences between individuals are important as they will affect learning",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q06",
+      "number": 6,
+      "sourceNumber": 6,
+      "type": "single-choice",
+      "prompt": "Reinforcement can come through sharing of results rather than a reward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptionIds": [
+        "A"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "A",
+      "sourceAnswerText": "True",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q07",
+      "number": 7,
+      "sourceNumber": 7,
+      "type": "single-choice",
+      "prompt": "___ has contributed to the humanistic orientations to learning.",
+      "options": [
+        {
+          "id": "A",
+          "text": "linguistic"
+        },
+        {
+          "id": "B",
+          "text": "kinesthetic"
+        },
+        {
+          "id": "C",
+          "text": "visual"
+        },
+        {
+          "id": "D",
+          "text": "Carl Rogers"
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "Carl Rogers",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q08",
+      "number": 8,
+      "sourceNumber": 8,
+      "type": "single-choice",
+      "prompt": "In the process of learning, which of the following is not a component of output?",
+      "options": [
+        {
+          "id": "A",
+          "text": "certification"
+        },
+        {
+          "id": "B",
+          "text": "attitude change"
+        },
+        {
+          "id": "C",
+          "text": "knowledge enhancement"
+        },
+        {
+          "id": "D",
+          "text": "training plan"
+        }
+      ],
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "training plan",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q09",
+      "number": 9,
+      "sourceNumber": 9,
+      "type": "single-choice",
+      "prompt": "Ambience, space and decorum do not affect learning.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "B",
+      "sourceAnswerText": "False",
+      "reference": null,
+      "note": null
+    },
+    {
+      "id": "w07-q10",
+      "number": 10,
+      "sourceNumber": 10,
+      "type": "single-choice",
+      "prompt": "Role-playing can motivate ___ type of learners effectively.",
+      "options": [
+        {
+          "id": "A",
+          "text": "solitary"
+        },
+        {
+          "id": "B",
+          "text": "social"
+        },
+        {
+          "id": "C",
+          "text": "reading/writing"
+        },
+        {
+          "id": "D",
+          "text": "logical/analytical"
+        }
+      ],
+      "correctOptionIds": [
+        "B"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "B",
+      "sourceAnswerText": "social",
+      "reference": null,
+      "note": null
+    }
+  ]
+}

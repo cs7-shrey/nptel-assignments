@@ -1,0 +1,4444 @@
+{
+  "course": "Psychology of Learning",
+  "courseId": "noc26_hs206",
+  "collectedOn": "2026-10-11",
+  "schemaVersion": 1,
+  "weeks": [
+    {
+      "week": 0,
+      "title": "Week 0 · Practice",
+      "topic": "Getting started",
+      "sourceUrl": "https://drive.google.com/file/d/10Tro0Pq4zlT5TFsU0noRTwQ0ONTelhfw/view",
+      "sourceFile": "sources/week-00-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w00-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "What is Psychology?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Just a social media trend"
+            },
+            {
+              "id": "B",
+              "text": "An art of living"
+            },
+            {
+              "id": "C",
+              "text": "A subject about human body"
+            },
+            {
+              "id": "D",
+              "text": "A study of cognitive processes & behavior"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "A study of cognitive processes & behavior",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "A broad field of study that explores a variety of questions about thoughts, feelings and actions is -------?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Society"
+            },
+            {
+              "id": "B",
+              "text": "Globalization"
+            },
+            {
+              "id": "C",
+              "text": "Psychology"
+            },
+            {
+              "id": "D",
+              "text": "Social Science"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Learning has been a central topic of research in ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Chemistry"
+            },
+            {
+              "id": "B",
+              "text": "Physics"
+            },
+            {
+              "id": "C",
+              "text": "Mathematics"
+            },
+            {
+              "id": "D",
+              "text": "Psychology"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The word Psyche means -------------?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Body or physique"
+            },
+            {
+              "id": "B",
+              "text": "Mind or soul"
+            },
+            {
+              "id": "C",
+              "text": "Spirituality"
+            },
+            {
+              "id": "D",
+              "text": "Hormones"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "Mind or soul",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "The ___ of learning focuses on how people learn.",
+          "options": [
+            {
+              "id": "A",
+              "text": "psychology"
+            },
+            {
+              "id": "B",
+              "text": "english"
+            },
+            {
+              "id": "C",
+              "text": "chemistry"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "To help people to function effectively and fulfill their own unique potential” is the aim of------ --------?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Humanistic psychology"
+            },
+            {
+              "id": "B",
+              "text": "Evolutionary biology"
+            },
+            {
+              "id": "C",
+              "text": "Computer science"
+            },
+            {
+              "id": "D",
+              "text": "Microbiology"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Humanistic psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Psychology is not an independent science, but dependent on other fields.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "The study of changes in an individual’s behavior during his/her lifetime is called ----------.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hormonal psychology"
+            },
+            {
+              "id": "B",
+              "text": "Gender psychology"
+            },
+            {
+              "id": "C",
+              "text": "Developmental Psychology"
+            },
+            {
+              "id": "D",
+              "text": "Genetics or Heredity"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Developmental Psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "The study of differences and similarities in the behavior of animals of different species is called - -----------------------.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Developmental psychology"
+            },
+            {
+              "id": "B",
+              "text": "Cultural psychology"
+            },
+            {
+              "id": "C",
+              "text": "Personality psychology"
+            },
+            {
+              "id": "D",
+              "text": "Comparative Psychology"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Comparative Psychology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w00-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Humans are incapable of learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "title": "Week 1",
+      "topic": "Psychology of Learning",
+      "sourceUrl": "https://drive.google.com/file/d/1P5rNx4-nULnKXR4rgVW1h48-GN1cWe7i/view",
+      "sourceFile": "sources/week-01-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w01-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Learning is often seen as the contiguous causal effect of ____ on behavior.",
+          "options": [
+            {
+              "id": "A",
+              "text": "blood"
+            },
+            {
+              "id": "B",
+              "text": "bone density"
+            },
+            {
+              "id": "C",
+              "text": "trauma"
+            },
+            {
+              "id": "D",
+              "text": "experience"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "experience",
+          "reference": "Please go through lecture notes of week-1 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "In order to say that learning has occurred, a hidden change in behavior must occur.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": "Please go through lecture notes of week-1 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a mental construct?",
+          "options": [
+            {
+              "id": "A",
+              "text": "skeleton"
+            },
+            {
+              "id": "B",
+              "text": "knowledge"
+            },
+            {
+              "id": "C",
+              "text": "representations"
+            },
+            {
+              "id": "D",
+              "text": "associations"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "skeleton",
+          "reference": "Please go through lecture notes of week-1 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Learning changes the ___ structure of the brain through the process of continuous interactions between the learner and the external environment.",
+          "options": [
+            {
+              "id": "A",
+              "text": "physical"
+            },
+            {
+              "id": "B",
+              "text": "social"
+            },
+            {
+              "id": "C",
+              "text": "biological"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "physical",
+          "reference": "Please go through lecture notes of week-1 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "___ shapes the learning process.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only thoughts"
+            },
+            {
+              "id": "B",
+              "text": "Only emotions"
+            },
+            {
+              "id": "C",
+              "text": "Both thoughts and emotions"
+            },
+            {
+              "id": "D",
+              "text": "Neither thoughts nor emotions"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Both thoughts and emotions",
+          "reference": "Please go through lecture notes of week-1 (slide no.07) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Watson's work included the famous Little Albert experiment in which he conditioned a small child to ___ a white rat.",
+          "options": [
+            {
+              "id": "A",
+              "text": "fear"
+            },
+            {
+              "id": "B",
+              "text": "love"
+            },
+            {
+              "id": "C",
+              "text": "hate"
+            },
+            {
+              "id": "D",
+              "text": "play with"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "fear",
+          "reference": "Please go through lecture notes of week-1 (slide no.07) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q07",
+          "number": 7,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Behaviorism dominated psychology for much of the early ___ century.",
+          "options": [
+            {
+              "id": "A",
+              "text": "20th"
+            },
+            {
+              "id": "B",
+              "text": "19th"
+            },
+            {
+              "id": "C",
+              "text": "18th"
+            },
+            {
+              "id": "D",
+              "text": "17th"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "20th",
+          "reference": "Please go through lecture notes of week-1 (slide no.07) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "The state of “conscious incompetence” may be valuable ____ of a learning experience.",
+          "options": [
+            {
+              "id": "A",
+              "text": "at the end"
+            },
+            {
+              "id": "B",
+              "text": "in the middle"
+            },
+            {
+              "id": "C",
+              "text": "2 years after the end"
+            },
+            {
+              "id": "D",
+              "text": "at the start"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "at the start",
+          "reference": "Please go through lecture notes of week-1 (slide no.11) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Which of the following is not an outcome of effective e-learning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "wider range of strategies"
+            },
+            {
+              "id": "B",
+              "text": "more reflective approach"
+            },
+            {
+              "id": "C",
+              "text": "more positive emotions towards learning"
+            },
+            {
+              "id": "D",
+              "text": "more disconnected knowledge"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "more disconnected knowledge",
+          "reference": "Please go through lecture notes of week-1 (slide no.14) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w01-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Instrumental conditioning is an example of ___ learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "sensitization"
+            },
+            {
+              "id": "B",
+              "text": "habituation"
+            },
+            {
+              "id": "C",
+              "text": "associative"
+            },
+            {
+              "id": "D",
+              "text": "meaningful"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "associative",
+          "reference": "Please go through lecture notes of week-1 (slide no.24) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Week 2",
+      "topic": "Major Theories of Learning",
+      "sourceUrl": "https://drive.google.com/file/d/1DypoK6oT36wD57lRYXg_axXWszcvEMUb/view",
+      "sourceFile": "sources/week-02-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w02-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The three major types of learning described by ___ psychology are classical conditioning, operant conditioning and observational learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "cognitive"
+            },
+            {
+              "id": "B",
+              "text": "behavioral"
+            },
+            {
+              "id": "C",
+              "text": "emotional"
+            },
+            {
+              "id": "D",
+              "text": "evolutionary"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "behavioral",
+          "reference": "Please go through lecture notes of week-2 (slide no.2) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "According to the view of Watson, psychology is ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "subjective"
+            },
+            {
+              "id": "B",
+              "text": "only descriptive"
+            },
+            {
+              "id": "C",
+              "text": "experimental"
+            },
+            {
+              "id": "D",
+              "text": "about internal mental processes that cannot be measured and observed"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "experimental",
+          "reference": "Please go through lecture notes of week-2 (slide no.3) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "___ is given by Ivan Pavlov.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Operant conditioning"
+            },
+            {
+              "id": "B",
+              "text": "Functional conditioning"
+            },
+            {
+              "id": "C",
+              "text": "Classical conditioning"
+            },
+            {
+              "id": "D",
+              "text": "Modern conditioning"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Classical conditioning",
+          "reference": "Please go through lecture notes of week-2 (slide no.5) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The process by which organisms learn to respond to certain stimuli but not to others is known as ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "stimulus generalization"
+            },
+            {
+              "id": "B",
+              "text": "stimulus appreciation"
+            },
+            {
+              "id": "C",
+              "text": "stimulus discrimination"
+            },
+            {
+              "id": "D",
+              "text": "stimulus differentiation"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "stimulus discrimination",
+          "reference": "Please go through lecture notes of week-2 (slide no.11) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Higher-order conditioning is intrinsically weaker than its first-order counterpart.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "True",
+          "reference": "Please go through lecture notes of week-2 (slide no.12) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "____ is the process of gradually changing the quality of a response.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Shaping"
+            },
+            {
+              "id": "B",
+              "text": "Modeling"
+            },
+            {
+              "id": "C",
+              "text": "Cueing"
+            },
+            {
+              "id": "D",
+              "text": "Shifting"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Shaping",
+          "reference": "Please go through lecture notes of week-2 (slide no.23) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "The works of ___ were instrumental in engendering the dramatic shift from behaviorism to cognitive theories.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Edward C. Tolman"
+            },
+            {
+              "id": "B",
+              "text": "Jean Piaget"
+            },
+            {
+              "id": "C",
+              "text": "German Gestalt"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-2 (slide no.39) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "___ intelligence is the ability to perceive the visual–spatial world accurately and involves sensitivity to color, line, shape, form, space, and the potential for recognizing and manipulating the patterns of spaces.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Interpersonal"
+            },
+            {
+              "id": "B",
+              "text": "Spatial"
+            },
+            {
+              "id": "C",
+              "text": "Bodily-kinesthetic"
+            },
+            {
+              "id": "D",
+              "text": "Linguistic"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "Spatial",
+          "reference": "Please go through lecture notes of week-2 (slide no.48) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Sternberg proposed his theory in 1985 as an alternative to the idea of the ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "general intelligence factor"
+            },
+            {
+              "id": "B",
+              "text": "multiple intelligences"
+            },
+            {
+              "id": "C",
+              "text": "specific intelligence factor"
+            },
+            {
+              "id": "D",
+              "text": "unconscious intelligence"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "general intelligence factor",
+          "reference": "Please go through lecture notes of week-2 (slide no.51) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w02-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a kind of product in the structure of intellect model?",
+          "options": [
+            {
+              "id": "A",
+              "text": "symbolic"
+            },
+            {
+              "id": "B",
+              "text": "classes"
+            },
+            {
+              "id": "C",
+              "text": "systems"
+            },
+            {
+              "id": "D",
+              "text": "implications"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "symbolic",
+          "reference": "Please go through lecture notes of week-2 (slide no.79) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Week 3",
+      "topic": "Memory & Cognition",
+      "sourceUrl": "https://drive.google.com/file/d/1fPLqemD0BqxFQrrxsqR5AahcH7JxaeQ5/view",
+      "sourceFile": "sources/week-03-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w03-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The connections between nerves cells are called ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "systems"
+            },
+            {
+              "id": "B",
+              "text": "syntaxes"
+            },
+            {
+              "id": "C",
+              "text": "neurons"
+            },
+            {
+              "id": "D",
+              "text": "synapses"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "synapses",
+          "reference": "Please go through lecture notes of week-3 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "In order to create a ___, information must be changed into a usable form, which occurs through a process known as encoding.",
+          "options": [
+            {
+              "id": "A",
+              "text": "past memory"
+            },
+            {
+              "id": "B",
+              "text": "new imagination"
+            },
+            {
+              "id": "C",
+              "text": "new memory"
+            },
+            {
+              "id": "D",
+              "text": "past imagination"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "new memory",
+          "reference": "Please go through lecture notes of week-3 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Calling back the stored information in response to some cue for use in a process or activity is called ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Retrieval"
+            },
+            {
+              "id": "B",
+              "text": "Recall"
+            },
+            {
+              "id": "C",
+              "text": "Recollection"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-3 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "For many with ___ deficits, reading facial expressions and knowing how to respond are confusing daily challenges.",
+          "options": [
+            {
+              "id": "A",
+              "text": "memory"
+            },
+            {
+              "id": "B",
+              "text": "intelligence"
+            },
+            {
+              "id": "C",
+              "text": "social cognition"
+            },
+            {
+              "id": "D",
+              "text": "biological cognition"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "social cognition",
+          "reference": "Please go through lecture notes of week-3 (slide no.08) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "The Information Processing View of Learning assumes that there are limits to how much information can be processed at each stage.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "True",
+          "reference": "Please go through lecture notes of week-3 (slide no.09) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "The Information Processing View of Learning assumes that information process is involved in ___",
+          "options": [
+            {
+              "id": "A",
+              "text": "forgetting"
+            },
+            {
+              "id": "B",
+              "text": "remembering"
+            },
+            {
+              "id": "C",
+              "text": "perceiving"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-3 (slide no.09) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "The capacity of the sensory register is ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "very small"
+            },
+            {
+              "id": "B",
+              "text": "very large"
+            },
+            {
+              "id": "C",
+              "text": "7+/-2 chunks"
+            },
+            {
+              "id": "D",
+              "text": "unlimited"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "very large",
+          "reference": "Please go through lecture notes of week-3 (slide no.14) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Most children do not begin to engage in the process of rehearsal on their own until about age ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "seven"
+            },
+            {
+              "id": "B",
+              "text": "two"
+            },
+            {
+              "id": "C",
+              "text": "thirteen"
+            },
+            {
+              "id": "D",
+              "text": "one"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "seven",
+          "reference": "Please go through lecture notes of week-3 (slide no.16) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "___ provides an interface between the sub-systems of working memory and the part of long term memory specialized for episodic memory.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Phonological loop"
+            },
+            {
+              "id": "B",
+              "text": "Visuo-spatial sketchpad"
+            },
+            {
+              "id": "C",
+              "text": "Retrieval buffer"
+            },
+            {
+              "id": "D",
+              "text": "Episodic buffer"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Episodic buffer",
+          "reference": "Please go through lecture notes of week-3 (slide no.27) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w03-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Memories of specific episodes of one’s life refers to ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "declarative memory"
+            },
+            {
+              "id": "B",
+              "text": "experimental episodic memory"
+            },
+            {
+              "id": "C",
+              "text": "autobiographical episodic memory"
+            },
+            {
+              "id": "D",
+              "text": "procedural memory"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "autobiographical episodic memory",
+          "reference": "Please go through lecture notes of week-3 (slide no.34) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Week 4",
+      "topic": "Thinking & Cognition",
+      "sourceUrl": "https://drive.google.com/file/d/15xVF4XcUkXcfds8qS6HQG3OPeE_3HtXJ/view",
+      "sourceFile": "sources/week-04-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w04-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "___ thinking is the ability to create mental representations of objects, places, events, or people in your mind.",
+          "options": [
+            {
+              "id": "A",
+              "text": "General"
+            },
+            {
+              "id": "B",
+              "text": "Creative"
+            },
+            {
+              "id": "C",
+              "text": "Divergent"
+            },
+            {
+              "id": "D",
+              "text": "Symbolic"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Symbolic",
+          "reference": "Please go through lecture notes of week-4 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "We compare new information to our ___ of the person, place, or thing, so we know how to categorize the new information mentally.",
+          "options": [
+            {
+              "id": "A",
+              "text": "protofit"
+            },
+            {
+              "id": "B",
+              "text": "protobite"
+            },
+            {
+              "id": "C",
+              "text": "prototype"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "prototype",
+          "reference": "Please go through lecture notes of week-4 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following is not true?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Thinking is a higher mental process"
+            },
+            {
+              "id": "B",
+              "text": "Thinking is a sub-vocal talking"
+            },
+            {
+              "id": "C",
+              "text": "Thinking is fulfilling a need or problem solving"
+            },
+            {
+              "id": "D",
+              "text": "Thinking is only done in verbal symbols"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Thinking is only done in verbal symbols",
+          "reference": "Please go through lecture notes of week-4 (slide no.6) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Mental images are ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Auditory"
+            },
+            {
+              "id": "B",
+              "text": "Visual"
+            },
+            {
+              "id": "C",
+              "text": "Gustatory"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-4 (slide no.07) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "___ organize complex phenomena into simpler, easily understandable, and usable categories and help to solve our problems.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Concepts"
+            },
+            {
+              "id": "B",
+              "text": "Propositions"
+            },
+            {
+              "id": "C",
+              "text": "Constructs"
+            },
+            {
+              "id": "D",
+              "text": "Components"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Concepts",
+          "reference": "Please go through lecture notes of week-4 (slide no.08) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "The lowermost level of Bloom’s taxonomy is ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "remember"
+            },
+            {
+              "id": "B",
+              "text": "apply"
+            },
+            {
+              "id": "C",
+              "text": "understand"
+            },
+            {
+              "id": "D",
+              "text": "analyze"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "remember",
+          "reference": "Please go through lecture notes of week-4 (slide no.13) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "The psychomotor domain of the Bloom’s taxonomy is concerned with ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Biological makeup"
+            },
+            {
+              "id": "B",
+              "text": "Thoughts and beliefs"
+            },
+            {
+              "id": "C",
+              "text": "Feelings and emotions"
+            },
+            {
+              "id": "D",
+              "text": "Skilled behavior"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Skilled behavior",
+          "reference": "Please go through lecture notes of week-4 (slide no.17) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Which of the following is an example of meta-cognition skills?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ignoring your limits"
+            },
+            {
+              "id": "B",
+              "text": "Self-monitoring"
+            },
+            {
+              "id": "C",
+              "text": "Skimming all important information"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "Self-monitoring",
+          "reference": "Please go through lecture notes of week-4 (slide no.24) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "___ critical thinking skill helps you analyze and process information to come to an unbiased conclusion.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Open-mindedness"
+            },
+            {
+              "id": "B",
+              "text": "Self-regulation"
+            },
+            {
+              "id": "C",
+              "text": "Self-control"
+            },
+            {
+              "id": "D",
+              "text": "Observation"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Open-mindedness",
+          "reference": "Please go through lecture notes of week-4 (slide no.32) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w04-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "The inspiration phase of the creative thinking process refers to the ___ stage.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Incubation"
+            },
+            {
+              "id": "B",
+              "text": "Insight"
+            },
+            {
+              "id": "C",
+              "text": "Evaluation"
+            },
+            {
+              "id": "D",
+              "text": "Preparation"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Preparation",
+          "reference": "Please go through lecture notes of week-4 (slide no.51) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "title": "Week 5",
+      "topic": "Motivation of Learning",
+      "sourceUrl": "https://drive.google.com/file/d/1yRNp_sAL0pq4tOkc6Upqi0meq0hstfqL/view",
+      "sourceFile": "sources/week-05-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w05-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following is true about motivation?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is a physical impulse"
+            },
+            {
+              "id": "B",
+              "text": "It is an external process"
+            },
+            {
+              "id": "C",
+              "text": "It has a willingness to activate but not channel the attitudes of learners"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "None of the given",
+          "reference": "Please go through lecture notes of week-5 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "The term “motivation” comes from a ___ word.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Greek"
+            },
+            {
+              "id": "B",
+              "text": "Latin"
+            },
+            {
+              "id": "C",
+              "text": "Hindi"
+            },
+            {
+              "id": "D",
+              "text": "Bengali"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "Latin",
+          "reference": "Please go through lecture notes of week-5 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "It is called extrinsic motivation if causal factor is ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "curiosity"
+            },
+            {
+              "id": "B",
+              "text": "social pressure"
+            },
+            {
+              "id": "C",
+              "text": "self-satisfaction"
+            },
+            {
+              "id": "D",
+              "text": "needs"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "social pressure",
+          "reference": "Please go through lecture notes of week-5 (slide no.5) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "___ motivation is considered to be more crucial for students as it is associated with deep learning, better performance and self-efficacy.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Intrinsic"
+            },
+            {
+              "id": "B",
+              "text": "Extrinsic"
+            },
+            {
+              "id": "C",
+              "text": "Introjected regulation"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Intrinsic",
+          "reference": "Please go through lecture notes of week-5 (slide no.7) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "___ proposed that there are three primary drives that drive human behavior.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hull"
+            },
+            {
+              "id": "B",
+              "text": "Watson"
+            },
+            {
+              "id": "C",
+              "text": "Piaget"
+            },
+            {
+              "id": "D",
+              "text": "Gestalt"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Hull",
+          "reference": "Please go through lecture notes of week-5 (slide no.12) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Expectancy Theory of Motivation was developed by ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vroom"
+            },
+            {
+              "id": "B",
+              "text": "Hull"
+            },
+            {
+              "id": "C",
+              "text": "Murray"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Vroom",
+          "reference": "Please go through lecture notes of week-5 (slide no.21) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "An example of ___ is thinking, “If I work hard I can achieve the targets my boss has set for me”.",
+          "options": [
+            {
+              "id": "A",
+              "text": "purposeful"
+            },
+            {
+              "id": "B",
+              "text": "valence"
+            },
+            {
+              "id": "C",
+              "text": "instrumentality"
+            },
+            {
+              "id": "D",
+              "text": "expectancy"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "expectancy",
+          "reference": "Please go through lecture notes of week-5 (slide no.23) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "In SMART goals, T stands for ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Temporary"
+            },
+            {
+              "id": "B",
+              "text": "Time-based"
+            },
+            {
+              "id": "C",
+              "text": "Tough"
+            },
+            {
+              "id": "D",
+              "text": "Testing"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "Time-based",
+          "reference": "Please go through lecture notes of week-5 (slide no.27) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Friendship is a ___ need in Maslow’s hierarchy.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Love and belonging"
+            },
+            {
+              "id": "B",
+              "text": "Esteem"
+            },
+            {
+              "id": "C",
+              "text": "Physiological"
+            },
+            {
+              "id": "D",
+              "text": "Safety"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Love and belonging",
+          "reference": "Please go through lecture notes of week-5 (slide no.31-32) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w05-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "___ theory differentiates between autonomous motivation and controlled motivation.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Arousal"
+            },
+            {
+              "id": "B",
+              "text": "Goal-setting"
+            },
+            {
+              "id": "C",
+              "text": "Need hierarchy"
+            },
+            {
+              "id": "D",
+              "text": "Self-determination"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Self-determination",
+          "reference": "Please go through lecture notes of week-5 (slide no.37) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "title": "Week 6",
+      "topic": "Emotional Intelligence & Learning",
+      "sourceUrl": "https://drive.google.com/file/d/19KkGmkKjWusp_YcrJrFs-M-covu9kpBK/view",
+      "sourceFile": "sources/week-06-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w06-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "According to Daniel Goleman, ___ component of emotional intelligence focuses on how we handle relationships with others.",
+          "options": [
+            {
+              "id": "A",
+              "text": "self-awareness"
+            },
+            {
+              "id": "B",
+              "text": "motivation"
+            },
+            {
+              "id": "C",
+              "text": "empathy"
+            },
+            {
+              "id": "D",
+              "text": "emotional regulation"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "empathy",
+          "reference": "Please go through lecture notes of week-6 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Emotional intelligence can be considered a type of ___ intelligence.",
+          "options": [
+            {
+              "id": "A",
+              "text": "academic"
+            },
+            {
+              "id": "B",
+              "text": "genetic"
+            },
+            {
+              "id": "C",
+              "text": "social"
+            },
+            {
+              "id": "D",
+              "text": "external"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "social",
+          "reference": "Please go through lecture notes of week-6 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Noticing a difficult emotion and slowing down or resisting any impulsive action that may follow highlights ___ component of emotional intelligence.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Self-regulation"
+            },
+            {
+              "id": "B",
+              "text": "Motivation"
+            },
+            {
+              "id": "C",
+              "text": "Emotional literacy"
+            },
+            {
+              "id": "D",
+              "text": "Empathy"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Self-regulation",
+          "reference": "Please go through lecture notes of week-6 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The following are signs of emotional intelligence, except ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "strong sense of curiosity"
+            },
+            {
+              "id": "B",
+              "text": "holding onto mistakes"
+            },
+            {
+              "id": "C",
+              "text": "ability to manage emotions in difficult situations"
+            },
+            {
+              "id": "D",
+              "text": "self-confidence"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "holding onto mistakes",
+          "reference": "Please go through lecture notes of week-6 (slide no.07) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Perceiving emotions means ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ignoring signals"
+            },
+            {
+              "id": "B",
+              "text": "Understanding only what somebody is saying to you"
+            },
+            {
+              "id": "C",
+              "text": "Understanding only somebody’s facial expression"
+            },
+            {
+              "id": "D",
+              "text": "Understanding both verbal and nonverbal signals"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Understanding both verbal and nonverbal signals",
+          "reference": "Please go through lecture notes of week-6 (slide no.11) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "___ suggests that 10 distinct components provide the scaffolding of emotionally and socially intelligent behaviors:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bar-On"
+            },
+            {
+              "id": "B",
+              "text": "Goleman"
+            },
+            {
+              "id": "C",
+              "text": "Salovey"
+            },
+            {
+              "id": "D",
+              "text": "Mayer"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Bar-On",
+          "reference": "Please go through lecture notes of week-6 (slide no.15) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is a facilitator of EQ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "optimism"
+            },
+            {
+              "id": "B",
+              "text": "happiness"
+            },
+            {
+              "id": "C",
+              "text": "independence"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "all of the given",
+          "reference": "Please go through lecture notes of week-6 (slide no.18) for better understanding.",
+          "note": "The solution PDF prints A but describes option D. The course quiz explicitly accepts D; that verified key is used here."
+        },
+        {
+          "id": "w06-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "___ is a strategy for improving one’s self-awareness.",
+          "options": [
+            {
+              "id": "A",
+              "text": "rejecting feedback"
+            },
+            {
+              "id": "B",
+              "text": "using critical self-talk daily"
+            },
+            {
+              "id": "C",
+              "text": "developing a fixed mindset"
+            },
+            {
+              "id": "D",
+              "text": "pursuing one’s passion"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "pursuing one’s passion",
+          "reference": "Please go through lecture notes of week-6 (slide no.20) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Having students create autobiographies is an example of creating opportunities for ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "emotional labor"
+            },
+            {
+              "id": "B",
+              "text": "emotional contagion"
+            },
+            {
+              "id": "C",
+              "text": "metacognition"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "metacognition",
+          "reference": "Please go through lecture notes of week-6 (slide no.23) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w06-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following is not true about management of emotions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is essentially a private act"
+            },
+            {
+              "id": "B",
+              "text": "It is directly regulated by others"
+            },
+            {
+              "id": "C",
+              "text": "It is influenced by cultural norms"
+            },
+            {
+              "id": "D",
+              "text": "It is influenced by what society defines as appropriate to feel and express"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "It is directly regulated by others",
+          "reference": "Please go through lecture notes of week-6 (slide no.30) for better understanding.",
+          "note": null
+        }
+      ],
+      "quizUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=71&assessmentId=211"
+    },
+    {
+      "week": 7,
+      "title": "Week 7",
+      "topic": "Learning & Instruction",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=74&assessmentId=212",
+      "sourceFile": "sources/week-07-question-images/",
+      "sourceNote": "Questions and accepted answers from the current course quiz. The linked 2025 solution PDF differs and is not used for this week.",
+      "questions": [
+        {
+          "id": "w07-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Simon defined learning as changes in a system that result in ___ over time on tasks similar to those done previously.",
+          "options": [
+            {
+              "id": "A",
+              "text": "boredom"
+            },
+            {
+              "id": "B",
+              "text": "decreased anxiety"
+            },
+            {
+              "id": "C",
+              "text": "improved performance"
+            },
+            {
+              "id": "D",
+              "text": "reduced performance"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "improved performance",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Robert Gagne defined learning as ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "a change in human disposition or capacity"
+            },
+            {
+              "id": "B",
+              "text": "a change that persists over a period of time"
+            },
+            {
+              "id": "C",
+              "text": "a change not simply ascribable to processes of growth"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "all of the given",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Psychomotor skills are ___ skills.",
+          "options": [
+            {
+              "id": "A",
+              "text": "cognitive"
+            },
+            {
+              "id": "B",
+              "text": "spiritual"
+            },
+            {
+              "id": "C",
+              "text": "mental"
+            },
+            {
+              "id": "D",
+              "text": "physical"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "physical",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Returning to experience refers to ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "attending to feelings"
+            },
+            {
+              "id": "B",
+              "text": "re-examining experience in the light of one’s intent and existing knowledge"
+            },
+            {
+              "id": "C",
+              "text": "using helpful feelings and removing obstructive ones"
+            },
+            {
+              "id": "D",
+              "text": "recalling or detailing salient events"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "recalling or detailing salient events",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following assumptions does not come under the behaviorist orientation to learning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Differences between individuals are important as they will affect learning"
+            },
+            {
+              "id": "B",
+              "text": "Observable behavior rather than internal thought processes are the focus of study."
+            },
+            {
+              "id": "C",
+              "text": "Environment shapes one’s behavior"
+            },
+            {
+              "id": "D",
+              "text": "The principle of contiguity is central"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Differences between individuals are important as they will affect learning",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Reinforcement can come through sharing of results rather than a reward.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "True",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "___ has contributed to the humanistic orientations to learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "linguistic"
+            },
+            {
+              "id": "B",
+              "text": "kinesthetic"
+            },
+            {
+              "id": "C",
+              "text": "visual"
+            },
+            {
+              "id": "D",
+              "text": "Carl Rogers"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Carl Rogers",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "In the process of learning, which of the following is not a component of output?",
+          "options": [
+            {
+              "id": "A",
+              "text": "certification"
+            },
+            {
+              "id": "B",
+              "text": "attitude change"
+            },
+            {
+              "id": "C",
+              "text": "knowledge enhancement"
+            },
+            {
+              "id": "D",
+              "text": "training plan"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "training plan",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Ambience, space and decorum do not affect learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Role-playing can motivate ___ type of learners effectively.",
+          "options": [
+            {
+              "id": "A",
+              "text": "solitary"
+            },
+            {
+              "id": "B",
+              "text": "social"
+            },
+            {
+              "id": "C",
+              "text": "reading/writing"
+            },
+            {
+              "id": "D",
+              "text": "logical/analytical"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "social",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "title": "Week 8",
+      "topic": "Learning & Pedagogy",
+      "sourceUrl": "https://drive.google.com/file/d/1dv_EbsqT6eenCxVpMTsM6lBT9vr-Lx0f/view",
+      "sourceFile": "sources/week-08-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w08-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The word ‘pedagogy’ has been derived from the ___ word “pedagogue”.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Latin"
+            },
+            {
+              "id": "B",
+              "text": "Sanskrit"
+            },
+            {
+              "id": "C",
+              "text": "Greek"
+            },
+            {
+              "id": "D",
+              "text": "English"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Greek",
+          "reference": "Please go through lecture notes of week-8 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is not true about pedagogy?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It is a method or way of teaching"
+            },
+            {
+              "id": "B",
+              "text": "It is derived from the Greek word “pedagogue”"
+            },
+            {
+              "id": "C",
+              "text": "It helps a teacher understand how learning should be facilitated."
+            },
+            {
+              "id": "D",
+              "text": "It harms the quality of teaching and learning."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "It harms the quality of teaching and learning.",
+          "reference": "Please go through lecture notes of week-8 (slide no.03-05) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Pedagogy can enhance the student-teacher relationship.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "True",
+          "reference": "Please go through lecture notes of week-8 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "___ learning is based on the model that knowledge can be created within a population where members actively interact by sharing experiences and take on asymmetry roles.",
+          "options": [
+            {
+              "id": "A",
+              "text": "integrative"
+            },
+            {
+              "id": "B",
+              "text": "inquiry-based"
+            },
+            {
+              "id": "C",
+              "text": "collaborative"
+            },
+            {
+              "id": "D",
+              "text": "constructivist"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "collaborative",
+          "reference": "Please go through lecture notes of week-8 (slide no.06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "The Pedagogical Model provides an overview of the learning cycle and breaks it down into ___ domains or phases of instruction.",
+          "options": [
+            {
+              "id": "A",
+              "text": "five"
+            },
+            {
+              "id": "B",
+              "text": "three"
+            },
+            {
+              "id": "C",
+              "text": "two"
+            },
+            {
+              "id": "D",
+              "text": "seven"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "five",
+          "reference": "Please go through lecture notes of week-8 (slide no.09) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a type of inquiry-based approach?",
+          "options": [
+            {
+              "id": "A",
+              "text": "confrontation"
+            },
+            {
+              "id": "B",
+              "text": "structure"
+            },
+            {
+              "id": "C",
+              "text": "guided"
+            },
+            {
+              "id": "D",
+              "text": "open"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "confrontation",
+          "reference": "Please go through lecture notes of week-8 (slide no.10) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "In experiential learning, students are engaged ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "intellectually"
+            },
+            {
+              "id": "B",
+              "text": "soulfully"
+            },
+            {
+              "id": "C",
+              "text": "socially"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "all of the given",
+          "reference": "Please go through lecture notes of week-8 (slide no.14) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "___ stage of experiential theory by Kolb focuses on planning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "concrete experience"
+            },
+            {
+              "id": "B",
+              "text": "abstract conceptualization"
+            },
+            {
+              "id": "C",
+              "text": "reflective observation"
+            },
+            {
+              "id": "D",
+              "text": "active experimentation"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "active experimentation",
+          "reference": "Please go through lecture notes of week-8 (slide no.21) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "People with a ___ learning style can often act on “gut feeling” and will rely on others' analysis rather than their own.",
+          "options": [
+            {
+              "id": "A",
+              "text": "accommodating"
+            },
+            {
+              "id": "B",
+              "text": "converging"
+            },
+            {
+              "id": "C",
+              "text": "diverging"
+            },
+            {
+              "id": "D",
+              "text": "assimilating"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "accommodating",
+          "reference": "Please go through lecture notes of week-8 (slide no.25) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w08-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "According to the ___ principle, students learn better from animation and narration than from animation and on-screen text.",
+          "options": [
+            {
+              "id": "A",
+              "text": "multimedia"
+            },
+            {
+              "id": "B",
+              "text": "modality"
+            },
+            {
+              "id": "C",
+              "text": "coherence"
+            },
+            {
+              "id": "D",
+              "text": "temporal contiguity"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "modality",
+          "reference": "Please go through lecture notes of week-8 (slide no.45) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "title": "Week 9",
+      "topic": "Psychology of E-Learning",
+      "sourceUrl": "https://drive.google.com/file/d/1PeL1HiE7zGUHzC5BUWUH8jCpjoDDu4_w/view",
+      "sourceFile": "sources/week-09-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w09-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "E-learning is any form of ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "teaching"
+            },
+            {
+              "id": "B",
+              "text": "training"
+            },
+            {
+              "id": "C",
+              "text": "tutoring"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "all of the given",
+          "reference": "Please go through lecture notes of week-9 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "___ is a feature of e-learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "difficulty in access"
+            },
+            {
+              "id": "B",
+              "text": "user friendliness"
+            },
+            {
+              "id": "C",
+              "text": "social injustice"
+            },
+            {
+              "id": "D",
+              "text": "closed learning"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "user friendliness",
+          "reference": "Please go through lecture notes of week-9 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "E-learning is a synonym of audio-visual learning, multimedia learning, and distance learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": "Please go through lecture notes of week-9 (slide no.05) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a type of e-learning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "text-driven"
+            },
+            {
+              "id": "B",
+              "text": "interactive"
+            },
+            {
+              "id": "C",
+              "text": "simulation"
+            },
+            {
+              "id": "D",
+              "text": "physical"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "physical",
+          "reference": "Please go through lecture notes of week-9 (slide no.05-06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a benefit of e-learning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It can accommodate the need of a housewife"
+            },
+            {
+              "id": "B",
+              "text": "People can revise the learning content as many times as they want"
+            },
+            {
+              "id": "C",
+              "text": "It facilitates in developing and communicating new training policies"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "None of the given",
+          "reference": "Please go through lecture notes of week-9 (slide no.06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Good learners know ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "What they are learning"
+            },
+            {
+              "id": "B",
+              "text": "Why they are learning"
+            },
+            {
+              "id": "C",
+              "text": "How they are learning"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-9 (slide no.12) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Learners may multitask when engaging in an online course, which could be resulting in ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "hyperfocus"
+            },
+            {
+              "id": "B",
+              "text": "better retrieval"
+            },
+            {
+              "id": "C",
+              "text": "shorter attention spans"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "shorter attention spans",
+          "reference": "Please go through lecture notes of week-9 (slide no.19) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "___ learning is the crucial determinant of successful e-learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "passive"
+            },
+            {
+              "id": "B",
+              "text": "retrospective"
+            },
+            {
+              "id": "C",
+              "text": "social"
+            },
+            {
+              "id": "D",
+              "text": "active"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "active",
+          "reference": "Please go through lecture notes of week-9 (slide no.13) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "The brain can process 36,000 visual cues per___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "hour"
+            },
+            {
+              "id": "B",
+              "text": "second"
+            },
+            {
+              "id": "C",
+              "text": "day"
+            },
+            {
+              "id": "D",
+              "text": "year"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "hour",
+          "reference": "Please go through lecture notes of week-9 (slide no.14) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w09-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "For effective learning, online courses should ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "use headings"
+            },
+            {
+              "id": "B",
+              "text": "use complex language"
+            },
+            {
+              "id": "C",
+              "text": "present long pieces of text"
+            },
+            {
+              "id": "D",
+              "text": "use random images"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "use headings",
+          "reference": "Please go through lecture notes of week-9 (slide no.20) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "title": "Week 10",
+      "topic": "Effective Learning: Assessment & Feedback",
+      "sourceUrl": "https://drive.google.com/file/d/1hZmxRJldDFa5omO9qW-8nMYjva3_vtD7/view",
+      "sourceFile": "sources/week-10-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w10-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "During Covid-19 the world was busy in preparing 1.5 billion learners for the new normal, i.e., ___ learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "ineffective"
+            },
+            {
+              "id": "B",
+              "text": "physical"
+            },
+            {
+              "id": "C",
+              "text": "remote"
+            },
+            {
+              "id": "D",
+              "text": "experiential"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "remote",
+          "reference": "Please go through lecture notes of week-10 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "To develop learner readiness for online learning, training sessions on ___ are helpful.",
+          "options": [
+            {
+              "id": "A",
+              "text": "netiquettes"
+            },
+            {
+              "id": "B",
+              "text": "time management"
+            },
+            {
+              "id": "C",
+              "text": "developing study skills"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "all of the given",
+          "reference": "Please go through lecture notes of week-10 (slide no.04) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "The typical picture of a teacher being a dispenser of knowledge to the students has been replaced by that of a ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "obstructor"
+            },
+            {
+              "id": "B",
+              "text": "parent"
+            },
+            {
+              "id": "C",
+              "text": "friend"
+            },
+            {
+              "id": "D",
+              "text": "facilitator"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "facilitator",
+          "reference": "Please go through lecture notes of week-10 (slide no.06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "In 2018, Global Education and Skills Forum noted that the ‘future’ teacher would need the 5 skills to thrive in the 21st century. Which of the following is not one of them?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Strong social skills"
+            },
+            {
+              "id": "B",
+              "text": "Data analysis"
+            },
+            {
+              "id": "C",
+              "text": "External focus"
+            },
+            {
+              "id": "D",
+              "text": "Strictness"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Strictness",
+          "reference": "Please go through lecture notes of week-10 (slide no.06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Participatory education demands ___ so as to build a needs-based approach to teaching.",
+          "options": [
+            {
+              "id": "A",
+              "text": "creativity"
+            },
+            {
+              "id": "B",
+              "text": "stubbornness"
+            },
+            {
+              "id": "C",
+              "text": "reward"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "creativity",
+          "reference": "Please go through lecture notes of week-10 (slide no.08) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Students who consider intelligence as a malleable entity tend to focus on their obstacles instead of goals.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "False",
+          "reference": "Please go through lecture notes of week-10 (slide no.10) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is not a principle to enhance student learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "What students already know affects their learning"
+            },
+            {
+              "id": "B",
+              "text": "Learning is context-based"
+            },
+            {
+              "id": "C",
+              "text": "Students’ cognitive development and learning is limited by the general stages of development."
+            },
+            {
+              "id": "D",
+              "text": "The acquisition of knowledge and skills in the long term depends largely on practice."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "Students’ cognitive development and learning is limited by the general stages of development.",
+          "reference": "Please go through lecture notes of week-10 (slide no.10-11) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "___ feedback to students is important for learning.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Unclear"
+            },
+            {
+              "id": "B",
+              "text": "Late"
+            },
+            {
+              "id": "C",
+              "text": "Harsh"
+            },
+            {
+              "id": "D",
+              "text": "Explanatory"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "Explanatory",
+          "reference": "Please go through lecture notes of week-10 (slide no.14) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Mastery goals are those that are geared towards the acquisition or improvement of___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Skills"
+            },
+            {
+              "id": "B",
+              "text": "Number of students in a classroom"
+            },
+            {
+              "id": "C",
+              "text": "Teacher feedback"
+            },
+            {
+              "id": "D",
+              "text": "None of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "Skills",
+          "reference": "Please go through lecture notes of week-10 (slide no.15) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w10-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "The vast majority of formative assessment is___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Formal"
+            },
+            {
+              "id": "B",
+              "text": "Incorrect"
+            },
+            {
+              "id": "C",
+              "text": "Written"
+            },
+            {
+              "id": "D",
+              "text": "informal"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-linked-solution",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "informal",
+          "reference": "Please go through lecture notes of week-10 (slide no.44) for better understanding.",
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "title": "Week 11",
+      "topic": "Learning & Social Cognition",
+      "sourceUrl": "https://drive.google.com/file/d/1hqjaOh0KMz3L-nGnLJWv-5Ui_q_BppVq/view",
+      "sourceFile": "sources/week-11-solution.pdf",
+      "sourceNote": null,
+      "questions": [
+        {
+          "id": "w11-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Social cognition has a protracted development through infancy to ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "teenage"
+            },
+            {
+              "id": "B",
+              "text": "old-age"
+            },
+            {
+              "id": "C",
+              "text": "adulthood"
+            },
+            {
+              "id": "D",
+              "text": "death"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "adulthood",
+          "reference": "Please go through lecture notes of week-11 (slide no.02) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following abilities comes under social cognition?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Face processing"
+            },
+            {
+              "id": "B",
+              "text": "Joint attention"
+            },
+            {
+              "id": "C",
+              "text": "Theory of mind"
+            },
+            {
+              "id": "D",
+              "text": "All of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "All of the given",
+          "reference": "Please go through lecture notes of week-11 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Under social cognition, abilities involved in affective processing are often called ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "hot"
+            },
+            {
+              "id": "B",
+              "text": "cold"
+            },
+            {
+              "id": "C",
+              "text": "white"
+            },
+            {
+              "id": "D",
+              "text": "black"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "hot",
+          "reference": "Please go through lecture notes of week-11 (slide no.03) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Social schemas refer to people's mental representations of social ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "values"
+            },
+            {
+              "id": "B",
+              "text": "memories"
+            },
+            {
+              "id": "C",
+              "text": "skills"
+            },
+            {
+              "id": "D",
+              "text": "patterns"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "patterns",
+          "reference": "Please go through lecture notes of week-11 (slide no.05) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "During the earliest stages of development, children are very ___-centric. They see the world from their own perspective and struggle to think about how other people may view the world.",
+          "options": [
+            {
+              "id": "A",
+              "text": "selfish"
+            },
+            {
+              "id": "B",
+              "text": "ego"
+            },
+            {
+              "id": "C",
+              "text": "conscious"
+            },
+            {
+              "id": "D",
+              "text": "emotional"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "ego",
+          "reference": "Please go through lecture notes of week-11 (slide no.06) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "A theory of mind refers to a person's ability to understand and think about the ___ of other people.",
+          "options": [
+            {
+              "id": "A",
+              "text": "behaviors"
+            },
+            {
+              "id": "B",
+              "text": "family backgrounds"
+            },
+            {
+              "id": "C",
+              "text": "mental states"
+            },
+            {
+              "id": "D",
+              "text": "language"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "C",
+          "sourceAnswerText": "mental states",
+          "reference": "Please go through lecture notes of week-11 (slide no.08) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "The same social behavior in one cultural setting might have a very different meaning and interpretation if it were to occur or be observed in another culture.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "True",
+          "reference": "Please go through lecture notes of week-11 (slide no.09) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Social cognitive theory by Bandura focuses on concepts of ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "self-efficacy"
+            },
+            {
+              "id": "B",
+              "text": "modeling"
+            },
+            {
+              "id": "C",
+              "text": "observational learning"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "D",
+          "sourceAnswerText": "all of the given",
+          "reference": "Please go through lecture notes of week-11 (slide no.11) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "The central tenet of Bandura’s social-cognitive theory is that people seek to develop a sense of ___ over the important events in their lives.",
+          "options": [
+            {
+              "id": "A",
+              "text": "agency"
+            },
+            {
+              "id": "B",
+              "text": "dependency"
+            },
+            {
+              "id": "C",
+              "text": "attachment"
+            },
+            {
+              "id": "D",
+              "text": "emotion"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "A",
+          "sourceAnswerText": "agency",
+          "reference": "Please go through lecture notes of week-11 (slide no.13) for better understanding.",
+          "note": null
+        },
+        {
+          "id": "w11-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "___ hypothesis suggests that social processes influence how information is selected, organized, integrated, and retrieved.",
+          "options": [
+            {
+              "id": "A",
+              "text": "activation"
+            },
+            {
+              "id": "B",
+              "text": "cognitive influence"
+            },
+            {
+              "id": "C",
+              "text": "interaction"
+            },
+            {
+              "id": "D",
+              "text": "social cue strength"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerLabel": "B",
+          "sourceAnswerText": "cognitive influence",
+          "reference": "Please go through lecture notes of week-11 (slide no.30) for better understanding.",
+          "note": null
+        }
+      ],
+      "quizUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=124&assessmentId=216"
+    },
+    {
+      "week": 12,
+      "title": "Week 12",
+      "topic": "Learning for Sustainability",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=127&assessmentId=217",
+      "sourceFile": "sources/week-12-question-images/",
+      "sourceNote": "Transcribed from saved assignment question images. Official accepted answers were not available on 2026-10-11; due date is 2026-10-14.",
+      "questions": [
+        {
+          "id": "w12-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Sustainability in economic sustainability is ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "multidimensional"
+            },
+            {
+              "id": "B",
+              "text": "bidimensional"
+            },
+            {
+              "id": "C",
+              "text": "unidimensional"
+            },
+            {
+              "id": "D",
+              "text": "none of the given"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "The term \"sustainable development\" was first mentioned in a book related to the 1972 UN Stockholm conference on ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "water"
+            },
+            {
+              "id": "B",
+              "text": "poverty"
+            },
+            {
+              "id": "C",
+              "text": "economic crisis"
+            },
+            {
+              "id": "D",
+              "text": "human environment"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Environmental sustainability focuses on impacts of processes, products and services on ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "water"
+            },
+            {
+              "id": "B",
+              "text": "biodiversity"
+            },
+            {
+              "id": "C",
+              "text": "human health"
+            },
+            {
+              "id": "D",
+              "text": "all of the given"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following does not come under social sustainability?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Labour practices"
+            },
+            {
+              "id": "B",
+              "text": "Revenue generation"
+            },
+            {
+              "id": "C",
+              "text": "Human rights"
+            },
+            {
+              "id": "D",
+              "text": "Business ethics"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "SDG __ focuses on clean water and sanitation.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "17"
+            },
+            {
+              "id": "C",
+              "text": "6"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "SDG 16 focuses on ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "No poverty"
+            },
+            {
+              "id": "B",
+              "text": "No hunger"
+            },
+            {
+              "id": "C",
+              "text": "Good health"
+            },
+            {
+              "id": "D",
+              "text": "Peace and justice"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "On 20 October 2020, the Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the ___ 2020.",
+          "options": [
+            {
+              "id": "A",
+              "text": "National Sustainability Meeting"
+            },
+            {
+              "id": "B",
+              "text": "National Teachers Meeting"
+            },
+            {
+              "id": "C",
+              "text": "Global Childrens’ Meeting"
+            },
+            {
+              "id": "D",
+              "text": "Global Education Meeting"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Education is related to all SDGs.",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Successful implementation of ESD requires a shift in focus from ___.",
+          "options": [
+            {
+              "id": "A",
+              "text": "teaching to learning"
+            },
+            {
+              "id": "B",
+              "text": "learning to teaching"
+            },
+            {
+              "id": "C",
+              "text": "reading to speaking"
+            },
+            {
+              "id": "D",
+              "text": "knowing to ignoring"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        },
+        {
+          "id": "w12-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "___ competency is the ability to reflect on one’s own role in the local community and (global) society.",
+          "options": [
+            {
+              "id": "A",
+              "text": "collaboration"
+            },
+            {
+              "id": "B",
+              "text": "self-awareness"
+            },
+            {
+              "id": "C",
+              "text": "strategic"
+            },
+            {
+              "id": "D",
+              "text": "normative"
+            }
+          ],
+          "correctOptionIds": null,
+          "answerStatus": "not-released",
+          "answerSource": null,
+          "sourceAnswerLabel": null,
+          "sourceAnswerText": null,
+          "reference": null,
+          "note": "Official accepted answer not released as of 11 October 2026."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "week": 12,
+  "title": "Week 12",
+  "topic": "Learning for Sustainability",
+  "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=127&assessmentId=217",
+  "sourceFile": "sources/week-12-question-images/",
+  "sourceNote": "Transcribed from saved assignment question images. Official accepted answers were not available on 2026-10-11; due date is 2026-10-14.",
+  "questions": [
+    {
+      "id": "w12-q01",
+      "number": 1,
+      "sourceNumber": 1,
+      "type": "single-choice",
+      "prompt": "Sustainability in economic sustainability is ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "multidimensional"
+        },
+        {
+          "id": "B",
+          "text": "bidimensional"
+        },
+        {
+          "id": "C",
+          "text": "unidimensional"
+        },
+        {
+          "id": "D",
+          "text": "none of the given"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q02",
+      "number": 2,
+      "sourceNumber": 2,
+      "type": "single-choice",
+      "prompt": "The term \"sustainable development\" was first mentioned in a book related to the 1972 UN Stockholm conference on ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "water"
+        },
+        {
+          "id": "B",
+          "text": "poverty"
+        },
+        {
+          "id": "C",
+          "text": "economic crisis"
+        },
+        {
+          "id": "D",
+          "text": "human environment"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q03",
+      "number": 3,
+      "sourceNumber": 3,
+      "type": "single-choice",
+      "prompt": "Environmental sustainability focuses on impacts of processes, products and services on ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "water"
+        },
+        {
+          "id": "B",
+          "text": "biodiversity"
+        },
+        {
+          "id": "C",
+          "text": "human health"
+        },
+        {
+          "id": "D",
+          "text": "all of the given"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q04",
+      "number": 4,
+      "sourceNumber": 4,
+      "type": "single-choice",
+      "prompt": "Which of the following does not come under social sustainability?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Labour practices"
+        },
+        {
+          "id": "B",
+          "text": "Revenue generation"
+        },
+        {
+          "id": "C",
+          "text": "Human rights"
+        },
+        {
+          "id": "D",
+          "text": "Business ethics"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q05",
+      "number": 5,
+      "sourceNumber": 5,
+      "type": "single-choice",
+      "prompt": "SDG __ focuses on clean water and sanitation.",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "17"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q06",
+      "number": 6,
+      "sourceNumber": 6,
+      "type": "single-choice",
+      "prompt": "SDG 16 focuses on ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "No poverty"
+        },
+        {
+          "id": "B",
+          "text": "No hunger"
+        },
+        {
+          "id": "C",
+          "text": "Good health"
+        },
+        {
+          "id": "D",
+          "text": "Peace and justice"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q07",
+      "number": 7,
+      "sourceNumber": 7,
+      "type": "single-choice",
+      "prompt": "On 20 October 2020, the Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the ___ 2020.",
+      "options": [
+        {
+          "id": "A",
+          "text": "National Sustainability Meeting"
+        },
+        {
+          "id": "B",
+          "text": "National Teachers Meeting"
+        },
+        {
+          "id": "C",
+          "text": "Global Childrens’ Meeting"
+        },
+        {
+          "id": "D",
+          "text": "Global Education Meeting"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q08",
+      "number": 8,
+      "sourceNumber": 8,
+      "type": "single-choice",
+      "prompt": "Education is related to all SDGs.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q09",
+      "number": 9,
+      "sourceNumber": 9,
+      "type": "single-choice",
+      "prompt": "Successful implementation of ESD requires a shift in focus from ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "teaching to learning"
+        },
+        {
+          "id": "B",
+          "text": "learning to teaching"
+        },
+        {
+          "id": "C",
+          "text": "reading to speaking"
+        },
+        {
+          "id": "D",
+          "text": "knowing to ignoring"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    },
+    {
+      "id": "w12-q10",
+      "number": 10,
+      "sourceNumber": 10,
+      "type": "single-choice",
+      "prompt": "___ competency is the ability to reflect on one’s own role in the local community and (global) society.",
+      "options": [
+        {
+          "id": "A",
+          "text": "collaboration"
+        },
+        {
+          "id": "B",
+          "text": "self-awareness"
+        },
+        {
+          "id": "C",
+          "text": "strategic"
+        },
+        {
+          "id": "D",
+          "text": "normative"
+        }
+      ],
+      "correctOptionIds": null,
+      "answerStatus": "not-released",
+      "answerSource": null,
+      "sourceAnswerLabel": null,
+      "sourceAnswerText": null,
+      "reference": null,
+      "note": "Official accepted answer not released as of 11 October 2026."
+    }
+  ]
+}
