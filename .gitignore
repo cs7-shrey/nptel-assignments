@@ -6,3 +6,4 @@ out/
 # Browser-saved pages may include account/submission state; only extracted questions ship.
 sources/*.html
 sources/*_files/
+next-env.d.ts

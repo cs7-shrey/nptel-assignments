@@ -18,7 +18,7 @@ Pick a week and click an option to check it against the course key. **Show answe
 
 ## Data
 
-`data/assignments.json` contains all assignments and source provenance. Download it from `/assignments.json`.
+`data/assignments.json` contains all assignments and source provenance. View it at `/assignments.json`.
 
 Each week contains `week`, `title`, `topic`, `sourceUrl`, `sourceFile`, `sourceNote`, and `questions`. Each question includes its stable `id`, display `number`, original `sourceNumber`, `prompt`, `options` (`id` and `text`), `correctOptionIds`, `answerStatus`, and answer provenance. Unreleased answers have `correctOptionIds: null` and `answerStatus: "not-released"`.
 
