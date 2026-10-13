@@ -226,7 +226,8 @@ main {
 }
 .intro,
 .questions,
-.pagination {
+.pagination,
+.footer {
   max-width: 820px;
   margin: 0 auto;
   padding: 0 52px;
@@ -437,7 +438,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
-  padding-bottom: 56px;
+  padding-bottom: 32px;
 }
 .pagination button {
   font-size: 14px;
@@ -446,6 +447,32 @@ main {
 }
 .pagination button:hover {
   color: var(--correct-text);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.heart {
+  color: var(--orange);
+}
+.footer a {
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+.footer a:hover {
+  text-decoration-color: currentColor;
 }
 
 @keyframes enter {
@@ -470,7 +497,8 @@ main {
   }
   .intro,
   .questions,
-  .pagination {
+  .pagination,
+  .footer {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -525,7 +553,8 @@ main {
   }
   .intro,
   .questions,
-  .pagination {
+  .pagination,
+  .footer {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -574,7 +603,8 @@ main {
 @media print {
   .sidebar,
   .controls,
-  .pagination {
+  .pagination,
+  .footer {
     display: none;
   }
   main {
