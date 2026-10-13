@@ -14,11 +14,11 @@ npm run dev
 
 Open http://127.0.0.1:3000. Dependencies are already installed in this checkout.
 
-Select a week, choose options for practice, and toggle **Show answers** to reveal the course key. The toggle resets when changing weeks. Search filters the current week. Selections stay in memory for the current session and are never submitted to the course.
+Pick a week and click an option to check it against the course key. **Show answers** reveals the whole week at once. The last week and your choices are saved in the browser's local storage and are never submitted to the course.
 
 ## Data
 
-`data/assignments.json` contains all assignments and source provenance. Download it from `/assignments.json`, or use **Export this week** for a single week.
+`data/assignments.json` contains all assignments and source provenance. Download it from `/assignments.json`.
 
 Each week contains `week`, `title`, `topic`, `sourceUrl`, `sourceFile`, `sourceNote`, and `questions`. Each question includes its stable `id`, display `number`, original `sourceNumber`, `prompt`, `options` (`id` and `text`), `correctOptionIds`, `answerStatus`, and answer provenance. Unreleased answers have `correctOptionIds: null` and `answerStatus: "not-released"`.
 
