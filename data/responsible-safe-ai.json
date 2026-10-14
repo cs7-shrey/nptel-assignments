@@ -4620,7 +4620,7 @@
       "topic": "Graph explanations & representation surgery",
       "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs145?unitId=56&assessmentId=166",
       "sourceFile": "sources/responsible-safe-ai/week-12.ax.txt",
-      "sourceNote": "Captured from current course quiz; official answers not yet released.",
+      "sourceNote": "Questions and accepted answers captured from the current course quiz.",
       "questions": [
         {
           "id": "w12-q01",
@@ -4646,11 +4646,13 @@
               "text": "The attribute is entirely impossible to classify based on the representation."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "D"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The attribute is entirely impossible to classify based on the representation.",
           "reference": null,
           "note": null
         },
@@ -4678,11 +4680,13 @@
               "text": "To completely randomize the vector outputs of specific trigger tokens."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "B"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To guard an attribute with the smallest possible change to unrelated semantics.",
           "reference": null,
           "note": null
         },
@@ -4710,11 +4714,13 @@
               "text": "It depends heavily on reinforcement learning and human feedback."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "A"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It is a no-gradient and cheap way to control model generation.",
           "reference": null,
           "note": null
         },
@@ -4742,11 +4748,13 @@
               "text": "It scales linearly with respect to graph size."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "B"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It scales quadratically with respect to graph size.",
           "reference": null,
           "note": null
         },
@@ -4774,11 +4782,13 @@
               "text": "It assigns zero weight to all the chemical bonds by default."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "C"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It cannot capture specific multi-node groupwise interactions.",
           "reference": null,
           "note": null
         },
@@ -4806,11 +4816,13 @@
               "text": "By executing the explainer algorithm on highly compressed latent space."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "B"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "By strategically removing specific types of boundary relations.",
           "reference": null,
           "note": null
         },
@@ -4838,11 +4850,13 @@
               "text": "They are represented as 3-cells."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "C"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "They are represented as 2-cells.",
           "reference": null,
           "note": null
         },
@@ -4874,11 +4888,15 @@
               "text": "Fraud detection"
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "B",
+            "D",
+            "E"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Toxicity detection of molecules, Drug prediction, Fraud detection",
           "reference": null,
           "note": null
         },
@@ -4906,11 +4924,13 @@
               "text": "Perturbation-based methods"
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "D"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Perturbation-based methods",
           "reference": null,
           "note": null
         },
@@ -4942,15 +4962,20 @@
               "text": "A p-cell c^(p) is considered a face or boundary of a (p+1)-cell c^(p+1) if the set of points composing c^(p) is a subset of those composing c^(p+1)."
             }
           ],
-          "correctOptionIds": null,
+          "correctOptionIds": [
+            "A",
+            "D",
+            "E"
+          ],
           "correctNumericAnswer": null,
-          "answerStatus": "not-released",
-          "answerSource": null,
-          "sourceAnswerText": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs., Boundary relations in the framework are restricted to be undirected, meaning 𝜎 𝑐 1 , 𝑐 2 = 𝜎 𝑐 2 , 𝑐 1 . , A 𝑝 -cell 𝑐 ( 𝑝 ) is considered a face or boundary of a (p+1)-cell 𝑐 ( 𝑝 + 1 ) if the set of points composing 𝑐 ( 𝑝 ) is a subset of those composing 𝑐 ( 𝑝 + 1 ) .",
           "reference": null,
           "note": null
         }
-      ]
+      ],
+      "answersVerifiedOn": "2026-10-15"
     }
   ]
 }

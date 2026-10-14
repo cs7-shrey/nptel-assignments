@@ -6,12 +6,12 @@ const load = name => JSON.parse(readFileSync(new URL(`../data/${name}.json`, imp
 const ai = load('responsible-safe-ai'), psychology = load('assignments');
 const find = id => ai.weeks.flatMap(w => w.questions).find(q => q.id === id);
 
-test('AI dataset preserves all twelve weeks, 141 questions, and 131 published keys', () => {
+test('AI dataset preserves all twelve weeks, 141 questions, and 141 published keys', () => {
   assert.deepEqual(ai.weeks.map(w => w.week), Array.from({ length: 12 }, (_, i) => i + 1));
   assert.deepEqual(ai.weeks.map(w => w.questions.length), [...Array(10).fill(12), 11, 10]);
   const questions = ai.weeks.flatMap(w => w.questions);
   assert.equal(new Set(questions.map(q => q.id)).size, 141);
-  assert.equal(questions.filter(hasAnswer).length, 131);
+  assert.equal(questions.filter(hasAnswer).length, 141);
   assert.equal(questions.filter(q => q.type === 'numeric').length, 3);
   for (const w of ai.weeks) for (const [i, q] of w.questions.entries()) {
     assert.equal(q.sourceNumber, i + 1);
@@ -20,7 +20,7 @@ test('AI dataset preserves all twelve weeks, 141 questions, and 131 published ke
     else { assert(q.options.length >= 2); assert.equal(new Set(q.options.map(o => o.id)).size, q.options.length); }
     for (const id of q.correctOptionIds ?? []) assert(q.options.some(o => o.id === id));
     assert(q.options.every(o => o.text.trim().length > 0));
-    assert.equal(q.answerStatus, w.week === 12 ? 'not-released' : 'official');
+    assert.equal(q.answerStatus, 'official');
   }
   const serialized = JSON.stringify(ai);
   for (const fragment of ['Value:', 'Your last recorded', 'Score:', 'You may submit', '@gmail.com']) assert(!serialized.includes(fragment));
@@ -45,7 +45,20 @@ test('numeric answers accept equivalent numbers, reject blanks, and await checki
   for (const value of ['', ' ', '3', 'NaN', 'Infinity']) assert(!isCorrect(q, value));
   assert(!isChecked(q, '2', {}));
   assert(isChecked(q, '2', { [q.id]: true }));
-  assert(!hasAnswer(find('w12-q01')));
+  assert(!hasAnswer({ ...q, correctNumericAnswer: null, correctOptionIds: null, answerStatus: 'not-released' }));
+});
+
+test('Week 12 published keys include the complete accepted multi-select sets', () => {
+  const week = ai.weeks.find(w => w.week === 12);
+  assert.deepEqual(week.questions.map(q => q.correctOptionIds), [
+    ['D'], ['B'], ['A'], ['B'], ['C'], ['B'], ['C'], ['B', 'D', 'E'], ['D'], ['A', 'D', 'E'],
+  ]);
+  assert(week.questions.every(q => q.answerSource === 'course-accepted-answer'));
+  for (const q of week.questions) {
+    assert(hasAnswer(q));
+    assert(isCorrect(q, q.type === 'multiple-choice' ? q.correctOptionIds : q.correctOptionIds[0]));
+    if (q.type === 'multiple-choice') assert(!isCorrect(q, q.correctOptionIds.slice(0, -1)));
+  }
 });
 
 test('legacy Psychology progress survives and course storage keys are isolated', () => {

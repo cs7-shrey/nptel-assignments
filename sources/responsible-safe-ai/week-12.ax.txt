@@ -1,211 +1,261 @@
-							117 text 1 .
-							118 text What does a ‘guarded’ attribute mean in a language model’s representation space?
-							119 container
-								120 text 1  Point
-							121 container
-								122 radio button The attribute can only be classified by specific linear probes.
-								123 text The attribute can only be classified by specific linear probes.
-							124 container
-								125 radio button The attribute requires non-linear transformations to be classified.
-								126 text The attribute requires non-linear transformations to be classified.
-							127 container
-								128 radio button The attribute is heavily emphasized during the initial pre-training process.
-								129 text The attribute is heavily emphasized during the initial pre-training process.
-							130 container
-								131 radio button The attribute is entirely impossible to classify based on the representation.
-								132 text The attribute is entirely impossible to classify based on the representation.
-							133 text 2 .
-							134 text What is the primary objective of modifying vectors from one distribution (e.g., toxic to non-toxic) to look like another?
-							135 container
-								136 text 1  Point
+							135 text 1 .
+							136 text What does a ‘guarded’ attribute mean in a language model’s representation space?
 							137 container
-								138 radio button To increase the computational cost of generating toxic content.
-								139 text To increase the computational cost of generating toxic content.
-							140 container
-								141 radio button To guard an attribute with the smallest possible change to unrelated semantics.
-								142 text To guard an attribute with the smallest possible change to unrelated semantics.
-							143 container
-								144 radio button To fundamentally alter the underlying vocabulary of the model.
-								145 text To fundamentally alter the underlying vocabulary of the model.
-							146 container
-								147 radio button To completely randomize the vector outputs of specific trigger tokens.
-								148 text To completely randomize the vector outputs of specific trigger tokens.
-							149 text 3 .
-							150 text According to the lecture, what is the implication behind using Affine Steering?
+								138 text 1  Point
+							139 container
+								140 radio button (disabled) The attribute can only be classified by specific linear probes.
+								141 text The attribute can only be classified by specific linear probes.
+							142 container
+								143 radio button (disabled) The attribute requires non-linear transformations to be classified.
+								144 text The attribute requires non-linear transformations to be classified.
+							145 container
+								146 radio button (disabled) The attribute is heavily emphasized during the initial pre-training process.
+								147 text The attribute is heavily emphasized during the initial pre-training process.
+							148 container
+								149 radio button (disabled) The attribute is entirely impossible to classify based on the representation.
+								150 text The attribute is entirely impossible to classify based on the representation.
 							151 container
-								152 text 1  Point
-							153 container
-								154 radio button It is a no-gradient and cheap way to control model generation.
-								155 text It is a no-gradient and cheap way to control model generation.
-							156 container
-								157 radio button It fine-tunes the model to effectively remove bias using minimal training data.
-								158 text It fine-tunes the model to effectively remove bias using minimal training data.
-							159 container
-								160 radio button It is a highly interpretable, gradient-based optimization method.
-								161 text It is a highly interpretable, gradient-based optimization method.
-							162 container
-								163 radio button It depends heavily on reinforcement learning and human feedback.
-								164 text It depends heavily on reinforcement learning and human feedback.
-							165 text 4 .
-							166 text How does the size of a conventional cell complex scale as the size of the graph increases?
-							167 container
-								168 text 1  Point
+							153 text Accepted answer is The attribute is entirely impossible to classify based on the representation. 2 .
+							154 text What is the primary objective of modifying vectors from one distribution (e.g., toxic to non-toxic) to look like another?
+							155 container
+								156 text 1  Point
+							157 container
+								158 radio button (disabled) To increase the computational cost of generating toxic content.
+								159 text To increase the computational cost of generating toxic content.
+							160 container
+								161 radio button (disabled) To guard an attribute with the smallest possible change to unrelated semantics.
+								162 text To guard an attribute with the smallest possible change to unrelated semantics.
+							163 container
+								164 radio button (disabled) To fundamentally alter the underlying vocabulary of the model.
+								165 text To fundamentally alter the underlying vocabulary of the model.
+							166 container
+								167 radio button (disabled) To completely randomize the vector outputs of specific trigger tokens.
+								168 text To completely randomize the vector outputs of specific trigger tokens.
 							169 container
-								170 radio button It scales inversely with respect to graph size.
-								171 text It scales inversely with respect to graph size.
-							172 container
-								173 radio button It scales quadratically with respect to graph size.
-								174 text It scales quadratically with respect to graph size.
+							171 text Accepted answer is To guard an attribute with the smallest possible change to unrelated semantics. 3 .
+							172 text According to the lecture, what is the implication behind using Affine Steering?
+							173 container
+								174 text 1  Point
 							175 container
-								176 radio button It scales logarithmically with respect to graph size.
-								177 text It scales logarithmically with respect to graph size.
+								176 radio button (disabled) It is a no-gradient and cheap way to control model generation.
+								177 text It is a no-gradient and cheap way to control model generation.
 							178 container
-								179 radio button It scales linearly with respect to graph size.
-								180 text It scales linearly with respect to graph size.
-							181 text 5 .
-							182 text In the molecule toxicity detection task, why might a standard Graph Neural Network Explainer fail to identify the correct explanation?
-							183 container
-								184 text 1  Point
-							185 container
-								186 radio button It removes all nodes that have a high edge degree.
-								187 text It removes all nodes that have a high edge degree.
-							188 container
-								189 radio button It processes node features too slowly for a chemical dataset.
-								190 text It processes node features too slowly for a chemical dataset.
+								179 radio button (disabled) It fine-tunes the model to effectively remove bias using minimal training data.
+								180 text It fine-tunes the model to effectively remove bias using minimal training data.
+							181 container
+								182 radio button (disabled) It is a highly interpretable, gradient-based optimization method.
+								183 text It is a highly interpretable, gradient-based optimization method.
+							184 container
+								185 radio button (disabled) It depends heavily on reinforcement learning and human feedback.
+								186 text It depends heavily on reinforcement learning and human feedback.
+							187 container
+							189 text Accepted answer is It is a no-gradient and cheap way to control model generation. 4 .
+							190 text How does the size of a conventional cell complex scale as the size of the graph increases?
 							191 container
-								192 radio button It cannot capture specific multi-node groupwise interactions.
-								193 text It cannot capture specific multi-node groupwise interactions.
-							194 container
-								195 radio button It assigns zero weight to all the chemical bonds by default.
-								196 text It assigns zero weight to all the chemical bonds by default.
-							197 text 6 .
-							198 text How does FORGE reduce the computational complexity of the cell complex to a linear scale?
+								192 text 1  Point
+							193 container
+								194 radio button (disabled) It scales inversely with respect to graph size.
+								195 text It scales inversely with respect to graph size.
+							196 container
+								197 radio button (disabled) It scales quadratically with respect to graph size.
+								198 text It scales quadratically with respect to graph size.
 							199 container
-								200 text 1  Point
-							201 container
-								202 radio button By randomly sampling only 10% of the original graph edges.
-								203 text By randomly sampling only 10% of the original graph edges.
-							204 container
-								205 radio button By strategically removing specific types of boundary relations.
-								206 text By strategically removing specific types of boundary relations.
-							207 container
-								208 radio button By completely deleting all nodes with a degree higher than a threshold degree.
-								209 text By completely deleting all nodes with a degree higher than a threshold degree.
-							210 container
-								211 radio button By executing the explainer algorithm on highly compressed latent space.
-								212 text By executing the explainer algorithm on highly compressed latent space.
-							213 text 7 .
-							214 text How are cycles structurally represented in the cell complex?
-							215 container
-								216 text 1  Point
+								200 radio button (disabled) It scales logarithmically with respect to graph size.
+								201 text It scales logarithmically with respect to graph size.
+							202 container
+								203 radio button (disabled) It scales linearly with respect to graph size.
+								204 text It scales linearly with respect to graph size.
+							205 container
+							207 text Accepted answer is It scales quadratically with respect to graph size. 5 .
+							208 text In the molecule toxicity detection task, why might a standard Graph Neural Network Explainer fail to identify the correct explanation?
+							209 container
+								210 text 1  Point
+							211 container
+								212 radio button (disabled) It removes all nodes that have a high edge degree.
+								213 text It removes all nodes that have a high edge degree.
+							214 container
+								215 radio button (disabled) It processes node features too slowly for a chemical dataset.
+								216 text It processes node features too slowly for a chemical dataset.
 							217 container
-								218 radio button They are represented as 0-cells.
-								219 text They are represented as 0-cells.
+								218 radio button (disabled) It cannot capture specific multi-node groupwise interactions.
+								219 text It cannot capture specific multi-node groupwise interactions.
 							220 container
-								221 radio button They are represented as 1-cells.
-								222 text They are represented as 1-cells.
+								221 radio button (disabled) It assigns zero weight to all the chemical bonds by default.
+								222 text It assigns zero weight to all the chemical bonds by default.
 							223 container
-								224 radio button They are represented as 2-cells.
-								225 text They are represented as 2-cells.
-							226 container
-								227 radio button They are represented as 3-cells.
-								228 text They are represented as 3-cells.
-							229 text 8 .
-							230 text Which of the following are examples of graph explainers? (Select all that apply.)
-							231 container
-								232 text 1  Point
-							233 container
-								234 Tick box Predicting the next token in a language model
-								235 text Predicting the next token in a language model
-							236 container
-								237 Tick box Toxicity detection of molecules
-								238 text Toxicity detection of molecules
-							239 container
-								240 Tick box Affine concept erasure
-								241 text Affine concept erasure
-							242 container
-								243 Tick box Drug prediction
-								244 text Drug prediction
+							225 text Accepted answer is It cannot capture specific multi-node groupwise interactions. 6 .
+							226 text How does FORGE reduce the computational complexity of the cell complex to a linear scale?
+							227 container
+								228 text 1  Point
+							229 container
+								230 radio button (disabled) By randomly sampling only 10% of the original graph edges.
+								231 text By randomly sampling only 10% of the original graph edges.
+							232 container
+								233 radio button (disabled) By strategically removing specific types of boundary relations.
+								234 text By strategically removing specific types of boundary relations.
+							235 container
+								236 radio button (disabled) By completely deleting all nodes with a degree higher than a threshold degree.
+								237 text By completely deleting all nodes with a degree higher than a threshold degree.
+							238 container
+								239 radio button (disabled) By executing the explainer algorithm on highly compressed latent space.
+								240 text By executing the explainer algorithm on highly compressed latent space.
+							241 container
+							243 text Accepted answer is By strategically removing specific types of boundary relations. 7 .
+							244 text How are cycles structurally represented in the cell complex?
 							245 container
-								246 Tick box Fraud detection
-								247 text Fraud detection
-							248 text 9 .
-							249 text Which of the following methods benefits the most from the FORGE framework?
+								246 text 1  Point
+							247 container
+								248 radio button (disabled) They are represented as 0-cells.
+								249 text They are represented as 0-cells.
 							250 container
-								251 text 1  Point
-							252 container
-								253 radio button Attention-based methods
-								254 text Attention-based methods
-							255 container
-								256 radio button Surrogate-based methods
-								257 text Surrogate-based methods
-							258 container
-								259 radio button Gradient-based methods
-								260 text Gradient-based methods
-							261 container
-								262 radio button Perturbation-based methods
-								263 text Perturbation-based methods
-							264 text 10 .
-							265 text Based on the mathematical definitions of cell complexes presented in the FORGE slides, which of the following statements are correct? (Select all that apply.)
-							266 container
-								267 text 1  Point
+								251 radio button (disabled) They are represented as 1-cells.
+								252 text They are represented as 1-cells.
+							253 container
+								254 radio button (disabled) They are represented as 2-cells.
+								255 text They are represented as 2-cells.
+							256 container
+								257 radio button (disabled) They are represented as 3-cells.
+								258 text They are represented as 3-cells.
+							259 container
+							261 text Accepted answer is They are represented as 2-cells. 8 .
+							262 text Which of the following are examples of graph explainers? (Select all that apply.)
+							263 container
+								264 text 1  Point
+							265 container
+								266 Tick box (disabled) Predicting the next token in a language model
+								267 text Predicting the next token in a language model
 							268 container
-								269 Tick box A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs.
-								270 text A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs.
+								269 Tick box (disabled) Toxicity detection of molecules
+								270 text Toxicity detection of molecules
 							271 container
-								272 Tick box The 1-skeleton of a cell complex consists exclusively of 1-dimensional cells.
-								273 container
-									274 text The 1-skeleton 
-									275 container
-										276 text 𝑋
-										277 text (
-										278 text 1
-										279 text )
-									280 text of a cell complex consists exclusively of 1-dimensional cells.
-							281 container
-								282 Tick box Vertical boundary relations connect two cells of the same dimension that share a common boundary.
-								283 text Vertical boundary relations connect two cells of the same dimension that share a common boundary.
+								272 Tick box (disabled) Affine concept erasure
+								273 text Affine concept erasure
+							274 container
+								275 Tick box (disabled) Drug prediction
+								276 text Drug prediction
+							277 container
+								278 Tick box (disabled) Fraud detection
+								279 text Fraud detection
+							280 container
+							282 text Accepted answer is Toxicity detection of molecules, Drug prediction, Fraud detection 9 .
+							283 text Which of the following methods benefits the most from the FORGE framework?
 							284 container
-								285 Tick box Boundary relations in the framework are restricted to be undirected, meaning
-								286 container
-									287 text Boundary relations in the framework are restricted to be undirected, meaning 
-									288 container
-										289 text 𝜎
-										290 container
-											291 text 𝑐 1 , 𝑐 2
-										292 text =
-										293 text 𝜎
-										294 container
-											295 text 𝑐 2 , 𝑐 1
-										296 text .
-							297 container
-								298 Tick box A -cell is considered a face or boundary of a (p+1)-cell if the set of points composing is a subset of those composing
-								299 container
-									300 text A 
-									301 text 𝑝
-									302 text -cell 
-									303 container
-										304 text 𝑐
-										305 text (
-										306 text 𝑝
-										307 text )
-									308 text  is considered a face or boundary of a (p+1)-cell 
-									309 container
-										310 text 𝑐
-										311 text (
-										312 text 𝑝
-										313 text +
+								285 text 1  Point
+							286 container
+								287 radio button (disabled) Attention-based methods
+								288 text Attention-based methods
+							289 container
+								290 radio button (disabled) Surrogate-based methods
+								291 text Surrogate-based methods
+							292 container
+								293 radio button (disabled) Gradient-based methods
+								294 text Gradient-based methods
+							295 container
+								296 radio button (disabled) Perturbation-based methods
+								297 text Perturbation-based methods
+							298 container
+							300 text Accepted answer is Perturbation-based methods 10 .
+							301 text Based on the mathematical definitions of cell complexes presented in the FORGE slides, which of the following statements are correct? (Select all that apply.)
+							302 container
+								303 text 1  Point
+							304 container
+								305 Tick box (disabled) A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs.
+								306 text A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs.
+							307 container
+								308 Tick box (disabled) The 1-skeleton of a cell complex consists exclusively of 1-dimensional cells.
+								309 container
+									310 text The 1-skeleton
+									311 container
+										312 text 𝑋
+										313 text (
 										314 text 1
 										315 text )
-									316 text  if the set of points composing 
-									317 container
-										318 text 𝑐
-										319 text (
-										320 text 𝑝
-										321 text )
-									322 text  is a subset of those composing 
-									323 container
-										324 text 𝑐
-										325 container
-											326 text ( 𝑝 + 1 )
-										327 text .
+									316 text of a cell complex consists exclusively of 1-dimensional cells.
+							317 container
+								318 Tick box (disabled) Vertical boundary relations connect two cells of the same dimension that share a common boundary.
+								319 text Vertical boundary relations connect two cells of the same dimension that share a common boundary.
+							320 container
+								321 Tick box (disabled) Boundary relations in the framework are restricted to be undirected, meaning
+								322 container
+									323 text Boundary relations in the framework are restricted to be undirected, meaning
+									324 container
+										325 text 𝜎
+										326 container
+											327 text 𝑐 1 , 𝑐 2
+										328 text =
+										329 text 𝜎
+										330 container
+											331 text 𝑐 2 , 𝑐 1
+										332 text .
+							333 container
+								334 Tick box (disabled) A -cell is considered a face or boundary of a (p+1)-cell if the set of points composing is a subset of those composing
+								335 container
+									336 text A
+									337 text 𝑝
+									338 text -cell
+									339 container
+										340 text 𝑐
+										341 text (
+										342 text 𝑝
+										343 text )
+									344 text  is considered a face or boundary of a (p+1)-cell
+									345 container
+										346 text 𝑐
+										347 text (
+										348 text 𝑝
+										349 text +
+										350 text 1
+										351 text )
+									352 text  if the set of points composing
+									353 container
+										354 text 𝑐
+										355 text (
+										356 text 𝑝
+										357 text )
+									358 text  is a subset of those composing
+									359 container
+										360 text 𝑐
+										361 container
+											362 text ( 𝑝 + 1 )
+										363 text .
+							364 container
+							366 text Accepted answer is
+							367 container
+								368 text A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs., Boundary relations in the framework are restricted to be undirected, meaning
+								369 container
+									370 text 𝜎
+									371 container
+										372 text 𝑐 1 , 𝑐 2
+									373 text =
+									374 text 𝜎
+									375 container
+										376 text 𝑐 2 , 𝑐 1
+									377 text .
+								378 text , A
+								379 text 𝑝
+								380 text -cell
+								381 container
+									382 text 𝑐
+									383 text (
+									384 text 𝑝
+									385 text )
+								386 text  is considered a face or boundary of a (p+1)-cell
+								387 container
+									388 text 𝑐
+									389 text (
+									390 text 𝑝
+									391 text +
+									392 text 1
+									393 text )
+								394 text  if the set of points composing
+								395 container
+									396 text 𝑐
+									397 text (
+									398 text 𝑝
+									399 text )
+								400 text  is a subset of those composing
+								401 container
+									402 text 𝑐
+									403 container
+										404 text ( 𝑝 + 1 )
+									405 text .

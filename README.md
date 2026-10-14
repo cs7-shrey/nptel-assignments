@@ -29,16 +29,16 @@ Each week contains `week`, `title`, `topic`, `sourceUrl`, `sourceFile`, `sourceN
 
 Psychology, collected 11 October 2026:
 
-- Weeks 0–11 have 120 official answers from course-linked solutions or accepted answers shown on the course quiz.
+- Weeks 0–12 have 130 official answers from course-linked solutions or accepted answers shown on the course quiz.
 - Week 7 uses the current quiz and accepted answers. Its linked solution PDF is from 2025 and differs from the current questions; that older PDF is retained only as a source record.
 - Week 6, question 7: the PDF prints answer A but describes option D. The course quiz explicitly accepts D, which is used here.
-- Week 12 has all ten questions, but its official key was not released at collection time. No answers were inferred from submitted choices. Update `sources/week-12.json` after the official key is available, then rebuild the aggregate.
+- Week 12’s ten official accepted answers were verified on 15 October 2026. `sources/week-12.json` retains the key and links to its sanitized quiz capture; no answers were inferred from submitted choices.
 - Week 1 repeats source question number 6; display numbers are normalized to 1–10 while preserving `sourceNumber`.
 
 Responsible AI, collected 14 October 2026:
 
 - Weeks 1–10 contain 12 questions each, Week 11 contains 11, and Week 12 contains 10. The course outline has no Week 0 assignment.
-- Weeks 1–11 have 131 published accepted answers, including three numeric questions. Week 12’s key was not released when collected; its due date is 14 October 2026.
+- Weeks 1–12 have 141 published accepted answers, including three numeric questions. Week 12’s ten keys, including two multi-select answers, were verified on 15 October 2026.
 - Questions and accepted answers were captured from the current course quiz accessibility text. Saved selections and submission metadata are excluded. Mathematical notation is normalized for readability; source answer text remains available for auditing.
 - The Week 3 matching table and Weeks 6–7 exponents/fractions were recovered or verified against course-linked solution PDFs. `sources/responsible-safe-ai/question-overrides.json` records these display corrections; official answer choices are not inferred or changed.
 

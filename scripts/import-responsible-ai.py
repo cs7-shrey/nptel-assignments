@@ -3,6 +3,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parent.parent
 src=root/'sources/responsible-safe-ai'
 def clean(s):return re.sub(r'\s+',' ',s).strip()
+def answer_match_text(s):return re.sub(r'\s+,',',',clean(s))
 def parse(path):
  week=int(path.name[5:7]);raw=path.read_text();events=[]
  for line in raw.splitlines():
@@ -43,7 +44,8 @@ def parse(path):
   if ans and not numeric:
    for r in range(1,len(opts)+1):
     for combo in itertools.combinations(opts,r):
-     if clean(', '.join(o['text'] for o in combo))==ans:matches.append([o['id'] for o in combo])
+     # AX math fragments can insert whitespace before answer-separating commas.
+     if answer_match_text(', '.join(o['text'] for o in combo))==answer_match_text(ans):matches.append([o['id'] for o in combo])
    assert len(matches)==1,('ANSWER MISMATCH',week,k+1,ans,opts)
   qs.append(dict(id=f'w{week:02}-q{k+1:02}',number=k+1,sourceNumber=int(out[i][1]),type='numeric' if numeric else 'multiple-choice' if any(typ=='Tick box' for typ,t in block) else 'single-choice',prompt=prompt,options=opts,correctOptionIds=matches[0] if len(matches)==1 else None,correctNumericAnswer=numeric[1] if numeric else None,answerStatus='official' if numeric or len(matches)==1 else 'needs-verification' if ans else 'not-released',answerSource='course-accepted-answer' if ans else None,sourceAnswerText=ans,reference=None,note=None))
  return qs
@@ -59,7 +61,8 @@ if __name__=='__main__':
    # Matching answers mix "1 ->" and "2->"; show them uniformly after answers are matched.
    for o in q['options']:o['text']=re.sub(r'\s*->\s*',' → ',o['text'])
   meta=json.loads((src/f'week-{n:02}.source.json').read_text())
-  weeks.append(dict(week=n,title=f'Week {n}',topic=topics[n-1],sourceUrl=meta['url'],sourceFile=str(p.relative_to(root)),sourceNote='Captured from current course quiz; official answers not yet released.' if n==12 else 'Questions and accepted answers captured from the current course quiz.',questions=qs))
+  weeks.append(dict(week=n,title=f'Week {n}',topic=topics[n-1],sourceUrl=meta['url'],sourceFile=str(p.relative_to(root)),sourceNote='Questions and accepted answers captured from the current course quiz.' if all(q['answerStatus']=='official' for q in qs) else 'Captured from current course quiz; some official answers not yet released.',questions=qs))
+  if n==12 and all(q['answerStatus']=='official' for q in qs):weeks[-1]['answersVerifiedOn']=meta['collectedOn']
   print('Week',n,':',len(qs),'questions')
  result=dict(course='Responsible & Safe AI Systems',courseId='noc26_cs145',collectedOn='2026-10-14',schemaVersion=2,weeks=weeks)
  (root/'data/responsible-safe-ai.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')

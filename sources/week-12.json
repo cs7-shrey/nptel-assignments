@@ -4,7 +4,7 @@
   "topic": "Learning for Sustainability",
   "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_hs206?unitId=127&assessmentId=217",
   "sourceFile": "sources/week-12-question-images/",
-  "sourceNote": "Transcribed from saved assignment question images. Official accepted answers were not available on 2026-10-11; due date is 2026-10-14.",
+  "sourceNote": "Questions transcribed from saved assignment images; official accepted answers verified on the current course quiz on 2026-10-15.",
   "questions": [
     {
       "id": "w12-q01",
@@ -30,13 +30,15 @@
           "text": "none of the given"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "C"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "C",
+      "sourceAnswerText": "C.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q02",
@@ -62,13 +64,15 @@
           "text": "human environment"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "D.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q03",
@@ -94,13 +98,15 @@
           "text": "all of the given"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "D.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q04",
@@ -126,13 +132,15 @@
           "text": "Business ethics"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "B"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "B",
+      "sourceAnswerText": "B.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q05",
@@ -158,13 +166,15 @@
           "text": "3"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "C"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "C",
+      "sourceAnswerText": "C.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q06",
@@ -190,13 +200,15 @@
           "text": "Peace and justice"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "D.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q07",
@@ -222,13 +234,15 @@
           "text": "Global Education Meeting"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "D"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "D",
+      "sourceAnswerText": "D.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q08",
@@ -246,13 +260,15 @@
           "text": "False"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "A"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "A",
+      "sourceAnswerText": "A.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q09",
@@ -278,13 +294,15 @@
           "text": "knowing to ignoring"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "A"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "A",
+      "sourceAnswerText": "A.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     },
     {
       "id": "w12-q10",
@@ -310,13 +328,17 @@
           "text": "normative"
         }
       ],
-      "correctOptionIds": null,
-      "answerStatus": "not-released",
-      "answerSource": null,
-      "sourceAnswerLabel": null,
-      "sourceAnswerText": null,
+      "correctOptionIds": [
+        "B"
+      ],
+      "answerStatus": "official",
+      "answerSource": "course-accepted-answer",
+      "sourceAnswerLabel": "B",
+      "sourceAnswerText": "B.",
       "reference": null,
-      "note": "Official accepted answer not released as of 11 October 2026."
+      "note": null
     }
-  ]
+  ],
+  "answersVerifiedOn": "2026-10-15",
+  "answerSourceFile": "sources/week-12-accepted-answers.ax.txt"
 }

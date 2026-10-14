@@ -9,8 +9,10 @@ test('all 13 weeks are present, each with ten uniquely identified questions',()=
 });
 test('verified answers refer to real choices; unreleased answers are never guessed',()=>{
  for(const week of data.weeks)for(const q of week.questions){if(q.answerStatus==='official'){assert(q.correctOptionIds?.length);for(const id of q.correctOptionIds)assert(q.options.some(o=>o.id===id));}else assert.equal(q.correctOptionIds,null);}
- const pending=data.weeks.find(w=>w.week===12);assert(pending.questions.every(q=>q.answerStatus==='not-released'&&q.correctOptionIds===null));
- assert.equal(data.weeks.slice(0,12).flatMap(w=>w.questions).filter(q=>q.answerStatus==='official').length,120);
+ const finalWeek=data.weeks.find(w=>w.week===12);
+ assert.deepEqual(finalWeek.questions.map(q=>q.correctOptionIds),[...'CDDBCDDAAB'].map(id=>[id]));
+ assert(finalWeek.questions.every(q=>q.answerSource==='course-accepted-answer'));
+ assert.equal(data.weeks.flatMap(w=>w.questions).filter(q=>q.answerStatus==='official').length,130);
 });
 test('known source discrepancies are resolved with provenance',()=>{
  const q=data.weeks[6].questions[6];assert.deepEqual(q.correctOptionIds,['D']);assert.equal(q.sourceAnswerLabel,'A');assert.equal(q.answerSource,'course-accepted-answer');
