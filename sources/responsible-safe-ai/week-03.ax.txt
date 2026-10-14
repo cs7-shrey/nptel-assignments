@@ -1,0 +1,212 @@
+							200 text 1 . Match the unlearning method to their corresponding concept.
+							201 container
+								202 text 1  Point
+							203 container
+								204 radio button (disabled) 1 -> i, 2-> iv, 3-> iii, 4-> ii
+								205 text 1 -> i, 2-> iv, 3-> iii, 4-> ii
+							206 container
+								207 radio button (disabled) 1 -> i, 2-> iv, 3-> ii, 4-> iii
+								208 text 1 -> i, 2-> iv, 3-> ii, 4-> iii
+							209 container
+								210 radio button (disabled) 1 -> iv, 2-> i, 3-> iii, 4-> ii
+								211 text 1 -> iv, 2-> i, 3-> iii, 4-> ii
+							212 container
+								213 radio button (disabled) 1 -> iv, 2-> i, 3-> ii, 4-> iii
+								214 text 1 -> iv, 2-> i, 3-> ii, 4-> iii
+							215 container
+							217 text Accepted answer is 1 -> iv, 2-> i, 3-> ii, 4-> iii 2 .
+							218 text What is the primary goal of “Machine Unlearning”?
+							219 container
+								220 text 1  Point
+							221 container
+								222 radio button (disabled) To increase the training speed of a model.
+								223 text To increase the training speed of a model.
+							224 container
+								225 radio button (disabled) To add more data to an existing model without retraining.
+								226 text To add more data to an existing model without retraining.
+							227 container
+								228 radio button (disabled) To remove the influence of specific training data from a trained model.
+								229 text To remove the influence of specific training data from a trained model.
+							230 container
+								231 radio button (disabled) To improve the accuracy of a model on new, unseen data.
+								232 text To improve the accuracy of a model on new, unseen data.
+							233 container
+							235 text Accepted answer is To remove the influence of specific training data from a trained model. 3 .
+							236 text What is GDPR’s Article 17 about in the context of Machine Learning?
+							237 container
+								238 text 1  Point
+							239 container
+								240 radio button (disabled) Right to be remembered
+								241 text Right to be remembered
+							242 container
+								243 radio button (disabled) Right to be forgotten
+								244 text Right to be forgotten
+							245 container
+								246 radio button (disabled) Right to be modified
+								247 text Right to be modified
+							248 container
+								249 radio button (disabled) Right to be distributed
+								250 text Right to be distributed
+							251 container
+							253 text Accepted answer is Right to be forgotten 4 .
+							254 text In the SISA framework, what is the benefit of using “shards” and “slices”?
+							255 container
+								256 text 1  Point
+							257 container
+								258 radio button (disabled) It increases the overall accuracy of the model.
+								259 text It increases the overall accuracy of the model.
+							260 container
+								261 radio button (disabled) It ensures that unlearned data never contributes to other components.
+								262 text It ensures that unlearned data never contributes to other components.
+							263 container
+								264 radio button (disabled) It allows the model to learn from toxic data safely.
+								265 text It allows the model to learn from toxic data safely.
+							266 container
+								267 radio button (disabled) It eliminates the need for any retraining.
+								268 text It eliminates the need for any retraining.
+							269 container
+							271 text Accepted answer is It ensures that unlearned data never contributes to other components. 5 .
+							272 text What is “Membership Inference Attack”?
+							273 container
+								274 text 1  Point
+							275 container
+								276 radio button (disabled) To distinguish whether specific training data was used to train a model.
+								277 text To distinguish whether specific training data was used to train a model.
+							278 container
+								279 radio button (disabled) To add new members to a training dataset.
+								280 text To add new members to a training dataset.
+							281 container
+								282 radio button (disabled) To speed up the unlearning process.
+								283 text To speed up the unlearning process.
+							284 container
+								285 radio button (disabled) To verify the architecture of the model.
+								286 text To verify the architecture of the model.
+							287 container
+							289 text Accepted answer is To distinguish whether specific training data was used to train a model. 6 .
+							290 text Which unlearning method involves increasing the training loss on the forget set?
+							291 container
+								292 text 1  Point
+							293 container
+								294 radio button (disabled) KL Divergence
+								295 text KL Divergence
+							296 container
+								297 radio button (disabled) Direct Preference Optimization
+								298 text Direct Preference Optimization
+							299 container
+								300 radio button (disabled) Gradient Ascent
+								301 text Gradient Ascent
+							302 container
+								303 radio button (disabled) Gradient Difference
+								304 text Gradient Difference
+							305 container
+							307 text Accepted answer is Gradient Ascent 7 .
+							308 text According to the lecture, what is “Representation Engineering”?
+							309 container
+								310 text 1  Point
+							311 container
+								312 radio button (disabled) A bottom-up approach focusing on individual neurons.
+								313 text A bottom-up approach focusing on individual neurons.
+							314 container
+								315 radio button (disabled) Modifying representation vectors to control model traits.
+								316 text Modifying representation vectors to control model traits.
+							317 container
+								318 radio button (disabled) A method for increasing the parameter count of a model.
+								319 text A method for increasing the parameter count of a model.
+							320 container
+								321 radio button (disabled) Re-labeling all data points in a dataset to fix biases.
+								322 text Re-labeling all data points in a dataset to fix biases.
+							323 container
+							325 text Accepted answer is Modifying representation vectors to control model traits. 8 .
+							326 text In the context of the SISA framework, how does the system minimize the cost of retraining when a data point must be unlearned?
+							327 container
+								328 text 1  Point
+							329 container
+								330 radio button (disabled) By using gradient ascent on only the affected data points.
+								331 text By using gradient ascent on only the affected data points.
+							332 container
+								333 radio button (disabled) By applying a differential privacy constraint to the aggregation layer.
+								334 text By applying a differential privacy constraint to the aggregation layer.
+							335 container
+								336 radio button (disabled) By flipping the labels of the forget set and performing few-shot.
+								337 text By flipping the labels of the forget set and performing few-shot.
+							338 container
+								339 radio button (disabled) By retraining only the constituent model whose shards contain the point to be unlearned.
+								340 text By retraining only the constituent model whose shards contain the point to be unlearned.
+							341 container
+							343 text Accepted answer is By retraining only the constituent model whose shards contain the point to be unlearned. 9 .
+							344 text According to the lecture, why is unlearning fundamental facts like “the sun rises every day” considered more difficult than unlearning infrequent textual occurrences, such as car accidents?
+							345 container
+								346 text 1  Point
+							347 container
+								348 radio button (disabled) Fundamental knowledge is deeply embedded in the model’s implicit knowledge graph.
+								349 text Fundamental knowledge is deeply embedded in the model’s implicit knowledge graph.
+							350 container
+								351 radio button (disabled) Fundamental facts are typically protected by guardrails.
+								352 text Fundamental facts are typically protected by guardrails.
+							353 container
+								354 radio button (disabled) Models are primarily trained on Wikipedia, which contains these facts.
+								355 text Models are primarily trained on Wikipedia, which contains these facts.
+							356 container
+								357 radio button (disabled) Differential privacy guarantees fall off more quickly for fundamental facts.
+								358 text Differential privacy guarantees fall off more quickly for fundamental facts.
+							359 container
+							361 text Accepted answer is Fundamental knowledge is deeply embedded in the model’s implicit knowledge graph. 10 .
+							362 text Which unlearning evaluation metric focuses on whether the unlearning process negatively affects the model’s performance on the “retrain data” or unrelated tasks?
+							363 container
+								364 text 1  Point
+							365 container
+								366 radio button (disabled) Efficiency
+								367 text Efficiency
+							368 container
+								369 radio button (disabled) Forgetting Quality
+								370 text Forgetting Quality
+							371 container
+								372 radio button (disabled) Model Utility
+								373 text Model Utility
+							374 container
+								375 radio button (disabled) Membership Inference
+								376 text Membership Inference
+							377 container
+							379 text Accepted answer is Model Utility 11 .
+							380 container
+								381 text The WMDP benchmark measures hazardous knowledge in which specific areas?  (Select all that apply.)
+							382 container
+								383 text 1  Point
+							384 container
+								385 Tick box (disabled) Biosecurity/Bioweapons
+								386 text Biosecurity/Bioweapons
+							387 container
+								388 Tick box (disabled) Cybersecurity
+								389 text Cybersecurity
+							390 container
+								391 Tick box (disabled) Chemical security
+								392 text Chemical security
+							393 container
+								394 Tick box (disabled) Financial market manipulation
+								395 text Financial market manipulation
+							396 container
+							398 text Accepted answer is Biosecurity/Bioweapons, Cybersecurity, Chemical security 12 .
+							399 container
+								400 text Which methods are used for Edge Unlearning?  (Select all that apply.)
+							401 container
+								402 text 1  Point
+							403 container
+								404 Tick box (disabled) GraphEraser
+								405 text GraphEraser
+							406 container
+								407 Tick box (disabled) GUIDE
+								408 text GUIDE
+							409 container
+								410 Tick box (disabled) Projector
+								411 text Projector
+							412 container
+								413 Tick box (disabled) GraphdEditor
+								414 text GraphdEditor
+							415 container
+								416 Tick box (disabled) GNNDelete
+								417 text GNNDelete
+							418 container
+								419 Tick box (disabled) MEGU
+								420 text MEGU
+							421 container
+							423 text Accepted answer is GraphEraser, GraphdEditor, GNNDelete, MEGU

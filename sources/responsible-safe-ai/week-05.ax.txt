@@ -1,0 +1,210 @@
+							123 text 1 .
+							124 text What should be the language modelling (lms) for an ideal model in the StereoSet benchmark?
+							125 container
+								126 text 1  Point
+							127 container
+								128 radio button (disabled) 25
+								129 text 25
+							130 container
+								131 radio button (disabled) 50
+								132 text 50
+							133 container
+								134 radio button (disabled) 75
+								135 text 75
+							136 container
+								137 radio button (disabled) 100
+								138 text 100
+							139 container
+							141 text Accepted answer is 100 2 .
+							142 text In the CrowS-Pairs benchmark, what does a score of 100% indicate?
+							143 container
+								144 text 1  Point
+							145 container
+								146 radio button (disabled) The model has no social bias.
+								147 text The model has no social bias.
+							148 container
+								149 radio button (disabled) The model always prefers anti-stereotypical sentences.
+								150 text The model always prefers anti-stereotypical sentences.
+							151 container
+								152 radio button (disabled) The model always prefers stereotypical sentences.
+								153 text The model always prefers stereotypical sentences.
+							154 container
+								155 radio button (disabled) The model is an ideal language model.
+								156 text The model is an ideal language model.
+							157 container
+							159 text Accepted answer is The model always prefers stereotypical sentences. 3 .
+							160 text What phenomenon occurs when fine-tuning all parameters of a large language model (LLM) to remove bias, leading to a drop in general performance?
+							161 container
+								162 text 1  Point
+							163 container
+								164 radio button (disabled) Model Drifting
+								165 text Model Drifting
+							166 container
+								167 radio button (disabled) Catastrophic Forgetting
+								168 text Catastrophic Forgetting
+							169 container
+								170 radio button (disabled) Overfitting
+								171 text Overfitting
+							172 container
+								173 radio button (disabled) Gradient Explosion
+								174 text Gradient Explosion
+							175 container
+							177 text Accepted answer is Catastrophic Forgetting 4 .
+							178 text What is Counterfactual Data Augmentation (CDA)?
+							179 container
+								180 text 1  Point
+							181 container
+								182 radio button (disabled) Re-balancing a corpus by swapping bias attribute words in a dataset.
+								183 text Re-balancing a corpus by swapping bias attribute words in a dataset.
+							184 container
+								185 radio button (disabled) Adding more stereotypical sentences to a dataset to make it more biased.
+								186 text Adding more stereotypical sentences to a dataset to make it more biased.
+							187 container
+								188 radio button (disabled) Removing all bias-attributed words in a dataset.
+								189 text Removing all bias-attributed words in a dataset.
+							190 container
+								191 radio button (disabled) Ensuring the dataset has an equal number of biased and unbiased samples.
+								192 text Ensuring the dataset has an equal number of biased and unbiased samples.
+							193 container
+							195 text Accepted answer is Re-balancing a corpus by swapping bias attribute words in a dataset. 5 .
+							196 text Which toolkit is used to add programmable guardrails to LLM-based conversational applications to control outputs?
+							197 container
+								198 text 1  Point
+							199 container
+								200 radio button (disabled) GPT-4
+								201 text GPT-4
+							202 container
+								203 radio button (disabled) NVIDIA NeMo
+								204 text NVIDIA NeMo
+							205 container
+								206 radio button (disabled) CoDi
+								207 text CoDi
+							208 container
+								209 radio button (disabled) MAFIA
+								210 text MAFIA
+							211 container
+							213 text Accepted answer is NVIDIA NeMo 6 .
+							214 text Match the following example to the correct prompt variation. 
+							215 text i. The image shows a subject with the occupation 'Chief Executive Officer'. Based on the image and this information, what is the gender of the person? (a) male (b) female (c) no preference
+							216 text ii. Looking at this image alone, who would you hire to be the CEO of a Fortune 500 company? (a) person in the image (b) someone else (c) no preference
+							217 container
+								218 text 1  Point
+							219 container
+								220 radio button (disabled) i -> Informed, ii -> Informed
+								221 text i -> Informed, ii -> Informed
+							222 container
+								223 radio button (disabled) i -> Informed, ii -> Blind
+								224 text i -> Informed, ii -> Blind
+							225 container
+								226 radio button (disabled) i -> Blind, ii ->Informed
+								227 text i -> Blind, ii ->Informed
+							228 container
+								229 radio button (disabled) i -> Blind, ii -> Blind
+								230 text i -> Blind, ii -> Blind
+							231 container
+							233 text Accepted answer is i -> Informed, ii -> Blind 7 .
+							234 text The CrowS-Pairs benchmark includes which of the following types of social bias? (Select all that apply.)
+							235 container
+								236 text 1  Point
+							237 container
+								238 Tick box (disabled) Sexual orientation
+								239 text Sexual orientation
+							240 container
+								241 Tick box (disabled) Socioeconomic status
+								242 text Socioeconomic status
+							243 container
+								244 Tick box (disabled) Political ideology
+								245 text Political ideology
+							246 container
+								247 Tick box (disabled) Physical appearance
+								248 text Physical appearance
+							249 container
+							251 text Accepted answer is Sexual orientation, Socioeconomic status, Physical appearance 8 .
+							252 text Which of the following datasets are specifically designed for measuring gender-related biases? (Select all that apply.)
+							253 container
+								254 text 1  Point
+							255 container
+								256 Tick box (disabled) BOLD
+								257 text BOLD
+							258 container
+								259 Tick box (disabled) RedditBias
+								260 text RedditBias
+							261 container
+								262 Tick box (disabled) WinoBias
+								263 text WinoBias
+							264 container
+								265 Tick box (disabled) Winogender
+								266 text Winogender
+							267 container
+							269 text Accepted answer is WinoBias, Winogender 9 . You are performing a bias audit on a corpus with 
+							270 container
+								271 text 𝑁 = 1000
+							272 text  total documents. Calculate the PMI between an identity label 
+							273 container
+								274 text 𝑤 𝑖
+							275 text  and a specific descriptive word 
+							276 container
+								277 text 𝑤
+								278 text 𝑗
+								279 text .
+							280 text ● The identity label appears in 100 documents. 
+							281 text ● The descriptive word appears in 50 documents. 
+							282 text ● Both words co-occur in the same document 20 times. 
+							283 container
+								284 text 1  Point
+							286 container
+							288 text Accepted answer is
+							289 container
+								290 text Type: Numeric: 2
+							291 text 10 .
+							292 text What is the minimum threshold a word has to appear in the corpus for it to be considered when performing word association analysis?
+							293 container
+								294 text 1  Point
+							295 container
+								296 radio button (disabled) 2 times
+								297 text 2 times
+							298 container
+								299 radio button (disabled) 5 times
+								300 text 5 times
+							301 container
+								302 radio button (disabled) 10 times
+								303 text 10 times
+							304 container
+								305 radio button (disabled) 20 times
+								306 text 20 times
+							307 container
+							309 text Accepted answer is 10 times 11 .
+							310 text What is the "Gender-bleached" input method used for?
+							311 container
+								312 text 1  Point
+							313 container
+								314 radio button (disabled) To remove all images containing humans from the training set.
+								315 text To remove all images containing humans from the training set.
+							316 container
+								317 radio button (disabled) To study societal bias in generated output by providing input that blurs gender.
+								318 text To study societal bias in generated output by providing input that blurs gender.
+							319 container
+								320 radio button (disabled) To increase the "Neutral" accuracy above the random baseline.
+								321 text To increase the "Neutral" accuracy above the random baseline.
+							322 container
+								323 radio button (disabled) To ensure the model can only identify objects rather than social attributes.
+								324 text To ensure the model can only identify objects rather than social attributes.
+							325 container
+							327 text Accepted answer is To study societal bias in generated output by providing input that blurs gender. 12 .
+							328 text What is the main goal of the COBIAS framework when assessing bias?
+							329 container
+								330 text 1  Point
+							331 container
+								332 radio button (disabled) To automatically remove all stereotypical words from a model's training data.
+								333 text To automatically remove all stereotypical words from a model's training data.
+							334 container
+								335 radio button (disabled) To increase the speed at which a model generates text by reducing the number of words used.
+								336 text To increase the speed at which a model generates text by reducing the number of words used.
+							337 container
+								338 radio button (disabled) To ensure that models only use gender-neutral pronouns like "they" in every conversation.
+								339 text To ensure that models only use gender-neutral pronouns like "they" in every conversation.
+							340 container
+								341 radio button (disabled) To evaluate how much a model relies on specific contexts before deciding if a statement is truly biased.
+								342 text To evaluate how much a model relies on specific contexts before deciding if a statement is truly biased.
+							343 container
+							345 text Accepted answer is To evaluate how much a model relies on specific contexts before deciding if a statement is truly biased.

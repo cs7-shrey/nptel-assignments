@@ -1,0 +1,222 @@
+							152 text 1 .
+							153 text What are “Black Swans”?
+							154 container
+								155 text 1  Point
+							156 container
+								157 radio button (disabled) Frequent events with predictable and minor impacts.
+								158 text Frequent events with predictable and minor impacts.
+							159 container
+								160 radio button (disabled) Outlier events that often have extreme and unpredictable impacts.
+								161 text Outlier events that often have extreme and unpredictable impacts.
+							162 container
+								163 radio button (disabled) Known risks that are intentionally ignored during model training.
+								164 text Known risks that are intentionally ignored during model training.
+							165 container
+								166 radio button (disabled) Events that follow thin-tailer distribution and have negligible consequences.
+								167 text Events that follow thin-tailer distribution and have negligible consequences.
+							168 container
+							170 text Accepted answer is Outlier events that often have extreme and unpredictable impacts. 2 .
+							171 container
+								172 text Which of the following is considered a “Known Unknown”?  (Select all that apply.)
+							173 container
+								174 text 1  Point
+							175 container
+								176 Tick box (disabled) Recollection
+								177 text Recollection
+							178 container
+								179 Tick box (disabled) Closed-ended Questions
+								180 text Closed-ended Questions
+							181 container
+								182 Tick box (disabled) Meta-ignorance
+								183 text Meta-ignorance
+							184 container
+								185 Tick box (disabled) Conscious Ignorance
+								186 text Conscious Ignorance
+							187 container
+								188 Tick box (disabled) Open-ended Exploration
+								189 text Open-ended Exploration
+							190 container
+								191 Tick box (disabled) Self-analysis
+								192 text Self-analysis
+							193 container
+							195 text Accepted answer is Closed-ended Questions, Conscious Ignorance 3 .
+							196 container
+								197 text Which type of distribution shift occurs when the input distribution 
+								198 container
+									199 text 𝑃 ( 𝑥 )
+								200 text  changes between training and testing but 
+								201 container
+									202 text 𝑃 ( 𝑦
+									203 text |
+									204 text 𝑥 )
+								205 text  remains constant?
+							206 container
+								207 text 1  Point
+							208 container
+								209 radio button (disabled) Concept shift
+								210 text Concept shift
+							211 container
+								212 radio button (disabled) Normalized shift
+								213 text Normalized shift
+							214 container
+								215 radio button (disabled) Covariate shift
+								216 text Covariate shift
+							217 container
+								218 radio button (disabled) Prior probability shift
+								219 text Prior probability shift
+							220 container
+							222 text Accepted answer is Covariate shift 4 .
+							223 text What is “transferability” in the context of adversarial attacks?
+							224 container
+								225 text 1  Point
+							226 container
+								227 radio button (disabled) The ability to move a model from a secure state to a vulnerable state.
+								228 text The ability to move a model from a secure state to a vulnerable state.
+							229 container
+								230 radio button (disabled) The phenomenon where adversarial examples crafted for one model also fool another model.
+								231 text The phenomenon where adversarial examples crafted for one model also fool another model.
+							232 container
+								233 radio button (disabled) Converting a black-box model into a white-box model.
+								234 text Converting a black-box model into a white-box model.
+							235 container
+								236 radio button (disabled) The process of retraining a model on adversarial attacks.
+								237 text The process of retraining a model on adversarial attacks.
+							238 container
+							240 text Accepted answer is The phenomenon where adversarial examples crafted for one model also fool another model. 5 .
+							241 text According to the lecture, what is a common trade-off when using Adversarial Training to improve robustness?
+							242 container
+								243 text 1  Point
+							244 container
+								245 radio button (disabled) It requires a significantly larger dataset than normal training.
+								246 text It requires a significantly larger dataset than normal training.
+							247 container
+								248 radio button (disabled) It can significantly reduce the accuracy on clean examples.
+								249 text It can significantly reduce the accuracy on clean examples.
+							250 container
+								251 radio button (disabled) It only works for simple binary classifiers.
+								252 text It only works for simple binary classifiers.
+							253 container
+								254 radio button (disabled) It requires a low-variance dataset to function effectively.
+								255 text It requires a low-variance dataset to function effectively.
+							256 container
+							258 text Accepted answer is It can significantly reduce the accuracy on clean examples. 6 .
+							259 text Which of the following are challenges associated with direct human ratings when modeling preferences? (Select all that apply.)
+							260 container
+								261 text 1  Point
+							262 container
+								263 Tick box (disabled) Human-in-the-loop evaluation is expensive and time-consuming.
+								264 text Human-in-the-loop evaluation is expensive and time-consuming.
+							265 container
+								266 Tick box (disabled) Direct ratings require white-box access to the model.
+								267 text Direct ratings require white-box access to the model.
+							268 container
+								269 Tick box (disabled) Human ratings are always completely objective and free from annotator bias.
+								270 text Human ratings are always completely objective and free from annotator bias.
+							271 container
+								272 Tick box (disabled) Human judgments are noisy and miscalibrated.
+								273 text Human judgments are noisy and miscalibrated.
+							274 container
+							276 text Accepted answer is Human-in-the-loop evaluation is expensive and time-consuming., Human judgments are noisy and miscalibrated. 7 .
+							277 text What does Direct Preference Optimization (DPO) represent in the RLHF framework?
+							278 container
+								279 text 1  Point
+							280 container
+								281 radio button (disabled) RLHF without the reward model
+								282 text RLHF without the reward model
+							283 container
+								284 radio button (disabled) RLHF without human feedback
+								285 text RLHF without human feedback
+							286 container
+								287 radio button (disabled) RLHF without reinforcement learning
+								288 text RLHF without reinforcement learning
+							289 container
+								290 radio button (disabled) RLHF without policy optimization
+								291 text RLHF without policy optimization
+							292 container
+							294 text Accepted answer is RLHF without the reward model 8 .
+							295 text What is the first step of the RLHF pipeline?
+							296 container
+								297 text 1  Point
+							298 container
+								299 radio button (disabled) Collecting comparison data and training a reward model.
+								300 text Collecting comparison data and training a reward model.
+							301 container
+								302 radio button (disabled) Optimizing a policy against the reward model using reinforcement learning.
+								303 text Optimizing a policy against the reward model using reinforcement learning.
+							304 container
+								305 radio button (disabled) Collecting demonstration data and training a supervised policy.
+								306 text Collecting demonstration data and training a supervised policy.
+							307 container
+								308 radio button (disabled) Performing external white-box auditing of the pretrained model.
+								309 text Performing external white-box auditing of the pretrained model.
+							310 container
+							312 text Accepted answer is Collecting demonstration data and training a supervised policy. 9 .
+							313 text Why is black-box access insufficient for rigorous AI audits?
+							314 container
+								315 text 1  Point
+							316 container
+								317 radio button (disabled) It is too expensive for external auditors.
+								318 text It is too expensive for external auditors.
+							319 container
+								320 radio button (disabled) It does not allow for human-in-the-loop feedback.
+								321 text It does not allow for human-in-the-loop feedback.
+							322 container
+								323 radio button (disabled) It prevents the use of reinforcement learning.
+								324 text It prevents the use of reinforcement learning.
+							325 container
+								326 radio button (disabled) It only allows auditors to query the system and observe outputs.
+								327 text It only allows auditors to query the system and observe outputs.
+							328 container
+							330 text Accepted answer is It only allows auditors to query the system and observe outputs. 10 .
+							331 text According to the lecture, what does the Kullback–Leibler (KL) divergence penalty prevent in RLHF?
+							332 container
+								333 text 1  Point
+							334 container
+								335 radio button (disabled) The reward model from becoming too complex
+								336 text The reward model from becoming too complex
+							337 container
+								338 radio button (disabled) The policy model from diverging too far from the initial pretrained model
+								339 text The policy model from diverging too far from the initial pretrained model
+							340 container
+								341 radio button (disabled) Human evaluators from providing biased feedback
+								342 text Human evaluators from providing biased feedback
+							343 container
+								344 radio button (disabled) The model from over-generalizing
+								345 text The model from over-generalizing
+							346 container
+							348 text Accepted answer is The policy model from diverging too far from the initial pretrained model 11 .
+							349 container
+								350 text Which of the following is true?  (Select all that apply.)
+							351 container
+								352 text 1  Point
+							353 container
+								354 Tick box (disabled) Extremistan has thin tails while Medicristan has long tails.
+								355 text Extremistan has thin tails while Medicristan has long tails.
+							356 container
+								357 Tick box (disabled) Extremistan is determined by many small events.
+								358 text Extremistan is determined by many small events.
+							359 container
+								360 Tick box (disabled) Mediocristan is the tyranny of the collective.
+								361 text Mediocristan is the tyranny of the collective.
+							362 container
+								363 Tick box (disabled) Extremistan’s impact is potentially scalable.
+								364 text Extremistan’s impact is potentially scalable.
+							365 container
+							367 text Accepted answer is Mediocristan is the tyranny of the collective., Extremistan’s impact is potentially scalable. 12 .
+							368 text Identify the equations that can lead to a long-tailed distribution.
+							369 container
+								370 text 1  Point
+							371 container
+								372 radio button (disabled) Idea * student * resources * time
+								373 text Idea * student * resources * time
+							374 container
+								375 radio button (disabled) Idea * student + resources * time
+								376 text Idea * student + resources * time
+							377 container
+								378 radio button (disabled) Idea + student + resource + time
+								379 text Idea + student + resource + time
+							380 container
+								381 radio button (disabled) Idea - student * resource - time
+								382 text Idea - student * resource - time
+							383 container
+							385 text Accepted answer is Idea * student * resources * time

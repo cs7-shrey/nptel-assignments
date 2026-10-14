@@ -1,0 +1,220 @@
+							119 text 1
+							120 text .
+							121 text In the context of data privacy, which right requires companies to delete user data when requested?
+							122 container
+								123 text 1  Point
+							124 container
+								125 radio button (disabled) Right to intellectual property retention
+								126 text Right to intellectual property retention
+							127 container
+								128 radio button (disabled) Right to be forgotten
+								129 text Right to be forgotten
+							130 container
+								131 radio button (disabled) Right to data portability
+								132 text Right to data portability
+							133 container
+								134 radio button (disabled) Right to transparency
+								135 text Right to transparency
+							136 container
+							138 text Accepted answer is
+							139 text Right to be forgotten
+							140 text 2
+							141 text .
+							142 text Which OECD AI Principle states that AI systems should operate safely and function properly under normal use, misuse, or adverse conditions?
+							143 container
+								144 text 1  Point
+							145 container
+								146 radio button (disabled) Inclusive growth, sustainable development and well-being
+								147 text Inclusive growth, sustainable development and well-being
+							148 container
+								149 radio button (disabled) Transparency and explainability
+								150 text Transparency and explainability
+							151 container
+								152 radio button (disabled) Robustness, security, and safety
+								153 text Robustness, security, and safety
+							154 container
+								155 radio button (disabled) Accountability
+								156 text Accountability
+							157 container
+							159 text Accepted answer is
+							160 text Robustness, security, and safety
+							161 text 3
+							162 text .
+							163 text Under the EU AI Act, which application category is classified as an 'unacceptable risk'? (Select all that apply.)
+							164 container
+								165 text 1  Point
+							166 container
+								167 Tick box (disabled) Social Scoring Systems
+								168 text Social Scoring Systems
+							169 container
+								170 Tick box (disabled) Critical Infrastructure Management
+								171 text Critical Infrastructure Management
+							172 container
+								173 Tick box (disabled) Law Enforcement
+								174 text Law Enforcement
+							175 container
+								176 Tick box (disabled) Cognitive Behavioural Manipulation
+								177 text Cognitive Behavioural Manipulation
+							178 container
+							180 text Accepted answer is
+							181 text Social Scoring Systems, Cognitive Behavioural Manipulation
+							182 text 4
+							183 text .
+							184 text When a system like an email spam server filters out malicious messages in the background without requiring user intervention, which type of threat mitigation is it demonstrating?
+							185 container
+								186 text 1  Point
+							187 container
+								188 radio button (disabled) Educating and training users
+								189 text Educating and training users
+							190 container
+								191 radio button (disabled) Providing interface-level threat warnings
+								192 text Providing interface-level threat warnings
+							193 container
+								194 radio button (disabled) Silently eliminating the threat
+								195 text Silently eliminating the threat
+							196 container
+								197 radio button (disabled) Enforcing legal regulations
+								198 text Enforcing legal regulations
+							199 container
+							201 text Accepted answer is
+							202 text Silently eliminating the threat
+							203 text 5
+							204 text .
+							205 text What specific transparency requirement does the EU AI Act impose on deepfakes or generated media?
+							206 container
+								207 text 1  Point
+							208 container
+								209 radio button (disabled) They must be exclusively hosted on European-based servers.
+								210 text They must be exclusively hosted on European-based servers.
+							211 container
+								212 radio button (disabled) They must be clearly labeled as AI-generated.
+								213 text They must be clearly labeled as AI-generated.
+							214 container
+								215 radio button (disabled) They must not be published on the internet at all.
+								216 text They must not be published on the internet at all.
+							217 container
+								218 radio button (disabled) They must be heavily taxed before distribution.
+								219 text They must be heavily taxed before distribution.
+							220 container
+							222 text Accepted answer is
+							223 text They must be clearly labeled as AI-generated.
+							224 text 6
+							225 text .
+							226 text In the AI Value Chain, who is considered the "deployer"?
+							227 container
+								228 text 1  Point
+							229 container
+								230 radio button (disabled) The person or organization that uses the AI systems under its own authority.
+								231 text The person or organization that uses the AI systems under its own authority.
+							232 container
+								233 radio button (disabled) The original engineering team that built the AI model.
+								234 text The original engineering team that built the AI model.
+							235 container
+								236 radio button (disabled) The individual who imports the AI system into the EU market.
+								237 text The individual who imports the AI system into the EU market.
+							238 container
+								239 radio button (disabled) The government official responsible for writing the regulations.
+								240 text The government official responsible for writing the regulations.
+							241 container
+							243 text Accepted answer is
+							244 text The person or organization that uses the AI systems under its own authority.
+							245 text 7
+							246 text .
+							247 text To satisfy the OECD principle of "accountability," AI actors should ensure "traceability" throughout the system's lifecycle. What does this specifically help achieve?
+							248 container
+								249 text 1  Point
+							250 container
+								251 radio button (disabled) It allows companies to track user information that can lead to their location, such as IP addresses.
+								252 text It allows companies to track user information that can lead to their location, such as IP addresses.
+							253 container
+								254 radio button (disabled) It ensures one can trace back how data was collected and how it influences decision-making.
+								255 text It ensures one can trace back how data was collected and how it influences decision-making.
+							256 container
+								257 radio button (disabled) It guarantees the system uses minimal computing power and has a low carbon footprint.
+								258 text It guarantees the system uses minimal computing power and has a low carbon footprint.
+							259 container
+								260 radio button (disabled) It allows the AI to completely wipe its training period after a set period.
+								261 text It allows the AI to completely wipe its training period after a set period.
+							262 container
+							264 text Accepted answer is
+							265 text It ensures one can trace back how data was collected and how it influences decision-making.
+							266 text 8
+							267 text .
+							268 text In the SaGE framework, how is semantic inconsistency functionally defined?
+							269 container
+								270 text 1  Point
+							271 container
+								272 radio button (disabled) Failing to identify commonsense reasoning violations within a single prompt.
+								273 text Failing to identify commonsense reasoning violations within a single prompt.
+							274 container
+								275 radio button (disabled) Generating factually incorrect statements in response to a factual prompt.
+								276 text Generating factually incorrect statements in response to a factual prompt.
+							277 container
+								278 radio button (disabled) Utilizing grammatically disparate structures to answer identical prompts.
+								279 text Utilizing grammatically disparate structures to answer identical prompts.
+							280 container
+								281 radio button (disabled) Providing semantically disparate answers to semantically equivalent prompts.
+								282 text Providing semantically disparate answers to semantically equivalent prompts.
+							283 container
+							285 text Accepted answer is
+							286 text Providing semantically disparate answers to semantically equivalent prompts.
+							287 text 9
+							288 text .
+							289 text In the SaGE framework, what does a higher semantic graph entropy indicate about the LLM?
+							290 container
+								291 text 1  Point
+							292 container
+								293 radio button (disabled) The model is exhibiting higher semantic consistency.
+								294 text The model is exhibiting higher semantic consistency.
+							295 container
+								296 radio button (disabled) The model is exhibiting higher semantic inconsistency.
+								297 text The model is exhibiting higher semantic inconsistency.
+							298 container
+								299 radio button (disabled) The model is exhibiting lower syntactic divergence.
+								300 text The model is exhibiting lower syntactic divergence.
+							301 container
+								302 radio button (disabled) The model is exhibiting lower fundamental judgment.
+								303 text The model is exhibiting lower fundamental judgment.
+							304 container
+							306 text Accepted answer is
+							307 text The model is exhibiting higher semantic inconsistency.
+							308 text 10
+							309 text .
+							310 text A developer attempts to reduce an LLM's tendency to give contradictory answers to moral questions by lowering the generation temperature. Based on SaGE, what is the expected outcome?
+							311 container
+								312 text 1  Point
+							313 container
+								314 radio button (disabled) The consistency score will improve to near perfection.
+								315 text The consistency score will improve to near perfection.
+							316 container
+								317 radio button (disabled) The consistency score will perfectly match human scores.
+								318 text The consistency score will perfectly match human scores.
+							319 container
+								320 radio button (disabled) The consistency score will drop to near zero.
+								321 text The consistency score will drop to near zero.
+							322 container
+								323 radio button (disabled) The consistency score will remain largely unaffected.
+								324 text The consistency score will remain largely unaffected.
+							325 container
+							327 text Accepted answer is
+							328 text The consistency score will remain largely unaffected.
+							329 text 11
+							330 text .
+							331 text According to the SaGE framework, how does an LLM's accuracy on standard commonsense reasoning benchmarks correlate with its moral consistency?
+							332 container
+								333 text 1  Point
+							334 container
+								335 radio button (disabled) Accuracy negatively correlates with consistency.
+								336 text Accuracy negatively correlates with consistency.
+							337 container
+								338 radio button (disabled) Accuracy does not correlate with consistency.
+								339 text Accuracy does not correlate with consistency.
+							340 container
+								341 radio button (disabled) Accuracy strictly correlates with consistency.
+								342 text Accuracy strictly correlates with consistency.
+							343 container
+								344 radio button (disabled) Accuracy conditionally correlates with consistency.
+								345 text Accuracy conditionally correlates with consistency.
+							346 container
+							348 text Accepted answer is
+							349 text Accuracy does not correlate with consistency.

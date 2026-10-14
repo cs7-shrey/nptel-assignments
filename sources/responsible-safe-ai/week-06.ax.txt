@@ -1,0 +1,340 @@
+							117 text 1 .
+							118 text According to the lecture, why would standard cryptographic solutions be unsuitable for AI model privacy?
+							119 container
+								120 text 1  Point
+							121 container
+								122 Tick box (disabled) It is unclear whether all complex functions can be effectively evaluated from in the encryption space.
+								123 text It is unclear whether all complex functions can be effectively evaluated from in the encryption space.
+							124 container
+								125 Tick box (disabled) Evaluation in encrypted space is computationally expensive.
+								126 text Evaluation in encrypted space is computationally expensive.
+							127 container
+								128 Tick box (disabled) As the model scales, cryptographic keys become impossible to manage.
+								129 text As the model scales, cryptographic keys become impossible to manage.
+							130 container
+								131 Tick box (disabled) Encryption models cannot be used for binary classification tasks.
+								132 text Encryption models cannot be used for binary classification tasks.
+							133 container
+							135 text Accepted answer is It is unclear whether all complex functions can be effectively evaluated from in the encryption space., Evaluation in encrypted space is computationally expensive. 2 .
+							136 text In the context of healthcare data, why might a trained binary classification model still pose a privacy risk even if the raw data is not directly released?
+							137 container
+								138 text 1  Point
+							139 container
+								140 radio button (disabled) The model weights occupy too much storage space.
+								141 text The model weights occupy too much storage space.
+							142 container
+								143 radio button (disabled) Binary classifiers are inherently less secure than multi-class ones.
+								144 text Binary classifiers are inherently less secure than multi-class ones.
+							145 container
+								146 radio button (disabled) An adversary can reverse-engineer sensitive training data.
+								147 text An adversary can reverse-engineer sensitive training data.
+							148 container
+								149 radio button (disabled) The labels used for training are usually public knowledge.
+								150 text The labels used for training are usually public knowledge.
+							151 container
+							153 text Accepted answer is An adversary can reverse-engineer sensitive training data. 3 .
+							154 text How were users able to deanonymize the “anonymized” Netflix dataset?
+							155 container
+								156 text 1  Point
+							157 container
+								158 radio button (disabled) By obtaining the meta-data of the dataset.
+								159 text By obtaining the meta-data of the dataset.
+							160 container
+								161 radio button (disabled) By brute-forcing the sparse matrix to reveal the missing entries.
+								162 text By brute-forcing the sparse matrix to reveal the missing entries.
+							163 container
+								164 radio button (disabled) By using cryptanalytic attacks to decode user information.
+								165 text By using cryptanalytic attacks to decode user information.
+							166 container
+								167 radio button (disabled) By using an auxiliary public database, such as IMDb, to correlate ratings.
+								168 text By using an auxiliary public database, such as IMDb, to correlate ratings.
+							169 container
+							171 text Accepted answer is By using an auxiliary public database, such as IMDb, to correlate ratings. 4 .
+							172 text In the randomized response algorithm presented in the lecture, what is the minimum probability that the truthful answer is revealed?
+							173 container
+								174 text 1  Point
+							175 container
+								176 radio button (disabled) 10%
+								177 text 10%
+							178 container
+								179 radio button (disabled) 25%
+								180 text 25%
+							181 container
+								182 radio button (disabled) 50%
+								183 text 50%
+							184 container
+								185 radio button (disabled) 75%
+								186 text 75%
+							187 container
+							189 text Accepted answer is 50% 5 .
+							190 container
+								191 text To maximize utility, how should the privacy parameter 
+								192 text 𝜀
+								193 text  be adjusted?
+							194 container
+								195 text 1  Point
+							196 container
+								197 radio button (disabled) should be maximum for privacy, should be minimum for utility
+								198 container
+									199 text 𝜀
+									200 text  should be maximum for privacy, 
+									201 text 𝜀
+									202 text  should be minimum for utility
+							203 container
+								204 radio button (disabled) should be minimum for privacy, should be minimum for utility
+								205 container
+									206 text 𝜀
+									207 text  should be minimum for privacy, 
+									208 text 𝜀
+									209 text  should be minimum for utility
+							210 container
+								211 radio button (disabled) should be maximum for privacy, should be maximum for utility
+								212 container
+									213 text 𝜀
+									214 text  should be maximum for privacy, 
+									215 text 𝜀
+									216 text  should be maximum for utility
+							217 container
+								218 radio button (disabled) should be minimum for privacy, should be maximum for utility
+								219 container
+									220 text 𝜀
+									221 text  should be minimum for privacy, 
+									222 text 𝜀
+									223 text  should be maximum for utility
+							224 container
+								225 radio button (disabled) is unrelated
+								226 container
+									227 text 𝜀
+									228 text  is unrelated
+							229 container
+							231 text Accepted answer is
+							232 container
+								233 text 𝜀
+								234 text  should be minimum for privacy, 
+								235 text 𝜀
+								236 text  should be maximum for utility
+							237 text 6 .
+							238 container
+								239 text An organization surveys 100 people and asks whether they voted for a certain party. To protect respondents' privacy, the organization uses the randomized response technique with 
+								240 container
+									241 text 𝜀 = 0.5 .
+								242 text  Out of 100 respondents, 60 reported “Yes” and 40 reported “No.” Estimate the true number of people whose actual answer was “Yes”. Round to the nearest whole number.
+							243 container
+								244 text 1  Point
+							246 container
+							248 text Accepted answer is
+							249 container
+								250 text Type: Numeric: 91
+							251 text 7 .
+							252 text Which trust scenario correctly describes the differential privacy model?
+							253 container
+								254 text 1  Point
+							255 container
+								256 radio button (disabled) Trust the curator; Trust the world
+								257 text Trust the curator; Trust the world
+							258 container
+								259 radio button (disabled) Do not trust the curator; Trust the world
+								260 text Do not trust the curator; Trust the world
+							261 container
+								262 radio button (disabled) Trust the curator; Do not trust the world
+								263 text Trust the curator; Do not trust the world
+							264 container
+								265 radio button (disabled) Do not trust the curator; Do not trust the world
+								266 text Do not trust the curator; Do not trust the world
+							267 container
+							269 text Accepted answer is Trust the curator; Do not trust the world 8 .
+							270 container
+								271 text In the Laplace Mechanism, how is the sensitivity 
+								272 container
+									273 text ( 𝛥 )
+								274 text  defined for a function f?
+							275 container
+								276 text 1  Point
+							277 container
+								278 radio button (disabled) The average difference between and for all neighbouring and .
+								279 container
+									280 text The average difference between 
+									281 container
+										282 text 𝑓 ( 𝑋 )
+									283 text  and 
+									284 container
+										285 text 𝑓 (
+										286 text 𝑋
+										287 text ′
+										288 text )
+									289 text  for all neighbouring 
+									290 text 𝑋
+									291 text  and 
+									292 container
+										293 text 𝑋 ′
+									294 text .
+							295 container
+								296 radio button (disabled) The maximum absolute difference between and for any two neighboring and .
+								297 container
+									298 text The maximum absolute difference between 
+									299 container
+										300 text 𝑓 ( 𝑋 )
+									301 text  and 
+									302 container
+										303 text 𝑓 (
+										304 text 𝑋
+										305 text ′
+										306 text )
+									307 text  for any two neighboring 
+									308 text 𝑋
+									309 text  and 
+									310 container
+										311 text 𝑋 ′
+									312 text .
+							313 container
+								314 radio button (disabled) The standard deviation of the function
+								315 container
+									316 text The standard deviation of the function 
+									317 container
+										318 text 𝑓 .
+							319 container
+								320 radio button (disabled) The minimum difference between and for any two neighboring and .
+								321 container
+									322 text The minimum difference between 
+									323 container
+										324 text 𝑓 ( 𝑋 )
+									325 text  and 
+									326 container
+										327 text 𝑓 (
+										328 text 𝑋
+										329 text ′
+										330 text )
+									331 text  for any two neighboring 
+									332 text 𝑋
+									333 text  and 
+									334 container
+										335 text 𝑋 ′
+									336 text .
+							337 container
+							339 text Accepted answer is
+							340 container
+								341 text The maximum absolute difference between 
+								342 container
+									343 text 𝑓 ( 𝑋 )
+								344 text  and 
+								345 container
+									346 text 𝑓 (
+									347 text 𝑋
+									348 text ′
+									349 text )
+								350 text  for any two neighboring 
+								351 text 𝑋
+								352 text  and 
+								353 container
+									354 text 𝑋 ′
+								355 text .
+							356 text 9 .
+							357 container
+								358 text According to Cynthia Dwork's definition of ε-differential privacy, for all neighbouring datasets 
+								359 text 𝑋
+								360 text  and 
+								361 container
+									362 text 𝑋 ′
+								363 text , the probability that a mechanism 
+								364 text 𝑀
+								365 text  on 
+								366 text 𝑋
+								367 text  generates an output in subset 
+								368 text 𝑆
+								369 text  divided by the probability that a mechanism 
+								370 text 𝑀
+								371 text  on 
+								372 container
+									373 text 𝑋 ′
+								374 text  generates an output in subset 
+								375 text 𝑆
+								376 text  is at most:
+							377 container
+								378 text 1  Point
+							379 container
+								380 radio button (disabled) 1
+								381 container
+									382 text 𝑒 𝜀
+							383 container
+								384 radio button (disabled) 0
+								385 text 𝜀
+							386 container
+								387 radio button (disabled) 0
+								388 container
+									389 text 1
+									390 text /
+									391 text 𝜀
+							392 container
+								393 radio button (disabled) 0
+								394 container
+									395 text 𝜀 𝑒
+							396 container
+							398 text Accepted answer is
+							399 container
+								400 text 𝑒 𝜀
+							401 text 10 .
+							402 container
+								403 text What property of neighboring data sets 
+								404 text 𝑋
+								405 text  and 
+								406 container
+									407 text 𝑋 ′
+								408 text  is used to prove the privacy guarantee of Randomized Response?
+							409 container
+								410 text 1  Point
+							411 container
+								412 radio button (disabled) They have zero correlation.
+								413 text They have zero correlation.
+							414 container
+								415 radio button (disabled) They differ by 99% of the elements in the set.
+								416 text They differ by 99% of the elements in the set.
+							417 container
+								418 radio button (disabled) They are disjoint sets.
+								419 text They are disjoint sets.
+							420 container
+								421 radio button (disabled) They differ by only one element.
+								422 text They differ by only one element.
+							423 container
+							425 text Accepted answer is They differ by only one element. 11 .
+							426 container
+								427 text For a fixed 
+								428 text 𝜀
+								429 text , if a function being computed is highly sensitive (large 
+								430 text 𝛥
+								431 text ), how does it affect the noise added to the Laplace mechanism?
+							432 container
+								433 text 1  Point
+							434 container
+								435 radio button (disabled) Less noise is added.
+								436 text Less noise is added.
+							437 container
+								438 radio button (disabled) More noise is added.
+								439 text More noise is added.
+							440 container
+								441 radio button (disabled) The noise remains unchanged.
+								442 text The noise remains unchanged.
+							443 container
+								444 radio button (disabled) Noise is irrelevant.
+								445 text Noise is irrelevant.
+							446 container
+							448 text Accepted answer is More noise is added. 12 .
+							449 container
+								450 text Comparing the Laplace mechanism and randomized response, how does the required number of respondents 
+								451 text 𝑛
+								452 text  differ to achieve the same privacy–utility trade-off?
+							453 container
+								454 text 1  Point
+							455 container
+								456 radio button (disabled) The Laplace mechanism requires quadratically more people.
+								457 text The Laplace mechanism requires quadratically more people.
+							458 container
+								459 radio button (disabled) The Laplace mechanism requires quadratically fewer people.
+								460 text The Laplace mechanism requires quadratically fewer people.
+							461 container
+								462 radio button (disabled) Both require the same number of people.
+								463 text Both require the same number of people.
+							464 container
+								465 radio button (disabled) The number of people to survey does not matter.
+								466 text The number of people to survey does not matter.
+							467 container
+							469 text Accepted answer is The Laplace mechanism requires quadratically fewer people.

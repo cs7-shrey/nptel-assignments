@@ -1,0 +1,143 @@
+Week 7:
+
+   1.​ In Approximate Differential Privacy, what does δ represent?
+           a.​ The strict upper bound of the probability of the mechanism 𝑀.
+           b.​ The estimated noise added to the Laplace Mechanism.
+           c.​ The average difference between all the data points in the datasets 𝑋 and 𝑋'.
+           d.​ A leeway for small-probability events where ε-differential privacy may fail.
+
+      Explanation: Approximate Differential Privacy [6:50-9:26] - δ is a small leeway for low
+      probability events where ε-differential privacy property may not hold true.
+
+   2.​ Compared to the Laplacian mechanism, how does the Gaussian mechanism scale the
+       amount of noise added when releasing D different outputs?
+         a.​ It adds noise linearly proportional to D.
+         b.​ It adds noise proportional to the square root of D.
+         c.​ It adds noise exponentially proportional to D.
+         d.​ It adds the same amount of noise.
+
+      Explanation: Approximate Differential Privacy [18:00-20:58] - The Guassian Mechanism
+      requires quadratically less amount of noise to become in terms of number of output that
+      you're releasing.
+
+   3.​ Which of the following are properties of Approximate Differential Privacy? (Select all
+       that apply.)
+          a.​ It satisfies the property of post-processing, meaning any data-independent
+              computation applied to the output will not make it less (ε, δ)-differentially private.
+          b.​ It guarantees privacy even when δ is significantly larger than 1/𝑛 (where 𝑛 is the
+              number of individuals in a dataset).
+          c.​ It satisfies composition, meaning if you have 𝑘 mechanisms that are all (ε, δ)
+              -differentially private, then the combined mechanism is (𝑘ε, 𝑘δ)-differentially
+              private.
+          d.​ It guarantees that the output distributions of the algorithm are completely identical
+              for any two neighboring datasets.
+
+      Explanation: Approximate Differential Privacy [23:40-34:53] - Approximate differential
+      privacy has two properties: post-processing and composition.
+
+   4.​ According to the lecture, what is the primary advantage of using the Gaussian
+       Mechanism?
+          a.​ Zero chance of privacy leakage.
+          b.​ Faster computational time for calculating probabilities.
+          c.​ Better utility due to adding quadratically less noise.
+          d.​ Eliminates the need for a trusted curator.
+
+      Explanation: Approximate Differential Privacy [14:45-22:55] - Gaussian mechanism
+      gains better utility with quadratically less amount of noise.
+
+   5.​ There are three buyers whose valuations are 15, 20, and 135, respectively. What is the
+       absolute difference in revenue when the price of a digital good changes from 14 to 18?
+       (Round your answer to the nearest whole number.) ​
+       ​
+       Answer (numerical): 6
+
+​      Explanation: Exponential Mechanism
+
+
+
+
+    6.​ How does the Exponential Mechanism select a price ℎ ϵ 𝐻?
+          a.​ With probability proportional to the inverse of the price.
+                                                     ε
+                                                    2δ
+                                                       𝑆(𝑥, ℎ)
+           b.​ With probability proportional to 𝑒                .
+                                                    δ
+                                                    2ε
+                                                       𝑆(𝑥, ℎ)
+           c.​ With probability proportional to 𝑒       .
+           d.​ Uniformly at random from all prices below the maximum valuation.
+
+       Explanation: Exponential Mechanism [14:11-15:00] - Select ℎ ϵ 𝐻 with probability
+                            ε
+                           2δ
+                              𝑆(𝑥, ℎ)
+       proportional to 𝑒                .
+
+    7.​ What privacy guarantee does the Exponential Mechanism provide for buyers'
+        valuations?
+            a.​ (ε, δ)-Differential Privacy
+            b.​ ε-Differential Privacy
+            c.​ K-Anonymity
+            d.​ Concentrated Differential Privacy
+
+       Explanation: Exponential Mechanism [15:53-18:15] - Exponential mechanism is Epsilon
+       differentially private for the given valuations.
+
+    8.​ What is the utility guarantee provided by the Exponential Mechanism?
+          a.​ It guarantees the absolute highest possible revenue every time.
+          b.​ It does not guarantee positive revenue every time.
+          c.​ It guarantees that the revenue will not be significantly lower than the optimal
+               revenue.
+          d.​ The guarantee will exactly match the median valuation.
+       Explanation: Exponential Mechanism [18:15-22:35] - It guarantees that the revenue will
+       not be significantly lower than the optimal revenue.
+
+    9.​ In Statistical Parity, for a protected group 𝐶 and a classifier 𝑀, what is the parity value for
+        an ideal classifier?
+            a.​ -1
+            b.​ 0
+            c.​ 0.5
+            d.​ 1
+
+       Explanation: Fairness in Machine Learning [47:03-50:41] - An ideal classifier has a
+       parity equal to 0.
+
+    10.​According to the data comparing White and African American defendants in risk
+        assessments, which of the following statements are true? (Select all that apply.)
+           a.​ White defendants were labeled lower risk yet did re-offend at a higher rate than
+               African American defendants.
+           b.​ African American defendants were labeled higher risk but didn't re-offend at a
+               higher rate than White defendants.
+           c.​ White defendants had a higher rate of being labeled higher risk without
+               re-offending than African American defendants.
+           d.​ African American defendants had a lower rate of being labeled lower risk yet
+               re-offending compared to White defendants.
+
+​      Explanation: Fairness in Machine Learning [19:42-21:38] - According to the table:
+          ●​ A higher percentage of African Americans were labelled as higher risk but didn’t
+             re-offend
+          ●​ A higher percentage of White people were labelled as low risk but did re-offend.
+          ●​ A lower percentage of African Americans were labelled as lower risk yet
+             re-offended compared to White people.
+
+    11.​Based on the analysis of biases in word embeddings from Wikipedia and Social Media,
+        which of the following professions was associated with sexist prejudice towards men?
+           a.​ Nurse
+           b.​ Teacher
+           c.​ Pharmacist
+           d.​ Cameraman
+
+       Explanation: Fairness in Machine Learning [24:44-28:10] - According to the lecture,
+       “Cameraman” is a profession that is associated with sexist prejudice towards men.
+
+    12.​The goal of Fair PCA is to find a PCA solution 𝑈 = [𝑈𝐴, 𝑈𝐵] such that the reconstruction
+       losses of groups A and B (where A is the protected group) are:
+           a.​ Equal
+           b.​ Unequal
+           c.​ The protected group has a lower reconstruction loss
+           d.​ The protected group has a higher reconstruction loss
+Explanation: Fairness in Machine Learning [40:05-44:56] - At optimality, Fair PCA
+minimizes the maximum loss between the groups, which mathematically forces their
+average reconstruction errors to be equal.
+

@@ -1,0 +1,327 @@
+							119 text 1 .
+							120 container
+								121 text In Approximate Differential Privacy, what does 
+								122 text 𝛿
+								123 text  represent?
+							124 container
+								125 text 1  Point
+							126 container
+								127 radio button (disabled) The strict upper bound of the probability of the mechanism .
+								128 container
+									129 text The strict upper bound of the probability of the mechanism 
+									130 text 𝑀
+									131 text .
+							132 container
+								133 radio button (disabled) The estimated noise added to the Laplace Mechanism.
+								134 text The estimated noise added to the Laplace Mechanism.
+							135 container
+								136 radio button (disabled) The average difference between all the data points in the datasets and .
+								137 container
+									138 text The average difference between all the data points in the datasets 
+									139 text 𝑋
+									140 text  and 
+									141 container
+										142 text 𝑋 ′
+									143 text .
+							144 container
+								145 radio button (disabled) A leeway for small-probability events where -differential privacy may fail.
+								146 container
+									147 text A leeway for small-probability events where 
+									148 text 𝜀
+									149 text -differential privacy may fail.
+							150 container
+							152 text Accepted answer is
+							153 container
+								154 text A leeway for small-probability events where 
+								155 text 𝜀
+								156 text -differential privacy may fail.
+							157 text 2 .
+							158 text Compared to the Laplacian mechanism, how does the Gaussian mechanism scale the amount of noise added when releasing D different outputs?
+							159 container
+								160 text 1  Point
+							161 container
+								162 radio button (disabled) It adds noise linearly proportional to D.
+								163 text It adds noise linearly proportional to D.
+							164 container
+								165 radio button (disabled) It adds noise proportional to the square root of D.
+								166 text It adds noise proportional to the square root of D.
+							167 container
+								168 radio button (disabled) It adds noise exponentially proportional to D.
+								169 text It adds noise exponentially proportional to D.
+							170 container
+								171 radio button (disabled) It adds the same amount of noise.
+								172 text It adds the same amount of noise.
+							173 container
+							175 text Accepted answer is It adds noise proportional to the square root of D. 3 .
+							176 text Which of the following are properties of Approximate Differential Privacy? (Select all that apply.)
+							177 container
+								178 text 1  Point
+							179 container
+								180 Tick box (disabled) It satisfies the property of post-processing, meaning any data-independent computation applied to the output will not make it less -differentially private.
+								181 container
+									182 text It satisfies the property of post-processing, meaning any data-independent computation applied to the output will not make it less 
+									183 container
+										184 text ( 𝜀 , 𝛿 )
+									185 text -differentially private.
+							186 container
+								187 Tick box (disabled) It guarantees privacy even when is significantly larger than (where is the number of individuals in a dataset).
+								188 container
+									189 text It guarantees privacy even when 
+									190 text 𝛿
+									191 text  is significantly larger than 
+									192 container
+										193 text 1
+										194 text /
+										195 text 𝑛
+									196 text  (where 
+									197 text 𝑛
+									198 text  is the number of individuals in a dataset).
+							199 container
+								200 Tick box (disabled) It satisfies composition, meaning if you have mechanisms that are all -differentially private, then the combined mechanism is -differentially private.
+								201 container
+									202 text It satisfies composition, meaning if you have 
+									203 text 𝑘
+									204 text  mechanisms that are all 
+									205 container
+										206 text ( 𝜀 , 𝛿 )
+									207 text -differentially private, then the combined mechanism is 
+									208 container
+										209 text ( 𝑘 𝜀 , 𝑘 𝛿 )
+									210 text -differentially private.
+							211 container
+								212 Tick box (disabled) It guarantees that the output distributions of the algorithm are completely identical for any two neighboring datasets.
+								213 text It guarantees that the output distributions of the algorithm are completely identical for any two neighboring datasets.
+							214 container
+							216 text Accepted answer is
+							217 container
+								218 text It satisfies the property of post-processing, meaning any data-independent computation applied to the output will not make it less 
+								219 container
+									220 text ( 𝜀 , 𝛿 )
+								221 text -differentially private., It satisfies composition, meaning if you have 
+								222 text 𝑘
+								223 text  mechanisms that are all 
+								224 container
+									225 text ( 𝜀 , 𝛿 )
+								226 text -differentially private, then the combined mechanism is 
+								227 container
+									228 text ( 𝑘 𝜀 , 𝑘 𝛿 )
+								229 text -differentially private.
+							230 text 4 .
+							231 text According to the lecture, what is the primary advantage of using the Gaussian Mechanism?
+							232 container
+								233 text 1  Point
+							234 container
+								235 radio button (disabled) Zero chance of privacy leakage.
+								236 text Zero chance of privacy leakage.
+							237 container
+								238 radio button (disabled) Faster computational time for calculating probabilities.
+								239 text Faster computational time for calculating probabilities.
+							240 container
+								241 radio button (disabled) Better utility due to adding quadratically less noise.
+								242 text Better utility due to adding quadratically less noise.
+							243 container
+								244 radio button (disabled) Eliminates the need for a trusted curator.
+								245 text Eliminates the need for a trusted curator.
+							246 container
+							248 text Accepted answer is Better utility due to adding quadratically less noise. 5 .
+							249 text There are three buyers whose valuations are 15, 20, and 135, respectively. What is the absolute difference in revenue when the price of a digital good changes from 14 to 18? (Round your answer to the nearest whole number.)
+							250 container
+								251 text 1  Point
+							253 container
+							255 text Accepted answer is
+							256 container
+								257 text Type: Numeric: 6
+							258 text 6 .
+							259 container
+								260 text How does the Exponential Mechanism select a price 
+								261 container
+									262 text ℎ 𝜖 𝐻
+								263 text ?
+							264 container
+								265 text 1  Point
+							266 container
+								267 radio button (disabled) With probability proportional to the inverse of the price.
+								268 text With probability proportional to the inverse of the price.
+							269 container
+								270 radio button (disabled) With probability proportional to .
+								271 container
+									272 text With probability proportional to 
+									273 container
+										274 text 𝑒
+										275 container
+											276 text 𝜀
+											277 text 2
+											278 text 𝛿
+										279 text 𝑆
+										280 text (
+										281 text 𝑥
+										282 text ,
+										283 text ℎ
+										284 text )
+									285 text .
+							286 container
+								287 radio button (disabled) With probability proportional to .
+								288 container
+									289 text With probability proportional to 
+									290 container
+										291 text 𝑒
+										292 container
+											293 text 𝛿
+											294 text 2
+											295 text 𝜀
+										296 text 𝑆
+										297 text (
+										298 text 𝑥
+										299 text ,
+										300 text ℎ
+										301 text )
+									302 text .
+							303 container
+								304 radio button (disabled) Uniformly at random from all prices below the maximum valuation.
+								305 text Uniformly at random from all prices below the maximum valuation.
+							306 container
+							308 text Accepted answer is
+							309 container
+								310 text With probability proportional to 
+								311 container
+									312 text 𝑒
+									313 container
+										314 text 𝜀
+										315 text 2
+										316 text 𝛿
+									317 text 𝑆
+									318 text (
+									319 text 𝑥
+									320 text ,
+									321 text ℎ
+									322 text )
+								323 text .
+							324 text 7 .
+							325 text What privacy guarantee does the Exponential Mechanism provide for buyers' valuations?
+							326 container
+								327 text 1  Point
+							328 container
+								329 radio button (disabled) -Differential Privacy
+								330 container
+									331 container
+										332 text ( 𝜀 , 𝛿 )
+									333 text -Differential Privacy
+							334 container
+								335 radio button (disabled) -Differential Privacy
+								336 container
+									337 text 𝜀
+									338 text -Differential Privacy
+							339 container
+								340 radio button (disabled) -Anonymity
+								341 container
+									342 text 𝐾
+									343 text -Anonymity
+							344 container
+								345 radio button (disabled) Concentrated Differential Privacy
+								346 text Concentrated Differential Privacy
+							347 container
+							349 text Accepted answer is
+							350 container
+								351 text 𝜀
+								352 text -Differential Privacy
+							353 text 8 .
+							354 text What is the utility guarantee provided by the Exponential Mechanism?
+							355 container
+								356 text 1  Point
+							357 container
+								358 radio button (disabled) It guarantees the absolute highest possible revenue every time.
+								359 text It guarantees the absolute highest possible revenue every time.
+							360 container
+								361 radio button (disabled) It does not guarantee positive revenue every time.
+								362 text It does not guarantee positive revenue every time.
+							363 container
+								364 radio button (disabled) It guarantees that the revenue will not be significantly lower than the optimal revenue.
+								365 text It guarantees that the revenue will not be significantly lower than the optimal revenue.
+							366 container
+								367 radio button (disabled) The guarantee will exactly match the median valuation.
+								368 text The guarantee will exactly match the median valuation.
+							369 container
+							371 text Accepted answer is It guarantees that the revenue will not be significantly lower than the optimal revenue. 9 .
+							372 container
+								373 text In Statistical Parity, for a protected group 
+								374 text 𝐶
+								375 text  and a classifier 
+								376 text 𝑀
+								377 text , what is the parity value for an ideal classifier?
+							378 container
+								379 text 1  Point
+							380 container
+								381 radio button (disabled) -1
+								382 text -1
+							383 container
+								384 radio button (disabled) 0
+								385 text 0
+							386 container
+								387 radio button (disabled) 0.5
+								388 text 0.5
+							389 container
+								390 radio button (disabled) 1
+								391 text 1
+							392 container
+							394 text Accepted answer is 0 10 .
+							395 text According to the data comparing White and African American defendants in risk assessments, which of the following statements are true? (Select all that apply.)
+							396 container
+								397 text 1  Point
+							398 container
+								399 Tick box (disabled) White defendants were labeled lower risk yet did re-offend at a higher rate than African American defendants.
+								400 text White defendants were labeled lower risk yet did re-offend at a higher rate than African American defendants.
+							401 container
+								402 Tick box (disabled) African American defendants were labeled higher risk but didn't re-offend at a higher rate than White defendants.
+								403 text African American defendants were labeled higher risk but didn't re-offend at a higher rate than White defendants.
+							404 container
+								405 Tick box (disabled) White defendants had a higher rate of being labeled higher risk without re-offending than African American defendants.
+								406 text White defendants had a higher rate of being labeled higher risk without re-offending than African American defendants.
+							407 container
+								408 Tick box (disabled) African American defendants had a lower rate of being labeled lower risk yet re-offending compared to White defendants.
+								409 text African American defendants had a lower rate of being labeled lower risk yet re-offending compared to White defendants.
+							410 container
+							412 text Accepted answer is White defendants were labeled lower risk yet did re-offend at a higher rate than African American defendants., African American defendants were labeled higher risk but didn't re-offend at a higher rate than White defendants., African American defendants had a lower rate of being labeled lower risk yet re-offending compared to White defendants. 11 .
+							413 text Based on the analysis of biases in word embeddings from Wikipedia and Social Media, which of the following professions was associated with sexist prejudice towards men?
+							414 container
+								415 text 1  Point
+							416 container
+								417 radio button (disabled) Nurse
+								418 text Nurse
+							419 container
+								420 radio button (disabled) Teacher
+								421 text Teacher
+							422 container
+								423 radio button (disabled) Pharmacist
+								424 text Pharmacist
+							425 container
+								426 radio button (disabled) Cameraman
+								427 text Cameraman
+							428 container
+							430 text Accepted answer is Cameraman 12 .
+							431 container
+								432 text The goal of Fair PCA is to find a PCA solution 
+								433 container
+									434 text 𝑈 = [
+									435 text 𝑈
+									436 text 𝐴
+									437 text ,
+									438 text 𝑈
+									439 text 𝐵
+									440 text ]
+								441 text such that the reconstruction losses of groups A and B (where A is the protected group) are:
+							442 container
+								443 text 1  Point
+							444 container
+								445 radio button (disabled) Equal
+								446 text Equal
+							447 container
+								448 radio button (disabled) Unequal
+								449 text Unequal
+							450 container
+								451 radio button (disabled) The protected group has a lower reconstruction loss
+								452 text The protected group has a lower reconstruction loss
+							453 container
+								454 radio button (disabled) The protected group has a higher reconstruction loss
+								455 text The protected group has a higher reconstruction loss
+							456 container
+							458 text Accepted answer is Equal

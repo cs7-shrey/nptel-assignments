@@ -1,0 +1,138 @@
+Week-3 Solution Sheet:
+
+    1.​ Match the unlearning method to their corresponding concept.
+​       1) Exact unlearning​ ​             ​    ​   i) Unlearned model and retrained model are
+distributionally close
+​       2) Unlearning via Differential Privacy​​    ii) The forget set is clearly defined
+​       3) Example Unlearning​             ​    ​   iii) The forget set is not clearly defined
+​       4) Concept Unlearning​             ​    ​   iv) Unlearned model and retrained model
+are distributionally identical
+            a.​ 1 -> i, 2-> iv, 3-> iii, 4-> ii
+            b.​ 1 -> i, 2-> iv, 3-> ii, 4-> iii
+            c.​ 1 -> iv, 2-> i, 3-> iii, 4-> ii
+            d.​ 1 -> iv, 2-> i, 3-> ii, 4-> iii
+
+       Explanation: Answers are found throughout the Unlearning and Approximate
+       Unlearning lectures -
+          ●​ Exact Unlearning - Unlearned model & retrained model to be distributionally
+              identical.
+          ●​ Unlearning via Differential Privacy - Unlearned model & retrained model to be
+              distributionally close.
+          ●​ Example Unlearning - Train, retain, and forget sets are often clearly defined.
+          ●​ Concept Unlearning - Train, retain, or forget sets are poorly specified or just not
+          ●​ specified at all.
+
+   2.​ What is the primary goal of “Machine Unlearning”?
+         a.​ To increase the training speed of a model.
+         b.​ To add more data to an existing model without retraining.
+         c.​ To remove the influence of specific training data from a trained model.
+         d.​ To improve the accuracy of a model on new, unseen data.
+
+       Explanation: Unlearning [8:41-9:36] - Machine Unlearning can be broadly described as
+       removing the influences of training data from a trained model.
+
+   3.​ What is GDPR’s Article 17 about in the context of Machine Learning?
+         a.​ Right to be remembered
+         b.​ Right to be forgotten
+         c.​ Right to be modified
+         d.​ Right to be distributed
+
+       Explanation: Unlearning [11:35-15:50] - GDPR’s Article 17 is the right to erasure or right
+       to be forgotten.
+
+   4.​ In the SISA framework, what is the benefit of using “shards” and “slices”?
+           a.​ It increases the overall accuracy of the model.
+           b.​ It ensures that unlearned data never contributes to other components.
+           c.​ It allows the model to learn from toxic data safely.
+           d.​ It eliminates the need for any retraining.
+   Explanation: Unlearning [29:44-30:02] - Algorithm is the proof: SISA by design
+   unlearned data never contributed to other components (split).
+
+5.​ What is “Membership Inference Attack”?
+      a.​ To distinguish whether specific training data was used to train a model.
+      b.​ To add new members to a training dataset.
+      c.​ To speed up the unlearning process.
+      d.​ To verify the architecture of the model.
+
+   Explanation: Approximate Unlearning [11:55-13:48] - Membership inference attacks aim
+   to distinguish training data from unseen data.
+
+6.​ Which unlearning method involves increasing the training loss on the forget set?
+       a.​ KL Divergence
+       b.​ Direct Preference Optimization
+       c.​ Gradient Ascent
+       d.​ Gradient Difference
+
+   Explanation: Evaluation of Unlearning and Graph Unlearning Part 1 [17:20-19:08] -
+   Gradient Ascent: Mess up predictions on the forget set by increasing the usual training
+   loss on the forget set.
+
+7.​ According to the lecture, what is “Representation Engineering”?
+       a.​ A bottom-up approach focusing on individual neurons.
+       b.​ Modifying representation vectors to control model traits.
+       c.​ A method for increasing the parameter count of a model.
+       d.​ Re-labeling all data points in a dataset to fix biases.
+
+   Explanation: Evaluation of Unlearning and Graph Unlearning Part 1 [30:35-33:10] -
+   Modify the representation vectors to modify the model outputs.
+
+8.​ In the context of the SISA framework, how does the system minimize the cost of
+    retraining when a data point must be unlearned?
+        a.​ By using gradient ascent on only the affected data points.
+        b.​ By applying a differential privacy constraint to the aggregation layer.
+        c.​ By flipping the labels of the forget set and performing few-shot.
+        d.​ By retraining only the constituent model whose shards contain the point to be
+            unlearned.
+
+   Explanation: Unlearning [25:00-29:43] - SISA training: data is divided in shards, which
+   are themselves divided into slices. One constituent model is trained on each shard by
+   presenting it with incrementally many slices and saving its parameters before the training
+   set is augmented with a new slice. When data needs to be unlearned, only one of the
+   constituent models whose shards contain the point to be unlearned needs to be
+   retrained — retraining can start from the last parameter values saved before including
+   the slice containing the data point to be unlearned.
+9.​ According to the lecture, why is unlearning fundamental facts like “the sun rises every
+    day” considered more difficult than unlearning infrequent textual occurrences, such as
+    car accidents?
+        a.​ Fundamental knowledge is deeply embedded in the model’s implicit knowledge
+            graph.
+        b.​ Fundamental facts are typically protected by guardrails.
+        c.​ Models are primarily trained on Wikipedia, which contains these facts.
+        d.​ Differential privacy guarantees fall off more quickly for fundamental facts.
+
+   Explanation: Evaluation of Unlearning and Graph Unlearning Part 1 [25:25-27:16] - A
+   piece of knowledge can be so embedded in the model’s implicit knowledge graph that it
+   cannot be unlearned without introducing contradictions and harming the model’s utility.
+
+10.​Which unlearning evaluation metric focuses on whether the unlearning process
+    negatively affects the model’s performance on the “retrain data” or unrelated tasks?
+       a.​ Efficiency
+       b.​ Forgetting Quality
+       c.​ Model Utility
+       d.​ Membership Inference
+
+   Explanation: Approximate Unlearning [25:55-27:35] - Model utility: Do we harm
+   performance on the retain data or orthogonal tasks?
+
+11.​The WMDP benchmark measures hazardous knowledge in which specific areas?
+    (Select all that apply.)
+       a.​ Biosecurity/Bioweapons
+       b.​ Cybersecurity
+       c.​ Chemical security
+       d.​ Financial market manipulation
+
+   Explanation: Evaluation of Unlearning and Graph Unlearning Part 1 [19:45-21:40] -
+   Unlearning dangerous knowledge, specifically on biosecurity, cybersecurity, and
+   chemical security.
+
+12.​Which methods are used for Edge Unlearning? (Select all that apply.)
+       a.​ GraphEraser
+       b.​ GUIDE
+       c.​ Projector
+       d.​ GraphdEditor
+       e.​ GNNDelete
+       f.​ MEGU
+
+   Explanation: Evaluation of Unlearning and Graph Unlearning Part 2 [13:14-16:53] - The
+   chart has checkmarks showing the methods used for each type of unlearning.
+

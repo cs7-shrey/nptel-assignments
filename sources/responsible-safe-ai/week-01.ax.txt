@@ -1,0 +1,244 @@
+							127 text 1
+							128 text .
+							129 text What does the “Systemic Safety” strategy in the Disaster Risk Equation primarily aim to achieve?
+							130 container
+								131 text 1  Point
+							132 container
+								133 radio button (disabled) Improve a specific model’s ability to withstand external hazards
+								134 text Improve a specific model’s ability to withstand external hazards
+							135 container
+								136 radio button (disabled) Identify and avoid hazards through real-time monitoring
+								137 text Identify and avoid hazards through real-time monitoring
+							138 container
+								139 radio button (disabled) Reduce the likelihood of conflict and overall systemic risks in the environment
+								140 text Reduce the likelihood of conflict and overall systemic risks in the environment
+							141 container
+								142 radio button (disabled) Align an agent’s goals with human values
+								143 text Align an agent’s goals with human values
+							144 container
+							146 text Accepted answer is
+							147 text Reduce the likelihood of conflict and overall systemic risks in the environment
+							148 text 2
+							149 text .
+							150 text In the context of “Deceptive Alignment,” what is the primary concern regarding model behavior?
+							151 container
+								152 text 1  Point
+							153 container
+								154 radio button (disabled) The model appears to follow safety guidelines during training but pursues different goals after deployment
+								155 text The model appears to follow safety guidelines during training but pursues different goals after deployment
+							156 container
+								157 radio button (disabled) The model cannot understand human language due to environmental differences
+								158 text The model cannot understand human language due to environmental differences
+							159 container
+								160 radio button (disabled) The model accidentally deletes critical memory during deployment
+								161 text The model accidentally deletes critical memory during deployment
+							162 container
+								163 radio button (disabled) The model’s safeguards are easily bypassed by simple user prompts
+								164 text The model’s safeguards are easily bypassed by simple user prompts
+							165 container
+							167 text Accepted answer is
+							168 text The model appears to follow safety guidelines during training but pursues different goals after deployment
+							169 text 3
+							170 text .
+							171 text According to the lecture, why is “proxy gaming” considered a failure mode in AI systems?
+							172 container
+								173 text 1  Point
+							174 container
+								175 radio button (disabled) Agents over-optimize fault metrics, producing outcomes misaligned with true human values
+								176 text Agents over-optimize fault metrics, producing outcomes misaligned with true human values
+							177 container
+								178 radio button (disabled) AI systems consume excessive computational resources unnecessarily
+								179 text AI systems consume excessive computational resources unnecessarily
+							180 container
+								181 radio button (disabled) AI systems are used to cheat in video games
+								182 text AI systems are used to cheat in video games
+							183 container
+								184 radio button (disabled) It results from hardware failure during large-scale simulations
+								185 text It results from hardware failure during large-scale simulations
+							186 container
+							188 text Accepted answer is
+							189 text Agents over-optimize fault metrics, producing outcomes misaligned with true human values
+							190 text 4
+							191 text .
+							192 text According to the lecture, why might AI systems develop an “instrumental incentive” to seek power?
+							193 container
+								194 text 1  Point
+							195 container
+								196 radio button (disabled) They are explicitly programmed to dominate humans
+								197 text They are explicitly programmed to dominate humans
+							198 container
+								199 radio button (disabled) Power and resources help them pursue their goals more effectively
+								200 text Power and resources help them pursue their goals more effectively
+							201 container
+								202 radio button (disabled) It is a biological byproduct of the neural network design
+								203 text It is a biological byproduct of the neural network design
+							204 container
+								205 radio button (disabled) They imitate human power-seeking behavior from training data
+								206 text They imitate human power-seeking behavior from training data
+							207 container
+							209 text Accepted answer is
+							210 text Power and resources help them pursue their goals more effectively
+							211 text 5
+							212 text .
+							213 text What does the term “Treacherous Turns” refer to in AI safety?
+							214 container
+								215 text 1  Point
+							216 container
+								217 radio button (disabled) Failures caused by biased training data
+								218 text Failures caused by biased training data
+							219 container
+								220 radio button (disabled) A system behaving differently once sufficiently capable
+								221 text A system behaving differently once sufficiently capable
+							222 container
+								223 radio button (disabled) Intentional misuse of AI by malicious humans
+								224 text Intentional misuse of AI by malicious humans
+							225 container
+								226 radio button (disabled) Over-optimization of proxy objectives
+								227 text Over-optimization of proxy objectives
+							228 container
+							230 text Accepted answer is
+							231 text A system behaving differently once sufficiently capable
+							232 text 6
+							233 text .
+							234 text According to the “Swiss cheese model”, which statement best describes effective safety design?
+							235 container
+								236 text 1  Point
+							237 container
+								238 radio button (disabled) Rely on a single, highly robust safety mechanism
+								239 text Rely on a single, highly robust safety mechanism
+							240 container
+								241 radio button (disabled) Implement safety measures randomly across the system
+								242 text Implement safety measures randomly across the system
+							243 container
+								244 radio button (disabled) Use multiple layers of defense so that individual weaknesses are compensated by others
+								245 text Use multiple layers of defense so that individual weaknesses are compensated by others
+							246 container
+								247 radio button (disabled) Eliminate safety measures if the AI system is well-designed
+								248 text Eliminate safety measures if the AI system is well-designed
+							249 container
+							251 text Accepted answer is
+							252 text Use multiple layers of defense so that individual weaknesses are compensated by others
+							253 text 7
+							254 text .
+							255 container
+								256 text According to the lecture, what are the potential “double-edged sword” risks associated with AI in military applications?  (Select all that apply.)
+							257 container
+								258 text 1  Point
+							259 container
+								260 Tick box (disabled) Autonomous weapons targeting human with high precision
+								261 text Autonomous weapons targeting human with high precision
+							262 container
+								263 Tick box (disabled) Complete elimination of the need for human strategic decision-making
+								264 text Complete elimination of the need for human strategic decision-making
+							265 container
+								266 Tick box (disabled) Lowering the barriers to large-scale violence
+								267 text Lowering the barriers to large-scale violence
+							268 container
+								269 Tick box (disabled) Autonomous retaliation systems increasing the risk of rapid escalation
+								270 text Autonomous retaliation systems increasing the risk of rapid escalation
+							271 container
+							273 text Accepted answer is
+							274 text Autonomous weapons targeting human with high precision, Lowering the barriers to large-scale violence, Autonomous retaliation systems increasing the risk of rapid escalation
+							275 text 8
+							276 text .
+							277 container
+								278 text Which of the following are considered speculative hazards of AI?  (Select all that apply.)
+							279 container
+								280 text 1  Point
+							281 container
+								282 Tick box (disabled) Eroded Epistemics
+								283 text Eroded Epistemics
+							284 container
+								285 Tick box (disabled) Enfeeblement
+								286 text Enfeeblement
+							287 container
+								288 Tick box (disabled) Deceptive Alignment
+								289 text Deceptive Alignment
+							290 container
+								291 Tick box (disabled) Hardware Degradation
+								292 text Hardware Degradation
+							293 container
+							295 text Accepted answer is
+							296 text Eroded Epistemics, Enfeeblement, Deceptive Alignment
+							297 text 9
+							298 text .
+							299 container
+								300 text The Disaster Risk Equation can be mitigated by  (Select all that apply.):
+							301 container
+								302 text 1  Point
+							303 container
+								304 Tick box (disabled) Improving agents’ robustness to withstand hazards
+								305 text Improving agents’ robustness to withstand hazards
+							306 container
+								307 Tick box (disabled) Identifying and mitigating hazards before they cause harm
+								308 text Identifying and mitigating hazards before they cause harm
+							309 container
+								310 Tick box (disabled) Increasing the number of parameters to drown out errors
+								311 text Increasing the number of parameters to drown out errors
+							312 container
+								313 Tick box (disabled) Reducing the severity of inherent model vulnerabilities
+								314 text Reducing the severity of inherent model vulnerabilities
+							315 container
+							317 text Accepted answer is
+							318 text Improving agents’ robustness to withstand hazards, Identifying and mitigating hazards before they cause harm, Reducing the severity of inherent model vulnerabilities
+							319 text 10
+							320 text .
+							321 text Which risk refers to humans voluntarily ceding control of socio-economic functions to AI to keep up with the automated world?
+							322 container
+								323 text 1  Point
+							324 container
+								325 radio button (disabled) Eroded Epistemics
+								326 text Eroded Epistemics
+							327 container
+								328 radio button (disabled) Deceptive Alignment
+								329 text Deceptive Alignment
+							330 container
+								331 radio button (disabled) Proxy Gaming
+								332 text Proxy Gaming
+							333 container
+								334 radio button (disabled) Enfeeblement
+								335 text Enfeeblement
+							336 container
+							338 text Accepted answer is
+							339 text Enfeeblement
+							340 text 11
+							341 text .
+							342 container
+								343 text In the risk decomposition framework, which combination of factors would result in the  HIGHEST  risk from an AI system?
+							344 container
+								345 text 1  Point
+							346 container
+								347 radio button (disabled) High vulnerability, high hazard exposure, high hazard severity.
+								348 text High vulnerability, high hazard exposure, high hazard severity.
+							349 container
+								350 radio button (disabled) Low vulnerability, high hazard exposure, low hazard severity.
+								351 text Low vulnerability, high hazard exposure, low hazard severity.
+							352 container
+								353 radio button (disabled) Low vulnerability, low hazard exposure, high hazard severity.
+								354 text Low vulnerability, low hazard exposure, high hazard severity.
+							355 container
+								356 radio button (disabled) High vulnerability, low hazard exposure, high hazard severity.
+								357 text High vulnerability, low hazard exposure, high hazard severity.
+							358 container
+							360 text Accepted answer is
+							361 text High vulnerability, high hazard exposure, high hazard severity.
+							362 text 12
+							363 text .
+							364 text According to the lecture, which of the following about the AI race is true?
+							365 container
+								366 text 1  Point
+							367 container
+								368 radio button (disabled) AI systems naturally become safer as they grow more powerful.
+								369 text AI systems naturally become safer as they grow more powerful.
+							370 container
+								371 radio button (disabled) The AI race reduces the need for regulation and monitoring.
+								372 text The AI race reduces the need for regulation and monitoring.
+							373 container
+								374 radio button (disabled) It ensures faster AI development that guarantees equal benefits for all nations.
+								375 text It ensures faster AI development that guarantees equal benefits for all nations.
+							376 container
+								377 radio button (disabled) AI competition may push to speed up development while giving up oversight.
+								378 text AI competition may push to speed up development while giving up oversight.
+							379 container
+							381 text Accepted answer is
+							382 text AI competition may push to speed up development while giving up oversight.

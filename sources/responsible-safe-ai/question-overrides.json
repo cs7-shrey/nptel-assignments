@@ -1,0 +1,129 @@
+{
+  "w03-q01": {
+    "contextTable": {
+      "headers": [
+        "Unlearning method",
+        "Concept"
+      ],
+      "rows": [
+        [
+          "1) Exact unlearning",
+          "i) Unlearned model and retrained model are distributionally close"
+        ],
+        [
+          "2) Unlearning via Differential Privacy",
+          "ii) The forget set is clearly defined"
+        ],
+        [
+          "3) Example Unlearning",
+          "iii) The forget set is not clearly defined"
+        ],
+        [
+          "4) Concept Unlearning",
+          "iv) Unlearned model and retrained model are distributionally identical"
+        ]
+      ]
+    },
+    "note": "Matching table restored from the course-linked Week 3 solution PDF.",
+    "contextSourceUrl": "https://storage.googleapis.com/swayam-node1-production.appspot.com/assets/img/noc26_cs145/Solutions%20of%20RSAI-2026-Week-3.pdf"
+  },
+  "w02-q03": {
+    "prompt": "Which type of distribution shift occurs when the input distribution P(x) changes between training and testing but P(y | x) remains constant?"
+  },
+  "w05-q09": {
+    "prompt": "You are performing a bias audit on a corpus with N = 1000 total documents. Calculate the PMI between an identity label wᵢ and a specific descriptive word wⱼ.\n\n• The identity label appears in 100 documents.\n• The descriptive word appears in 50 documents.\n• Both words co-occur in the same document 20 times."
+  },
+  "w06-q09": {
+    "options": [
+      {
+        "id": "A",
+        "text": "e^ε"
+      },
+      {
+        "id": "B",
+        "text": "ε"
+      },
+      {
+        "id": "C",
+        "text": "1/ε"
+      },
+      {
+        "id": "D",
+        "text": "ε^e"
+      }
+    ],
+    "note": "Exponents restored from the course-linked Week 6 solution PDF.",
+    "contextSourceUrl": "https://storage.googleapis.com/swayam-node1-production.appspot.com/assets/img/noc26_cs145/Solutions%20of%20RSAI-2026-Week-6.pdf"
+  },
+  "w07-q06": {
+    "options": [
+      {
+        "id": "A",
+        "text": "With probability proportional to the inverse of the price."
+      },
+      {
+        "id": "B",
+        "text": "With probability proportional to e^((ε / (2δ)) S(x, h))."
+      },
+      {
+        "id": "C",
+        "text": "With probability proportional to e^((δ / (2ε)) S(x, h))."
+      },
+      {
+        "id": "D",
+        "text": "Uniformly at random from all prices below the maximum valuation."
+      }
+    ],
+    "prompt": "How does the Exponential Mechanism select a price h ∈ H?",
+    "note": "Fractions and exponents restored from the course-linked Week 7 solution PDF.",
+    "contextSourceUrl": "https://storage.googleapis.com/swayam-node1-production.appspot.com/assets/img/noc26_cs145/Solutions%20of%20RSAI-2026-Week-7.pdf"
+  },
+  "w07-q12": {
+    "prompt": "The goal of Fair PCA is to find a PCA solution U = [U_A, U_B] such that the reconstruction losses of groups A and B (where A is the protected group) are:"
+  },
+  "w08-q08": {
+    "prompt": "Consider the following equation for LIME:\nξ(x) = argmin_(g ∈ G) L(f, g, πₓ) + Ω(g)\n\nWhat do the components L and Ω(g) represent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "L measures how unfaithful the explanation model g is in approximating f locally (weighted by πₓ, while Ω(g) measures the complexity/interpretability penalty of the explanation model."
+      },
+      {
+        "id": "B",
+        "text": "L represents the global accuracy of the black-box model f, and Ω(g) represents the total number of convolutional layers."
+      },
+      {
+        "id": "C",
+        "text": "L is the adversarial perturbation budget, and Ω(g) is the learning rate of the surrogate model."
+      },
+      {
+        "id": "D",
+        "text": "L calculates the exact Shapley values, and Ω(g) computes the gradient with respect to input pixels."
+      }
+    ]
+  },
+  "w12-q10": {
+    "options": [
+      {
+        "id": "A",
+        "text": "A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs."
+      },
+      {
+        "id": "B",
+        "text": "The 1-skeleton X^(1) of a cell complex consists exclusively of 1-dimensional cells."
+      },
+      {
+        "id": "C",
+        "text": "Vertical boundary relations connect two cells of the same dimension that share a common boundary."
+      },
+      {
+        "id": "D",
+        "text": "Boundary relations in the framework are restricted to be undirected, meaning σ_(c₁,c₂) = σ_(c₂,c₁)."
+      },
+      {
+        "id": "E",
+        "text": "A p-cell c^(p) is considered a face or boundary of a (p+1)-cell c^(p+1) if the set of points composing c^(p) is a subset of those composing c^(p+1)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+Week-6
+
+  1.​ According to the lecture, why would standard cryptographic solutions be unsuitable for AI
+      model privacy? (Select all that apply.)
+         a.​ It is unclear whether all complex functions can be effectively evaluated from in
+             the encryption space.
+         b.​ Evaluation in encrypted space is computationally expensive.
+         c.​ As the model scales, cryptographic keys become impossible to manage.
+         d.​ Encryption models cannot be used for binary classification tasks.
+
+     Explanation: Data Privacy [4:06-6:22] - There are two reasons why cryptographic
+     solutions are not suitable. First, it is unclear whether you can do inference in an
+     encrypted space. Second, encryption is an expensive solution.
+
+  2.​ In the context of healthcare data, why might a trained binary classification model still
+      pose a privacy risk even if the raw data is not directly released?
+          a.​ The model weights occupy too much storage space.
+          b.​ Binary classifiers are inherently less secure than multi-class ones.
+          c.​ An adversary can reverse-engineer sensitive training data.
+          d.​ The labels used for training are usually public knowledge.
+
+     Explanation: Data Privacy [1:45-4:06] - An adversary can reverse-engineer sensitive
+     personal information such as healthcare or financial data given a simple binary
+     classification model.
+
+  3.​ How were users able to deanonymize the “anonymized” Netflix dataset?
+        a.​ By obtaining the meta-data of the dataset.
+        b.​ By brute-forcing the sparse matrix to reveal the missing entries.
+        c.​ By using cryptanalytic attacks to decode user information.
+        d.​ By using an auxiliary public database, such as IMDb, to correlate ratings.
+
+     Explanation: Data Privacy [8:55-12:46] - They were able to deanonymize the Netflix
+     dataset by using an auxiliary database (IMDb) and correlating the two.
+
+  4.​ In the randomized response algorithm presented in the lecture, what is the minimum
+      probability that the truthful answer is revealed?
+          a.​ 10%
+          b.​ 25%
+          c.​ 50%
+          d.​ 75%
+
+     Explanation: Data Privacy [21:25-24:12] - ε > 0 means that the truth will be revealed
+                               ε
+                              𝑒
+     with a probability of         ε   > 50%.
+                             1+ 𝑒
+
+
+  5.​ To maximize utility, how should the privacy parameter ε be adjusted?
+         a.​ ε should be maximum for privacy, ε should be minimum for utility
+         b.​ ε should be minimum for privacy, ε should be minimum for utility
+           c.​ ε should be maximum for privacy, ε should be maximum for utility
+           d.​ ε should be minimum for privacy, ε should be maximum for utility
+           e.​ ε is unrelated
+
+       Explanation: Data Privacy [1:00:00 - 1:01:20] - If ε is large, 𝑥𝑖 and 𝑧𝑖 are easier to
+       distinguish, which increases utility, and vice versa. ε controls the privacy-utility tradeoff.
+
+    6.​ An organization surveys 100 people and asks whether they voted for a certain party. To
+        protect respondents' privacy, the organization uses the randomized response technique
+        with ε = 0. 5. Out of 100 respondents, 60 reported “Yes” and 40 reported “No.” Estimate
+        the true number of people whose actual answer was “Yes”. Round to the nearest whole
+        number.
+​
+​      Answer (numerical): 91
+
+       Explanation: Data Privacy
+
+
+
+
+    7.​ Which trust scenario correctly describes the differential privacy model?
+           a.​ Trust the curator; Trust the world
+           b.​ Do not trust the curator; Trust the world
+           c.​ Trust the curator; Do not trust the world
+           d.​ Do not trust the curator; Do not trust the world
+
+       Explanation: Data Privacy [1:06:06-1:11:00] - In differential privacy, surveyors trust the
+       curator to give their information to them but want their information to be privatized when
+       the computed function is released to the world.
+8.​ In the Laplace Mechanism, how is the sensitivity (∆) defined for a function 𝑓?
+        a.​ The average difference between 𝑓(𝑋) and 𝑓(𝑋') for all neighbouring 𝑋 and 𝑋'.
+        b.​ The maximum absolute difference between 𝑓(𝑋) and 𝑓(𝑋') for any two
+            neighboring 𝑋 and 𝑋'.
+        c.​ The standard deviation of the function 𝑓.
+        d.​ The minimum difference between 𝑓(𝑋) and 𝑓(𝑋') for any two neighboring 𝑋 and
+            𝑋'.
+
+   Explanation: Differential Privacy [21:30-22:34] - Sensitivity (∆) in the Laplace
+   mechanism measures how sensitive a function 𝑓 is to a single input change. It is the
+   maximum absolute difference |𝑓(𝑋) − 𝑓(𝑋')| over all neighboring datasets 𝑋 and 𝑋' that
+   differ by one element.
+
+9.​ According to Cynthia Dwork's definition of ε-differential privacy, for all neighbouring
+    datasets 𝑋 and 𝑋', the probability that a mechanism 𝑀 on 𝑋 generates an output in
+    subset 𝑆 divided by the probability that a mechanism 𝑀 on 𝑋' generates an output in
+    subset 𝑆 is at most:
+               ε
+       a.​ 𝑒
+       b.​ ε
+       c.​ 1/ε
+             𝑒
+       d.​ ε
+
+   Explanation: Differential Privacy [9:57-15:02] - A mechanism 𝑀 is said to be ε
+                            𝑃𝑟(𝑀(𝑋) ϵ 𝑆)     ε
+   -differential private if 𝑃𝑟(𝑀(𝑋') ϵ 𝑆) ≤ 𝑒 .
+
+
+10.​What property of neighboring data sets 𝑋 and 𝑋' is used to prove the privacy guarantee
+    of Randomized Response?
+        a.​ They have zero correlation.
+        b.​ They differ by 99% of the elements in the set.
+        c.​ They are disjoint sets.
+        d.​ They differ by only one element.
+
+   Explanation: Data Privacy [24:29-25:58] - 𝑋 and 𝑋' are two datasets where
+   𝑋 = 𝑋' ∀ 𝑖 ϵ {1 ... ( 𝑛 − 1)}, meaning they differ by only one element of index 𝑖 = 𝑛.
+
+11.​For a fixed ε, if a function being computed is highly sensitive (large ∆), how does it affect
+    the noise added to the Laplace mechanism?
+        a.​ Less noise is added.
+        b.​ More noise is added.
+        c.​ The noise remains unchanged.
+        d.​ Noise is irrelevant.
+
+   Explanation: Differential Privacy [27:14-31:00] - The more sensitive the function, the
+   more noise should be added.
+12.​Comparing the Laplace mechanism and randomized response, how does the required
+    number of respondents 𝑛 differ to achieve the same privacy–utility trade-off?
+       a.​ The Laplace mechanism requires quadratically more people.
+       b.​ The Laplace mechanism requires quadratically fewer people.
+       c.​ Both require the same number of people.
+       d.​ The number of people to survey does not matter.
+
+   Explanation: Differential Privacy [50:18-53:02] - If you trust the curator, then you would
+   have to survey a quadratically lesser number of people to achieve the same
+   privacy-utility tradeoff using the Laplace mechanism than not trusting the curator.
+

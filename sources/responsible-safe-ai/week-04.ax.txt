@@ -1,0 +1,220 @@
+							200 text 1 .
+							201 text How does the definition of “bias” in CS/ML differ from Statistics?
+							202 container
+								203 text 1  Point
+							204 container
+								205 radio button (disabled) Statistics focuses on societal values, while CS/ML focuses on mathematical deviations.
+								206 text Statistics focuses on societal values, while CS/ML focuses on mathematical deviations.
+							207 container
+								208 radio button (disabled) Statistics defines it as a systematic error in data collection/interpretation, while CS/ML defines it as a systematic favoritism towards certain groups/outcomes.
+								209 text Statistics defines it as a systematic error in data collection/interpretation, while CS/ML defines it as a systematic favoritism towards certain groups/outcomes.
+							210 container
+								211 radio button (disabled) CS/ML focuses on rationality in judgment, while Statistics focuses on algorithmic performance.
+								212 text CS/ML focuses on rationality in judgment, while Statistics focuses on algorithmic performance.
+							213 container
+								214 radio button (disabled) There is no difference; both define bias as a systematic deviation from rationality.
+								215 text There is no difference; both define bias as a systematic deviation from rationality.
+							216 container
+							218 text Accepted answer is Statistics defines it as a systematic error in data collection/interpretation, while CS/ML defines it as a systematic favoritism towards certain groups/outcomes. 2 .
+							219 text According to the slides, when does bias become a problem?
+							220 container
+								221 text 1  Point
+							222 container
+								223 radio button (disabled) Bias is a problem at all times because humans are not perfect.
+								224 text Bias is a problem at all times because humans are not perfect.
+							225 container
+								226 radio button (disabled) It is only a problem when it occurs in the data collection phase.
+								227 text It is only a problem when it occurs in the data collection phase.
+							228 container
+								229 radio button (disabled) It is only a problem when it can have a negative impact.
+								230 text It is only a problem when it can have a negative impact.
+							231 container
+								232 radio button (disabled) It is only a problem when the model is not 100% accurate.
+								233 text It is only a problem when the model is not 100% accurate.
+							234 container
+							236 text Accepted answer is It is only a problem when it can have a negative impact. 3 .
+							237 text Which metric is proposed in the InSaAF study to encapsulate both fairness and accuracy in the Indian legal landscape?
+							238 container
+								239 text 1  Point
+							240 container
+								241 radio button (disabled) Demographic Parity Score
+								242 text Demographic Parity Score
+							243 container
+								244 radio button (disabled) Perspective API Score
+								245 text Perspective API Score
+							246 container
+								247 radio button (disabled) Legal Grounding Score
+								248 text Legal Grounding Score
+							249 container
+								250 radio button (disabled) -weighted Legal Safety Score
+								251 container
+									252 text 𝛽
+									253 text -weighted Legal Safety Score
+							254 container
+							256 text Accepted answer is
+							257 container
+								258 text 𝛽
+								259 text -weighted Legal Safety Score
+							260 text 4 .
+							261 text What was the primary issue with Microsoft’s chatbot “Tay”?
+							262 container
+								263 text 1  Point
+							264 container
+								265 radio button (disabled) It was unable to process text correctly.
+								266 text It was unable to process text correctly.
+							267 container
+								268 radio button (disabled) It posted unintended offensive tweets due to malicious user intent.
+								269 text It posted unintended offensive tweets due to malicious user intent.
+							270 container
+								271 radio button (disabled) It could only generate content related to the United States.
+								272 text It could only generate content related to the United States.
+							273 container
+								274 radio button (disabled) It was too slow to respond to users.
+								275 text It was too slow to respond to users.
+							276 container
+							278 text Accepted answer is It posted unintended offensive tweets due to malicious user intent. 5 .
+							279 text Analysis of AI-generated images from Midjourney showed which of the following biases regarding specialized roles?
+							280 container
+								281 text 1  Point
+							282 container
+								283 radio button (disabled) Only younger women were shown in specialized roles.
+								284 text Only younger women were shown in specialized roles.
+							285 container
+								286 radio button (disabled) Only older men were shown in specialized roles.
+								287 text Only older men were shown in specialized roles.
+							288 container
+								289 radio button (disabled) Older women were frequently depicted as news analysts.
+								290 text Older women were frequently depicted as news analysts.
+							291 container
+								292 radio button (disabled) Specialized roles always featured diverse racial representation.
+								293 text Specialized roles always featured diverse racial representation.
+							294 container
+							296 text Accepted answer is Only older men were shown in specialized roles. 6 .
+							297 text According to “The Source of Bias” ML pipeline, at which stage can bias be introduced?
+							298 container
+								299 text 1  Point
+							300 container
+								301 Tick box (disabled) Collecting and labelling data
+								302 text Collecting and labelling data
+							303 container
+								304 Tick box (disabled) Training using chosen metrics and objectives
+								305 text Training using chosen metrics and objectives
+							306 container
+								307 Tick box (disabled) Models deployed in production
+								308 text Models deployed in production
+							309 container
+								310 Tick box (disabled) Users see an effect
+								311 text Users see an effect
+							312 container
+							314 text Accepted answer is Collecting and labelling data, Training using chosen metrics and objectives, Models deployed in production, Users see an effect 7 .
+							315 text What does each pair in the CrowS-Pairs dataset consist of?
+							316 container
+								317 text 1  Point
+							318 container
+								319 radio button (disabled) One stereotype sentence and one neutral sentence
+								320 text One stereotype sentence and one neutral sentence
+							321 container
+								322 radio button (disabled) One biased sentence and one unbiased sentence
+								323 text One biased sentence and one unbiased sentence
+							324 container
+								325 radio button (disabled) One stereotype sentence and one opposite stereotype sentence
+								326 text One stereotype sentence and one opposite stereotype sentence
+							327 container
+								328 radio button (disabled) One stereotype sentence and one less stereotype sentence
+								329 text One stereotype sentence and one less stereotype sentence
+							330 container
+							332 text Accepted answer is One stereotype sentence and one less stereotype sentence 8 .
+							333 text Which of the following is a "latent" design choice that can lead to bias in a dataset?
+							334 container
+								335 text 1  Point
+							336 container
+								337 radio button (disabled) Choosing to use only English-language phrases.
+								338 text Choosing to use only English-language phrases.
+							339 container
+								340 radio button (disabled) Using systematic favoritism towards a specific outcome.
+								341 text Using systematic favoritism towards a specific outcome.
+							342 container
+								343 radio button (disabled) Manually editing every data point to be offensive.
+								344 text Manually editing every data point to be offensive.
+							345 container
+								346 radio button (disabled) Refusing to use any AI models in production.
+								347 text Refusing to use any AI models in production.
+							348 container
+							350 text Accepted answer is Choosing to use only English-language phrases. 9 .
+							351 text Which of the following is the correct setting for contrastive learning?
+							352 container
+								353 text 1  Point
+							354 container
+								355 Tick box (disabled) Irrespective of the sentences, minimise the distance between their embeddings.
+								356 text Irrespective of the sentences, minimise the distance between their embeddings.
+							357 container
+								358 Tick box (disabled) Irrespective of the sentences, maximise the distance between their embeddings.
+								359 text Irrespective of the sentences, maximise the distance between their embeddings.
+							360 container
+								361 Tick box (disabled) If sentences are similar, minimise the distance between their embeddings.
+								362 text If sentences are similar, minimise the distance between their embeddings.
+							363 container
+								364 Tick box (disabled) If sentences are different, minimise the distance between their embeddings.
+								365 text If sentences are different, minimise the distance between their embeddings.
+							366 container
+								367 Tick box (disabled) If sentences are different, maximise the distance between their embeddings.
+								368 text If sentences are different, maximise the distance between their embeddings.
+							369 container
+								370 Tick box (disabled) If sentences are different, minimise the distance between their embeddings
+								371 text If sentences are different, minimise the distance between their embeddings
+							372 container
+							374 text Accepted answer is If sentences are similar, minimise the distance between their embeddings., If sentences are different, maximise the distance between their embeddings. 10 .
+							375 text What is a “stereotype”?
+							376 container
+								377 text 1  Point
+							378 container
+								379 radio button (disabled) A factual statement that applies to all humans.
+								380 text A factual statement that applies to all humans.
+							381 container
+								382 radio button (disabled) A scientifically proven characteristic.
+								383 text A scientifically proven characteristic.
+							384 container
+								385 radio button (disabled) A legal rule used to govern a society.
+								386 text A legal rule used to govern a society.
+							387 container
+								388 radio button (disabled) A widely held belief about some group.
+								389 text A widely held belief about some group.
+							390 container
+							392 text Accepted answer is A widely held belief about some group. 11 .
+							393 text A sentiment-analysis model is trained to predict whether book reviews are positive or negative based on a corpus of user submissions to a popular website. The majority of reviews in the training dataset reflect extreme opinions (reviewers who either loved or hated a book), because people were less likely to submit a review of a book if they did not respond to it strongly. As a result, the model is less able to correctly predict the sentiment of reviews that use more subtle language to describe a book. Which
+							394 container
+								395 text 1  Point
+							396 container
+								397 radio button (disabled) Reporting bias
+								398 text Reporting bias
+							399 container
+								400 radio button (disabled) Historical bias
+								401 text Historical bias
+							402 container
+								403 radio button (disabled) Automation bias
+								404 text Automation bias
+							405 container
+								406 radio button (disabled) In-group bias
+								407 text In-group bias
+							408 container
+							410 text Accepted answer is Reporting bias 12 .
+							411 text As per the lecture, which of the following is a/are a category of bias?
+							412 container
+								413 text 1  Point
+							414 container
+								415 Tick box (disabled) Gender
+								416 text Gender
+							417 container
+								418 Tick box (disabled) Race
+								419 text Race
+							420 container
+								421 Tick box (disabled) Scientific Facts
+								422 text Scientific Facts
+							423 container
+								424 Tick box (disabled) Profession
+								425 text Profession
+							426 container
+								427 Tick box (disabled) Currency exchange rates
+								428 text Currency exchange rates
+							429 container
+							431 text Accepted answer is Gender, Race, Profession

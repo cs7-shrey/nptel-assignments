@@ -1,0 +1,240 @@
+							115 text 1
+							116 text .
+							117 text According to the lecture, why is black-box access considered insufficient for conducting rigorous AI auditing?
+							118 container
+								119 text 1  Point
+							120 container
+								121 Tick box (disabled) It restricts evaluation to only the utilization of computation.
+								122 text It restricts evaluation to only the utilization of computation.
+							123 container
+								124 Tick box (disabled) It focuses only on the final outputs rather than the internal mechanisms.
+								125 text It focuses only on the final outputs rather than the internal mechanisms.
+							126 container
+								127 Tick box (disabled) It fails to reveal underlying problematic model behaviour.
+								128 text It fails to reveal underlying problematic model behaviour.
+							129 container
+								130 Tick box (disabled) It requires the auditors to retrain the underlying weights from scratch.
+								131 text It requires the auditors to retrain the underlying weights from scratch.
+							132 container
+							134 text Accepted answer is
+							135 text It focuses only on the final outputs rather than the internal mechanisms., It fails to reveal underlying problematic model behaviour.
+							136 text 2
+							137 text .
+							138 text How does “goal misgeneralization” differ from “reward hacking”?
+							139 container
+								140 text 1  Point
+							141 container
+								142 radio button (disabled) The agent pursues a different goal that is merely correlated with the true reward function.
+								143 text The agent pursues a different goal that is merely correlated with the true reward function.
+							144 container
+								145 radio button (disabled) The agent continuously optimizes an imperfect proxy goal, worsening the outcomes.
+								146 text The agent continuously optimizes an imperfect proxy goal, worsening the outcomes.
+							147 container
+								148 radio button (disabled) The agent actively manipulates its own code to rewrite the target goal.
+								149 text The agent actively manipulates its own code to rewrite the target goal.
+							150 container
+								151 radio button (disabled) The agent randomly pursues a completely new, unpredictable behvaiour is deployment.
+								152 text The agent randomly pursues a completely new, unpredictable behvaiour is deployment.
+							153 container
+							155 text Accepted answer is
+							156 text The agent pursues a different goal that is merely correlated with the true reward function.
+							157 text 3
+							158 text .
+							159 text Which of the following characteristics of highly agentic AI systems could introduce severe safety concerns beyond those of current language models?
+							160 container
+								161 text 1  Point
+							162 container
+								163 radio button (disabled) High parameter count and dense multi-head attention.
+								164 text High parameter count and dense multi-head attention.
+							165 container
+								166 radio button (disabled) Increased speed of token generation in text.
+								167 text Increased speed of token generation in text.
+							168 container
+								169 radio button (disabled) Exploding context window expansion.
+								170 text Exploding context window expansion.
+							171 container
+								172 radio button (disabled) Direct interaction with external digital infrastructure.
+								173 text Direct interaction with external digital infrastructure.
+							174 container
+							176 text Accepted answer is
+							177 text Direct interaction with external digital infrastructure.
+							178 text 4
+							179 text .
+							180 text Why are benchmarks insufficient for assessing dangerous capabilities in current models?
+							181 container
+								182 text 1  Point
+							183 container
+								184 radio button (disabled) Benchmarks fail to capture emergent behaviours in a tool-based environment.
+								185 text Benchmarks fail to capture emergent behaviours in a tool-based environment.
+							186 container
+								187 radio button (disabled) Benchmarks require white-box parameter access to accurately test models.
+								188 text Benchmarks require white-box parameter access to accurately test models.
+							189 container
+								190 radio button (disabled) Benchmarks are only able to accurately assess image models and not language models.
+								191 text Benchmarks are only able to accurately assess image models and not language models.
+							192 container
+								193 radio button (disabled) Benchmarks cannot measure basic mathematical computation accuracy.
+								194 text Benchmarks cannot measure basic mathematical computation accuracy.
+							195 container
+							197 text Accepted answer is
+							198 text Benchmarks fail to capture emergent behaviours in a tool-based environment.
+							199 text 5
+							200 text .
+							201 text Instead of relying on third-party audits, what alternative approach can developers use to demonstrate that a model is safe before deployment?
+							202 container
+								203 text 1  Point
+							204 container
+								205 radio button (disabled) Deploying models in restricted sandbox environments to observe failure cases.
+								206 text Deploying models in restricted sandbox environments to observe failure cases.
+							207 container
+								208 radio button (disabled) Releasing the complete source code and model weights to the public.
+								209 text Releasing the complete source code and model weights to the public.
+							210 container
+								211 radio button (disabled) Providing a positive case demonstrating that the system is safe.
+								212 text Providing a positive case demonstrating that the system is safe.
+							213 container
+								214 radio button (disabled) Mandating that all training be physically monitored by the public.
+								215 text Mandating that all training be physically monitored by the public.
+							216 container
+							218 text Accepted answer is
+							219 text Providing a positive case demonstrating that the system is safe.
+							220 text 6
+							221 text .
+							222 text What is a systemic risk about highly capable, personalized AI assistants that adapt to a user's habits?
+							223 container
+								224 text 1  Point
+							225 container
+								226 radio button (disabled) They will overwrite local user data to optimize their performance.
+								227 text They will overwrite local user data to optimize their performance.
+							228 container
+								229 radio button (disabled) They will frequently hallucinate and fabricate sensitive personal information or memories.
+								230 text They will frequently hallucinate and fabricate sensitive personal information or memories.
+							231 container
+								232 radio button (disabled) They put dangerous amounts of private information in the hands of a few big companies.
+								233 text They put dangerous amounts of private information in the hands of a few big companies.
+							234 container
+								235 radio button (disabled) They require localized hardware upgrades that need to be funded by the user.
+								236 text They require localized hardware upgrades that need to be funded by the user.
+							237 container
+							239 text Accepted answer is
+							240 text They put dangerous amounts of private information in the hands of a few big companies.
+							241 text 7
+							242 text .
+							243 text According to the lecture, why is training models on copyrighted data not constitute “transformative fair use”?
+							244 container
+								245 text 1  Point
+							246 container
+								247 radio button (disabled) The models fail to provide accurate citations for the generated content.
+								248 text The models fail to provide accurate citations for the generated content.
+							249 container
+								250 radio button (disabled) The resulting model directly competes economically with the creators.
+								251 text The resulting model directly competes economically with the creators.
+							252 container
+								253 radio button (disabled) The generated outputs are legally indistinguishable from the copyrighted data.
+								254 text The generated outputs are legally indistinguishable from the copyrighted data.
+							255 container
+								256 radio button (disabled) The training process stores exact copies of the original works.
+								257 text The training process stores exact copies of the original works.
+							258 container
+							260 text Accepted answer is
+							261 text The resulting model directly competes economically with the creators.
+							262 text 8
+							263 text .
+							264 text According to the lecture, why might single-nation AI regulations fail to prevent the deployment of dangerous AI systems?
+							265 container
+								266 text 1  Point
+							267 container
+								268 radio button (disabled) National regulators lack the technical tools needed to monitor large computing data centers within their own borders.
+								269 text National regulators lack the technical tools needed to monitor large computing data centers within their own borders.
+							270 container
+								271 radio button (disabled) Individual nations may have the need to bypass regulations and build dangerous AI systems anyways.
+								272 text Individual nations may have the need to bypass regulations and build dangerous AI systems anyways.
+							273 container
+								274 radio button (disabled) International copyright laws prevent individual countries from enforcing safety standards on foreign models.
+								275 text International copyright laws prevent individual countries from enforcing safety standards on foreign models.
+							276 container
+								277 radio button (disabled) Private AI companies can legally overturn single-nation safety laws in international judicial systems.
+								278 text Private AI companies can legally overturn single-nation safety laws in international judicial systems.
+							279 container
+							281 text Accepted answer is
+							282 text Individual nations may have the need to bypass regulations and build dangerous AI systems anyways.
+							283 text 9
+							284 text .
+							285 text Which mechanism explains why safety fine-tuning may fail to eliminate deep-seated societal biases in LLMs?
+							286 container
+								287 text 1  Point
+							288 container
+								289 radio button (disabled) Catastrophic learning episodes
+								290 text Catastrophic learning episodes
+							291 container
+								292 radio button (disabled) Superficial behaviour alignment
+								293 text Superficial behaviour alignment
+							294 container
+								295 radio button (disabled) Inference latency optimization
+								296 text Inference latency optimization
+							297 container
+								298 radio button (disabled) Data scaling bottlenecks
+								299 text Data scaling bottlenecks
+							300 container
+							302 text Accepted answer is
+							303 text Superficial behaviour alignment
+							304 text 10
+							305 text .
+							306 text Why is it dangerous for AI systems to be optimized for user persuasiveness?
+							307 container
+								308 text 1  Point
+							309 container
+								310 radio button (disabled) It requires continuous access to quantum compute.
+								311 text It requires continuous access to quantum compute.
+							312 container
+								313 radio button (disabled) It degrades latency during multi-turn dialogue.
+								314 text It degrades latency during multi-turn dialogue.
+							315 container
+								316 radio button (disabled) It creates incentives to manipulate human intent.
+								317 text It creates incentives to manipulate human intent.
+							318 container
+								319 radio button (disabled) It prevents models from processing implicit or indirect input cues
+								320 text It prevents models from processing implicit or indirect input cues
+							321 container
+							323 text Accepted answer is
+							324 text It creates incentives to manipulate human intent.
+							325 text 11
+							326 text .
+							327 text Why is it better to have upstream regulation for companies developing AI systems and hardware than having downstream regulation on the people using the AI systems?
+							328 container
+								329 text 1  Point
+							330 container
+								331 radio button (disabled) Developers are completely free of standard regulations.
+								332 text Developers are completely free of standard regulations.
+							333 container
+								334 radio button (disabled) Developers lack any technical control over baseline models.
+								335 text Developers lack any technical control over baseline models.
+							336 container
+								337 radio button (disabled) Users control the underlying training data pipeline.
+								338 text Users control the underlying training data pipeline.
+							339 container
+								340 radio button (disabled) Users face high market pressure to adopt AI systems.
+								341 text Users face high market pressure to adopt AI systems.
+							342 container
+							344 text Accepted answer is
+							345 text Users face high market pressure to adopt AI systems.
+							346 text 12
+							347 text .
+							348 text According to the lecture, why is cross-modal capability considered to be a characteristic of Artificial General Intelligence (AGI)?
+							349 container
+								350 text 1  Point
+							351 container
+								352 radio button (disabled) Text processing requires higher computational memory.
+								353 text Text processing requires higher computational memory.
+							354 container
+								355 radio button (disabled) Multimodal models eliminate risks of hallucinations in the outputs.
+								356 text Multimodal models eliminate risks of hallucinations in the outputs.
+							357 container
+								358 radio button (disabled) Language models cannot represent abstract reasoning.
+								359 text Language models cannot represent abstract reasoning.
+							360 container
+								361 radio button (disabled) Excluding human modalities creates a gap in real-world understanding.
+								362 text Excluding human modalities creates a gap in real-world understanding.
+							363 container
+							365 text Accepted answer is
+							366 text Excluding human modalities creates a gap in real-world understanding.

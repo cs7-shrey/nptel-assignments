@@ -1,0 +1,246 @@
+							119 text 1
+							120 text .
+							121 text What is the difference between "vertical" and "horizontal" AI regulation?
+							122 container
+								123 text 1  Point
+							124 container
+								125 radio button (disabled) Vertical regulates the hardware, while horizontal regulates the software.
+								126 text Vertical regulates the hardware, while horizontal regulates the software.
+							127 container
+								128 radio button (disabled) Vertical regulation is completely market-based, while horizontal is purely state-controlled.
+								129 text Vertical regulation is completely market-based, while horizontal is purely state-controlled.
+							130 container
+								131 radio button (disabled) Vertical regulation applies existing sector-specific laws to AI, while horizontal regulation creates broad, new risk-based laws across all sectors.
+								132 text Vertical regulation applies existing sector-specific laws to AI, while horizontal regulation creates broad, new risk-based laws across all sectors.
+							133 container
+								134 radio button (disabled) Vertical regulation only applies to the industry, while horizontal applies to the industry and its customers.
+								135 text Vertical regulation only applies to the industry, while horizontal applies to the industry and its customers.
+							136 container
+							138 text Accepted answer is
+							139 text Vertical regulation applies existing sector-specific laws to AI, while horizontal regulation creates broad, new risk-based laws across all sectors.
+							140 text 2
+							141 text .
+							142 text Why is data privacy considered a relatively better-understood guardrail compared to model explainability?
+							143 container
+								144 text 1  Point
+							145 container
+								146 radio button (disabled) Explainability has exact mathematical bounds, whereas privacy cannot be measured mathematically.
+								147 text Explainability has exact mathematical bounds, whereas privacy cannot be measured mathematically.
+							148 container
+								149 radio button (disabled) Privacy can be controlled by improving the model’s accuracy, while explainability depends mainly on the size of the training dataset.
+								150 text Privacy can be controlled by improving the model’s accuracy, while explainability depends mainly on the size of the training dataset.
+							151 container
+								152 radio button (disabled) Privacy can be formally bounded and guaranteed with mathematical frameworks.
+								153 text Privacy can be formally bounded and guaranteed with mathematical frameworks.
+							154 container
+								155 radio button (disabled) There are far less constraints in ensuring data privacy than explainability.
+								156 text There are far less constraints in ensuring data privacy than explainability.
+							157 container
+							159 text Accepted answer is
+							160 text Privacy can be formally bounded and guaranteed with mathematical frameworks.
+							161 text 3
+							162 text .
+							163 text According to the lecture, as AI systems become autonomous agents capable of performing complex tasks independently, what is the main trade-off that occurs regarding human decision-making.
+							164 container
+								165 text 1  Point
+							166 container
+								167 radio button (disabled) Individual human agency decreases as decision-making is delegated to autonomous AI systems.
+								168 text Individual human agency decreases as decision-making is delegated to autonomous AI systems.
+							169 container
+								170 radio button (disabled) Human decision-making increases because autonomous AI agents provide more information and recommendations to users.
+								171 text Human decision-making increases because autonomous AI agents provide more information and recommendations to users.
+							172 container
+								173 radio button (disabled) Human agency remains unchanged because autonomous AI systems only perform tasks without affecting human decisions.
+								174 text Human agency remains unchanged because autonomous AI systems only perform tasks without affecting human decisions.
+							175 container
+								176 radio button (disabled) Human decision-making becomes more reliable because AI agents completely eliminate uncertainty and errors from the decision-making process.
+								177 text Human decision-making becomes more reliable because AI agents completely eliminate uncertainty and errors from the decision-making process.
+							178 container
+							180 text Accepted answer is
+							181 text Individual human agency decreases as decision-making is delegated to autonomous AI systems.
+							182 text 4
+							183 text .
+							184 text Which of the following are privacy-preserving training techniques? (Select all that apply.)
+							185 container
+								186 text 1  Point
+							187 container
+								188 Tick box (disabled) Model Quantization
+								189 text Model Quantization
+							190 container
+								191 Tick box (disabled) Differential Privacy
+								192 text Differential Privacy
+							193 container
+								194 Tick box (disabled) Federated Learning
+								195 text Federated Learning
+							196 container
+								197 Tick box (disabled) Data Augmentation
+								198 text Data Augmentation
+							199 container
+							201 text Accepted answer is
+							202 text Differential Privacy, Federated Learning
+							203 text 5
+							204 text .
+							205 text In structured AI governance, what is defines a “co-regulation” model from from strict-regulation or self-regulation?
+							206 container
+								207 text 1  Point
+							208 container
+								209 radio button (disabled) Companies operate without zero external guidelines or government interaction.
+								210 text Companies operate without zero external guidelines or government interaction.
+							211 container
+								212 radio button (disabled) The government directly dictates every policy of code without interference from the industry.
+								213 text The government directly dictates every policy of code without interference from the industry.
+							214 container
+								215 radio button (disabled) The government ensures that consumers have as much responsiblities as companies to follow policy.
+								216 text The government ensures that consumers have as much responsiblities as companies to follow policy.
+							217 container
+								218 radio button (disabled) Industries establish policies which are formally recognized and enforced by the government.
+								219 text Industries establish policies which are formally recognized and enforced by the government.
+							220 container
+							222 text Accepted answer is
+							223 text Industries establish policies which are formally recognized and enforced by the government.
+							224 text 6
+							225 text .
+							226 text According to the lecture, if copyrighted data is found inside a large AI model and must be removed, what is a major technical challenge?
+							227 container
+								228 text 1  Point
+							229 container
+								230 radio button (disabled) Removing the data may significantly reduce the model’s ability to generalize to unrelated tasks.
+								231 text Removing the data may significantly reduce the model’s ability to generalize to unrelated tasks.
+							232 container
+								233 radio button (disabled) The model may need to be retrained or use specialized unlearning techniques to remove the data’s influence.
+								234 text The model may need to be retrained or use specialized unlearning techniques to remove the data’s influence.
+							235 container
+								236 radio button (disabled) The model may become unstable because removing one data point automatically changes its entire architecture.
+								237 text The model may become unstable because removing one data point automatically changes its entire architecture.
+							238 container
+								239 radio button (disabled) The model may require additional training on the copyrighted data before its influence can be safely removed.
+								240 text The model may require additional training on the copyrighted data before its influence can be safely removed.
+							241 container
+							243 text Accepted answer is
+							244 text The model may need to be retrained or use specialized unlearning techniques to remove the data’s influence.
+							245 text 7
+							246 text .
+							247 text According to the discussed AI safety and governance proposals, about how much of an AI model’s development budget should be spent on safety and responsible AI?
+							248 container
+								249 text 1  Point
+							250 container
+								251 radio button (disabled) 50% on legal costs
+								252 text 50% on legal costs
+							253 container
+								254 radio button (disabled) 100% on testing the model after it is released
+								255 text 100% on testing the model after it is released
+							256 container
+								257 radio button (disabled) 10% on AI safety and responsible AI research
+								258 text 10% on AI safety and responsible AI research
+							259 container
+								260 radio button (disabled) All profits on building newer hardware
+								261 text All profits on building newer hardware
+							262 container
+							264 text Accepted answer is
+							265 text 10% on AI safety and responsible AI research
+							266 text 8
+							267 text .
+							268 text According to the lecture, which technical strategy help reduce the energy consumption and environmental footprint of LLM deployment?
+							269 container
+								270 text 1  Point
+							271 container
+								272 radio button (disabled) Routing every simple text query to ultra-large GPU clusters in real time.
+								273 text Routing every simple text query to ultra-large GPU clusters in real time.
+							274 container
+								275 radio button (disabled) Increasing parameter counts by 10x for routine classification tasks.
+								276 text Increasing parameter counts by 10x for routine classification tasks.
+							277 container
+								278 radio button (disabled) Running duplicate backup models continuously on solar-powered data centers.
+								279 text Running duplicate backup models continuously on solar-powered data centers.
+							280 container
+								281 radio button (disabled) Moving model inference to run on CPUs/Edge devices instead of GPUs.
+								282 text Moving model inference to run on CPUs/Edge devices instead of GPUs.
+							283 container
+							285 text Accepted answer is
+							286 text Moving model inference to run on CPUs/Edge devices instead of GPUs.
+							287 text 9
+							288 text .
+							289 text How does Back Translation Defense mitigate jailbreak attacks?
+							290 container
+								291 text 1  Point
+							292 container
+								293 radio button (disabled) It takes an unmoderated model output, reverse-infers the prompt that generated it, and runs it through safety filters.
+								294 text It takes an unmoderated model output, reverse-infers the prompt that generated it, and runs it through safety filters.
+							295 container
+								296 radio button (disabled) It translates outputs into multiple foreign languages until a syntax error occurs.
+								297 text It translates outputs into multiple foreign languages until a syntax error occurs.
+							298 container
+								299 radio button (disabled) It automatically rejects any prompt containing more words than the model’s maximum context window.
+								300 text It automatically rejects any prompt containing more words than the model’s maximum context window.
+							301 container
+								302 radio button (disabled) It re-encrypts the LLM’s weights after every user interaction.
+								303 text It re-encrypts the LLM’s weights after every user interaction.
+							304 container
+							306 text Accepted answer is
+							307 text It takes an unmoderated model output, reverse-infers the prompt that generated it, and runs it through safety filters.
+							308 text 10
+							309 text .
+							310 text Which of the following are principles of Responsible AI (RAI)? (Select all that apply.)
+							311 container
+								312 text 1  Point
+							313 container
+								314 Tick box (disabled) Fairness
+								315 text Fairness
+							316 container
+								317 Tick box (disabled) Explainability
+								318 text Explainability
+							319 container
+								320 Tick box (disabled) AI Autonomy
+								321 text AI Autonomy
+							322 container
+								323 Tick box (disabled) Accountability
+								324 text Accountability
+							325 container
+								326 Tick box (disabled) Fast Deployment
+								327 text Fast Deployment
+							328 container
+								329 Tick box (disabled) Privacy
+								330 text Privacy
+							331 container
+							333 text Accepted answer is
+							334 text Fairness, Explainability, Accountability, Privacy
+							335 text 11
+							336 text .
+							337 text According to the Fairness Tree Framework, which fairness metric is recommended when interventions are punitive and you are most concerned with ensuring predictive equity among people for whom intervention is taken?
+							338 container
+								339 text 1  Point
+							340 container
+								341 radio button (disabled) FN/GS Parity
+								342 text FN/GS Parity
+							343 container
+								344 radio button (disabled) FP/GS Pairty
+								345 text FP/GS Pairty
+							346 container
+								347 radio button (disabled) FDR Parity
+								348 text FDR Parity
+							349 container
+								350 radio button (disabled) FPR Parity
+								351 text FPR Parity
+							352 container
+							354 text Accepted answer is
+							355 text FDR Parity
+							356 text 12
+							357 text .
+							358 text According to the systems approach framework for AI design and development, what action immediately follows the step of analyzing the root causes of bias?
+							359 container
+								360 text 1  Point
+							361 container
+								362 radio button (disabled) Measure and detect the bias
+								363 text Measure and detect the bias
+							364 container
+								365 radio button (disabled) Mitigate the impact through adjusting interventions
+								366 text Mitigate the impact through adjusting interventions
+							367 container
+								368 radio button (disabled) Monitor & Evaluate
+								369 text Monitor & Evaluate
+							370 container
+								371 radio button (disabled) Improve fairness of AI systems
+								372 text Improve fairness of AI systems
+							373 container
+							375 text Accepted answer is
+							376 text Improve fairness of AI systems
