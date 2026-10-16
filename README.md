@@ -21,6 +21,8 @@ Open http://127.0.0.1:3000. Dependencies are already installed in this checkout.
 
 Pick a week and click a single-choice option to check it against the course key. For multiple-choice questions, select all your choices and click **Check answer**; only the exact full set counts as correct. Numeric questions accept equivalent number formats and use **Check answer** too. **Show answers** reveals the whole week at once, and **Reset** clears the current week. Progress is stored locally under `recall:<courseId>` and is never submitted to the course.
 
+**Quiz** (`/<subject>/quiz`, bottom of the sidebar) mixes questions from the weeks you pick: all keyed questions from those weeks are shuffled and the first *max questions* kept (all by default). Answers reveal on selection, **Reset** clears them, and **New quiz** draws a fresh set. Each subject keeps one quiz under `recall:quiz:<courseId>`, separate from week progress. Weeks without a released key can't be picked.
+
 ## Data
 
 `data/assignments.json` contains Psychology, and `data/responsible-safe-ai.json` contains Responsible AI. Both retain source provenance. `/assignments.json` returns `{ "courses": [...] }`; use `/assignments.json?course=noc26_cs145` (or `noc26_hs206`) for one course. An unknown course returns 404.

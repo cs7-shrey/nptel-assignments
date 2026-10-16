@@ -2,15 +2,14 @@
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { findWeek, LAST_VISIT_COOKIE, weekPath } from '@/lib/courses';
+import { findWeek, LAST_VISIT_COOKIE, quizPath, weekPath } from '@/lib/courses';
 import type { Subject } from '@/lib/courses';
 import { progressKey, restoreProgress } from '@/lib/study';
 import type { Progress } from '@/lib/study';
 import Footer from './footer';
+import { pad } from './question-card';
 import SubjectSwitcher from './subject-switcher';
 import ThemeToggle from './theme-toggle';
-
-export const pad = (n: number) => String(n).padStart(2, '0');
 
 type Desk = {
   course: Subject;
@@ -20,6 +19,9 @@ type Desk = {
   setShowAnswers: (show: boolean) => void;
 };
 const DeskContext = createContext<Desk | null>(null);
+// Set once someone has seen or used the quiz, so the "new" callout shows only on first visits.
+const QUIZ_INTRO_KEY = 'recall:quiz-intro-seen';
+
 export function useDesk() {
   const desk = useContext(DeskContext);
   if (!desk) throw new Error('useDesk must be used inside StudyDesk');
@@ -31,7 +33,9 @@ export default function StudyDesk({ course, children }: { course: Subject; child
   const [progress, setProgress] = useState<Progress>({ choices: {}, checked: {} });
   const [showAnswers, setShowAnswers] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const currentWeek = findWeek(course, useSelectedLayoutSegment())?.week;
+  const [quizIntro, setQuizIntro] = useState(false);
+  const segment = useSelectedLayoutSegment();
+  const currentWeek = findWeek(course, segment)?.week, onQuiz = segment === 'quiz';
 
   useEffect(() => {
     try { setProgress(restoreProgress(course, localStorage.getItem(progressKey(course.courseId)))); } catch { /* Storage is optional. */ }
@@ -41,10 +45,20 @@ export default function StudyDesk({ course, children }: { course: Subject; child
     if (loaded) try { localStorage.setItem(progressKey(course.courseId), JSON.stringify(progress)); } catch { /* Storage is optional. */ }
   }, [loaded, course.courseId, progress]);
   useEffect(() => {
-    if (currentWeek === undefined) return;
-    document.cookie = `${LAST_VISIT_COOKIE}=${weekPath(course, currentWeek)}; path=/; max-age=31536000; samesite=lax`;
+    try {
+      if (onQuiz) localStorage.setItem(QUIZ_INTRO_KEY, '1');
+      setQuizIntro(!localStorage.getItem(QUIZ_INTRO_KEY));
+    } catch { /* Storage is optional. */ }
+  }, [onQuiz]);
+  function dismissQuizIntro() {
+    setQuizIntro(false);
+    try { localStorage.setItem(QUIZ_INTRO_KEY, '1'); } catch { /* Storage is optional. */ }
+  }
+  useEffect(() => {
+    const path = onQuiz ? quizPath(course) : currentWeek !== undefined ? weekPath(course, currentWeek) : null;
+    if (path) document.cookie = `${LAST_VISIT_COOKIE}=${path}; path=/; max-age=31536000; samesite=lax`;
     document.querySelector('.week-button[aria-current]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
-  }, [course, currentWeek]);
+  }, [course, currentWeek, onQuiz]);
 
   return <DeskContext value={{ course, progress, setProgress, showAnswers, setShowAnswers }}>
     <div className={`study-shell ${loaded ? '' : 'loading'}`}>
@@ -53,6 +67,20 @@ export default function StudyDesk({ course, children }: { course: Subject; child
         <div className="wordmark"><span className="mark" aria-hidden="true">r.</span> recall</div>
         <SubjectSwitcher course={course} />
         <nav aria-label="Weeks">{course.weeks.map(w => <Link key={w.week} href={weekPath(course, w.week)} className="week-button" aria-current={w.week === currentWeek ? 'page' : undefined} aria-label={`Week ${w.week}: ${w.topic}`}><span className="week-number">{pad(w.week)}</span><span className="week-label">{w.topic}</span></Link>)}</nav>
+        <div className="quiz-slot">
+          {quizIntro && <div className="quiz-intro" role="status">
+            <p><strong>New: Quiz.</strong> Mix questions from any weeks into a shuffled quiz.</p>
+            <div className="quiz-intro-actions">
+              <Link href={quizPath(course)} onClick={dismissQuizIntro}>Try it →</Link>
+              <button className="text-button" onClick={dismissQuizIntro}>Dismiss</button>
+            </div>
+          </div>}
+          <Link href={quizPath(course)} className="quiz-link" aria-current={onQuiz ? 'page' : undefined} onClick={dismissQuizIntro}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" /></svg>
+            Quiz
+            {quizIntro && <span className="new-dot" aria-label="New" />}
+          </Link>
+        </div>
         <ThemeToggle />
       </aside>
       <main>

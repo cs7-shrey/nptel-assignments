@@ -15,4 +15,6 @@ export const weekPath = (course: Subject, week: number) => `/${course.slug}/${we
 export const findWeek = (course: Subject, segment: string | null) => course.weeks.find(w => weekSlug(w.week) === segment);
 // Remembered as a cookie so "/" can redirect on the server, before anything renders.
 export const LAST_VISIT_COOKIE = 'recall-last';
-export const isWeekPath = (path: string | undefined) => courses.some(c => c.weeks.some(w => weekPath(c, w.week) === path));
+export const quizPath = (course: Subject) => `/${course.slug}/quiz`;
+export const isResumePath = (path: string | undefined) =>
+  courses.some(c => quizPath(c) === path || c.weeks.some(w => weekPath(c, w.week) === path));
