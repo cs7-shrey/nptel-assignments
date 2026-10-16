@@ -395,6 +395,19 @@ a {
   font-weight: 500;
   line-height: 1.35;
 }
+/* All weeks sits above the week list, divided from it, and keeps the labels below aligned. */
+.all-button {
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--side-line);
+  border-radius: 6px 6px 0 0;
+}
+.all-button .week-number {
+  width: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
 .theme-toggle {
   position: absolute;
   top: 36px;
@@ -793,6 +806,17 @@ a {
     font-size: 13px;
     font-weight: 600;
     color: var(--ink);
+  }
+  /* The week list is a horizontal chip row here, so All weeks is just another chip. */
+  .all-button {
+    padding: 8px 11px;
+    margin: 0;
+    border-bottom: 0;
+    border-radius: 6px;
+  }
+  .all-button .week-number {
+    width: auto;
+    font-size: 13px;
   }
   .study-shell main {
     margin-left: 0;

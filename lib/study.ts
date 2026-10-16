@@ -53,9 +53,17 @@ export function restoreProgress(course: Course, raw: string | null): Progress {
   return empty;
 }
 export function resetWeekProgress(progress: Progress, week: Week): Progress {
-  const ids = new Set(week.questions.map(q => q.id));
+  return resetAnswers(progress, week.questions.map(q => q.id));
+}
+// Clears the given questions and leaves every other answer alone.
+export function resetAnswers(progress: Progress, questionIds: Iterable<string>): Progress {
+  const ids = new Set(questionIds);
   return {
     choices: Object.fromEntries(Object.entries(progress.choices).filter(([id]) => !ids.has(id))),
     checked: Object.fromEntries(Object.entries(progress.checked).filter(([id]) => !ids.has(id))),
   };
+}
+// Every question in the course, tagged with the week it came from.
+export function taggedQuestions(course: Course) {
+  return course.weeks.flatMap(w => w.questions.map(question => ({ question, week: w.week })));
 }

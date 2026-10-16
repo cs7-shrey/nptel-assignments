@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { findWeek, LAST_VISIT_COOKIE, quizPath, weekPath } from '@/lib/courses';
+import { allPath, allSlug, findWeek, LAST_VISIT_COOKIE, quizPath, weekPath } from '@/lib/courses';
 import type { Subject } from '@/lib/courses';
 import { progressKey, restoreProgress } from '@/lib/study';
 import type { Progress } from '@/lib/study';
@@ -35,7 +35,7 @@ export default function StudyDesk({ course, children }: { course: Subject; child
   const [loaded, setLoaded] = useState(false);
   const [quizIntro, setQuizIntro] = useState(false);
   const segment = useSelectedLayoutSegment();
-  const currentWeek = findWeek(course, segment)?.week, onQuiz = segment === 'quiz';
+  const currentWeek = findWeek(course, segment)?.week, onQuiz = segment === 'quiz', onAll = segment === allSlug;
 
   useEffect(() => {
     try { setProgress(restoreProgress(course, localStorage.getItem(progressKey(course.courseId)))); } catch { /* Storage is optional. */ }
@@ -55,10 +55,10 @@ export default function StudyDesk({ course, children }: { course: Subject; child
     try { localStorage.setItem(QUIZ_INTRO_KEY, '1'); } catch { /* Storage is optional. */ }
   }
   useEffect(() => {
-    const path = onQuiz ? quizPath(course) : currentWeek !== undefined ? weekPath(course, currentWeek) : null;
+    const path = onQuiz ? quizPath(course) : onAll ? allPath(course) : currentWeek !== undefined ? weekPath(course, currentWeek) : null;
     if (path) document.cookie = `${LAST_VISIT_COOKIE}=${path}; path=/; max-age=31536000; samesite=lax`;
     document.querySelector('.week-button[aria-current]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
-  }, [course, currentWeek, onQuiz]);
+  }, [course, currentWeek, onQuiz, onAll]);
 
   return <DeskContext value={{ course, progress, setProgress, showAnswers, setShowAnswers }}>
     <div className={`study-shell ${loaded ? '' : 'loading'}`}>
@@ -66,7 +66,10 @@ export default function StudyDesk({ course, children }: { course: Subject; child
       <aside className="sidebar">
         <div className="wordmark"><span className="mark" aria-hidden="true">r.</span> recall</div>
         <SubjectSwitcher course={course} />
-        <nav aria-label="Weeks">{course.weeks.map(w => <Link key={w.week} href={weekPath(course, w.week)} className="week-button" aria-current={w.week === currentWeek ? 'page' : undefined} aria-label={`Week ${w.week}: ${w.topic}`}><span className="week-number">{pad(w.week)}</span><span className="week-label">{w.topic}</span></Link>)}</nav>
+        <nav aria-label="Assignments">
+          <Link href={allPath(course)} className="week-button all-button" aria-current={onAll ? 'page' : undefined} aria-label={`All weeks: every question from ${course.weeks.length} weeks in one shuffled page`}><span className="week-number">ALL</span><span className="week-label">All weeks</span></Link>
+          {course.weeks.map(w => <Link key={w.week} href={weekPath(course, w.week)} className="week-button" aria-current={w.week === currentWeek ? 'page' : undefined} aria-label={`Week ${w.week}: ${w.topic}`}><span className="week-number">{pad(w.week)}</span><span className="week-label">{w.topic}</span></Link>)}
+        </nav>
         <div className="quiz-slot">
           {quizIntro && <div className="quiz-intro" role="status">
             <p><strong>New: Quiz.</strong> Mix questions from any weeks into a shuffled quiz.</p>

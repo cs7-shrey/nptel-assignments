@@ -1,3 +1,4 @@
+import { shuffle } from './shuffle.ts';
 import { hasAnswer, restoreProgress } from './study.ts';
 import type { Course, Progress, Question } from './study.ts';
 
@@ -10,11 +11,7 @@ export const quizzable = (course: Course, weeks: number[]) =>
   course.weeks.filter(w => weeks.includes(w.week)).flatMap(w => w.questions.filter(hasAnswer));
 
 export function createQuiz(course: Course, weeks: number[], max: number | null, random = Math.random): Quiz {
-  const pool = quizzable(course, weeks).map(q => q.id);
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
+  const pool = shuffle(quizzable(course, weeks).map(q => q.id), random);
   return { weeks: [...weeks].sort((a, b) => a - b), max, questionIds: pool.slice(0, Math.min(max ?? pool.length, pool.length)), choices: {}, checked: {} };
 }
 

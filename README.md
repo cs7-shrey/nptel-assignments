@@ -7,7 +7,7 @@ Switch subjects from the course name in the sidebar:
 - Psychology of Learning (`noc26_hs206`): 130 questions across Weeks 0–12.
 - Responsible & Safe AI Systems (`noc26_cs145`): 141 questions across Weeks 1–12.
 
-Every week has its own URL, such as `/responsible-safe-ai/week-3`; `/<subject>` opens its first week, and `/` reopens the last week you visited (Psychology Week 0 on a first visit). Each course keeps its own answers and checked questions, so switching subjects preserves progress. Existing Psychology progress is restored without migration steps.
+Every week has its own URL, such as `/responsible-safe-ai/week-3`; `/<subject>/all` puts every week's questions on one page, `/<subject>` opens its first week, and `/` reopens the last week, all-questions page, or quiz you visited (Psychology Week 0 on a first visit). Each course keeps its own answers and checked questions, so switching subjects preserves progress. Existing Psychology progress is restored without migration steps.
 
 ## Run
 
@@ -20,6 +20,8 @@ npm run dev
 Open http://127.0.0.1:3000. Dependencies are already installed in this checkout.
 
 Pick a week and click a single-choice option to check it against the course key. For multiple-choice questions, select all your choices and click **Check answer**; only the exact full set counts as correct. Numeric questions accept equivalent number formats and use **Check answer** too. **Show answers** reveals the whole week at once, and **Reset** clears the current week. Progress is stored locally under `recall:<courseId>` and is never submitted to the course.
+
+**All weeks** (`/<subject>/all`, first entry in the sidebar) shows every question in the subject on one page, mixed across weeks instead of grouped by week. Each card keeps its week label, and the order is seeded per course, so a reload draws the same mix until **Shuffle** is pressed. It reads and writes the same answers as the week pages, so a question answered here shows up in its week and the shared score counts both. **Reset all** clears the whole subject.
 
 **Quiz** (`/<subject>/quiz`, bottom of the sidebar) mixes questions from the weeks you pick: all keyed questions from those weeks are shuffled and the first *max questions* kept (all by default). Answers reveal on selection, **Reset** clears them, and **New quiz** draws a fresh set. Each subject keeps one quiz under `recall:quiz:<courseId>`, separate from week progress. Weeks without a released key can't be picked.
 
@@ -59,8 +61,8 @@ npm run build
 
 Both importers use Python's standard library. `sources/quiz-verification.json` records live course checks for Weeks 6 and 11. Tests check completeness, valid answer references, the known source discrepancies, and absence of saved account/submission metadata.
 
-Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, and week-only resets.
+Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, week-only resets, and the all-weeks mix (every question kept, stable per seed, reset all).
 
-To add another subject, add its dataset to `data/`, register it with a URL slug in `lib/courses.ts`, and include its source provenance and checks.
+To add another subject, add its dataset to `data/`, register it with a URL slug in `lib/courses.ts`, and include its source provenance and checks. `/all` and the week routes follow from the new slug.
 
 Built with Next.js App Router, TypeScript, and locally bundled DM Sans and Manrope fonts. No external service is required at runtime; Vercel Web Analytics reports page views when deployed on Vercel.
