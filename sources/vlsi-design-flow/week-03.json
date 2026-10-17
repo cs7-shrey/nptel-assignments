@@ -1,0 +1,88 @@
+{
+  "week": 3,
+  "title": "Week 3: Assignment 3",
+  "topic": "Verilog & RTL simulation",
+  "due": "2023-08-09",
+  "questions": [
+    {
+      "prompt": "How will the number -8'd4 (in Verilog) be internally represented as bits?",
+      "options": ["1111 1111", "1111 1110", "1111 1100", "1111 0000"],
+      "accepted": "1111 1100"
+    },
+    {
+      "prompt": "Which of the following data types can store value during Verilog simulation?",
+      "options": ["wire", "wand", "wor", "reg"],
+      "accepted": "reg"
+    },
+    {
+      "prompt": "The variable A contains the bit sequence {1011}. The variable Y is obtained by applying the reduction operator: Y=|A. What will be the final value of Y?",
+      "options": ["0", "1", "X", "Z"],
+      "accepted": "1"
+    },
+    {
+      "prompt": "Which of the following statements about non-blocking assignments in Verilog is incorrect?",
+      "options": [
+        "The execution of the next statement is done after the current non-blocking assignment is fully executed",
+        "The symbol for non-blocking assignment is <=",
+        "The execution of the next statement is not blocked until the current non-blocking assignment is executed",
+        "The RHS of a non-blocking assignment can be a Verilog expression"
+      ],
+      "accepted": "The execution of the next statement is done after the current non-blocking assignment is fully executed"
+    },
+    {
+      "prompt": "Which of the following statements is incorrect about a Verilog function?",
+      "options": [
+        "A function can have one or more inputs",
+        "A function will have one output",
+        "A function can call another function",
+        "A function can call another task"
+      ],
+      "accepted": "A function can call another task"
+    },
+    {
+      "prompt": "Which of the following tasks is typically NOT performed by a testbench in simulation-based RTL verification:",
+      "options": ["Interact with the simulator", "Applies stimulus", "Observes the response", "Perform logic synthesis"],
+      "accepted": "Perform logic synthesis"
+    },
+    {
+      "prompt": "Which of the following statements is incorrect about code coverage:",
+      "options": [
+        "Help identify sections of DUV's source code that did not execute during verification.",
+        "Help perform timing analysis of the design",
+        "Helps monitor the progress of the verification effort",
+        "Helps assess the quality of verification"
+      ],
+      "accepted": "Help perform timing analysis of the design"
+    },
+    {
+      "prompt": "An event-based RTL simulator keeps the events ordered in the event queue according to:",
+      "options": [
+        "Speed of the processor on which simulation is run",
+        "Randomly",
+        "Simulation time of the event",
+        "Delay of circuit elements in the synthesized netlist"
+      ],
+      "accepted": "Simulation time of the event"
+    },
+    {
+      "prompt": "Which of the following Verilog constructs is processed last in the stratified Verilog event queue",
+      "options": [
+        "continuous assign statement",
+        "blocking assignment",
+        "LHS of non-blocking assignment",
+        "RHS of non-blocking assignment"
+      ],
+      "accepted": "LHS of non-blocking assignment"
+    },
+    {
+      "prompt": "Which of the following statements is incorrect about race in RTL simulation",
+      "options": [
+        "Race in RTL simulation signifies that the circuit is operating very fast",
+        "Due to race, we can obtain different results when the order of execution of two or more statements is changed (as permitted by IEEE standard)",
+        "Races in RTL simulation can be difficult to debug",
+        "Races can be avoided by following some guidelines in RTL coding"
+      ],
+      "accepted": "Race in RTL simulation signifies that the circuit is operating very fast"
+    }
+  ]
+}

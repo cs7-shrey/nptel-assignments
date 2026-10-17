@@ -9,6 +9,10 @@ export type Question = {
   correctNumericAnswer?: string | null;
   reference: string | null;
   contextTable?: { headers: string[]; rows: string[][] };
+  // Some questions carry a figure, a code listing, or text that follows the figure.
+  image?: { src: string; alt: string; width: number; height: number };
+  continuation?: string;
+  code?: string;
 };
 export type Week = { week: number; topic: string; questions: Question[] };
 export type Course = { course: string; courseId: string; weeks: Week[] };

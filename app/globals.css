@@ -958,6 +958,38 @@ a {
   background: var(--option-bg);
   font-weight: 600;
 }
+/* Figures, follow-up text, and code listings inside a question. */
+.question-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 18px;
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--option-line);
+  border-radius: 8px;
+}
+.question-more {
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  margin: -4px 0 18px;
+}
+.question-code {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--option-bg);
+  border: 1px solid var(--option-line);
+  border-radius: 8px;
+}
+.question-code code {
+  font: inherit;
+}
 @media print {
   .check-answer {
     display: none;

@@ -1,0 +1,83 @@
+{
+  "week": 11,
+  "title": "Week 11: Assignment 11",
+  "topic": "Chip planning & placement",
+  "due": "2023-10-11",
+  "questions": [
+    {
+      "prompt": "Which of the following tasks is NOT a part of hierarchical design implementation methodologies:",
+      "options": ["Partitioning", "Budgeting", "Top-level Assembly", "Post-silicon validation"],
+      "accepted": "Post-silicon validation"
+    },
+    {
+      "prompt": "Which of the following statements does NOT describe the advantages of hierarchical design implementation methodologies compared to flat design implementation methodologies for physical design:",
+      "options": [
+        "The physical implementation tools need to handle smaller problems for various blocks.",
+        "Different teams can concurrently implement multiple blocks.",
+        "Overall design time can reduce due to the parallel implementation of blocks.",
+        "The final figures of merit can suffer in hierarchical design implementation."
+      ],
+      "accepted": "The final figures of merit can suffer in hierarchical design implementation."
+    },
+    {
+      "prompt": "Which of the following functions is typically NOT provided by an I/O cell in an integrated circuit:",
+      "options": ["Arithmetic operation", "Increase drive capability", "Voltage transformation", "Protection against Electrostatic Discharge (ESD)"],
+      "accepted": "Arithmetic operation"
+    },
+    {
+      "prompt": "The advantage of creating standard cell rows oriented in alternating 180-degree rotation is:",
+      "options": [
+        "It allows us to obtain the correct logical functionality.",
+        "It allows us to share the power and ground lines for adjacent rows.",
+        "It removes glitches in the circuit induced by signal integrity issues.",
+        "It eases the task of clock gating and power gating to save switching power dissipation."
+      ],
+      "accepted": "It allows us to share the power and ground lines for adjacent rows."
+    },
+    {
+      "prompt": "The IR drop in the power lines can be reduced typically by",
+      "options": [
+        "Increasing the resistance of the power supply lines.",
+        "Using the higher levels of metal layers.",
+        "Decreasing the width of the power supply lines.",
+        "Using lower levels of metal layers."
+      ],
+      "accepted": "Using the higher levels of metal layers."
+    },
+    {
+      "prompt": "The phenomenon of transport of metal mass in the direction opposite to current flow due to the flow of unidirectional current is known as:",
+      "options": ["Implantation", "Diffusion", "Electromigration", "Ionization"],
+      "accepted": "Electromigration"
+    },
+    {
+      "prompt": "A capacitor or cell inserted between the power and ground lines to mitigate the problem of IR drop hotspots is known as",
+      "options": [
+        "Dying Capacitor (Dead cell)",
+        "Demanding Capacitor (Dem cell)",
+        "Supplying Capacitor (Super cell)",
+        "Decoupling Capacitor (Decap Cell)"
+      ],
+      "accepted": "Decoupling Capacitor (Decap Cell)"
+    },
+    {
+      "prompt": "Why do we need to carry out legalization after global placement during standard cell placement?",
+      "options": [
+        "To avoid legal proceedings against designer",
+        "To remove overlap among standard cells",
+        "To make incremental changes in the functionality",
+        "To reduce static power dissipation"
+      ],
+      "accepted": "To remove overlap among standard cells"
+    },
+    {
+      "prompt": "The reduction in the wirelength of the scan chains after placement is typically accomplished by which of the following tasks:",
+      "options": ["Scan Chain Minimization", "Scan Chain Reordering", "Scan Chain Resizing", "Scan Chain Retiming"],
+      "accepted": "Scan Chain Reordering"
+    },
+    {
+      "prompt": "The extra cells that we put in an integrated circuit in anticipation of later use are known as:",
+      "options": ["Spare Cell", "Base cell", "Pad Cell", "IO Cell"],
+      "accepted": "Spare Cell"
+    }
+  ]
+}

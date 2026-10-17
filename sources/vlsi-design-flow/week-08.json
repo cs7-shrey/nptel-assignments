@@ -1,0 +1,71 @@
+{
+  "week": 8,
+  "title": "Week 8: Assignment 8",
+  "topic": "Constraints & technology mapping",
+  "due": "2023-09-20",
+  "questions": [
+    {
+      "prompt": "The SDC command to define a primary clock is",
+      "options": ["create_toggle", "create_period", "create_clock", "start_clock"],
+      "accepted": "create_clock"
+    },
+    {
+      "prompt": "The SDC command to define delay at the input port is",
+      "options": ["set_delay -my_port", "set_input_delay", "set_output_delay", "set_delay -my_input"],
+      "accepted": "set_input_delay"
+    },
+    {
+      "prompt": "The SDC command to add extra margin to the timing requirements is",
+      "options": ["set_clock_uncertainty", "set_my_margin", "set_extra_margin", "set_design_extra_margin"],
+      "accepted": "set_clock_uncertainty"
+    },
+    {
+      "prompt": "The setup check is done at the output port when which of the following constraints is applied at that port?",
+      "options": ["set_input_delay", "set_output_delay", "set_false_path", "set_input_transition"],
+      "accepted": "set_output_delay"
+    },
+    {
+      "prompt": "Which of the following statements BEST describes the purpose of technology mapping in logic synthesis?",
+      "options": [
+        "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is minimized.",
+        "It converts a given generic gate netlist to a netlist consisting of standard cells such that an arbitrary functionality is realized, and the given cost is minimized.",
+        "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is maximized.",
+        "It converts a given generic gate netlist to a netlist consisting of transistors such that an arbitrary functionality is realized, and the given cost is minimized."
+      ],
+      "accepted": "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is minimized."
+    },
+    {
+      "prompt": "Which of the following optimization techniques is typically NOT targeted for improving timing:",
+      "options": ["Sizing", "Power Gating", "Restructuring", "Retiming"],
+      "accepted": "Power Gating"
+    },
+    {
+      "prompt": "Which of the following optimization techniques involves changing logic circuit elements across a flip-flop:",
+      "options": ["Reading", "Retiming", "Restructuring", "Fanout optimization"],
+      "accepted": "Retiming"
+    },
+    {
+      "prompt": "Consider the following synchronous circuit:",
+      "image": {
+        "src": "/vlsi-design-flow/week-08-question-08.png",
+        "alt": "Synchronous circuit with input A driving inverter G1 into flip-flop FF1, FF1 output through inverter G2 into flip-flop FF2, and FF2 output through inverter G3 to output Z, both flip-flops clocked by CLK, with feedback from Z to A.",
+        "width": 1296,
+        "height": 672
+      },
+      "continuation": "The following attributes are valid for the flip-flops FF1 and FF2: setup time = 45 ps, hold time = 10 ps, and CLK-to-Q delay = 20 ps. The delay of each inverter is 50 ps. Ignore the wire delay. Assume that we have defined the following constraints in the SDC file (all time units are in picoseconds):",
+      "code": "create_clock -name CLK -period 1000 [get_ports CLK]\nset_input_delay -clock [get_clocks CLK] 150 [get_ports A]\nset_output_delay -clock [get_clocks CLK] 125 [get_ports Z]",
+      "options": ["755 ps", "700 ps", "850 ps", "905 ps"],
+      "accepted": "755 ps"
+    },
+    {
+      "prompt": "For the question above, what is the hold slack at the timing end-point FF1/D?",
+      "options": ["200 ps", "190 ps", "0 ps", "-190 ps"],
+      "accepted": "190 ps"
+    },
+    {
+      "prompt": "For the question above, what is the setup slack at the timing end-point port Z?",
+      "options": ["600 ps", "900 ps", "805 ps", "905 ps"],
+      "accepted": "805 ps"
+    }
+  ]
+}

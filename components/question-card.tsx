@@ -30,12 +30,15 @@ export default function QuestionCard({ q, number, source, choice, checked, showA
     <div>
       {source && <p className="question-source">{source}</p>}
       <h2 id={`${q.id}-prompt`}>{q.prompt}</h2>
+      {q.image && <img className="question-image" src={q.image.src} alt={q.image.alt} width={q.image.width} height={q.image.height} loading="lazy" decoding="async" />}
+      {q.continuation && <p id={`${q.id}-more`} className="question-more">{q.continuation}</p>}
+      {q.code && <pre className="question-code"><code>{q.code}</code></pre>}
       {q.contextTable && <div className="question-table"><table aria-label={`Question ${number} matching table`}><thead><tr>{q.contextTable.headers.map(h => <th key={h}>{h}</th>)}</tr></thead><tbody>{q.contextTable.rows.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>)}</tbody></table></div>}
       {multiple && !/select all/i.test(q.prompt) && <p className="choice-hint">Select all that apply.</p>}
       {numeric ? <div className="numeric-answer">
         <label htmlFor={`${q.id}-input`}>Your answer</label>
         <input id={`${q.id}-input`} type="number" step="any" aria-describedby={`${q.id}-prompt`} value={typeof choice === 'string' ? choice : ''} disabled={submitted} onChange={e => onChange(e.target.value)} />
-      </div> : <div className="options" role="group" aria-labelledby={`${q.id}-prompt`}>{q.options.map(o => {
+      </div> : <div className="options" role="group" aria-labelledby={`${q.id}-prompt${q.continuation ? ` ${q.id}-more` : ''}`}>{q.options.map(o => {
         const correctOption = revealed && !!q.correctOptionIds?.includes(o.id), wrongOption = revealed && selected.includes(o.id) && !correctOption;
         return <button key={o.id} aria-pressed={selected.includes(o.id)} disabled={submitted} className={`option ${selected.includes(o.id) ? 'selected' : ''} ${correctOption ? 'correct' : ''} ${wrongOption ? 'wrong' : ''}`} onClick={() => choose(o.id)}>
           <span className="option-letter">{o.id}</span><span className="option-text">{o.text}</span>
