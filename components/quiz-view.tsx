@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { createQuiz, quizKey, quizQuestions, restoreQuiz } from '@/lib/quiz';
 import type { Quiz } from '@/lib/quiz';
 import { isChecked, isCorrect } from '@/lib/study';
+import IncorrectDialog from './incorrect-dialog';
 import QuestionCard from './question-card';
 import QuizDialog from './quiz-dialog';
 import { useDesk } from './study-desk';
@@ -12,6 +13,7 @@ export default function QuizView() {
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [loaded, setLoaded] = useState(false);
   const [creating, setCreating] = useState(false);
+  const [reviewing, setReviewing] = useState(false);
 
   // No saved quiz opens the form straight away.
   useEffect(() => {
@@ -29,6 +31,8 @@ export default function QuizView() {
   const questions = quiz ? quizQuestions(course, quiz) : [];
   const answered = quiz ? questions.filter(({ question: q }) => isChecked(q, quiz.choices[q.id], quiz.checked)) : [];
   const correct = quiz ? answered.filter(({ question: q }) => isCorrect(q, quiz.choices[q.id])).length : 0;
+  const finished = questions.length > 0 && answered.length === questions.length;
+  const incorrect = quiz ? questions.map((entry, i) => ({ ...entry, number: i + 1 })).filter(({ question: q }) => !isCorrect(q, quiz.choices[q.id])) : [];
   const reset = () => setQuiz(q => q && { ...q, choices: {}, checked: {} });
   const newQuizButton = <button className="primary-button" onClick={() => setCreating(true)}>New quiz</button>;
 
@@ -50,9 +54,13 @@ export default function QuizView() {
           onCheck={() => setQuiz(qz => qz && { ...qz, checked: { ...qz.checked, [q.id]: true } })} />)}</div>
       <div className="pagination quiz-end">
         <span className="score">{answered.length}/{questions.length} answered{answered.length > 0 && ` · ${correct} correct`}</span>
-        {newQuizButton}
+        <div className="quiz-end-actions">
+          <button className="secondary-button" disabled={!finished} title={finished ? undefined : 'Answer every question first'} onClick={() => setReviewing(true)}>View incorrect answers</button>
+          {newQuizButton}
+        </div>
       </div>
     </> : <div id="questions" className="questions quiz-empty"><p>No quiz yet.</p>{newQuizButton}</div>}
+    {quiz && <IncorrectDialog open={reviewing && finished} quiz={quiz} incorrect={incorrect} onClose={() => setReviewing(false)} />}
     <QuizDialog open={creating} course={course} initial={quiz} onClose={() => setCreating(false)} onCreate={(weeks, max) => {
       setQuiz(createQuiz(course, weeks, max));
       setCreating(false);

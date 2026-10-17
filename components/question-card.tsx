@@ -35,10 +35,11 @@ export default function QuestionCard({ q, number, source, choice, checked, showA
       {numeric ? <div className="numeric-answer">
         <label htmlFor={`${q.id}-input`}>Your answer</label>
         <input id={`${q.id}-input`} type="number" step="any" aria-describedby={`${q.id}-prompt`} value={typeof choice === 'string' ? choice : ''} disabled={submitted} onChange={e => onChange(e.target.value)} />
-      </div> : <div className="options" role="group" aria-labelledby={`${q.id}-prompt`}>{q.options.map(o => {
+      </div> : <div className="options" role="group" aria-labelledby={`${q.id}-prompt`}>{q.options.map((o, i) => {
         const correctOption = revealed && !!q.correctOptionIds?.includes(o.id), wrongOption = revealed && selected.includes(o.id) && !correctOption;
+        // Letters follow display order, which a quiz shuffles.
         return <button key={o.id} aria-pressed={selected.includes(o.id)} disabled={submitted} className={`option ${selected.includes(o.id) ? 'selected' : ''} ${correctOption ? 'correct' : ''} ${wrongOption ? 'wrong' : ''}`} onClick={() => choose(o.id)}>
-          <span className="option-letter">{o.id}</span><span className="option-text">{o.text}</span>
+          <span className="option-letter">{String.fromCharCode(65 + i)}</span><span className="option-text">{o.text}</span>
           {correctOption ? <span className="option-mark" aria-label="Correct answer">✓</span> : wrongOption ? <span className="option-mark" aria-label="Wrong">×</span> : null}
         </button>;
       })}</div>}

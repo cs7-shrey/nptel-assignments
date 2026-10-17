@@ -968,8 +968,12 @@ a {
 .secondary-button {
   border: 1px solid var(--option-line);
 }
-.secondary-button:hover {
+.secondary-button:not(:disabled):hover {
   border-color: var(--option-hover-line);
+}
+.secondary-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 .text-button {
   font-size: 12px;
@@ -1085,6 +1089,41 @@ a {
   font-size: 12px;
   color: var(--muted);
 }
+.quiz-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+/* Review of incorrect answers: wider than the form, scrolling inside the dialog. */
+.review-dialog {
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+.review-head {
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: -26px -26px 18px;
+  padding: 22px 26px 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.review-head h2 {
+  margin: 0;
+}
+.review-dialog .questions {
+  padding: 0;
+}
+.review-empty {
+  margin: 0;
+  color: var(--muted);
+}
 .dialog-actions {
   display: flex;
   justify-content: flex-end;
@@ -1092,7 +1131,7 @@ a {
   margin-top: 24px;
 }
 @media print {
-  .quiz-end .primary-button,
+  .quiz-end-actions,
   .intro .primary-button {
     display: none;
   }
