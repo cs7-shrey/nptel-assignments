@@ -1,0 +1,260 @@
+                                          Week 8 Solution
+              NPTEL PSOSM Course (Privacy and Security in Online Social Media)
+
+Question 1
+What are the different approaches to profile linking? (multiple correct)
+    (a) Study and analyse common attributes (place of work, profile picture, name, etc.) across different
+    social media platforms ✔
+    (b) Check important attributes such as the same emails, locations, and contact numbers (if
+    available) used across multiple platforms ✔
+    (c) Only looking at the user posting behaviour on social media platforms will help in profile linking.
+    (d) It is not possible to find the same user profiles on different social media platforms.
+Solution
+Profile linking (also called identity resolution) means finding the accounts that belong to the same real
+person on different platforms, for example a person's Twitter, Facebook and LinkedIn profiles.
+    •   (a) Common profile attributes: name, username, profile picture, place of work, bio and so on are
+        compared across platforms. Similar values strongly suggest the same person.
+    •   (b) Unique identifiers: an email ID or phone number reused across platforms is a near-certain
+        match, and location adds supporting evidence.
+    •   (c) is wrong because of the word 'only'. Posting behaviour (writing style, posting times) can help,
+        but it is one signal among many, not the sole approach.
+    •   (d) is wrong: profile linking is possible and is done routinely, which is exactly why it is a privacy
+        concern.
+Answer: Options (a) and (b).
+
+Question 2
+Which of the following statements is/are true regarding username change on social media?
+    S1: Changes to any profile attribute other than username do not lead to unreachability to the user
+    profile.
+    S2: The potential benign reasons for username change include space gain, suiting a trending event,
+    gaining/losing anonymity, adjusting to real-life events, and avoiding boredom.
+    S3: The malicious intentions for username change may include obscured username promotion and
+    username squatting.
+    S4: Search by the user's old username results in a failed attempt to reach the user's profile, potentially
+    making others falsely believe that the user account has been deactivated.
+    (a) Only S1 and S4 are correct
+    (b) Only S1, S2, and S3 are correct
+    (c) S1, S2, and S4 are correct
+    (d) All S1, S2, S3, S4 are correct. ✔
+Solution
+On Twitter, the profile URL is built from the username (twitter.com/username). This makes username
+special among profile attributes. Checking each statement:
+    •   S1 (True): changing the name, bio, location or picture leaves the URL unchanged, so the profile
+        stays reachable. Only a username change breaks the link.
+
+
+                                      Week 8 Solution, NPTEL PSOSM | Page 1
+    •     S2 (True): these are the benign reasons identified in the lecture's study: freeing up characters in a
+          tweet (space gain), joining a trend or event, becoming more or less anonymous, real-life changes
+          (marriage, new job) and simply boredom.
+    •     S3 (True): malicious users change usernames to promote a hidden or misleading handle, or to
+          squat on a popular username, holding it to impersonate someone or to sell it later.
+    •     S4 (True): after a change, the old URL and old @mentions lead nowhere, so friends may wrongly
+          think the account was deleted or suspended. This is the unreachability problem.
+Answer: All S1, S2, S3, S4 are correct.
+
+Question 3
+Below is the graph of username change. Which of the following is the correct inference from the graph (as
+discussed in the lecture)?
+
+
+
+
+    (a) Around 35 per cent of the users change their profile picture at least 3 times. ✔
+    (b) Around 60-70 percent of the users change their usernames at least once.
+    (c) Around 35 percent of the users change their profile picture 3 times.
+    (d) Around 50-55 per cent of users have changed their descriptions thrice.
+Solution
+How to read the chart: each bar is a profile attribute. The total height of a bar is the percentage of users
+who changed that attribute at least once. The coloured segments split those users by how many distinct
+values the attribute took (2, 3, 4 or 5 values).
+Key step: an attribute with k distinct values was changed k - 1 times. So 2 values = 1 change, 3 values = 2
+changes, 4 values = 3 changes, 5 values = 4 changes.
+Approximate readings from the chart:
+        Attribute           2 values       3 values        4 values        5 values      Total height
+        Username              ~6%            ~0%             ~0%               ~0%           ~6%
+        Description          ~35%           ~12%             ~3%               ~2%          ~52%
+    Profile picture           ~2%           ~34%            ~19%               ~10%         ~65%
+
+
+Checking each option:
+    •     (a) True: changing the profile picture at least 3 times means 4 or more values: the yellow (4
+          values) plus dark red (5 values) segments. These run from about the 35% mark up to the top of
+          the bar at about 65%, which is roughly 30 to 35% of users. This matches 'around 35 per cent'.
+
+
+                                       Week 8 Solution, NPTEL PSOSM | Page 2
+    •   (b) False: the username bar is only about 6% tall. The 60 to 70% bar is the profile picture, not the
+        username.
+    •   (c) False: changing the picture exactly 3 times means exactly 4 values, which is only the yellow
+        segment, about 19%. The light-blue segment of about 34% is 3 values, which is 2 changes, not 3.
+    •   (d) False: about 52% is the total description bar (changed at least once). Changing the description
+        thrice means 4 values, which is only about 3%.
+Answer: Around 35 per cent of the users change their profile picture at least 3 times.
+
+Question 4
+Why do Whisper users have a low clustering coefficient over the network?
+    (a) Whisper users are likely to interact with complete strangers who are highly unlikely to interact
+    with each other. ✔
+    (b) Users interact with a large sample of other users
+    (c) New users make 20% of the contribution in the Whisper content.
+    (d) All of the above
+Solution
+The local clustering coefficient of a node measures how many of its neighbours are also connected to
+each other:
+             C(v) = (number of links among v's neighbours) / (k(k-1)/2), where k = degree of v
+In a friendship network like Facebook, your friends usually know each other (friends of friends are
+friends), so triangles are common and the coefficient is high.
+Whisper is an anonymous app: there are no profiles or friend lists, and users reply to posts by people they
+do not know. If user v replies to strangers X and Y, there is no reason X and Y should ever interact. Very
+few triangles form, so the clustering coefficient is low, close to that of a random graph.
+Option (b) describes breadth of interaction, not the missing links among neighbours, and option (c) is
+unrelated to network structure.
+Answer: Whisper users are likely to interact with complete strangers who are highly unlikely to interact
+with each other.
+
+Question 5
+What is the primary purpose of Gephi software?
+    (a) Video Editing
+    (b) 3D Modeling
+    (c) Network Visualization and Analysis ✔
+    (d) Music Composition
+Solution
+Gephi is a free, open-source desktop tool for exploring graphs and networks. It is widely used in social
+media research to:
+    •   Load network data (nodes and edges, for example a follower graph) from CSV, GEXF or GraphML
+        files.
+    •   Draw the network with layout algorithms such as ForceAtlas2 and Fruchterman-Reingold.
+    •   Compute metrics: degree, betweenness, closeness, eigenvector centrality, clustering coefficient
+        and modularity (community detection).
+    •   Colour and size nodes by these metrics to spot influencers and communities.
+Answer: Network Visualization and Analysis.
+                                     Week 8 Solution, NPTEL PSOSM | Page 3
+Question 6
+Why is studying username change behaviour useful for social media researchers? (multiple correct)
+    (a) This is one of the unique attributes of the user ✔
+    (b) It is usually homogeneous ✔
+    (c) The number of characters and length of the username is restricted ✔
+    (d) It is the publicly available attribute ✔
+Solution
+The lecture explains why username is a good attribute to study:
+    •    Unique: no two accounts on a platform can share a username, so it identifies a user exactly.
+    •    Homogeneous: usernames follow the same rules and format on a platform (letters, digits and
+         underscore), so they are easy to compare and analyse at scale.
+    •    Restricted length: there is a character limit (for example 15 characters on Twitter), so all
+         usernames are short strings of similar form.
+    •    Publicly available: anyone can see a username without special permission, so data can be
+         collected for research.
+Answer: All four options.
+
+Question 7
+In the network graph of Twitter, where nodes are users, the in-degree of the node would be
+    (a) Number of followers on Twitter ✔
+    (b) Number of people you follow
+    (c) Both a and b
+    (d) None of the above
+Solution
+Twitter's graph is directed: an edge X → Y means 'X follows Y'. For a user Y:
+   • In-degree = edges coming into Y = number of users who follow Y = followers.
+   • Out-degree = edges going out of Y = number of users Y follows = following.
+Option (b) is the out-degree, so (c) is also wrong.
+Answer: Number of followers on Twitter.
+
+Question 8
+Which of the following is/are anonymous social networks? (multiple correct)
+    (a) Secret ✔
+    (b) 4chan ✔
+    (c) Yik Yak ✔
+    (d) Blind ✔
+Solution
+An anonymous social network lets users post without revealing their real identity. All four options are
+examples:
+        Platform                                     How it is anonymous
+
+
+
+
+                                      Week 8 Solution, NPTEL PSOSM | Page 4
+        Secret            App for sharing posts with friends of friends without showing who wrote
+                                                            them
+        4chan                  Image board where most posts are made under the default name
+                                           'Anonymous', with no account needed
+        Yik Yak         Location-based app showing anonymous posts from people nearby, popular
+                                                 on college campuses
+           Blind            Workplace app where verified employees post anonymously about their
+                                                          company
+
+
+Whisper (Question 4) belongs to the same category.
+Answer: Secret, 4chan, Yik Yak and Blind (all four).
+
+Question 9
+A scale-free network can be one having
+    (a) Power law degree distribution
+    (b) Zipf's law
+    (c) Pareto principle
+    (d) All of the above ✔
+Solution
+A network is scale-free when the fraction of nodes with degree k follows a power law:
+                                      P(k) ∝ k^(-γ), typically 2 < γ < 3
+Most nodes have very few links while a few hubs have a huge number (for example, a few celebrity
+accounts with millions of followers). Zipf's law and the Pareto principle are other forms of the same
+power-law pattern:
+    •   Zipf's law: the item of rank r has frequency proportional to 1/r, so ranking nodes by degree gives
+        a power-law curve.
+    •   Pareto principle (80/20 rule): about 20% of nodes hold about 80% of the links, which is a
+        consequence of a heavy-tailed power-law distribution.
+Answer: All of the above.
+
+Question 10
+Imagine you're a student in a university, and you survey your classmates to find the number of friends
+each has on one popular social media platform (say Facebook).
+The average number of friends reported is 300. However, when you examine each classmate's number
+individually, many of them have fewer than 300 friends, perhaps ranging from 50 to 200. Why did you
+observe such a phenomenon?
+    (a) Most of the individuals have reported it wrong in the report.
+    (b) Few individuals have exceptionally high friend counts (outliers) that skew the average upward.
+    ✔
+    (c) There is an error in individual calculations. It is impossible to have 300 friends on average if many
+    individuals have fewer than 300 friends.
+    (d) None of the above
+Solution
+
+
+
+                                      Week 8 Solution, NPTEL PSOSM | Page 5
+Friend counts on social media follow a heavy-tailed (power-law) distribution, as in Question 9: most
+people have a modest number of friends and a few have very many. The mean is very sensitive to such
+extreme values, while the median is not.
+Numerical illustration (10 classmates):
+                  Friend counts                                               Statistic
+ 50, 80, 100, 120, 150, 150, 170, 180, 200, 1800                         Sum = 3000
+                Mean = 3000 / 10                                                300
+             Median = (150 + 150) / 2                                           150
+
+
+Nine of the ten students have 200 friends or fewer, yet the mean is 300 because one student has 1800
+friends. The data are correct; the outlier pulls the average up. This is a right-skewed distribution, where
+mean > median.
+Why the others are wrong: (a) assumes reporting errors with no evidence; (c) is mathematically false,
+since an average can exceed most individual values whenever a few values are very large.
+Answer: Few individuals have exceptionally high friend counts (outliers) that skew the average upward.
+
+Answer Key
+   Q.No.                                           Correct answer
+      1              (a) and (b): common attributes; same emails, locations, contact numbers
+      2                                      All S1, S2, S3, S4 are correct
+      3               Around 35 per cent of users change their profile picture at least 3 times
+      4              Users interact with strangers who are unlikely to interact with each other
+      5                                   Network Visualization and Analysis
+      6                                            All four options
+      7                                    Number of followers on Twitter
+      8                                 Secret, 4chan, Yik Yak, Blind (all four)
+      9                                            All of the above
+     10                                 Few outliers skew the average upward
+
+
+
+
+                                     Week 8 Solution, NPTEL PSOSM | Page 6
+

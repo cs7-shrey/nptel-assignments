@@ -1,0 +1,200 @@
+							154 text 1
+							155 text .
+							156 text Which sequence correctly hosts a local Git repository on GitHub?
+							157 container
+								158 text 1  Point
+							159 container
+								160 radio button (disabled) git push origin master → git remote -v → git remote add origin ...
+								161 text git push origin master → git remote -v → git remote add origin ...
+							162 container
+								163 radio button (disabled) git remote add origin ... → git remote -v → git push origin master
+								164 text git remote add origin ... → git remote -v → git push origin master
+							165 container
+								166 radio button (disabled) git remote -v → git clone → git push
+								167 text git remote -v → git clone → git push
+							168 container
+								169 radio button (disabled)  git clone → git remote add → git status
+								170 text  git clone → git remote add → git status
+							171 container
+							173 text Accepted answer is
+							174 text git remote add origin ... → git remote -v → git push origin master
+							175 text 2
+							176 text .
+							177 text Which of the following statement(s) is/are true about Anonymous social networks?
+							178 container
+								179 text 1  Point
+							180 container
+								181 Tick box (disabled) Anonymous social networks help in providing enhanced privacy and anonymity.
+								182 text Anonymous social networks help in providing enhanced privacy and anonymity.
+							183 container
+								184 Tick box (disabled) Anonymous social networks provide more freedom of expression.
+								185 text Anonymous social networks provide more freedom of expression.
+							186 container
+								187 Tick box (disabled) Anonymous social networks reduce the fear of judgment or social consequences.
+								188 text Anonymous social networks reduce the fear of judgment or social consequences.
+							189 container
+								190 Tick box (disabled) None of the above
+								191 text None of the above
+							192 container
+							194 text Accepted answer is
+							195 text Anonymous social networks help in providing enhanced privacy and anonymity., Anonymous social networks provide more freedom of expression., Anonymous social networks reduce the fear of judgment or social consequences.
+							196 text 3
+							197 text .
+							198 text Choose the correct option to create a virtual environment in Python
+							199 container
+								200 text 1  Point
+							201 container
+								202 radio button (disabled) python3 -m venv
+								203 text python3 -m venv
+							204 container
+								205 radio button (disabled) python3 venv -m
+								206 text python3 venv -m
+							207 container
+								208 radio button (disabled) virtualpython3 -m venv
+								209 text virtualpython3 -m venv
+							210 container
+								211 radio button (disabled) virtualenv python3 -m venv myenv
+								212 text virtualenv python3 -m venv myenv
+							213 container
+							215 text Accepted answer is
+							216 text python3 -m venv
+							217 text 4
+							218 text .
+							219 text Why is it important to create a virtual environment in Python?
+							220 container
+								221 text 1  Point
+							222 container
+								223 radio button (disabled) Creating a virtual environment isolates project dependencies and prevents conflicts between different projects.
+								224 text Creating a virtual environment isolates project dependencies and prevents conflicts between different projects.
+							225 container
+								226 radio button (disabled) Creating a virtual environment enhances the performance of Python programs.
+								227 text Creating a virtual environment enhances the performance of Python programs.
+							228 container
+								229 radio button (disabled) Creating a virtual environment to ensure compatibility with different operating systems.
+								230 text Creating a virtual environment to ensure compatibility with different operating systems.
+							231 container
+								232 radio button (disabled) Creating a virtual environment optimises memory usage in Python applications.
+								233 text Creating a virtual environment optimises memory usage in Python applications.
+							234 container
+							236 text Accepted answer is
+							237 text Creating a virtual environment isolates project dependencies and prevents conflicts between different projects.
+							238 text 5
+							239 text .
+							240 text Fill in the correct option to stage files/directories.
+							241 container
+								242 text 1  Point
+							243 container
+								244 radio button (disabled) Modified, Unmodified
+								245 text Modified, Unmodified
+							246 container
+								247 radio button (disabled) Unmodified, modified
+								248 text Unmodified, modified
+							249 container
+								250 radio button (disabled) modified, unstaged
+								251 text modified, unstaged
+							252 container
+								253 radio button (disabled) Modified, tracked
+								254 text Modified, tracked
+							255 container
+							257 text Accepted answer is
+							258 text Unmodified, modified
+							259 text 6
+							260 text .
+							261 text Which command lists all the remote addresses associated with a local repository?
+							262 container
+								263 text 1  Point
+							264 container
+								265 radio button (disabled) git remote -v
+								266 text git remote -v
+							267 container
+								268 radio button (disabled) git pull origin master
+								269 text git pull origin master
+							270 container
+								271 radio button (disabled) Git stash
+								272 text Git stash
+							273 container
+								274 radio button (disabled) Git checkout
+								275 text Git checkout
+							276 container
+							278 text Accepted answer is
+							279 text git remote -v
+							280 text 7
+							281 text .
+							282 text Which of the following concept is closely related to the fact that infrequent, arms-length relationships are more beneficial for employment opportunities, promotions, and wages than strong ties?
+							283 container
+								284 text 1  Point
+							285 container
+								286 radio button (disabled) Six degrees of separation
+								287 text Six degrees of separation
+							288 container
+								289 radio button (disabled) Small world phenomenon
+								290 text Small world phenomenon
+							291 container
+								292 radio button (disabled) Strength of weak ties
+								293 text Strength of weak ties
+							294 container
+								295 radio button (disabled) None of the above
+								296 text None of the above
+							297 container
+							299 text Accepted answer is
+							300 text Strength of weak ties
+							301 text 8
+							302 text .
+							303 text Which of the following is/are shortcomings of online social media platforms?
+							304 container
+								305 text 1  Point
+							306 container
+								307 Tick box (disabled) Spread of misinformation
+								308 text Spread of misinformation
+							309 container
+								310 Tick box (disabled) Cyberbullying and harassment
+								311 text Cyberbullying and harassment
+							312 container
+								313 Tick box (disabled) Addiction and time consumption
+								314 text Addiction and time consumption
+							315 container
+								316 Tick box (disabled) limited control over privacy
+								317 text limited control over privacy
+							318 container
+							320 text Accepted answer is
+							321 text Spread of misinformation, Cyberbullying and harassment, Addiction and time consumption, limited control over privacy
+							322 text 9
+							323 text .
+							324 text When a piece of content, such as a video, meme, or news article, gains attention on social media platforms, it can quickly reach a large audience within a short period. Which V of social media does it refers to?
+							325 container
+								326 text 1  Point
+							327 container
+								328 radio button (disabled) Velocity
+								329 text Velocity
+							330 container
+								331 radio button (disabled) Veracity
+								332 text Veracity
+							333 container
+								334 radio button (disabled) Value
+								335 text Value
+							336 container
+								337 radio button (disabled) Volume
+								338 text Volume
+							339 container
+							341 text Accepted answer is
+							342 text Velocity
+							343 text 10
+							344 text .
+							345 text What is the primary purpose of the Gab platform?
+							346 container
+								347 text 1  Point
+							348 container
+								349 radio button (disabled) To promote free speech
+								350 text To promote free speech
+							351 container
+								352 radio button (disabled) To facilitate online shopping experience
+								353 text To facilitate online shopping experience
+							354 container
+								355 radio button (disabled) It provides educational resources
+								356 text It provides educational resources
+							357 container
+								358 radio button (disabled) Support for professional networking
+								359 text Support for professional networking
+							360 container
+							362 text Accepted answer is
+							363 text To promote free speech

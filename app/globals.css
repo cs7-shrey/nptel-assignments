@@ -892,6 +892,51 @@ a {
 }
 .option-text {
   overflow-wrap: anywhere;
+  min-width: 0;
+}
+.question > div {
+  min-width: 0;
+}
+.question-context {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+.question-code {
+  padding: 16px;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--option-bg);
+  font-size: 12px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.option-code {
+  font-size: 12px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+.question-figure {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  cursor: zoom-in;
+}
+.question-figure img,
+.option-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: white;
 }
 .choice-hint {
   font-size: 12px;
@@ -1024,8 +1069,12 @@ a {
 .secondary-button {
   border: 1px solid var(--option-line);
 }
-.secondary-button:hover {
+.secondary-button:not(:disabled):hover {
   border-color: var(--option-hover-line);
+}
+.secondary-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 .text-button {
   font-size: 12px;
@@ -1141,6 +1190,41 @@ a {
   font-size: 12px;
   color: var(--muted);
 }
+.quiz-end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+/* Review of incorrect answers: wider than the form, scrolling inside the dialog. */
+.review-dialog {
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+.review-head {
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: -26px -26px 18px;
+  padding: 22px 26px 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.review-head h2 {
+  margin: 0;
+}
+.review-dialog .questions {
+  padding: 0;
+}
+.review-empty {
+  margin: 0;
+  color: var(--muted);
+}
 .dialog-actions {
   display: flex;
   justify-content: flex-end;
@@ -1148,7 +1232,7 @@ a {
   margin-top: 24px;
 }
 @media print {
-  .quiz-end .primary-button,
+  .quiz-end-actions,
   .intro .primary-button {
     display: none;
   }

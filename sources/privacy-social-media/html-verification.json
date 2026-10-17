@@ -1,0 +1,12 @@
+{
+  "collectedOn": "2026-10-17",
+  "week07": {
+    "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=28&assessmentId=156",
+    "question1AcceptedImage": "a7q1c.JPG",
+    "question3Prompt": "Which of the following are not stopwords in the following list? stopwords = [\"i\", \"me\", \"my\", \"myself\", \"we\", \"our\", \"ours\", \"ourselves\", \"you\", \"your\", \"yours\", \"yourself\", \"yourselves\", \"he\", \"him\", \"his\", \"himself\", \"she\", \"her\", \"hers\", \"herself\", \"it\", \"its\", \"itself\", \"they\", \"them\", \"their\", \"theirs\", \"themselves\", \"what\", \"which\", \"who\", \"whom\", \"this\", \"that\", \"these\", \"those\", \"am\", \"is\", \"are\", \"was\", \"were\", \"be\", \"been\", \"being\", \"have\", \"has\", \"had\", \"having\", \"do\", \"does\", \"did\", \"doing\", “apple”, \"a\", \"an\", \"the\", \"and\", \"but\", \"if\", \"or\", \"because\", \"as\", \"until\", \"while\", \"of\", \"at\", \"by\", \"for\", \"with\", \"about\", \"against\", \"between\", \"into\", \"through\", \"during\", \"before\", \"after\", \"above\", \"below\", \"to\", \"from\", \"up\", \"down\", \"in\", \"out\", \"on\", \"off\", \"over\", \"under\", \"again\", \"further\", \"then\", \"once\", \"here\", \"there\", \"when\", \"where\", \"why\", \"how\", \"all\", \"any\", \"both\", \"each\", \"few\", \"more\", \"most\", \"other\", \"some\", \"such\", \"no\", \"nor\", \"not\", \"only\", \"own\", \"same\", \"so\", \"than\", \"too\", \"very\", \"s\", \"t\", \"can\", \"will\", \"just\", \"don\", \"should\", \"now\"]"
+  },
+  "week09": {
+    "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=30&assessmentId=158",
+    "question10AcceptedAnswer": "In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart., In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week)., In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres), In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers."
+  }
+}

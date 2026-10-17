@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { createQuiz, quizKey, quizQuestions, quizzable, restoreQuiz } from '../lib/quiz.ts';
+import { createQuiz, quizKey, quizQuestions, quizzable, restoreQuiz, shuffleOptions } from '../lib/quiz.ts';
 const ai = JSON.parse(readFileSync(new URL('../data/responsible-safe-ai.json', import.meta.url), 'utf8'));
 
 test('a quiz shuffles every keyed question from the chosen weeks, capped at max', () => {
@@ -26,4 +26,20 @@ test('saved quizzes restore their questions and answers, and drop unknown data',
   assert.equal(restored.max, 4);
   for (const raw of [null, '{bad', '{}', JSON.stringify({ questionIds: ['nope'] })]) assert.equal(restoreQuiz(ai, raw), null);
   assert.equal(quizKey(ai.courseId), 'recall:quiz:noc26_cs145');
+});
+
+test('a quiz shuffles each question\'s options, keeping "all of the given" last', () => {
+  const quiz = createQuiz(ai, [1, 2, 3], null);
+  for (const { question: q } of quizQuestions(ai, quiz)) {
+    const original = quizzable(ai, [1, 2, 3]).find(o => o.id === q.id);
+    assert.deepEqual(q.options.map(o => o.id).sort(), original.options.map(o => o.id).sort());
+  }
+  const q = quizzable(ai, [1, 2, 3]).find(q => q.options.length > 2);
+  assert.notDeepEqual(shuffleOptions(q, () => 0), q.options.map(o => o.id));
+  const given = { options: [{ id: 'A', text: 'x' }, { id: 'B', text: 'y' }, { id: 'C', text: 'All of the given' }] };
+  assert.equal(shuffleOptions(given, () => 0).at(-1), 'C');
+  const restored = restoreQuiz(ai, JSON.stringify(quiz));
+  assert.deepEqual(restored.optionOrder, quiz.optionOrder);
+  const [first] = quiz.questionIds;
+  assert.deepEqual(restoreQuiz(ai, JSON.stringify({ ...quiz, optionOrder: { [first]: ['Z'] } })).optionOrder, {});
 });

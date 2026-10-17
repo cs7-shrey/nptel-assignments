@@ -1,0 +1,212 @@
+							198 text 1
+							199 text .
+							200 text What is the critical challenge that Latanya Sweeney's research on k-anonymity addresses?
+							201 container
+								202 text 1  Point
+							203 container
+								204 radio button (disabled) make datasets larger for analysis
+								205 text make datasets larger for analysis
+							206 container
+								207 radio button (disabled) eliminate data from datasets
+								208 text eliminate data from datasets
+							209 container
+								210 radio button (disabled) anonymise data without losing utility
+								211 text anonymise data without losing utility
+							212 container
+								213 radio button (disabled) ignore research utility for better privacy
+								214 text ignore research utility for better privacy
+							215 container
+							217 text Accepted answer is
+							218 text anonymise data without losing utility
+							219 text Suppose you're working on a project that involves analysing sales data for a chain of stores. You are provided with a list of daily sales figures for a particular product over some time. The task is to calculate various statistics such as the total sales, average sales, and maximum sales for that product. Answer the following questions [2-4]:
+							220 text 2
+							221 text .
+							222 text Which data structure can significantly enhance the efficiency and simplicity of your calculations?
+							223 container
+								224 text 1  Point
+							225 container
+								226 radio button (disabled) Python numpy list
+								227 text Python numpy list
+							228 container
+								229 radio button (disabled) Python numpy array
+								230 text Python numpy array
+							231 container
+								232 radio button (disabled) Python variables
+								233 text Python variables
+							234 container
+								235 radio button (disabled) None of these
+								236 text None of these
+							237 container
+							239 text Accepted answer is
+							240 text Python numpy array
+							241 text 3
+							242 text .
+							243 container
+								244 text Fill in the correct function  calculate_total_sales(sales_list) which calculates the total sales from a list of daily sales figures using NumPy  in the below code import numpy as np def calculate_total_sales(sales_list):  <<< write your code here >>>> return total_sales daily_sales = [1200, 1500, 1300, 1400, 1800, 1600] total_sales = calculate_total_sales(daily_sales) print("Total sales:", total_sales)
+							245 container
+								246 text 1  Point
+							247 container
+								248 radio button (disabled) sales_array = np.array(sales_list) total_sales = np.sum(sales_array)
+								249 container
+									250 text sales_array = np.array(sales_list) total_sales = np.sum(sales_array)
+							251 container
+								252 radio button (disabled) sales_array = np.list(sales_list) total_sales = np.sum(sales_array)
+								253 container
+									254 text sales_array = np.list(sales_list) total_sales = np.sum(sales_array)
+							255 container
+								256 radio button (disabled) sales_array = np.array(sales_list) total_sales = np.sum(np.concatenate(sales_array,sales_list))
+								257 container
+									258 text sales_array = np.array(sales_list) total_sales = np.sum(np.concatenate(sales_array,sales_list))
+							259 container
+								260 radio button (disabled) None of the above
+								261 text None of the above
+							262 container
+							264 text Accepted answer is
+							265 container
+								266 text sales_array = np.array(sales_list) total_sales = np.sum(sales_array)
+							267 text 4
+							268 text .
+							269 container
+								270 text Fill in the correct function  calculate_maximum_sales(sales_list) which calculates the maximum sales from a list of daily sales figures using NumPy  in the below code import numpy as np def calculate_maximum_sales(sales_list): << >>>> return max_sales daily_sales = [1200, 1500, 1300, 1400, 1800, 1600] maximum_sales = calculate_maximum_sales(daily_sales) print("Maximum sales:", maximum_sales)
+							271 container
+								272 text 1  Point
+							273 container
+								274 radio button (disabled) sales_array = np.array(sales_list) max_sales = np.max(sales_array)
+								275 container
+									276 text sales_array = np.array(sales_list) max_sales = np.max(sales_array)
+							277 container
+								278 radio button (disabled) sales_array = np.list(sales_list) max_sales = np.max(sales_array)
+								279 container
+									280 text sales_array = np.list(sales_list) max_sales = np.max(sales_array)
+							281 container
+								282 radio button (disabled) sales_array = np.array(sales_list) max_sales = np.max(np.concatenate(sales_array,sales_list))
+								283 container
+									284 text sales_array = np.array(sales_list) max_sales = np.max(np.concatenate(sales_array,sales_list))
+							285 container
+								286 radio button (disabled) None of the above
+								287 text None of the above
+							288 container
+							290 text Accepted answer is
+							291 container
+								292 text sales_array = np.array(sales_list) max_sales = np.max(sales_array)
+							293 container
+								294 text Imagine you have a NumPy array representing your monthly expenses for the past year. Each array element corresponds to the total expenses (in dollars) for a specific month. The task is to analyze and extract specific information. import numpy as np expenses_array = np.array([1200, 1500, 1300, 1400, 1800, 1600, 1400, 1250, 1350, 1500, 1700, 1900]) Answer the following questions from [5-7]:
+							295 text 5
+							296 text .
+							297 text How would you extract expenses for the second half of the year (July to December)?
+							298 container
+								299 text 1  Point
+							300 container
+								301 radio button (disabled) second_half_expenses = expenses_array[6:]
+								302 text second_half_expenses = expenses_array[6:]
+							303 container
+								304 radio button (disabled) second_half_expenses = expenses_array[5:]
+								305 text second_half_expenses = expenses_array[5:]
+							306 container
+								307 radio button (disabled) second_half_expenses = expenses_array[:12]
+								308 text second_half_expenses = expenses_array[:12]
+							309 container
+								310 radio button (disabled) second_half_expenses = expenses_array[7:]
+								311 text second_half_expenses = expenses_array[7:]
+							312 container
+							314 text Accepted answer is
+							315 text second_half_expenses = expenses_array[6:]
+							316 text 6
+							317 text .
+							318 text Identify the months where expenses exceeded $1600.
+							319 container
+								320 text 1  Point
+							321 container
+								322 radio button (disabled) high_expense_months = np.where(expenses_array < 1600)[0]
+								323 text high_expense_months = np.where(expenses_array < 1600)[0]
+							324 container
+								325 radio button (disabled) high_expense_months = np.where(expenses_array > 1600)[0]
+								326 text high_expense_months = np.where(expenses_array > 1600)[0]
+							327 container
+								328 radio button (disabled) high_expense_months = np.where(expenses_array > 1600))
+								329 text high_expense_months = np.where(expenses_array > 1600))
+							330 container
+								331 radio button (disabled) high_expense_months = np.where(expenses_array > 1600)[0] + 1
+								332 text high_expense_months = np.where(expenses_array > 1600)[0] + 1
+							333 container
+							335 text Accepted answer is
+							336 text high_expense_months = np.where(expenses_array > 1600)[0] + 1
+							337 text 7
+							338 text .
+							339 text Calculate the average expenses for the first quarter of year.
+							340 container
+								341 text 1  Point
+							342 container
+								343 radio button (disabled) first_quarter_average = np.mean(expenses_array[:4])
+								344 text first_quarter_average = np.mean(expenses_array[:4])
+							345 container
+								346 radio button (disabled) first_quarter_average = np.mean(expenses_array[:2])
+								347 text first_quarter_average = np.mean(expenses_array[:2])
+							348 container
+								349 radio button (disabled) first_quarter_average = np.mean(expenses_array[:3])
+								350 text first_quarter_average = np.mean(expenses_array[:3])
+							351 container
+								352 radio button (disabled) first_quarter_average = np.mean(expenses_array[:6])
+								353 text first_quarter_average = np.mean(expenses_array[:6])
+							354 container
+							356 text Accepted answer is
+							357 text first_quarter_average = np.mean(expenses_array[:3])
+							358 text 8
+							359 text .
+							360 container
+								361 text Choose the correct option for “result” import pandas as pd data = { 'Product': ['A', 'B', 'A', 'B', 'C', 'A', 'C', 'B', 'C', 'A'], 'Category': ['Electronics', 'Clothing', 'Electronics','Clothing', 'Home', 'Electronics', 'Home', 'Clothing', 'Home', 'Electronics'], 'Price': [500, 40, 600, 35, 100, 550, 80, 30, 90, 480] } sales_df = pd.DataFrame(data) grouped = sales_df.groupby('Category') result = grouped.agg({ 'Price': ['sum', 'mean'] }).reset_index() # Rename the columns result.columns = ['Category', 'Total Revenue', 'Average Price'] print(result)
+							362 container
+								363 text 1  Point
+							364 container
+								365 radio button (disabled) [image option]
+							366 container
+								367 radio button (disabled) [image option]
+							368 container
+								369 radio button (disabled) [image option]
+							370 container
+								371 radio button (disabled) None of the above
+								372 text None of the above
+							373 container
+							375 text Accepted answer is
+							376 text None of the above
+							377 text 9
+							378 text .
+							379 text What is the primary goal of k-anonymity in data privacy?
+							380 container
+								381 text 1  Point
+							382 container
+								383 radio button (disabled) Ensure that every attribute in the dataset is unique.
+								384 text Ensure that every attribute in the dataset is unique.
+							385 container
+								386 radio button (disabled) Prevent unauthorised access to the dataset.
+								387 text Prevent unauthorised access to the dataset.
+							388 container
+								389 radio button (disabled) Minimize the amount of data collected.
+								390 text Minimize the amount of data collected.
+							391 container
+								392 radio button (disabled) Making it difficult to link specific individuals to their records.
+								393 text Making it difficult to link specific individuals to their records.
+							394 container
+							396 text Accepted answer is
+							397 text Making it difficult to link specific individuals to their records.
+							398 text 10
+							399 text .
+							400 container
+								401 text What will be the output of the below code: import numpy as np import matplotlib.pyplot as plt time = np.linspace(0, 2 * np.pi, 1000) amplitude = 1.0 frequency = 1.0 sine_wave = amplitude * np.sin(frequency * time) plt.figure(figsize=(8, 6)) plt.plot(time, sine_wave, label='Sine Wave', color='blue') plt.title('Sine Wave') plt.xlabel('Time') plt.ylabel('Amplitude') plt.legend() plt.grid(True) plt.show()
+							402 container
+								403 text 1  Point
+							404 container
+								405 radio button (disabled) A plot consisting of sine wave
+								406 text A plot consisting of sine wave
+							407 container
+								408 radio button (disabled) A plot consisting of cosine wave
+								409 text A plot consisting of cosine wave
+							410 container
+								411 radio button (disabled) Logical error in code
+								412 text Logical error in code
+							413 container
+								414 radio button (disabled) None of the above
+								415 text None of the above
+							416 container
+							418 text Accepted answer is
+							419 text A plot consisting of sine wave

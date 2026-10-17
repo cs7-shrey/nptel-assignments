@@ -1,0 +1,399 @@
+{
+  "w01-q05": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w01-q05.png",
+        "alt": "Git file lifecycle with two blank state labels (a) and (b)."
+      }
+    ]
+  },
+  "w03-q08": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w03-q08.png",
+        "alt": "Cumulative response-time distribution for TweetCred."
+      }
+    ]
+  },
+  "w05-q03": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w05-q03.png",
+        "alt": "Example police report with the time and day highlighted in bold."
+      }
+    ]
+  },
+  "w05-q04": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w05-q04.png",
+        "alt": "Two examples of communication with police."
+      }
+    ]
+  },
+  "w07-q02": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w07-q02.jpg",
+        "alt": "Python Counter code using most_common(2)."
+      }
+    ]
+  },
+  "w07-q04": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w07-q04.jpg",
+        "alt": "Sample email claiming an eBay account will be suspended and asking for an update via a link."
+      }
+    ]
+  },
+  "w07-q08": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w07-q08.jpg",
+        "alt": "Social media post composer showing the audience for a public post."
+      }
+    ]
+  },
+  "w08-q03": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w08-q03.png",
+        "alt": "Cumulative distribution of changes to profile pictures, usernames and descriptions."
+      }
+    ]
+  },
+  "w09-q05": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w09-q05.png",
+        "alt": "Figure 2: cumulative distribution of mayorships, tips and dones per city."
+      }
+    ]
+  },
+  "w09-q08": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w09-q08.png",
+        "alt": "Sugar and fat intake per country chart."
+      }
+    ]
+  },
+  "w09-q10": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w09-q10.png",
+        "alt": "Figures 4 and 5: time intervals and displacements between consecutive tips and dones."
+      }
+    ],
+    "sourceAnswerText": "In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart., In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week)., In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres), In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers."
+  },
+  "w10-q03": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w10-q03.png",
+        "alt": "Location information granularity on Foursquare, Google+ and Twitter."
+      }
+    ]
+  },
+  "w10-q05": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w10-q05.png",
+        "alt": "Cumulative distribution and frequency of username changes."
+      }
+    ]
+  },
+  "w10-q08": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w10-q08.png",
+        "alt": "Two tweets about the Boston Marathon bombing, labelled (a) and (b)."
+      }
+    ]
+  },
+  "w10-q10": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w10-q10.png",
+        "alt": "Number of tweets plotted against hours after the Boston Marathon bombing."
+      }
+    ]
+  },
+  "w07-q01": {
+    "options": [
+      {
+        "id": "A",
+        "text": "Code snippet A",
+        "image": {
+          "src": "/questions/privacy-social-media/w07-q01-a.jpg",
+          "alt": "Python code option A for removing punctuation."
+        }
+      },
+      {
+        "id": "B",
+        "text": "Code snippet B",
+        "image": {
+          "src": "/questions/privacy-social-media/w07-q01-b.jpg",
+          "alt": "Python code option B for removing punctuation."
+        }
+      },
+      {
+        "id": "C",
+        "text": "Code snippet C",
+        "image": {
+          "src": "/questions/privacy-social-media/w07-q01-c.jpg",
+          "alt": "Python code option C for removing punctuation."
+        }
+      },
+      {
+        "id": "D",
+        "text": "None of these"
+      }
+    ],
+    "correctOptionIds": [
+      "C"
+    ],
+    "answerStatus": "official",
+    "answerSource": "course-accepted-answer",
+    "sourceAnswerText": "Image a7q1c.JPG (option C), verified in the saved current quiz accepted-answer section."
+  },
+  "w07-q03": {
+    "prompt": "Which of the following are not stopwords in the following list?",
+    "code": "stopwords = [\"i\", \"me\", \"my\", \"myself\", \"we\", \"our\", \"ours\", \"ourselves\", \"you\", \"your\", \"yours\", \"yourself\", \"yourselves\", \"he\", \"him\", \"his\", \"himself\", \"she\", \"her\", \"hers\", \"herself\", \"it\", \"its\", \"itself\", \"they\", \"them\", \"their\", \"theirs\", \"themselves\", \"what\", \"which\", \"who\", \"whom\", \"this\", \"that\", \"these\", \"those\", \"am\", \"is\", \"are\", \"was\", \"were\", \"be\", \"been\", \"being\", \"have\", \"has\", \"had\", \"having\", \"do\", \"does\", \"did\", \"doing\", “apple”, \"a\", \"an\", \"the\", \"and\", \"but\", \"if\", \"or\", \"because\", \"as\", \"until\", \"while\", \"of\", \"at\", \"by\", \"for\", \"with\", \"about\", \"against\", \"between\", \"into\", \"through\", \"during\", \"before\", \"after\", \"above\", \"below\", \"to\", \"from\", \"up\", \"down\", \"in\", \"out\", \"on\", \"off\", \"over\", \"under\", \"again\", \"further\", \"then\", \"once\", \"here\", \"there\", \"when\", \"where\", \"why\", \"how\", \"all\", \"any\", \"both\", \"each\", \"few\", \"more\", \"most\", \"other\", \"some\", \"such\", \"no\", \"nor\", \"not\", \"only\", \"own\", \"same\", \"so\", \"than\", \"too\", \"very\", \"s\", \"t\", \"can\", \"will\", \"just\", \"don\", \"should\", \"now\"]"
+  },
+  "w04-q08": {
+    "options": [
+      {
+        "id": "A",
+        "text": "Category | Total Revenue | Average Price\nclothing | 105 | 35.00\nelectronics | 1630 | 543.33\nhome | 270 | 90.00",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "Category | Total Revenue | Average Price\nclothing | 1630 | 35.00\nelectronics | 105 | 543.33\nhome | 270 | 90.00",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "Category | Total Revenue | Average Price\nclothing | 105 | 35.00\nelectronics | 270 | 90.00\nhome | 1630 | 543.33",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ],
+    "prompt": "Choose the correct option for “result”",
+    "code": "import pandas as pd\n\ndata = {\n    'Product': ['A', 'B', 'A', 'B', 'C', 'A', 'C', 'B', 'C', 'A'],\n    'Category': ['Electronics', 'Clothing', 'Electronics', 'Clothing', 'Home', 'Electronics', 'Home', 'Clothing', 'Home', 'Electronics'],\n    'Price': [500, 40, 600, 35, 100, 550, 80, 30, 90, 480]\n}\nsales_df = pd.DataFrame(data)\ngrouped = sales_df.groupby('Category')\nresult = grouped.agg({'Price': ['sum', 'mean']}).reset_index()\n# Rename the columns\nresult.columns = ['Category', 'Total Revenue', 'Average Price']\nprint(result)"
+  },
+  "w04-q03": {
+    "prompt": "Fill in the correct function calculate_total_sales(sales_list) which calculates the total sales from a list of daily sales figures using NumPy in the below code",
+    "code": "import numpy as np\n\ndef calculate_total_sales(sales_list):\n    # Write your code here\n    return total_sales\n\ndaily_sales = [1200, 1500, 1300, 1400, 1800, 1600]\ntotal_sales = calculate_total_sales(daily_sales)\nprint(\"Total sales:\", total_sales)",
+    "options": [
+      {
+        "id": "A",
+        "text": "sales_array = np.array(sales_list)\ntotal_sales = np.sum(sales_array)",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "sales_array = np.list(sales_list)\ntotal_sales = np.sum(sales_array)",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "sales_array = np.array(sales_list)\ntotal_sales = np.sum(np.concatenate(sales_array,sales_list))",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ]
+  },
+  "w04-q04": {
+    "prompt": "Fill in the correct function calculate_maximum_sales(sales_list) which calculates the maximum sales from a list of daily sales figures using NumPy in the below code",
+    "code": "import numpy as np\n\ndef calculate_maximum_sales(sales_list):\n    # Write your code here\n    return max_sales\n\ndaily_sales = [1200, 1500, 1300, 1400, 1800, 1600]\nmaximum_sales = calculate_maximum_sales(daily_sales)\nprint(\"Maximum sales:\", maximum_sales)",
+    "options": [
+      {
+        "id": "A",
+        "text": "sales_array = np.array(sales_list)\nmax_sales = np.max(sales_array)",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "sales_array = np.list(sales_list)\nmax_sales = np.max(sales_array)",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "sales_array = np.array(sales_list)\nmax_sales = np.max(np.concatenate(sales_array,sales_list))",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ]
+  },
+  "w04-q10": {
+    "prompt": "What will be the output of the below code:",
+    "code": "import numpy as np\nimport matplotlib.pyplot as plt\n\ntime = np.linspace(0, 2 * np.pi, 1000)\namplitude = 1.0\nfrequency = 1.0\nsine_wave = amplitude * np.sin(frequency * time)\nplt.figure(figsize=(8, 6))\nplt.plot(time, sine_wave, label='Sine Wave', color='blue')\nplt.title('Sine Wave')\nplt.xlabel('Time')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.grid(True)\nplt.show()"
+  },
+  "w02-q08": {
+    "prompt": "Given a MongoDB collection named \"employees\" with the following document structure: \n\nWhat MongoDB query would you use to retrieve all employees with a salary greater than or equal to 60000?",
+    "code": "{ \"_id\": ObjectId(\"615243d88f0ae43f255874c1\"), \"name\": \"Ram\", \"department\": \"CSE\", \"age\": 35, \"salary\": 50000 }",
+    "options": [
+      {
+        "id": "A",
+        "text": "db.employees.find({ \"salary\": { $gte: 60000 } })",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "db.employees.find({ \"salary\": { $gt: 60000 } })",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "db.employees.find({ \"salary\": { $lte: 60000 } })",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "db.employees.find({ \"salary\": { $lt: 60000 } })",
+        "code": true
+      }
+    ]
+  },
+  "w02-q09": {
+    "prompt": "You are developing a social media platform, and you have a database table, \"posts\" to store user posts. The \"posts\" table schema is given below: \n\nNow, you want to retrieve the 5 most recent posts made by a specific user with the user ID \"12345\". Which SQL query would you use?",
+    "code": "CREATE TABLE posts ( post_id INT PRIMARY KEY, user_id INT, post_content TEXT, post_date DATETIME );",
+    "options": [
+      {
+        "id": "A",
+        "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id DESC LIMIT 5;",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date ASC LIMIT 5;",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id ASC LIMIT 5;",
+        "code": true
+      }
+    ]
+  },
+  "w02-q04": {
+    "options": [
+      {
+        "id": "A",
+        "text": "import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').hot(limit=10) for post in posts: print(post.title)",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "import requests url = \"https://www.reddit.com/r/worldnews/new.json?limit=10\" response = requests.get(url) data = response.json() for post in data['data']['children']: print(post['data']['title'])",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').new(limit=10) for post in posts: print(post.title)",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "None of the above"
+      }
+    ]
+  },
+  "w04-q05": {
+    "options": [
+      {
+        "id": "A",
+        "text": "second_half_expenses = expenses_array[6:]",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "second_half_expenses = expenses_array[5:]",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "second_half_expenses = expenses_array[:12]",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "second_half_expenses = expenses_array[7:]",
+        "code": true
+      }
+    ]
+  },
+  "w04-q06": {
+    "options": [
+      {
+        "id": "A",
+        "text": "high_expense_months = np.where(expenses_array < 1600)[0]",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "high_expense_months = np.where(expenses_array > 1600)[0]",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "high_expense_months = np.where(expenses_array > 1600))",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "high_expense_months = np.where(expenses_array > 1600)[0] + 1",
+        "code": true
+      }
+    ]
+  },
+  "w04-q07": {
+    "options": [
+      {
+        "id": "A",
+        "text": "first_quarter_average = np.mean(expenses_array[:4])",
+        "code": true
+      },
+      {
+        "id": "B",
+        "text": "first_quarter_average = np.mean(expenses_array[:2])",
+        "code": true
+      },
+      {
+        "id": "C",
+        "text": "first_quarter_average = np.mean(expenses_array[:3])",
+        "code": true
+      },
+      {
+        "id": "D",
+        "text": "first_quarter_average = np.mean(expenses_array[:6])",
+        "code": true
+      }
+    ]
+  },
+  "w06-q10": {
+    "figures": [
+      {
+        "src": "/questions/privacy-social-media/w06-q10.jpg",
+        "alt": "Directed social-network diagram showing nodes A, B, C and S, with following relationships and labels for spam targets and spam followers."
+      }
+    ]
+  }
+}

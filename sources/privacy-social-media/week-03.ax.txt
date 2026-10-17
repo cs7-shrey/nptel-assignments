@@ -1,0 +1,177 @@
+							185 text 1 .
+							186 container
+								187 text Consider the below response: “To this segment, consumer privacy is very important; they feel that they have been victims of privacy invasions, they are pessimistic about the future of privacy protection, and about a third of them favour creating a general federal regulatory agency on consumer privacy.” To which of the three Westin Privacy categories is "they" in the above sentence most likely to fall?
+							188 container
+								189 text 1  Point
+							190 container
+								191 radio button (disabled) Fundamentalists
+								192 text Fundamentalists
+							193 container
+								194 radio button (disabled) Pragmatists
+								195 text Pragmatists
+							196 container
+								197 radio button (disabled) Unconcerned
+								198 text Unconcerned
+							199 container
+								200 radio button (disabled) None of the above
+								201 text None of the above
+							202 container
+							204 text Accepted answer is Fundamentalists 2 .
+							205 text Which of the following features is used by the credibility model- TweetCred?
+							206 container
+								207 text 1  Point
+							208 container
+								209 Tick box (disabled) Tweet links
+								210 text Tweet links
+							211 container
+								212 Tick box (disabled) Tweet Author
+								213 text Tweet Author
+							214 container
+								215 Tick box (disabled) Tweet network
+								216 text Tweet network
+							217 container
+								218 Tick box (disabled) Tweet meta data
+								219 text Tweet meta data
+							220 container
+							222 text Accepted answer is Tweet links, Tweet Author, Tweet network, Tweet meta data 3 .
+							223 text Cronbach’s alpha
+							224 container
+								225 text 1  Point
+							226 container
+								227 radio button (disabled) determines the statistical significance of a research study.
+								228 text determines the statistical significance of a research study.
+							229 container
+								230 radio button (disabled) assess the reliability and internal consistency of a questionnaire.
+								231 text assess the reliability and internal consistency of a questionnaire.
+							232 container
+								233 radio button (disabled) analyze the effect size of an intervention.
+								234 text analyze the effect size of an intervention.
+							235 container
+								236 radio button (disabled) calculate the standard deviation of a sample population.
+								237 text calculate the standard deviation of a sample population.
+							238 container
+							240 text Accepted answer is assess the reliability and internal consistency of a questionnaire. 4 .
+							241 container
+								242 text Suppose we have five tweets (TW1, TW2, TW3, TW4, and TW5) with their relevances based on user feedback or relevance labels: TW1: Highly relevant tweet (Relevance = 2) TW2: Moderately relevant tweet (Relevance = 1) TW3: Not relevant tweet (Relevance = 0) TW4: Relevant tweet (Relevance = 1) TW5: Highly relevant tweet (Relevance = 2) Now, let's assume the ranking algorithm generates a ranked list of tweets: Rank 1: TW5 (Highly relevant tweet) Rank 2: TW1 (Highly relevant tweet) Rank 3: TW3 (Not relevant tweet) Rank 4: TW2 (Moderately relevant tweet) Rank 5: TW4 (Relevant tweet) What would be NDCG@5 for this ranked list of tweets?
+							243 container
+								244 text 1  Point
+							245 container
+								246 radio button (disabled) 0.5
+								247 text 0.5
+							248 container
+								249 radio button (disabled) .513
+								250 text .513
+							251 container
+								252 radio button (disabled) .975
+								253 text .975
+							254 container
+								255 radio button (disabled) None of the above
+								256 text None of the above
+							257 container
+							259 text Accepted answer is .975
+							260 container
+								261 text Read through the report “Privacy in India: Attitudes and Awareness V 2.0” at
+								262 link Description: https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf, Value: cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf
+								263 text And answer the following questions [5-7].
+							264 text 5 .
+							265 text How many participants have changed their default settings on their social network?
+							266 container
+								267 text 1  Point
+							268 container
+								269 radio button (disabled) 75%
+								270 text 75%
+							271 container
+								272 radio button (disabled) 60%
+								273 text 60%
+							274 container
+								275 radio button (disabled) 50%
+								276 text 50%
+							277 container
+								278 radio button (disabled) 25%
+								279 text 25%
+							280 container
+							282 text Accepted answer is 50% 6 .
+							283 text What is the primary purpose of a Focus Group Discussion (FGD) in the above report?
+							284 container
+								285 text 1  Point
+							286 container
+								287 radio button (disabled) To conduct one-on-one interviews with participants.
+								288 text To conduct one-on-one interviews with participants.
+							289 container
+								290 radio button (disabled) To collect quantitative data through surveys and questionnaires.
+								291 text To collect quantitative data through surveys and questionnaires.
+							292 container
+								293 radio button (disabled) To observe participants' behaviours in a controlled environment.
+								294 text To observe participants' behaviours in a controlled environment.
+							295 container
+								296 radio button (disabled) To facilitate group discussions and gather qualitative insights.
+								297 text To facilitate group discussions and gather qualitative insights.
+							298 container
+							300 text Accepted answer is To facilitate group discussions and gather qualitative insights. 7 .
+							301 text “When you hear the word privacy, what comes to mind”. Which is the most common respondent answer according to the above report?
+							302 container
+								303 text 1  Point
+							304 container
+								305 radio button (disabled) Information Privacy
+								306 text Information Privacy
+							307 container
+								308 radio button (disabled) Bodily privacy
+								309 text Bodily privacy
+							310 container
+								311 radio button (disabled) Communication privacy
+								312 text Communication privacy
+							313 container
+								314 radio button (disabled) Territorial privacy
+								315 text Territorial privacy
+							316 container
+							318 text Accepted answer is Information Privacy 8 . Consider the below graph and choose the correct option:
+							319 container
+								320 text 1  Point
+							321 container
+								322 radio button (disabled) For 82% of the users, the response time was less than 2 seconds, and for 99%, the response time was under 10 seconds.
+								323 text For 82% of the users, the response time was less than 2 seconds, and for 99%, the response time was under 10 seconds.
+							324 container
+								325 radio button (disabled) For 99% of the users, the response time was less than 6 seconds, and for 100%, the response time was under 10 seconds.
+								326 text For 99% of the users, the response time was less than 6 seconds, and for 100%, the response time was under 10 seconds.
+							327 container
+								328 radio button (disabled) For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds.
+								329 text For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds.
+							330 container
+								331 radio button (disabled) None of the above
+								332 text None of the above
+							333 container
+							335 text Accepted answer is For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds. 9 .
+							336 text What is the Likert scale?
+							337 container
+								338 text 1  Point
+							339 container
+								340 radio button (disabled) rating scale in surveys and questionnaires
+								341 text rating scale in surveys and questionnaires
+							342 container
+								343 radio button (disabled) gives the score for any real-time tweets
+								344 text gives the score for any real-time tweets
+							345 container
+								346 radio button (disabled) Interannotator agreement
+								347 text Interannotator agreement
+							348 container
+								349 radio button (disabled) None of the above
+								350 text None of the above
+							351 container
+							353 text Accepted answer is rating scale in surveys and questionnaires 10 .
+							354 text TweetCred is
+							355 container
+								356 text 1  Point
+							357 container
+								358 radio button (disabled) a real-time web-based system to automatically evaluate the credibility of content on Twitter.
+								359 text a real-time web-based system to automatically evaluate the credibility of content on Twitter.
+							360 container
+								361 radio button (disabled) a real-time app-based system to automatically evaluate the score of tweets on Twitter.
+								362 text a real-time app-based system to automatically evaluate the score of tweets on Twitter.
+							363 container
+								364 radio button (disabled) a real-time app-based system to automatically assess the quality of content on Twitter.
+								365 text a real-time app-based system to automatically assess the quality of content on Twitter.
+							366 container
+								367 radio button (disabled) None of the above
+								368 text None of the above
+							369 container
+							371 text Accepted answer is a real-time web-based system to automatically evaluate the credibility of content on Twitter.

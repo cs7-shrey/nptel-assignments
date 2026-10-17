@@ -1,0 +1,173 @@
+							206 text 1 .
+							207 text Which statement(s) is/are true?
+							208 container
+								209 text 1  Point
+							210 container
+								211 Tick box (disabled) The authors perform a large-scale inference study in three popular social networks: Foursquare, Google+ and Twitter.
+								212 text The authors perform a large-scale inference study in three popular social networks: Foursquare, Google+ and Twitter.
+							213 container
+								214 Tick box (disabled) The paper is looking at different social networks not only Foursquare.
+								215 text The paper is looking at different social networks not only Foursquare.
+							216 container
+								217 Tick box (disabled) The dataset used in the paper comprises many attributes including venues where the location must be defined filling the open text fields, (limited in 30 and 127 characters, respectively), and setting a pin in the map.
+								218 text The dataset used in the paper comprises many attributes including venues where the location must be defined filling the open text fields, (limited in 30 and 127 characters, respectively), and setting a pin in the map.
+							219 container
+								220 Tick box (disabled) None of the above
+								221 text None of the above
+							222 container
+							224 text Accepted answer is The authors perform a large-scale inference study in three popular social networks: Foursquare, Google+ and Twitter., The paper is looking at different social networks not only Foursquare., The dataset used in the paper comprises many attributes including venues where the location must be defined filling the open text fields, (limited in 30 and 127 characters, respectively), and setting a pin in the map. 2 .
+							225 text What is a valid AGI?
+							226 container
+								227 text 1  Point
+							228 container
+								229 radio button (disabled) Valid Artificial General intelligence
+								230 text Valid Artificial General intelligence
+							231 container
+								232 radio button (disabled) Valid Ambigious Geographical Information
+								233 text Valid Ambigious Geographical Information
+							234 container
+								235 radio button (disabled) Valid Artificial Geographical Interface
+								236 text Valid Artificial Geographical Interface
+							237 container
+								238 radio button (disabled) None of the above
+								239 text None of the above
+							240 container
+							242 text Accepted answer is Valid Ambigious Geographical Information 3 . Given the following figure depicts the quality of valid UGI, what is the correct inference(s) from the figure ?
+							243 container
+								244 text 1  Point
+							245 container
+								246 Tick box (disabled) In figure (a), the vast majority (80%) of Foursquare users and venues have location information at the city level.
+								247 text In figure (a), the vast majority (80%) of Foursquare users and venues have location information at the city level.
+							248 container
+								249 Tick box (disabled) In figure (b), majority of users provide home location information at country level
+								250 text In figure (b), majority of users provide home location information at country level
+							251 container
+								252 Tick box (disabled) In figure (c), 60% of the users have provided their location information at the district level
+								253 text In figure (c), 60% of the users have provided their location information at the district level
+							254 container
+								255 Tick box (disabled) In figure (b), 80% of the users have provided location information at city level.
+								256 text In figure (b), 80% of the users have provided location information at city level.
+							257 container
+							259 text Accepted answer is In figure (a), the vast majority (80%) of Foursquare users and venues have location information at the city level., In figure (b), 80% of the users have provided location information at city level. Please go through the following paper, “On the dynamics of username change behavior on Twitter”
+							260 link Description: https://drive.google.com/file/d/1z5NcQ4bMbZK5Rb7I21eogjz-4Kic0CGi/view?usp=drive_link, Value: drive.google.com/file/d/1z5NcQ4bMbZK5Rb7I21eogjz-4Kic0CGi/view?usp=drive_link
+							261 text Answer the following questions from 4-6
+							262 text 4 .
+							263 text From the overall conclusion of the paper, which of the statements is true
+							264 container
+								265 text 1  Point
+							266 container
+								267 radio button (disabled) The set of people who change their handle many times is slightly larger than those who change their handle a very small number of times.
+								268 text The set of people who change their handle many times is slightly larger than those who change their handle a very small number of times.
+							269 container
+								270 radio button (disabled) The set of people who change their handle many times is slightly smaller than the set of people who change their handle very less number of times.
+								271 text The set of people who change their handle many times is slightly smaller than the set of people who change their handle very less number of times.
+							272 container
+								273 radio button (disabled) The set of people who change their handle many times is roughly equal to the set of people who do not change their handle.
+								274 text The set of people who change their handle many times is roughly equal to the set of people who do not change their handle.
+							275 container
+								276 radio button (disabled) None of the above
+								277 text None of the above
+							278 container
+							280 text Accepted answer is The set of people who change their handle many times is slightly smaller than the set of people who change their handle very less number of times. 5 . From the following figure, what is the correct inference?
+							281 container
+								282 text 1  Point
+							283 container
+								284 radio button (disabled) 20% of users rarely change user names in short intervals and 80% change user names frequently after longer intervals.
+								285 text 20% of users rarely change user names in short intervals and 80% change user names frequently after longer intervals.
+							286 container
+								287 radio button (disabled) 80% of users rarely change user names in short intervals, and 20% change user names frequently after longer intervals.
+								288 text 80% of users rarely change user names in short intervals, and 20% change user names frequently after longer intervals.
+							289 container
+								290 radio button (disabled) 35% of users choose a user name unrelated to an old one, and 65% of users reuse an old user name.
+								291 text 35% of users choose a user name unrelated to an old one, and 65% of users reuse an old user name.
+							292 container
+								293 radio button (disabled) 20% of users frequently change user names in short intervals, and 80% change user name rarely after longer intervals.
+								294 text 20% of users frequently change user names in short intervals, and 80% change user name rarely after longer intervals.
+							295 container
+							297 text Accepted answer is 20% of users frequently change user names in short intervals, and 80% change user name rarely after longer intervals. 6 .
+							298 text What is the correct observation in the paper?
+							299 container
+								300 text 1  Point
+							301 container
+								302 radio button (disabled) This paper aims at finding how and why users change their usernames within a social network like Twitter.
+								303 text This paper aims at finding how and why users change their usernames within a social network like Twitter.
+							304 container
+								305 radio button (disabled) Most users created new usernames unrelated to the old username when they changed usernames within a social network.
+								306 text Most users created new usernames unrelated to the old username when they changed usernames within a social network.
+							307 container
+								308 radio button (disabled) The authors believe that unrelated usernames over time could be credited to the absence of cognitive load to remember a past dumped username.
+								309 text The authors believe that unrelated usernames over time could be credited to the absence of cognitive load to remember a past dumped username.
+							310 container
+								311 radio button (disabled) All of the above
+								312 text All of the above
+							313 container
+							315 text Accepted answer is All of the above Please go through the following paper, “Boston Marathon Analyzing Fake Content on Twitter”
+							316 link Description: https://drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link , Value: drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link
+							317 text Answer the following questions from 7-10
+							318 text 7 .
+							319 text Which of the following statements is true about Boston blasts?
+							320 container
+								321 text 1  Point
+							322 container
+								323 radio button (disabled) Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT
+								324 text Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT
+							325 container
+								326 radio button (disabled) Twin blasts occurred during the Boston Marathon on April 15th, 2009 at 18:50 GMT
+								327 text Twin blasts occurred during the Boston Marathon on April 15th, 2009 at 18:50 GMT
+							328 container
+								329 radio button (disabled) Four people were killed and 264 were injured in the incident
+								330 text Four people were killed and 264 were injured in the incident
+							331 container
+								332 radio button (disabled) All of the above
+								333 text All of the above
+							334 container
+							336 text Accepted answer is Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT 8 . What can be depicted from the tweets shared below?
+							337 container
+								338 text 1  Point
+							339 container
+								340 radio button (disabled) Both tweets contain Fake content.
+								341 text Both tweets contain Fake content.
+							342 container
+								343 radio button (disabled) Figure (a) depicts a tweet from a fake charity profile.
+								344 text Figure (a) depicts a tweet from a fake charity profile.
+							345 container
+								346 radio button (disabled) Figure (b) depicts a rumour about a child being killed in the blasts.
+								347 text Figure (b) depicts a rumour about a child being killed in the blasts.
+							348 container
+								349 radio button (disabled) All of the above
+								350 text All of the above
+							351 container
+							353 text Accepted answer is All of the above 9 .
+							354 text What are the major contributions of the figure?
+							355 container
+								356 text 1  Point
+							357 container
+								358 Tick box (disabled) The authors characterised the spread of fake content on Twitter using temporal, source and user attributes.
+								359 text The authors characterised the spread of fake content on Twitter using temporal, source and user attributes.
+							360 container
+								361 Tick box (disabled) The authors used linear regression to predict how viral a rumour would be in the future based on its current user characteristics.
+								362 text The authors used linear regression to predict how viral a rumour would be in the future based on its current user characteristics.
+							363 container
+								364 Tick box (disabled) The authors analysed the activity and interaction graphs for the suspended user profiles created during the Boston blasts.
+								365 text The authors analysed the activity and interaction graphs for the suspended user profiles created during the Boston blasts.
+							366 container
+								367 Tick box (disabled) None of the above
+								368 text None of the above
+							369 container
+							371 text Accepted answer is The authors characterised the spread of fake content on Twitter using temporal, source and user attributes., The authors used linear regression to predict how viral a rumour would be in the future based on its current user characteristics., The authors analysed the activity and interaction graphs for the suspended user profiles created during the Boston blasts. 10 . What does the following figure depict?
+							372 container
+								373 text 1  Point
+							374 container
+								375 radio button (disabled) The figure shows the temporal distribution of tweets after the Boston blast
+								376 text The figure shows the temporal distribution of tweets after the Boston blast
+							377 container
+								378 radio button (disabled) The figure shows the spatial distribution of tweets after the Boston blast
+								379 text The figure shows the spatial distribution of tweets after the Boston blast
+							380 container
+								381 radio button (disabled) Both of the above
+								382 text Both of the above
+							383 container
+								384 radio button (disabled) None of the above
+								385 text None of the above
+							386 container
+							388 text Accepted answer is The figure shows the temporal distribution of tweets after the Boston blast

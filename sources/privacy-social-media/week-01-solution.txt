@@ -1,0 +1,262 @@
+NPTEL / PSOSM 2026
+
+Privacy and Security in Online Social Media
+Week 1 — Assignment Solutions with Detailed Explanations
+
+
+Q1. Which sequence correctly hosts a local Git repository on GitHub?
+ • (a) git push origin master → git remote -v → git remote add origin …
+ ▸ (b) git remote add origin … → git remote -v → git push origin master
+ • (c) git remote -v → git clone → git push
+ • (d) git clone → git remote add → git status
+
+  Correct answer: (b) git remote add origin … → git remote -v → git push origin master
+
+EXPLANATION
+A repository created locally with git init has no idea that GitHub exists. Publishing it is therefore a three-step
+idea: register the remote → verify it → upload the commits.
+
+  • git remote add origin <URL> — creates a bookmark (a “remote”) named origin that points at the empty
+     repository you created on GitHub. Nothing is transferred yet; this only writes the URL into .git/config.
+  • git remote -v — a sanity check. It prints the fetch and push URLs so you can confirm the remote was
+     added correctly before you push.
+  • git push origin master — uploads your local commits on the master branch to the origin remote. Adding
+     -u the first time sets the upstream so that later a bare git push suffices.
+
+
+Q2. Which of the following statement(s) is/are true about anonymous social
+networks?
+ ▸ (a) Anonymous social networks help in providing enhanced privacy and anonymity.
+ ▸ (b) Anonymous social networks provide more freedom of expression.
+ ▸ (c) Anonymous social networks reduce the fear of judgment or social consequences.
+ • (d) None of the above
+
+  Correct answer: (a), (b) and (c) — all three statements are true
+
+EXPLANATION
+An anonymous social network (Whisper, Secret, Yik Yak, Sarahah, Blind, 4chan) deliberately breaks the link
+between content and real-world identity. There is no real-name policy, often no persistent profile, and
+frequently no follower graph — so a post cannot be traced back to the author by other users.
+
+  • (a) Privacy and anonymity: posts are not attached to a verified identity, so the reputational trail that
+     exists on Facebook or LinkedIn simply is not created.
+
+
+
+
+                                        PSOSM 2026 — Week 1 Solutions | Page 1
+  • (b) Freedom of expression: this is exactly why such platforms are used for stigmatised or risky topics —
+     mental health, sexuality, workplace grievances, whistle-blowing, political dissent under authoritarian
+     regimes.
+  • (c) Reduced fear of judgment: on named platforms your post is seen simultaneously by family,
+     employer, classmates and strangers — the “context collapse” problem. Anonymity removes that
+     audience pressure and the self-censorship that comes with it.
+Since all three are correct, (d) “None of the above” cannot be selected.
+
+Important caveat for the exam: the same anonymity is a double-edged sword. Removing accountability also
+fuels trolling, hate speech, doxxing and cyberbullying, and “anonymous” rarely means untraceable — IP
+addresses, device fingerprints, timestamps and writing style can still de-anonymise a user.
+
+
+Q3. Choose the correct option to create a virtual environment in Python
+ ▸ (a) python3 -m venv
+ • (b) python3 venv -m
+ • (c) virtualpython3 -m venv
+ • (d) virtualenv python3 -m venv myenv
+
+  Correct answer: (a) python3 -m venv
+
+EXPLANATION
+The -m flag tells the interpreter to “run a library module as a script”. venv has been part of the Python
+standard library since 3.3, so the grammar is fixed: python3 (interpreter) -m venv (module to run) <path>
+(where to create it).
+
+  • Create: python3 -m venv psosm_env
+  • Activate (Linux/macOS): source psosm_env/bin/activate
+  • Activate (Windows): psosm_env\Scripts\activate
+  • Deactivate: deactivate
+
+
+Q4. Why is it important to create a virtual environment in Python?
+
+▸ (a) Creating a virtual environment isolates project dependencies and prevents conflicts
+between different projects.
+ • (b) Creating a virtual environment enhances the performance of Python programs.
+ • (c) Creating a virtual environment to ensure compatibility with different operating systems.
+ • (d) Creating a virtual environment optimises memory usage in Python applications.
+
+  Correct answer: (a) Creating a virtual environment isolates project dependencies and
+  prevents conflicts between different projects.
+
+EXPLANATION
+
+
+
+                                       PSOSM 2026 — Week 1 Solutions | Page 2
+Q5. Fill in the correct option to stage files/directories
+
+
+
+
+ • (a) Modified, Unmodified
+ ▸ (b) Unmodified, Modified
+ • (c) Modified, Unstaged
+ • (d) Modified, Tracked
+
+  Correct answer: (b) Unmodified, Modified
+
+EXPLANATION
+Every file in a Git working directory is either untracked (Git has never recorded it) or tracked. A tracked file
+then sits in exactly one of three states, giving the standard four-box lifecycle:
+
+  • Untracked — a brand-new file Git is not watching. git add starts tracking it.
+  • Unmodified — the file on disk is identical to the last committed snapshot. Nothing to do.
+  • Modified — you edited it, so it now differs from the last commit but the change has not been marked
+     for the next commit.
+  • Staged — git add <file> has copied the current version into the staging area (index); git commit will
+     snapshot exactly what is staged, after which the file returns to Unmodified.
+So the two blanks, in order, are Unmodified then Modified.
+
+
+Q6. Which command lists all the remote addresses associated with a local repository?
+ ▸ (a) git remote -v
+ • (b) git pull origin master
+ • (c) git stash
+ • (d) git checkout
+
+
+
+
+                                        PSOSM 2026 — Week 1 Solutions | Page 3
+  Correct answer: (a) git remote -v
+
+EXPLANATION
+git remote on its own prints only the short names of the configured remotes (typically just origin). Adding -v
+(verbose) prints the full URL for each, and separately for the fetch and push directions:
+
+    origin https://github.com/user/psosm.git (fetch)
+    origin https://github.com/user/psosm.git (push)
+
+This is the standard way to confirm that git remote add worked and that you are about to push to the right
+repository.
+
+WHY THE OTHER OPTIONS FAIL
+  • (b) git pull origin master downloads and merges commits from the remote — it transfers data rather
+     than listing configuration.
+  • (c) git stash shelves uncommitted local changes so you can switch context with a clean working tree.
+  • (d) git checkout switches branches or restores files from a commit. (Note: Git commands are case-
+     sensitive and lower-case — “Git stash” as written in the options would not even run.)
+
+
+Q7. Which of the following concept is closely related to the fact that
+infrequent, arms-length relationships are more beneficial for employment
+opportunities, promotions, and wages than strong ties?
+ • (a) Six degrees of separation
+ • (b) Small world phenomenon
+ ▸ (c) Strength of weak ties
+ • (d) None of the above
+
+  Correct answer: (c) Strength of weak ties
+
+EXPLANATION
+This is Mark Granovetter’s classic 1973 paper “The Strength of Weak Ties”. Granovetter measured tie
+strength by time spent together, emotional intensity, intimacy and reciprocity. Strong ties are close friends
+and family; weak ties are acquaintances you meet rarely — exactly the “infrequent, arms-length”
+relationships in the question.
+
+The counter-intuitive finding, and the reason weak ties win for job leads:
+
+  • Your strong ties move in the same circles you do, so they mostly know what you already know — their
+     information is redundant.
+  • Weak ties belong to other dense clusters, so they carry novel, non-redundant information —
+     unadvertised vacancies, an internal referral, a new opportunity.
+
+
+
+
+                                       PSOSM 2026 — Week 1 Solutions | Page 4
+  • Structurally, weak ties act as bridges between clusters. Remove them and the network fragments into
+     disconnected islands; they are the links that let information travel far.
+In his survey of professional and technical workers in Boston, most people who found a job through a
+personal contact had heard about it from someone they saw only occasionally or rarely — not from a close
+friend. This is why LinkedIn’s second- and third-degree connections are so valuable.
+
+
+Q8. Which of the following is/are shortcomings of online social media platforms?
+ ▸ (a) Spread of misinformation
+ ▸ (b) Cyberbullying and harassment
+ ▸ (c) Addiction and time consumption
+ ▸ (d) Limited control over privacy
+
+  Correct answer: All four — (a), (b), (c) and (d)
+
+EXPLANATION
+Each option names a well-documented harm, and together they cover the four themes the course returns to
+repeatedly.
+
+  • (a) Misinformation: there is no editorial gatekeeper, and engagement-driven ranking rewards content
+     that is novel and emotionally charged. Vosoughi, Roy and Aral (Science, 2018) found false stories on
+     Twitter spread farther, faster and more broadly than true ones — largely because humans, not bots,
+     chose to reshare them.
+  • (b) Cyberbullying and harassment: abuse online is persistent (it does not end at the school gate),
+     scalable (a mob can pile on instantly), often anonymous, and permanently archived. Doxxing, revenge
+     porn and coordinated brigading are extreme forms.
+  • (c) Addiction and time consumption: infinite scroll, autoplay, streaks, notifications and unpredictable
+     “likes” form a variable-reward loop that is deliberately habit-forming, with knock-on effects on sleep,
+     attention and social comparison.
+  • (d) Limited privacy control: defaults are permissive, policies are long and opaque, data is shared with
+     third parties and advertisers, and sensitive attributes can be inferred from innocuous behaviour.
+     Individually harmless posts can also be aggregated to re-identify a user.
+Because none of the four can be excluded, the answer is all of them.
+
+
+
+
+                                        PSOSM 2026 — Week 1 Solutions | Page 5
+Q9. When a piece of content, such as a video, meme, or news article, gains
+attention on social media platforms, it can quickly reach a large audience
+within a short period. Which V of social media does it refers to?
+ ▸ (a) Velocity
+ • (b) Veracity
+ • (c) Value
+ • (d) Volume
+
+  Correct answer: (a) Velocity
+
+EXPLANATION
+The giveaway phrase is “within a short period” — the question is about a rate, and rate is velocity. Velocity
+covers both how fast data is generated (roughly 6,000 tweets per second) and how fast a single item
+propagates through the network — i.e. virality.
+
+The Vs of social media / big data:
+
+  • Volume — the sheer quantity of data (billions of posts, photos, videos).
+  • Velocity — the speed of generation, streaming and diffusion. ← asked here
+  • Variety — the mix of formats: text, images, video, audio, geotags, likes, follow graphs.
+  • Veracity — how trustworthy and accurate the data is (bots, fake accounts, rumours, noise).
+  • Value — the insight that can actually be extracted from it.
+
+
+Q10. What is the primary purpose of the Gab platform?
+ ▸ (A) To promote free speech
+ • (B) To facilitate online shopping experience
+ • (C) It provides educational resources
+ • (D) Support for professional networking
+
+  Correct answer: (A) To promote free speech
+
+EXPLANATION
+Gab is a microblogging site launched in 2016 by Andrew Torba and explicitly positioned as a free-speech
+alternative to Twitter and Facebook. Its selling point is minimal content moderation: it advertises that it
+removes only what is illegal, rather than enforcing broad community-standards policies.
+
+Why the course studies it: Gab is the standard case study for what happens on an “alternative” or
+deplatforming-resistant network. Because mainstream platforms suspend accounts for hate speech, those
+users migrated to Gab, and it became notorious for far-right and extremist content — most infamously after
+the 2018 Pittsburgh synagogue attacker’s posts there. It illustrates the central tension of the module: the
+same weak moderation that maximises free expression also concentrates hate speech and harassment.
+
+
+
+                                       PSOSM 2026 — Week 1 Solutions | Page 6
+

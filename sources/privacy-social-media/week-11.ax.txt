@@ -1,0 +1,197 @@
+							197 text 1
+							198 text .
+							199 text Given below the statement. The statement is “An API is a set of rules and protocols that allows different software applications to communicate with each other, while a programming language is a formal language used to write instructions for a computer to perform specific tasks.”
+							200 container
+								201 text 1  Point
+							202 container
+								203 radio button (disabled) True
+								204 text True
+							205 container
+								206 radio button (disabled) False
+								207 text False
+							208 container
+								209 radio button (disabled) Can’t say
+								210 text Can’t say
+							211 container
+							213 text Accepted answer is
+							214 text True
+							215 text 2
+							216 text .
+							217 text Which of the following features is supposed to be a part of tweet content on Twitter?
+							218 container
+								219 text 1  Point
+							220 container
+								221 Tick box (disabled) Presence of pronouns
+								222 text Presence of pronouns
+							223 container
+								224 Tick box (disabled) No. of followers
+								225 text No. of followers
+							226 container
+								227 Tick box (disabled) No. of retweets
+								228 text No. of retweets
+							229 container
+								230 Tick box (disabled) Mention of self words (I;my;mine)
+								231 text Mention of self words (I;my;mine)
+							232 container
+							234 text Accepted answer is
+							235 text Presence of pronouns, Mention of self words (I;my;mine)
+							236 text 3
+							237 text .
+							238 text Who among the following are most likely to engage in link farming?
+							239 container
+								240 text 1  Point
+							241 container
+								242 Tick box (disabled) Highly active users
+								243 text Highly active users
+							244 container
+								245 Tick box (disabled) Legitimate users
+								246 text Legitimate users
+							247 container
+								248 Tick box (disabled) Popular users
+								249 text Popular users
+							250 container
+								251 Tick box (disabled) Bloggers and experts
+								252 text Bloggers and experts
+							253 container
+							255 text Accepted answer is
+							256 text Highly active users, Legitimate users, Popular users, Bloggers and experts
+							257 text 4
+							258 text .
+							259 text Which of the following is username creation behaviour?
+							260 container
+								261 text 1  Point
+							262 container
+								263 Tick box (disabled) Static behavior patterns
+								264 text Static behavior patterns
+							265 container
+								266 Tick box (disabled) Occasional reuse patterns
+								267 text Occasional reuse patterns
+							268 container
+								269 Tick box (disabled) Temporal behavior patterns
+								270 text Temporal behavior patterns
+							271 container
+								272 Tick box (disabled) Frequent reuse patterns
+								273 text Frequent reuse patterns
+							274 container
+							276 text Accepted answer is
+							277 text Static behavior patterns, Temporal behavior patterns
+							278 text 5
+							279 text .
+							280 text Which of the following is a username reuse behaviour?
+							281 container
+								282 text 1  Point
+							283 container
+								284 Tick box (disabled) Static behavior patterns
+								285 text Static behavior patterns
+							286 container
+								287 Tick box (disabled) Occasional reuse patterns
+								288 text Occasional reuse patterns
+							289 container
+								290 Tick box (disabled) Temporal behavior patterns
+								291 text Temporal behavior patterns
+							292 container
+								293 Tick box (disabled) Frequent reuse patterns
+								294 text Frequent reuse patterns
+							295 container
+							297 text Accepted answer is
+							298 text Occasional reuse patterns, Frequent reuse patterns
+							299 text 6
+							300 text .
+							301 text Why is it called a "Graph" API?
+							302 container
+								303 text 1  Point
+							304 container
+								305 radio button (disabled) it allows users to draw and create graphs and charts.
+								306 text it allows users to draw and create graphs and charts.
+							307 container
+								308 radio button (disabled) it represents social connections and relationships as a graph data structure.
+								309 text it represents social connections and relationships as a graph data structure.
+							310 container
+								311 radio button (disabled) it primarily deals with geographical mapping and location-based services.
+								312 text it primarily deals with geographical mapping and location-based services.
+							313 container
+								314 radio button (disabled) it is used exclusively for graph theory and mathematical computations.
+								315 text it is used exclusively for graph theory and mathematical computations.
+							316 container
+							318 text Accepted answer is
+							319 text it represents social connections and relationships as a graph data structure.
+							320 text 7
+							321 text .
+							322 text Latanya Sweeney's research highlighted how two seemingly unrelated pieces of information can be linked to reidentify an individual. Which term best describes this concept?
+							323 container
+								324 text 1  Point
+							325 container
+								326 radio button (disabled) Data Anonymization
+								327 text Data Anonymization
+							328 container
+								329 radio button (disabled) Data Aggregation
+								330 text Data Aggregation
+							331 container
+								332 radio button (disabled) Reidentification
+								333 text Reidentification
+							334 container
+								335 radio button (disabled) All of the above
+								336 text All of the above
+							337 container
+							339 text Accepted answer is
+							340 text Reidentification
+							341 text 8
+							342 text .
+							343 text What is the primary purpose of an API key on Twitter?
+							344 container
+								345 text 1  Point
+							346 container
+								347 radio button (disabled) To limit the number of characters in a tweet.
+								348 text To limit the number of characters in a tweet.
+							349 container
+								350 radio button (disabled) To verify a user's identity on the platform.
+								351 text To verify a user's identity on the platform.
+							352 container
+								353 radio button (disabled) To authenticate and access Twitter's APIs for development purposes.
+								354 text To authenticate and access Twitter's APIs for development purposes.
+							355 container
+								356 radio button (disabled) To encrypt and secure direct messages on Twitter.
+								357 text To encrypt and secure direct messages on Twitter.
+							358 container
+							360 text Accepted answer is
+							361 text To authenticate and access Twitter's APIs for development purposes.
+							362 text 9
+							363 text .
+							364 text What is the primary purpose of link farming in the context of SEO (Search Engine Optimization)?
+							365 container
+								366 text 1  Point
+							367 container
+								368 radio button (disabled) To create high-quality, relevant backlinks to improve a website's search engine ranking.
+								369 text To create high-quality, relevant backlinks to improve a website's search engine ranking.
+							370 container
+								371 radio button (disabled) To increase organic traffic by optimising on-page content and meta tags.
+								372 text To increase organic traffic by optimising on-page content and meta tags.
+							373 container
+								374 radio button (disabled) To manipulate search engine algorithms by generating a large number of low-quality backlinks.
+								375 text To manipulate search engine algorithms by generating a large number of low-quality backlinks.
+							376 container
+								377 radio button (disabled) To enhance the user experience by improving website navigation and design.
+								378 text To enhance the user experience by improving website navigation and design.
+							379 container
+							381 text Accepted answer is
+							382 text To manipulate search engine algorithms by generating a large number of low-quality backlinks.
+							383 text 10
+							384 text .
+							385 text Which V of social media represents “Viral trends that spread rapidly across social media platforms.”
+							386 container
+								387 text 1  Point
+							388 container
+								389 radio button (disabled) Value
+								390 text Value
+							391 container
+								392 radio button (disabled) Velocity
+								393 text Velocity
+							394 container
+								395 radio button (disabled) Volume
+								396 text Volume
+							397 container
+								398 radio button (disabled) Veracity
+								399 text Veracity
+							400 container
+							402 text Accepted answer is
+							403 text Velocity

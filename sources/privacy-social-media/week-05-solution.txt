@@ -1,0 +1,142 @@
+Week-5 PSOSM 2023
+
+
+Question 1: How do Online Social Networks improve public Communication between police and residents?
+provide actionable information and collective action
+provide mutual accountability
+understand fear and victimisation effects
+help to contact concerned authorities
+
+Question 2: Which of the following are examples of actionable information?
+OSN post regarding traffic issues on the road
+OSN post regarding open potholes on the road
+OSN post sharing about Azaadi ka Amrit Mahotsav celebrations in the locality
+None of the above 
+
+Question 3: What type of actionable information is highlighted in (bold) the below example?
+
+
+Temporal data
+Spatial data
+Linguistic data
+None of the above
+
+Question 4: Given below are two types of communication as discussed in the lecture.
+
+
+Formal and Formal
+Informal and Formal
+Informal and Informal
+Formal and Informal
+
+Question 5: How would you  identify emotional and psychological states based on the written text?
+LIWC
+K-means clustering
+N-gram analysis
+All of the above
+
+Question 6: Consider a sentence "ISRO launched Chandrayaan and conducted experiments on thermophysical properties and environment". What is the thematic content and subject matter being discussed?
+
+The linguistic diversity of the sentence.
+The emotional tone is conveyed in the sentence.
+The grammatical structure of the sentence.
+ The activities and research conducted by ISRO.
+
+
+Question 7: What does an “n” represent in the n-gram analysis of a sentence?
+
+The number of emotions in the analysis.
+The number of words in each n-gram.
+The number of characters in each n-gram.
+The number of different languages in the sentence.
+
+
+Question 8: A sentiment analysis study analyses a text passage for valence and arousal values. On a scale of -1 to 1, the valence and arousal score is 0.75 and 0.85. What do these values suggest about the emotional characteristics of the text?
+Negative sentiment, low emotional intensity
+Positive sentiment, High emotional intensity
+Negative sentiment, high emotional intensity
+Positive sentiment, low emotional intensity
+
+Question 9: A social media analyst is studying the engagement characteristics (likes, comments, and shares) of three different posts on a platform. The engagement counts for each post over a week are as follows:
+
+Post 1: 120 likes, 30 comments, 15 shares
+Post 2: 80 likes, 45 comments, 20 shares
+Post 3: 100 likes, 25 comments, 10 shares
+
+Calculate the mean engagement (average likes, comments, and shares) for each post and then find the standard deviation of engagement for the entire set of posts. Based on the standard deviation, which post shows the highest variability in engagement characteristics?
+
+A) Post 1
+B) Post 2
+C) Post 3
+D) All posts show similar variability.
+
+
+Question 10: What kind of post and sentiment is depicted in the below example?
+“Absolutely disgusted by the state of our local park! It's been months since we reported the broken playground equipment, and nothing has been done. Our kids deserve better!”
+Citizen-initiated and positive 
+Public authority-initiated and negative 
+Citizen-initiated and negative 
+Public authority-initiated and positive 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solutions:
+
+Question 9: 
+
+Mean Engagement for each post:
+
+Post 1: (120 + 30 + 15) / 3 = 55 engagements
+Post 2: (80 + 45 + 20) / 3 = 48.33 engagements (rounded off)
+Post 3: (100 + 25 + 10) / 3 = 45 engagements
+
+Calculate the Standard Deviation of Engagement for all posts:
+Calculate the mean engagement across all posts: (55 + 48.33 + 45) / 3 ≈ 49.44 engagements
+Calculate the squared differences from the mean for each post:
+Post 1: (55 - 49.78)^2 ≈ 27.07
+Post 2: (48.33 - 49.78)^2 ≈ 2.11
+Post 3: (45 - 49.78)^2 ≈ 22.98
+Calculate the average of the squared differences: (27.07 + 2.11 + 22.98) / 3 ≈ 17.05
+
+Calculate the square root of the average (which is the standard deviation): √17.05 ≈ 4.13
+
+Based on the standard deviation values, Post 1 shows the highest variability in engagement characteristics among the three posts.
+
+Likes  comments shares  Mean Engagement  
+Post 1[   120    30       15    ]  55
+Post 2[     80 4520  ] 48.33
+Post 3 [1002510 ]  45
+
+Across all rows → Average of matrix= 49.78 → overall engagement
+Across all rows → Standard deviation= 4.13 

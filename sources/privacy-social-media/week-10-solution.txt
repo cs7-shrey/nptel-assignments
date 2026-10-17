@@ -1,0 +1,249 @@
+                                       Week 10 Solution
+              NPTEL PSOSM Course (Privacy and Security in Online Social Media)
+
+
+
+Paper for Questions 1 to 3: "Beware of What You Share: Inferring Home Location in Social Networks"
+Idea of the paper: even when users hide their home address, the location information they and their
+friends share publicly (home city, places lived, venues, geo-tagged posts) can be combined to infer where
+they live. The authors measure how much and how precise such location data is on several networks.
+
+Question 1
+Which statement(s) is/are true? (multiple correct)
+    (a) The authors perform a large-scale inference study in three popular social networks: Foursquare,
+    Google+ and Twitter. ✔
+    (b) The paper is looking at different social networks, not only Foursquare. ✔
+    (c) The dataset used in the paper comprises many attributes including venues, where the location
+    must be defined filling the open text fields (limited to 30 and 127 characters, respectively), and
+    setting a pin in the map. ✔
+    (d) None of the above
+Solution
+    •   (a) True: the study covers three networks, Foursquare, Google+ and Twitter, each with its own
+        type of location data (venues and home city; places lived, address, education and employment;
+        profile location and geo-tagged tweets).
+    • (b) True: this follows directly from (a). Unlike the earlier Foursquare-only work, this paper
+        compares several networks.
+    • (c) True: when a Foursquare venue is created, its location is entered as free text in fields with
+        character limits (30 and 127) plus a pin dropped on the map. Since the text is not validated, it may
+        be noisy, which is why the authors had to check which entries were valid.
+Since (a), (b) and (c) are all true, (d) is false.
+Answer: Options (a), (b) and (c).
+
+Question 2
+What is a valid AGI?
+    (a) Valid Artificial General Intelligence
+    (b) Valid Ambiguous Geographical Information ✔
+    (c) Valid Artificial Geographical Interface
+    (d) None of the above
+Solution
+In this paper, AGI stands for Ambiguous Geographical Information: a location string that is a real place but
+could refer to more than one location. For example, 'Springfield' or 'Cambridge' exists in several countries,
+so the text alone does not say which one is meant.
+A valid AGI is such an entry that does refer to a real place (as opposed to junk like 'my home' or 'Mars'),
+even though it needs extra context to resolve. Option (a) is a distractor that uses the more common AI
+meaning of AGI, which is not what the paper uses.
+Answer: Valid Ambiguous Geographical Information.
+
+                                      Week 10 Solution, NPTEL PSOSM | Page 1
+Question 3
+Given the following figure depicts the quality of valid UGI, what is the correct inference(s) from the
+figure? (multiple correct)
+
+
+
+
+    (a) In figure (a), the vast majority (80%) of Foursquare users and venues have location information
+    at the city level. ✔
+    (b) In figure (b), the majority of users provide home location information at country level.
+    (c) In figure (c), 60% of the users have provided their location information at the district level.
+    (d) In figure (b), 80% of the users have provided location information at city level. ✔
+Solution
+Each panel shows, for each type of location field, the percentage of entries at each level of detail, from
+Continent (least precise) to Coordinate (most precise). The tallest bar shows the most common level of
+detail.
+    •   (a) True: in Foursquare, both the blue (users' home city) and red (venues' city) bars peak at City,
+        at about 80%.
+    •   (b) False: in Google+, the Country bars are tiny (under 10%). The tall bars are at City (about 62%
+        for Places Lived and about 80% for Education) and at Coordinate (about 80% for Address).
+    •   (c) False: in Twitter, the blue (users' location) bar at about 60% is at the City level, not District. The
+        District bar is only about 10%.
+    •   (d) True: in Google+, the green (Education) bar at the City level is about 80%.
+Answer: Options (a) and (d).
+
+Paper for Questions 4 to 6: "On the Dynamics of Username Change Behavior on Twitter"
+Idea of the paper: Twitter lets users change their username (handle) while keeping the same account. The
+authors tracked a large set of users over time to study how often, how and why they change handles, and
+the security problems this causes (broken links and username squatting).
+
+Question 4
+From the overall conclusion of the paper, which of the statements is true?
+    (a) The set of people who change their handle many times is slightly larger than those who change
+    their handle a very small number of times.
+    (b) The set of people who change their handle many times is slightly smaller than the set of people
+    who change their handle a very small number of times. ✔
+    (c) The set of people who change their handle many times is roughly equal to the set of people who
+    do not change their handle.
+    (d) None of the above
+Solution
+Plotting the number of users against how many times they changed their username (the inset of the
+Question 5 figure) gives a falling curve: many users change their handle only once or a few times, and the
+
+                                      Week 10 Solution, NPTEL PSOSM | Page 2
+number of users drops as the number of changes grows. The paper concludes that frequent changers
+form the smaller group, and that this group is still sizeable rather than negligible, which is why it is
+described as 'slightly smaller'.
+Option (a) reverses this. Option (c) is not supported, since users who never change their handle form by
+far the largest group on Twitter.
+Answer: The set of people who change their handle many times is slightly smaller than the set of people
+who change their handle a very small number of times.
+
+Question 5
+From the following figure, what is the correct inference?
+
+
+
+
+    (a) 20% of users rarely change user names in short intervals and 80% change user names frequently
+    after longer intervals.
+    (b) 80% of users rarely change user names in short intervals, and 20% change user names frequently
+    after longer intervals.
+    (c) 35% of users choose a user name unrelated to an old one, and 65% of users reuse an old user
+    name.
+    (d) 20% of users frequently change user names in short intervals, and 80% change user name rarely
+    after longer intervals. ✔
+Solution
+The main plot is a CDF: the y-value is the percentage of users who changed their username at most x
+times. The inset shows the number of users (log scale) against how often they changed their username.
+    •   The CDF rises almost vertically near x = 0 and reaches about 80% at only a handful of changes. So
+        about 80% of users change rarely, with long gaps between changes.
+   • The remaining about 20% make up the long tail stretching to 40, 80 and even more than 100
+        changes. These users change frequently, which means short intervals between changes.
+   • The inset confirms this: the number of users drops steeply as the change frequency increases,
+        with a few extreme users far to the right.
+Options (a) and (b) mix up the pairings ('rarely' with 'short intervals', 'frequently' with 'longer intervals'),
+and option (c) is about how new usernames relate to old ones, which this figure does not show.
+Answer: 20% of users frequently change user names in short intervals, and 80% change user name rarely
+after longer intervals.
+
+Question 6
+What is the correct observation in the paper?
+                                      Week 10 Solution, NPTEL PSOSM | Page 3
+   (a) This paper aims at finding how and why users change their usernames within a social network like
+   Twitter.
+   (b) Most users created new usernames unrelated to the old username when they changed usernames
+   within a social network.
+   (c) The authors believe that unrelated usernames over time could be credited to the absence of
+   cognitive load to remember a past dumped username.
+   (d) All of the above ✔
+Solution
+   •   (a) True: the stated goal of the paper is to understand the frequency, patterns and reasons ('how
+       and why') of username changes on Twitter.
+   •   (b) True: comparing old and new handles with string similarity, the authors found most new
+       usernames had little in common with the previous ones.
+   •   (c) True: their explanation is that users feel no need to stay close to an old handle once they drop
+       it. There is no cognitive load (memory effort) to keep it, so the new choice is free and often
+       unrelated.
+Answer: All of the above.
+
+Paper for Questions 7 to 10: "$1.00 per RT #BostonMarathon #PrayForBoston: Analyzing Fake Content on
+Twitter"
+Idea of the paper: after the Boston Marathon bombings, Twitter was flooded with rumours, fake charity
+accounts and fake images. The authors collected millions of related tweets and studied how fake content
+spread, which accounts spread it, and whether its spread could be predicted.
+
+Question 7
+Which of the following statements is true about the Boston blasts?
+   (a) Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT ✔
+   (b) Twin blasts occurred during the Boston Marathon on April 15th, 2009 at 18:50 GMT
+   (c) Four people were killed and 264 were injured in the incident
+   (d) All of the above
+Solution
+   •   (a) True: two bombs exploded near the finish line on 15 April 2013, at about 2:50 pm Boston time,
+       which is 18:50 GMT. This is the date and time given in the paper.
+   •   (b) False: wrong year (2009).
+   •   (c) False: the blasts killed three people and injured around 264. A fourth death (a police officer)
+       happened days later during the manhunt, not in the blasts.
+   •   (d) False: since (b) and (c) are false.
+Answer: Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT.
+
+Question 8
+What can be depicted from the tweets shared below?
+
+
+
+
+                                   Week 10 Solution, NPTEL PSOSM | Page 4
+    (a) Both tweets contain fake content.
+    (b) Figure (a) depicts a tweet from a fake charity profile.
+    (c) Figure (b) depicts a rumour about a child being killed in the blasts.
+    (d) All of the above ✔
+Solution
+    •   Tweet (a): an account named '_BostonMarathon' (not the official marathon account) promised to
+        donate $1.00 to victims for every retweet. It was a fake charity profile: no money was donated,
+        and the trick simply harvested over 52,000 retweets and followers. This tweet gave the paper its
+        title.
+    • Tweet (b): @HopeForBoston posted that an 8-year-old boy who was running for the Sandy Hook
+        kids had died. This was a false rumour: it used the emotional link to the Sandy Hook school
+        shooting to spread rapidly.
+So (b) and (c) are both correct, and together they make (a) correct: both tweets contain fake content.
+Answer: All of the above..
+
+Question 9
+What are the major contributions of the paper? (multiple correct)
+    (a) The authors characterised the spread of fake content on Twitter using temporal, source and user
+    attributes. ✔
+    (b) The authors used linear regression to predict how viral a rumour would be in the future based
+    on its current user characteristics. ✔
+    (c) The authors analysed the activity and interaction graphs for the suspended user profiles created
+    during the Boston blasts. ✔
+    (d) None of the above
+Solution
+The paper lists three main contributions, matching options (a) to (c):
+    •   Characterisation: how fake content spread over time (temporal), which tools and clients posted it
+        (source), and what kind of accounts spread it (user attributes such as followers and account age).
+    •   Prediction: a linear regression model that uses the impact of the users who have spread a rumour
+        so far to predict how widely it will spread later.
+    •   Malicious profiles: an analysis of accounts created after the blasts and later suspended by
+        Twitter, studying their activity and the interaction graph among them.
+Answer: Options (a), (b) and (c).
+
+
+
+                                     Week 10 Solution, NPTEL PSOSM | Page 5
+Question 10
+What does the following figure depict?
+
+
+
+
+    (a) The figure shows the temporal distribution of tweets after the Boston blast ✔
+    (b) The figure shows the spatial distribution of tweets after the Boston blast
+    (c) Both of the above
+    (d) None of the above
+Solution
+The x-axis is 'Hours after the Blast' and the y-axis is the number of tweets. So the figure shows how tweet
+volume changed over time: a temporal distribution.
+The peaks match real-world events: about 2.2 lakh (220,000) tweets in the hour right after the blast, a
+spike near 48 hours when the FBI released the suspects' pictures, and another spike near 100 hours when
+the manhunt ended.
+A spatial distribution would show where tweets came from, for example on a map. The figure has no
+location information, so (b) and (c) are wrong.
+Answer: The figure shows the temporal distribution of tweets after the Boston blast.
+
+Answer Key
+   Q.No.                                          Correct answer
+      1                                            (a), (b) and (c)
+      2                             Valid Ambiguous Geographical Information
+      3                                              (a) and (d)
+      4                      Frequent changers are slightly fewer than rare changers
+      5             20% change frequently in short intervals; 80% rarely, after longer intervals
+      6                                           All of the above
+      7                            Twin blasts on April 15th, 2013 at 18:50 GMT
+      8                                           All of the above
+      9                                            (a), (b) and (c)
+     10                                  Temporal distribution of tweets
+
+
+
+                                    Week 10 Solution, NPTEL PSOSM | Page 6
+

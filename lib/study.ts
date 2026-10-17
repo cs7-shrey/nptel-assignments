@@ -1,9 +1,13 @@
-export type Option = { id: string; text: string };
+export type QuestionImage = { src: string; alt: string };
+export type Option = { id: string; text: string; code?: boolean; image?: QuestionImage };
 export type Question = {
   id: string;
   number: number;
   type: string;
   prompt: string;
+  context?: string;
+  code?: string;
+  figures?: QuestionImage[];
   options: Option[];
   correctOptionIds: string[] | null;
   correctNumericAnswer?: string | null;

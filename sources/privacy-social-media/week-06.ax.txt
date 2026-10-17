@@ -1,0 +1,201 @@
+							205 text 1
+							206 text .
+							207 container
+								208 text Consider the following scenario on a social network A is friends with B and C. B is friends with A and D. C is friends with A and D. D is friends with B and C. Calculate the betweenness centrality for A, B, C, and D. Identify the individual having the highest betweenness centrality.
+							209 container
+								210 text 1  Point
+							211 container
+								212 radio button (disabled) A
+								213 text A
+							214 container
+								215 radio button (disabled) B
+								216 text B
+							217 container
+								218 radio button (disabled) C
+								219 text C
+							220 container
+								221 radio button (disabled) All of them have the same betweenness centrality
+								222 text All of them have the same betweenness centrality
+							223 container
+							225 text Accepted answer is
+							226 text All of them have the same betweenness centrality
+							227 text 2
+							228 text .
+							229 text What does indegree centrality measure in the social media and network analysis context?
+							230 container
+								231 text 1  Point
+							232 container
+								233 radio button (disabled) The level of activity a user has on the platform.
+								234 text The level of activity a user has on the platform.
+							235 container
+								236 radio button (disabled) The number of outgoing connections a user has with other users.
+								237 text The number of outgoing connections a user has with other users.
+							238 container
+								239 radio button (disabled) A user's popularity based on their followers or incoming connections.
+								240 text A user's popularity based on their followers or incoming connections.
+							241 container
+								242 radio button (disabled) The diversity of content shared by a user.
+								243 text The diversity of content shared by a user.
+							244 container
+							246 text Accepted answer is
+							247 text A user's popularity based on their followers or incoming connections.
+							248 text 3
+							249 text .
+							250 text What does betweenness centrality depict about the node?
+							251 container
+								252 text 1  Point
+							253 container
+								254 radio button (disabled) One who is quickly approachable
+								255 text One who is quickly approachable
+							256 container
+								257 radio button (disabled) Who is close to everyone
+								258 text Who is close to everyone
+							259 container
+								260 radio button (disabled) One who is most influential
+								261 text One who is most influential
+							262 container
+								263 radio button (disabled) All of the above
+								264 text All of the above
+							265 container
+							267 text Accepted answer is
+							268 text One who is quickly approachable
+							269 text 4
+							270 text .
+							271 text What is link farming?
+							272 container
+								273 text 1  Point
+							274 container
+								275 radio button (disabled) Agricultural practice that involves cultivating crops in a vertical arrangement.
+								276 text Agricultural practice that involves cultivating crops in a vertical arrangement.
+							277 container
+								278 radio button (disabled) Rapidly growing links on a website through unethical or manipulative means.
+								279 text Rapidly growing links on a website through unethical or manipulative means.
+							280 container
+								281 radio button (disabled) A strategy for developing social connections by attending networking events.
+								282 text A strategy for developing social connections by attending networking events.
+							283 container
+								284 radio button (disabled) All of the above
+								285 text All of the above
+							286 container
+							288 text Accepted answer is
+							289 text Rapidly growing links on a website through unethical or manipulative means.
+							290 text 5
+							291 text .
+							292 text Spamming the index of search engines is called
+							293 container
+								294 text 1  Point
+							295 container
+								296 Tick box (disabled) Spamdexing
+								297 text Spamdexing
+							298 container
+								299 Tick box (disabled) Spamexing
+								300 text Spamexing
+							301 container
+								302 Tick box (disabled) Spamming
+								303 text Spamming
+							304 container
+								305 Tick box (disabled) None of the above
+								306 text None of the above
+							307 container
+							309 text Accepted answer is
+							310 text Spamdexing, Spamexing
+							311 text 6
+							312 text .
+							313 text Which of the following is the best example of a clickbait headline?
+							314 container
+								315 text 1  Point
+							316 container
+								317 radio button (disabled) Annual Financial Report 2026
+								318 text Annual Financial Report 2026
+							319 container
+								320 radio button (disabled) Meeting Agenda for Today
+								321 text Meeting Agenda for Today
+							322 container
+								323 radio button (disabled) You Won't Believe What Happened Next! Click Here to Claim Your Prize!
+								324 text You Won't Believe What Happened Next! Click Here to Claim Your Prize!
+							325 container
+								326 radio button (disabled) Python Programming Notes
+								327 text Python Programming Notes
+							328 container
+							330 text Accepted answer is
+							331 text You Won't Believe What Happened Next! Click Here to Claim Your Prize!
+							332 text 7
+							333 text .
+							334 text Which of the following is considered as “social etiquette” on online social media such as Twitter?
+							335 container
+								336 text 1  Point
+							337 container
+								338 radio button (disabled) Following back
+								339 text Following back
+							340 container
+								341 radio button (disabled) Comment on the post of an influential person
+								342 text Comment on the post of an influential person
+							343 container
+								344 radio button (disabled) Giving likes to the post of an influential person
+								345 text Giving likes to the post of an influential person
+							346 container
+								347 radio button (disabled) Saying “Thank you” to any appreciation by an influential person
+								348 text Saying “Thank you” to any appreciation by an influential person
+							349 container
+							351 text Accepted answer is
+							352 text Following back
+							353 text 8
+							354 text .
+							355 text A psychological principle where individuals feel compelled to return favours and interactions they receive is called
+							356 container
+								357 text 1  Point
+							358 container
+								359 radio button (disabled) Spamming
+								360 text Spamming
+							361 container
+								362 radio button (disabled) Reciprocity
+								363 text Reciprocity
+							364 container
+								365 radio button (disabled) Link farming
+								366 text Link farming
+							367 container
+								368 radio button (disabled) All of the above
+								369 text All of the above
+							370 container
+							372 text Accepted answer is
+							373 text Reciprocity
+							374 text 9
+							375 text .
+							376 text Which of the following is/are graph centrality measures?
+							377 container
+								378 text 1  Point
+							379 container
+								380 Tick box (disabled) Eigen centrality
+								381 text Eigen centrality
+							382 container
+								383 Tick box (disabled) Node degree
+								384 text Node degree
+							385 container
+								386 Tick box (disabled) Betweenness centrality
+								387 text Betweenness centrality
+							388 container
+								389 Tick box (disabled) Closeness centrality
+								390 text Closeness centrality
+							391 container
+							393 text Accepted answer is
+							394 text Eigen centrality, Node degree, Betweenness centrality, Closeness centrality
+							395 text 10
+							396 text .
+							397 text Which of the following are spam targets?
+							398 container
+								399 text 1  Point
+							400 container
+								401 Tick box (disabled) A
+								402 text A
+							403 container
+								404 Tick box (disabled) B
+								405 text B
+							406 container
+								407 Tick box (disabled) C
+								408 text C
+							409 container
+								410 Tick box (disabled) S
+								411 text S
+							412 container
+							414 text Accepted answer is
+							415 text A, B
