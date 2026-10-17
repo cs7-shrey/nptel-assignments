@@ -1,0 +1,277 @@
+                                          Week 9 Solution
+                  NPTEL PSOSM Course (Privacy and Security in Online Social Media)
+
+
+
+Question 1
+Which of the following is/are location-based services? (multiple correct)
+    (a) Foursquare ✔
+    (b) Yelp ✔
+    (c) Gowalla ✔
+    (d) Uber ✔
+Solution
+A location-based service (LBS) is any service whose core function depends on the user's geographic
+location, usually taken from the phone's GPS.
+       Service                                                Role of location
+     Foursquare           Users 'check in' at venues; the lecture's main case study of a location-based
+                                                          social network
+           Yelp             Shows reviews and ratings of restaurants and businesses near the user
+       Gowalla            Check-in based social network (similar to Foursquare, now shut down); its
+                                         check-in dataset is widely used in research
+           Uber           Uses the live location of both rider and driver to match them, route the trip
+                                                      and calculate the fare
+
+
+All four would not work without the user's location, so all are location-based services.
+Answer: Foursquare, Yelp, Gowalla and Uber (all four).
+
+Question 2
+What is the difference between Pearson and Spearman rank correlation?
+    (a) Pearson correlation assesses linear relationships, while Spearman correlation evaluates
+    monotonic relationships. ✔
+    (b) Spearman correlation is always between -1 and 1, while Pearson correlation can have values
+    outside this range.
+    (c) Spearman correlation is calculated using a formula involving the sum of squared differences,
+    whereas Pearson correlation is based on the product of z-scores.
+    (d) All of the above
+Solution
+Pearson correlation measures how well the data fit a straight line:
+                                r = Σ (x_i - x̄)(y_i - ȳ) / √[ Σ (x_i - x̄)² · Σ (y_i - ȳ)² ]
+Spearman correlation is Pearson's r applied to the ranks of the data. It measures whether y always
+increases (or always decreases) as x increases, which is a monotonic relationship, not necessarily a
+straight line. With no tied ranks:
+            ρ = 1 - 6 Σ d_i² / [ n (n² - 1) ], where d_i = difference between the ranks of x_i and y_i
+
+
+                                        Week 9 Solution, NPTEL PSOSM | Page 1
+Example: x = 1, 2, 3, 4, 5 and y = x³ = 1, 8, 27, 64, 125. The relationship is perfectly increasing but curved.
+Spearman ρ = 1.00 while Pearson r ≈ 0.94 (both computed in Python). Spearman captures the perfect
+monotonic trend; Pearson is penalised because the points do not lie on a line.
+Checking the other options:
+    •   (b) False: both coefficients always lie between -1 and +1. Pearson can never go outside this range.
+    •   (c): this describes how each is computed (the shortcut Spearman formula uses squared rank
+        differences; Pearson equals the average product of z-scores), but it is not the conceptual
+        difference the question asks for.
+    •   (d) False: since (b) is false, 'All of the above' cannot be correct.
+Answer: Pearson correlation assesses linear relationships, while Spearman correlation evaluates
+monotonic relationships.
+
+Question 3
+You have two datasets and want to measure the strength and direction of the relationship between them.
+One set consists of the ranks or ordinal values of the observations, while the other set consists of
+continuous numerical data. Which correlation coefficient is most appropriate?
+    (a) Spearman's rank correlation coefficient ✔
+    (b) Pearson's correlation coefficient
+    (c) Either Spearman or Pearson correlation can be used interchangeably.
+    (d) None of the above because correlation coefficients are not applicable in this scenario.
+Solution
+Pearson's r needs both variables to be continuous (interval or ratio scale), because it uses the actual
+distances between values. Ordinal data (ranks such as 1st, 2nd, 3rd, or ratings like low/medium/high)
+have an order, but the gaps between levels are not meaningful numbers.
+Spearman's method works on ranks only. The continuous variable is converted into ranks, then the two
+rank lists are correlated. This uses only the ordering, which both datasets have, so Spearman is the right
+choice.
+Example: correlating students' class rank (ordinal) with hours studied (continuous). Rank the hours, then
+compute ρ.
+Option (c) is wrong because Pearson is not valid for ordinal data, and (d) is wrong because a rank
+correlation applies perfectly well here.
+Answer: Spearman's rank correlation coefficient.
+
+Question 4
+Which of the following are open text fields, whose validity is not enforced by the system and may carry
+noise/invalid locations? (multiple correct)
+    (a) Venue location ✔
+    (b) Tips
+    (c) User home city ✔
+    (d) Dones
+Solution
+The lecture's Foursquare study collected location information from two fields that users type in freely:
+    •   Venue location: the address or city of a venue, entered by the user who created the venue.
+    •   User home city: typed in by the user on their profile.
+
+
+                                      Week 9 Solution, NPTEL PSOSM | Page 2
+Foursquare does not check these against a map, so they can contain spelling mistakes, abbreviations,
+jokes or invalid places (for example 'my home', 'Earth' or a misspelled city name). Researchers therefore
+had to clean them before using them for analysis.
+Tips (short reviews or recommendations) and dones (marking that a tip was followed) are user activities
+attached to a venue, not location fields, so (b) and (d) are not the answer.
+Answer: Venue location and User home city.
+
+Question 5
+Which of the following is the correct inference from Figure 2?
+
+
+
+
+    (a) The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or
+    dones. ✔
+    (b) The distributions are evenly balanced, with cities having a nearly equal number of mayorships,
+    tips, or dones.
+    (c) The distributions are normally distributed, with no cities having an exceptionally high number of
+    mayorships, tips, or dones.
+    (d) None of the above
+Solution
+How to read a CDF: a point (x, y) means that a fraction y of all cities have a count of at most x. Note that
+the x-axis is logarithmic (1, 100, 10,000, 1,000,000).
+Approximate readings for all three curves:
+               Value of x                                             P(X ≤ x)
+                   1                               about 0.25 (a quarter of cities have only 1)
+               about 10                                              about 0.65
+               about 100                                             about 0.95
+           10,000 and beyond                     1.0 (only a handful of cities reach these values)
+
+
+The curve rises very steeply at small x and then flattens into a long tail stretching across several orders of
+magnitude. Most cities have very few mayorships, tips or dones, while a few cities (large, popular ones)
+have 100 or more. This is a highly skewed, long-tailed distribution.
+Option (b) would need the CDF to jump almost straight from 0 to 1 at one value, and (c) would need a
+symmetric S-shaped curve with no long tail; neither matches the figure.
+Answer: The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or
+dones.
+
+                                      Week 9 Solution, NPTEL PSOSM | Page 3
+Question 6
+What is the key difference between a scatter plot and a bar chart?
+    (a) Scatter plots display categorical data, while bar charts are used for numerical data.
+    (b) Scatter plots show the relationship between two numerical variables, while bar charts display
+    the frequency or distribution of categorical data. ✔
+    (c) Scatter plots are only used for displaying data with a single variable, while bar charts can visualize
+    data with multiple variables.
+    (d) All of the above
+Solution
+                                    Scatter plot                                   Bar chart
+       X-axis                   Numerical variable                   Categories (cities, platforms, ...)
+       Y-axis                   Numerical variable                    Count, frequency or value per
+                                                                                category
+     Each mark           A point = one observation (x, y)                     A bar = one category
+      Used for         Relationship / correlation between              Comparing amounts across
+                                 two variables                                categories
+      Example          Followers vs number of tweets per           Number of users per social network
+                                      user
+
+
+Option (a) reverses the roles, and (c) is wrong because a scatter plot needs two variables (one per axis).
+Answer: Scatter plots show the relationship between two numerical variables, while bar charts display the
+frequency or distribution of categorical data.
+
+Question 7
+Which of the following is publicly available data on Foursquare? (multiple correct)
+    (a) Mayorships ✔
+    (b) Tips ✔
+    (c) Dones ✔
+    (d) Check-ins
+Solution
+       Data                               Meaning                                       Visibility
+    Mayorships        The user with the most check-ins at a venue in          Public (shown on the venue
+                           the last 60 days becomes its 'mayor'                          page)
+        Tips            Short public reviews or recommendations                          Public
+                                      about a venue
+       Dones               Marks that a user has done what a tip                         Public
+                                         suggested
+     Check-ins         A user's record of being at a venue at a given          Private by default (friends
+                                            time                                          only)
+
+
+
+
+                                      Week 9 Solution, NPTEL PSOSM | Page 4
+Check-ins reveal exactly where a person is right now, so they are visible only to the user's friends and
+cannot be crawled publicly. This is why the lecture's study used mayorships, tips and dones, which anyone
+can see, as indirect evidence of where users had been.
+Answer: Mayorships, Tips and Dones.
+
+Question 8
+Which plot is shown in the below figure?
+
+
+
+
+    (a) Scatter plot
+    (b) Bar chart
+    (c) Bubble plot ✔
+    (d) Histogram
+Solution
+The figure shows each country as a circle placed by daily fat intake (x-axis) and daily sugar intake (y-axis).
+Crucially, the circles have different sizes, which encodes a third variable (for example population or
+obesity rate).
+A bubble plot is a scatter plot extended to three variables: x position, y position and bubble size. Here the
+US and NZ bubbles are much larger than RU or IT, so size is clearly carrying information. A plain scatter
+plot would use equal-sized points, and bar charts and histograms use bars, not points.
+Answer: Bubble plot.
+
+Question 9
+What is the primary characteristic of Location-Based Social Networks (LBSNs)?
+    (a) They allow users to share text-based posts with their friends and followers.
+    (b) They provide a platform for online gaming and virtual reality experiences.
+    (c) They enable users to connect with others and share their physical locations and activities. ✔
+    (d) They focus exclusively on professional networking and job searching.
+Solution
+An LBSN adds a location layer to a social network. Users check in at real places, share where they are and
+what they are doing there, leave tips, and find friends or venues nearby. Foursquare, Gowalla and Swarm
+are examples.
+
+
+                                      Week 9 Solution, NPTEL PSOSM | Page 5
+Option (a) describes any social network (such as Twitter), (b) describes gaming platforms, and (d)
+describes LinkedIn. Only (c) mentions physical location, the defining feature of an LBSN.
+Answer: They enable users to connect with others and share their physical locations and activities.
+
+Question 10
+As discussed in the lecture, choose the correct inference(s) for the figures below (Figure 4 and Figure 5).
+Here mayorships (blue), Tips (red) and Dones (green). (multiple correct)
+
+
+
+
+    (a) In Figure 4, the distribution of minimum inter-activity times is very skewed towards short
+    periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart. ✔
+    (b) In Figure 4, on average, median and maximum, users do tend to experience very long periods of
+    time between consecutive tips and dones. For instance, around 50% of the users have an average
+    inter-activity time of at least 450 hours, whereas around 80% of the users have a maximum inter-
+    activity time above 167 hours (roughly a week). ✔
+    (c) In Figure 5, around 36% of the users have average and maximum displacements of 0 kilometer,
+    indicating very short distances (within a few metres). ✔
+    (d) In Figure 5, about 10% of the users have a maximum displacement of at least 6,000 kilometers.
+    ✔
+Solution
+Both figures come from the 2012 Foursquare privacy study given as the reference in the question (Precog
+group, IIIT Delhi, TP_lbsn_2012). For each user, the consecutive tips/dones they posted are compared,
+and four statistics are plotted as CDFs: minimum, median, average and maximum.
+Figure 4: time between consecutive activities (hours).
+    •   (a) True: the minimum curve shoots up almost immediately near x = 0, reaching about 0.5. So
+        about half the users have, at least once, posted two tips/dones within about an hour (for
+        example, several tips while at one place).
+    • (b) True: the median, average and maximum curves rise slowly. Reading the CDF, about half the
+        users have an average gap of 450 hours or more, and about 80% have a maximum gap above 167
+        hours (about one week). Typical users are not very active, with long pauses between posts.
+Figure 5: distance between consecutive activities (km).
+    •   (c) True: the curves start at about 0.36 at x = 0, meaning about 36% of users have average and
+        maximum displacement of 0 km: all their activities are at essentially the same spot.
+    • (d) True: the maximum curve reaches only about 0.9 by 6,000 km, so about 10% of users have at
+        least one pair of consecutive posts 6,000 km or more apart (for example, after international
+        travel).
+Privacy insight: since many users post repeatedly from the same small area, their public tips and dones
+can reveal where they live or work, even though their check-ins are private (Question 7).
+Answer: All four statements (a), (b), (c) and (d) are correct.
+
+Answer Key
+
+                                      Week 9 Solution, NPTEL PSOSM | Page 6
+Q.No.                           Correct answer
+ 1                Foursquare, Yelp, Gowalla, Uber (all four)
+ 2                  Pearson: linear; Spearman: monotonic
+ 3                 Spearman's rank correlation coefficient
+ 4                     Venue location, User home city
+ 5              Very skewed; a few cities have as many as 100
+ 6          Scatter: two numerical variables; bar: categorical data
+ 7                         Mayorships, Tips, Dones
+ 8                                Bubble plot
+ 9      Connect with others and share physical locations and activities
+ 10                           All four statements
+
+
+
+
+                  Week 9 Solution, NPTEL PSOSM | Page 7
+

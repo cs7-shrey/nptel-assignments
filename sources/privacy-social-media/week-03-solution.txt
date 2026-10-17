@@ -1,0 +1,122 @@
+Week-3 PSOSM 2023
+
+
+Consider the below response:
+“To this segment, consumer privacy is very important; they feel that they have been victims of privacy invasions, they are pessimistic about the future of privacy protection, and about a third of them favour creating a general federal regulatory agency on consumer privacy.”
+
+To which of the three Westin Privacy categories is "they" in the above sentence most likely to fall?
+Fundamentalists
+Pragmatists
+Unconcerned
+None of the above
+
+       2. Which of the following features is used by the credibility model- TweetCred?
+ Tweet links
+Tweet Author
+Tweet network
+Tweet meta data
+
+       3. Cronbach’s alpha 
+determines the statistical significance of a research study.
+assess the reliability and internal consistency of a questionnaire.
+analyze the effect size of an intervention.
+calculate the standard deviation of a sample population.
+
+ 4. Suppose we have five tweets (TW1, TW2, TW3, TW4, and TW5) with their relevances based on user feedback or relevance labels:
+TW1: Highly relevant tweet (Relevance = 2)
+TW2: Moderately relevant tweet (Relevance = 1)
+TW3: Not relevant tweet (Relevance = 0)
+TW4: Relevant tweet (Relevance = 1)
+TW5: Highly relevant tweet (Relevance = 2)
+
+Now, let's assume the ranking algorithm generates a ranked list of tweets:
+
+Rank 1: TW5 (Highly relevant tweet)
+Rank 2: TW1 (Highly relevant tweet)
+Rank 3: TW3 (Not relevant tweet)
+Rank 4: TW2 (Moderately relevant tweet)
+Rank 5: TW4 (Relevant tweet)
+
+What would be NDCG@5 for this ranked list of tweets?
+
+0.5
+.513
+.975
+None of the above
+
+Solution:
+Step 1: Calculate DCG@5 (Discounted Cumulative Gain at rank 5). 
+Step 2: Calculate IDCG@5 (Ideal Discounted Cumulative Gain at rank 5). 
+Step 3: Divide DCG@5 by IDCG@5 to get NDCG@5.
+
+Step 1: Calculate DCG@5 DCG@5 = rel1 + rel2/log2(2) + rel3/log2(3) + rel4/log2(4) + rel5/log2(5)
+
+Given relevances: rel1 = 2 (for TW5) rel2 = 2 (for TW1) rel3 = 0 (for TW3) rel4 = 1 (for TW2) rel5 = 1 (for TW4)
+
+DCG@5 = 2 + 2/log2(2) + 0/log2(3) + 1/log2(4) + 1/log2(5) DCG@5 = 2 + 2/1 + 0 + 1/2 + 1/2 DCG@5 = 4 + 0.5 + 0.5 DCG@5 = 5
+
+
+Step 2: Calculate IDCG@5 (Ideal DCG@5) To calculate IDCG@5, we consider the ideal ranking based on relevance:
+
+Ideal ranking: TW5 (Highly relevant tweet) > TW1 (Highly relevant tweet) > TW2 (Moderately relevant tweet) > TW4 (Relevant tweet) > TW3 (Not relevant tweet)
+
+
+IDCG@5 = rel1 + rel2/log2(2) + rel3/log2(3) + rel4/log2(4) + rel5/log2(5)
+For ideal ranking: rel1 = 2 (for TW5) rel2 = 2 (for TW1) rel3 = 1 (for TW2) rel4 = 1 (for TW4) rel5 = 0 (for TW3)
+IDCG@5 = 2 + 2/log2(2) + 1/log2(3) + 1/log2(4) + 0/log2(5) IDCG@5 = 2 + 2/1 + 1/1.585 + 1/2 + 0 IDCG@5 = 2 + 2 + 0.63 + 0.5 IDCG@5 = 5.13
+Step 3: Calculate NDCG@5 NDCG@5 = DCG@5 / IDCG@5
+NDCG@5 = 5 / 5.13
+NDCG@5 ≈ 0.975 (rounded to three decimal places)
+So, the NDCG@5 for the ranked list of tweets is approximately 0.975.
+
+
+
+
+Read through the report “Privacy in India: Attitudes and Awareness V 2.0” at https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf
+And answer the following questions [5-7].
+
+5. How many participants have changed their default settings on their social network?
+75%
+60%
+50%
+25%
+
+6. What is the primary purpose of a Focus Group Discussion (FGD) in the above report?
+
+To conduct one-on-one interviews with participants.
+To collect quantitative data through surveys and questionnaires.
+To observe participants' behaviours in a controlled environment.
+To facilitate group discussions and gather qualitative insights.
+
+
+7. “When you hear the word privacy, what comes to mind”. Which is the most common respondent answer according to the above report?
+Information Privacy
+Bodily privacy
+Communication privacy
+Territorial privacy
+
+
+
+8. Consider the below graph and choose the correct option:
+
+
+For 82% of the users, the response time was less than 2 seconds, and for 99%, the response time was under 10 seconds.
+For 99% of the users, the response time was less than 6 seconds, and for 100%, the response time was under 10 seconds.
+For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds.
+None of the above 
+
+
+9. What is the Likert scale?
+
+rating scale in surveys and questionnaires
+gives the score for any real-time tweets
+Interannotator agreement 
+None of the above
+
+
+10. TweetCred is
+a real-time web-based system to automatically evaluate the credibility of content on Twitter.
+a real-time app-based system to automatically evaluate the score of tweets on Twitter.
+a real-time app-based system to automatically assess the quality of content on Twitter.
+None of the above
+

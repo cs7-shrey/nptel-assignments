@@ -868,6 +868,51 @@ a {
 }
 .option-text {
   overflow-wrap: anywhere;
+  min-width: 0;
+}
+.question > div {
+  min-width: 0;
+}
+.question-context {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+.question-code {
+  padding: 16px;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--option-bg);
+  font-size: 12px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.option-code {
+  font-size: 12px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+.question-figure {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  cursor: zoom-in;
+}
+.question-figure img,
+.option-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: white;
 }
 .choice-hint {
   font-size: 12px;

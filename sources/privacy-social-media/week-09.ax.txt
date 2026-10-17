@@ -1,0 +1,172 @@
+							203 text 1 .
+							204 text Which of the following is/are location-based services?
+							205 container
+								206 text 1  Point
+							207 container
+								208 Tick box (disabled) Foursquare
+								209 text Foursquare
+							210 container
+								211 Tick box (disabled) Yelp
+								212 text Yelp
+							213 container
+								214 Tick box (disabled) Gowalla
+								215 text Gowalla
+							216 container
+								217 Tick box (disabled) Uber
+								218 text Uber
+							219 container
+							221 text Accepted answer is Foursquare, Yelp, Gowalla, Uber 2 .
+							222 container
+								223 text What is the difference between Pearson and Spearman rank correlation? Hint:
+								224 link Description: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient, Value: en.wikipedia.org/wiki/Pearson_correlation_coefficient
+							225 container
+								226 text 1  Point
+							227 container
+								228 radio button (disabled) Pearson correlation assesses linear relationships, while Spearman correlation evaluates monotonic relationships.
+								229 text Pearson correlation assesses linear relationships, while Spearman correlation evaluates monotonic relationships.
+							230 container
+								231 radio button (disabled) Spearman correlation is always between -1 and 1, while Pearson correlation can have values outside this range.
+								232 text Spearman correlation is always between -1 and 1, while Pearson correlation can have values outside this range.
+							233 container
+								234 radio button (disabled) Spearman correlation is calculated using a formula involving the sum of squared differences, whereas Pearson correlation is based on the product of z-scores.
+								235 text Spearman correlation is calculated using a formula involving the sum of squared differences, whereas Pearson correlation is based on the product of z-scores.
+							236 container
+								237 radio button (disabled) All of the above
+								238 text All of the above
+							239 container
+							241 text Accepted answer is Pearson correlation assesses linear relationships, while Spearman correlation evaluates monotonic relationships. 3 .
+							242 text You have two datasets and want to measure the strength and direction of the relationship between them. One set of data consists of the ranks or ordinal values of the observations, while the other set consists of continuous numerical data. Which correlation coefficient is most appropriate for this scenario?
+							243 container
+								244 text 1  Point
+							245 container
+								246 radio button (disabled) Spearman's rank correlation coefficient
+								247 text Spearman's rank correlation coefficient
+							248 container
+								249 radio button (disabled) Pearson's correlation coefficient
+								250 text Pearson's correlation coefficient
+							251 container
+								252 radio button (disabled) Either Spearman or Pearson correlation can be used interchangeably.
+								253 text Either Spearman or Pearson correlation can be used interchangeably.
+							254 container
+								255 radio button (disabled) None of the above because correlation coefficients are not applicable in this scenario.
+								256 text None of the above because correlation coefficients are not applicable in this scenario.
+							257 container
+							259 text Accepted answer is Spearman's rank correlation coefficient 4 .
+							260 text Which of the following are open text fields, whose validity is not enforced by the system and may carry noise/invalid locations?
+							261 container
+								262 text 1  Point
+							263 container
+								264 Tick box (disabled) Venue location
+								265 text Venue location
+							266 container
+								267 Tick box (disabled) tips
+								268 text tips
+							269 container
+								270 Tick box (disabled) User home city
+								271 text User home city
+							272 container
+								273 Tick box (disabled) dones
+								274 text dones
+							275 container
+							277 text Accepted answer is Venue location, User home city 5 . Which of the following is correct inference from Figure 2?
+							278 Unlabelled image /Screenshot%20(216).png
+							279 container
+								280 text 1  Point
+							281 container
+								282 radio button (disabled) The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or dones.
+								283 text The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or dones.
+							284 container
+								285 radio button (disabled) The distributions are evenly balanced, with cities having a nearly equal number of mayorships, tips, or dones.
+								286 text The distributions are evenly balanced, with cities having a nearly equal number of mayorships, tips, or dones.
+							287 container
+								288 radio button (disabled) The distributions are normally distributed, with no cities having an exceptionally high number of mayorships, tips, or dones.
+								289 text The distributions are normally distributed, with no cities having an exceptionally high number of mayorships, tips, or dones.
+							290 container
+								291 radio button (disabled) None of the above
+								292 text None of the above
+							293 container
+							295 text Accepted answer is The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or dones. 6 .
+							296 text What is the key difference between a scatter plot and a bar chart?
+							297 container
+								298 text 1  Point
+							299 container
+								300 radio button (disabled) Scatter plots display categorical data, while bar charts are used for numerical data.
+								301 text Scatter plots display categorical data, while bar charts are used for numerical data.
+							302 container
+								303 radio button (disabled) Scatter plots show the relationship between two numerical variables, while bar charts display the frequency or distribution of categorical data.
+								304 text Scatter plots show the relationship between two numerical variables, while bar charts display the frequency or distribution of categorical data.
+							305 container
+								306 radio button (disabled) Scatter plots are only used for displaying data with a single variable, while bar charts can visualize data with multiple variables.
+								307 text Scatter plots are only used for displaying data with a single variable, while bar charts can visualize data with multiple variables.
+							308 container
+								309 radio button (disabled) All of the above
+								310 text All of the above
+							311 container
+							313 text Accepted answer is Scatter plots show the relationship between two numerical variables, while bar charts display the frequency or distribution of categorical data. 7 .
+							314 text Which of the following is publicly available data on Foursquare?
+							315 container
+								316 text 1  Point
+							317 container
+								318 Tick box (disabled) Mayorships
+								319 text Mayorships
+							320 container
+								321 Tick box (disabled) Tips
+								322 text Tips
+							323 container
+								324 Tick box (disabled) Dones
+								325 text Dones
+							326 container
+								327 Tick box (disabled) Checkins
+								328 text Checkins
+							329 container
+							331 text Accepted answer is Mayorships, Tips, Dones 8 . Which plot is shown in the below figure?
+							332 container
+								333 text 1  Point
+							334 container
+								335 radio button (disabled) Scatter plot
+								336 text Scatter plot
+							337 container
+								338 radio button (disabled) Bar chart
+								339 text Bar chart
+							340 container
+								341 radio button (disabled) Bubble plot
+								342 text Bubble plot
+							343 container
+								344 radio button (disabled) Histogram
+								345 text Histogram
+							346 container
+							348 text Accepted answer is Bubble plot 9 .
+							349 text What is the primary characteristic of Location-Based Social Networks (LBSNs)?
+							350 container
+								351 text 1  Point
+							352 container
+								353 radio button (disabled) They allow users to share text-based posts with their friends and followers.
+								354 text They allow users to share text-based posts with their friends and followers.
+							355 container
+								356 radio button (disabled) They provide a platform for online gaming and virtual reality experiences.
+								357 text They provide a platform for online gaming and virtual reality experiences.
+							358 container
+								359 radio button (disabled) They enable users to connect with others and share their physical locations and activities.
+								360 text They enable users to connect with others and share their physical locations and activities.
+							361 container
+								362 radio button (disabled) They focus exclusively on professional networking and job searching.
+								363 text They focus exclusively on professional networking and job searching.
+							364 container
+							366 text Accepted answer is They enable users to connect with others and share their physical locations and activities. 10 . As discussed in lecture, Choose the correct inference (s) for figures below (Figure 4 and Figure 5). Here mayorships (blue), Tips (red), and Dones (green). Reference:
+							367 link Description: https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/Publications_files/TP_lbsn_2012.pdf, Value: cdn.iiit.ac.in/cdn/precog.iiit.ac.in/Publications_files/TP_lbsn_2012.pdf
+							368 container
+								369 text 1  Point
+							370 container
+								371 Tick box (disabled) In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart.
+								372 text In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart.
+							373 container
+								374 Tick box (disabled) In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week).
+								375 text In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week).
+							376 container
+								377 Tick box (disabled) In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres)
+								378 text In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres)
+							379 container
+								380 Tick box (disabled) In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers.
+								381 text In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers.
+							382 container
+							384 text Accepted answer is In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart., In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week

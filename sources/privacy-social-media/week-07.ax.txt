@@ -1,0 +1,199 @@
+							207 text 1
+							208 text .
+							209 container
+								210 text Consider the following statement:  "Hello everyone!!!, Are you enjoying psosm course --- and learning new skills."  Choose the correct code to convert it to unpunctuated string
+							211 container
+								212 text 1  Point
+							213 container
+								214 radio button (disabled) [image option]
+							215 container
+								216 radio button (disabled) [image option]
+							217 container
+								218 radio button (disabled) [image option]
+							219 container
+								220 radio button (disabled) None of these
+								221 text None of these
+							222 container
+							224 text Accepted answer is
+							225 text 2
+							226 text .
+							227 text Consider the following code:
+							228 text Which of the following is the correct option?
+							229 container
+								230 text 1  Point
+							231 container
+								232 radio button (disabled) This code is used to retrieve an ascending sorted list having two tuples.
+								233 text This code is used to retrieve an ascending sorted list having two tuples.
+							234 container
+								235 radio button (disabled) This code is used to retrieve a descending sorted list having two tuples.
+								236 text This code is used to retrieve a descending sorted list having two tuples.
+							237 container
+								238 radio button (disabled) This code retrieves two tuples in a sorted or unsorted manner.
+								239 text This code retrieves two tuples in a sorted or unsorted manner.
+							240 container
+								241 radio button (disabled) This code returns a logical error.
+								242 text This code returns a logical error.
+							243 container
+							245 text Accepted answer is
+							246 text This code is used to retrieve a descending sorted list having two tuples.
+							247 text 3
+							248 text .
+							249 container
+								250 text Which of the following are not stopwords in the following list? stopwords = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", “apple”, "a", "an", "the", "and", "but", "if", "or", "because", "as
+							251 container
+								252 text 1  Point
+							253 container
+								254 radio button (disabled) All of the above are stopwords.
+								255 text All of the above are stopwords.
+							256 container
+								257 radio button (disabled) Further, again, apple
+								258 text Further, again, apple
+							259 container
+								260 radio button (disabled) While, apple
+								261 text While, apple
+							262 container
+								263 radio button (disabled) apple
+								264 text apple
+							265 container
+							267 text Accepted answer is
+							268 text apple
+							269 text 4
+							270 text .
+							271 text Which elements in the below sample mail make it potentially phishing email, as discussed in the lecture?
+							272 container
+								273 text 1  Point
+							274 container
+								275 radio button (disabled) Urgency in subject
+								276 text Urgency in subject
+							277 container
+								278 radio button (disabled) Regrettable information in the body
+								279 text Regrettable information in the body
+							280 container
+								281 radio button (disabled) Potential phishing link along with body
+								282 text Potential phishing link along with body
+							283 container
+								284 radio button (disabled) All of the above
+								285 text All of the above
+							286 container
+							288 text Accepted answer is
+							289 text All of the above
+							290 text 5
+							291 text .
+							292 text Which of the following is correct statement as discussed in the lecture?
+							293 container
+								294 text 1  Point
+							295 container
+								296 radio button (disabled) Younger participants were more vulnerable to phishing attacks.
+								297 text Younger participants were more vulnerable to phishing attacks.
+							298 container
+								299 radio button (disabled) Older participants were more vulnerable to phishing attacks.
+								300 text Older participants were more vulnerable to phishing attacks.
+							301 container
+								302 radio button (disabled) Younger and older participants were equally vulnerable to phishing attacks.
+								303 text Younger and older participants were equally vulnerable to phishing attacks.
+							304 container
+								305 radio button (disabled) No one is vulnerable to phishing attacks.
+								306 text No one is vulnerable to phishing attacks.
+							307 container
+							309 text Accepted answer is
+							310 text Younger participants were more vulnerable to phishing attacks.
+							311 text 6
+							312 text .
+							313 text In a scientific experiment, which group refers to manipulating the independent variable?
+							314 container
+								315 text 1  Point
+							316 container
+								317 radio button (disabled) Observational group
+								318 text Observational group
+							319 container
+								320 radio button (disabled) Comparison group
+								321 text Comparison group
+							322 container
+								323 radio button (disabled) Control group
+								324 text Control group
+							325 container
+								326 radio button (disabled) Experimental group
+								327 text Experimental group
+							328 container
+							330 text Accepted answer is
+							331 text Experimental group
+							332 text 7
+							333 text .
+							334 text Which of the following is/are the advantages of having privacy policies?
+							335 container
+								336 text 1  Point
+							337 container
+								338 radio button (disabled) To help users make informed decisions with the information that is presented to them
+								339 text To help users make informed decisions with the information that is presented to them
+							340 container
+								341 radio button (disabled) To help individuals avoid regrettable online disclosures
+								342 text To help individuals avoid regrettable online disclosures
+							343 container
+								344 radio button (disabled) Both a and b are correct
+								345 text Both a and b are correct
+							346 container
+								347 radio button (disabled) None of the above
+								348 text None of the above
+							349 container
+							351 text Accepted answer is
+							352 text Both a and b are correct
+							353 text 8
+							354 text .
+							355 text Which of the following nudges is depicted in the figure below?
+							356 container
+								357 text 1  Point
+							358 container
+								359 radio button (disabled) Timer nudge
+								360 text Timer nudge
+							361 container
+								362 radio button (disabled) Picture nudge
+								363 text Picture nudge
+							364 container
+								365 radio button (disabled) Sentiment nudge
+								366 text Sentiment nudge
+							367 container
+								368 radio button (disabled) All of the above
+								369 text All of the above
+							370 container
+							372 text Accepted answer is
+							373 text Picture nudge
+							374 text 9
+							375 text .
+							376 text As discussed in the lecture, which of the following is/are not a social media nudge?
+							377 container
+								378 text 1  Point
+							379 container
+								380 radio button (disabled) Timer Nudge
+								381 text Timer Nudge
+							382 container
+								383 radio button (disabled) Picture Nudge
+								384 text Picture Nudge
+							385 container
+								386 radio button (disabled) Sentiment Nudge
+								387 text Sentiment Nudge
+							388 container
+								389 radio button (disabled) Voice Nudge
+								390 text Voice Nudge
+							391 container
+							393 text Accepted answer is
+							394 text Voice Nudge
+							395 text 10
+							396 text .
+							397 text Which of the following has the property of having high indegree and high outdegree on online social media?
+							398 container
+								399 text 1  Point
+							400 container
+								401 radio button (disabled) Top Link farmers
+								402 text Top Link farmers
+							403 container
+								404 radio button (disabled) Random social network users
+								405 text Random social network users
+							406 container
+								407 radio button (disabled) Top Spammers
+								408 text Top Spammers
+							409 container
+								410 radio button (disabled) All of the above
+								411 text All of the above
+							412 container
+							414 text Accepted answer is
+							415 text Top Link farmers

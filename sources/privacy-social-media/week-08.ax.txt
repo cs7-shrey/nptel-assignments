@@ -1,0 +1,202 @@
+							203 text 1
+							204 text .
+							205 text What are the different approaches to profile linking?
+							206 container
+								207 text 1  Point
+							208 container
+								209 Tick box (disabled) Study and analyse common attributes (place of work, profile picture, name, etc.) across different social media platforms
+								210 text Study and analyse common attributes (place of work, profile picture, name, etc.) across different social media platforms
+							211 container
+								212 Tick box (disabled) Check important attributes such as the same emails, locations, and contact numbers (if available) used across multiple platforms
+								213 text Check important attributes such as the same emails, locations, and contact numbers (if available) used across multiple platforms
+							214 container
+								215 Tick box (disabled) Only looking at the user posting behaviour on social media platforms will help in profile linking.
+								216 text Only looking at the user posting behaviour on social media platforms will help in profile linking.
+							217 container
+								218 Tick box (disabled) It is not possible to find the same user profiles on different social media platforms.
+								219 text It is not possible to find the same user profiles on different social media platforms.
+							220 container
+							222 text Accepted answer is
+							223 text Study and analyse common attributes (place of work, profile picture, name, etc.) across different social media platforms, Check important attributes such as the same emails, locations, and contact numbers (if available) used across multiple platforms
+							224 text 2
+							225 text .
+							226 container
+								227 text Which of the following statements is/are true regarding username change on social media? S1: Changes to any profile attribute other than username do not lead to unreachability to the user profile. S2: The potential benign reasons for username change include space gain, suiting a trending event, gaining/losing anonymity, adjusting to real-life events, and avoiding boredom. S3: The malicious intentions for username change may include obscured username promotion and username squatting. S4: Search by the user’s old username results in a failed attempt to reach the user’s profile, potentially making others falsely believe that the user account has been deactivated.
+							228 container
+								229 text 1  Point
+							230 container
+								231 radio button (disabled) Only S1 and S4 are correct
+								232 text Only S1 and S4 are correct
+							233 container
+								234 radio button (disabled) Only S1, S2, and S3 are correct
+								235 text Only S1, S2, and S3 are correct
+							236 container
+								237 radio button (disabled) S1, S2, and S4 are correct
+								238 text S1, S2, and S4 are correct
+							239 container
+								240 radio button (disabled) All S1, S2, S3, S4 are correct.
+								241 text All S1, S2, S3, S4 are correct.
+							242 container
+							244 text Accepted answer is
+							245 text All S1, S2, S3, S4 are correct.
+							246 text 3
+							247 text .
+							248 text Below is the graph of username change. Which of the following is correct inference from the graph (as discussed in the lecture)?
+							249 container
+								250 text 1  Point
+							251 container
+								252 radio button (disabled) Around 35 per cent, of the users change their profile picture at least 3 times.
+								253 text Around 35 per cent, of the users change their profile picture at least 3 times.
+							254 container
+								255 radio button (disabled) Around 60-70 percent of the users change their usernames atleast once.
+								256 text Around 60-70 percent of the users change their usernames atleast once.
+							257 container
+								258 radio button (disabled) Around 35 percent of the users change their profile picture 3 times.
+								259 text Around 35 percent of the users change their profile picture 3 times.
+							260 container
+								261 radio button (disabled) Around 50-55 per cent of users have changed their descriptions thrice.
+								262 text Around 50-55 per cent of users have changed their descriptions thrice.
+							263 container
+							265 text Accepted answer is
+							266 text Around 35 per cent, of the users change their profile picture at least 3 times.
+							267 text 4
+							268 text .
+							269 text Why do whisper users have a low clustering coefficient over the network?
+							270 container
+								271 text 1  Point
+							272 container
+								273 radio button (disabled) Whisper users are likely to interact with complete strangers who are highly unlikely to interact with each other.
+								274 text Whisper users are likely to interact with complete strangers who are highly unlikely to interact with each other.
+							275 container
+								276 radio button (disabled) Users interact with a large sample of other users
+								277 text Users interact with a large sample of other users
+							278 container
+								279 radio button (disabled) New users make 20% of the contribution in the whisper content.
+								280 text New users make 20% of the contribution in the whisper content.
+							281 container
+								282 radio button (disabled) All of the above
+								283 text All of the above
+							284 container
+							286 text Accepted answer is
+							287 text Whisper users are likely to interact with complete strangers who are highly unlikely to interact with each other.
+							288 text 5
+							289 text .
+							290 text What is the primary purpose of Gephi software?
+							291 container
+								292 text 1  Point
+							293 container
+								294 radio button (disabled) Video Editing
+								295 text Video Editing
+							296 container
+								297 radio button (disabled) 3D Modeling
+								298 text 3D Modeling
+							299 container
+								300 radio button (disabled) Network Visualization and Analysis
+								301 text Network Visualization and Analysis
+							302 container
+								303 radio button (disabled) Music Composition
+								304 text Music Composition
+							305 container
+							307 text Accepted answer is
+							308 text Network Visualization and Analysis
+							309 text 6
+							310 text .
+							311 text Why studying username change behaviour is/are useful for social media researchers?
+							312 container
+								313 text 1  Point
+							314 container
+								315 Tick box (disabled) This is one of the unique attributes of the user
+								316 text This is one of the unique attributes of the user
+							317 container
+								318 Tick box (disabled) It is usually homogeneous
+								319 text It is usually homogeneous
+							320 container
+								321 Tick box (disabled) The number of characters and length of the username is restricted
+								322 text The number of characters and length of the username is restricted
+							323 container
+								324 Tick box (disabled) It is the publicly available attribute
+								325 text It is the publicly available attribute
+							326 container
+							328 text Accepted answer is
+							329 text This is one of the unique attributes of the user, It is usually homogeneous, The number of characters and length of the username is restricted, It is the publicly available attribute
+							330 text 7
+							331 text .
+							332 text In the network graph of Twitter, where nodes are users, the in-degree of the node would be
+							333 container
+								334 text 1  Point
+							335 container
+								336 radio button (disabled) Number of followers on Twitter
+								337 text Number of followers on Twitter
+							338 container
+								339 radio button (disabled) Number of people you follow
+								340 text Number of people you follow
+							341 container
+								342 radio button (disabled) Both a and b
+								343 text Both a and b
+							344 container
+								345 radio button (disabled) None of the above
+								346 text None of the above
+							347 container
+							349 text Accepted answer is
+							350 text Number of followers on Twitter
+							351 text 8
+							352 text .
+							353 text Which of the following is/are anonymous social networks?
+							354 container
+								355 text 1  Point
+							356 container
+								357 Tick box (disabled) Secret
+								358 text Secret
+							359 container
+								360 Tick box (disabled) 4chan
+								361 text 4chan
+							362 container
+								363 Tick box (disabled) Yak yak
+								364 text Yak yak
+							365 container
+								366 Tick box (disabled) Blind
+								367 text Blind
+							368 container
+							370 text Accepted answer is
+							371 text Secret, 4chan, Yak yak, Blind
+							372 text 9
+							373 text .
+							374 text A scale-free network can be one having
+							375 container
+								376 text 1  Point
+							377 container
+								378 radio button (disabled) Power law degree distribution
+								379 text Power law degree distribution
+							380 container
+								381 radio button (disabled) Zipf’s law
+								382 text Zipf’s law
+							383 container
+								384 radio button (disabled) Pareto principle
+								385 text Pareto principle
+							386 container
+								387 radio button (disabled) All of the above
+								388 text All of the above
+							389 container
+							391 text Accepted answer is
+							392 text All of the above
+							393 text 10
+							394 text .
+							395 container
+								396 text Consider the below situation Imagine you're a student in a university, and you decide to survey to determine the number of friends each of your classmates has on social media. You ask everyone to report the number of friends they have on one popular social media platform (say Facebook). When you collect the data and calculate the average number of friends reported by your classmates, 300 friends. However, when you individually examine the number of friends reported by each of your classmates, you notice that many of them have fewer than 300 friends, perhaps ranging from 50 to 200 friends. Why did you observe such a phenomenon?
+							397 container
+								398 text 1  Point
+							399 container
+								400 radio button (disabled) Most of the individuals have reported it wrong in the report.
+								401 text Most of the individuals have reported it wrong in the report.
+							402 container
+								403 radio button (disabled) Few individuals have exceptionally high friend counts (outliers) that skew the average upward.
+								404 text Few individuals have exceptionally high friend counts (outliers) that skew the average upward.
+							405 container
+								406 radio button (disabled) There is an error in individual calculations. It is impossible to have 300 friends on average if many individuals have fewer than 300 friends.
+								407 text There is an error in individual calculations. It is impossible to have 300 friends on average if many individuals have fewer than 300 friends.
+							408 container
+								409 radio button (disabled) None of the above
+								410 text None of the above
+							411 container
+							413 text Accepted answer is
+							414 text Few individuals have exceptionally high friend counts (outliers) that skew the average upward.

@@ -1,0 +1,3967 @@
+{
+  "course": "Privacy and Security in Online Social Media",
+  "courseId": "noc26_cs141",
+  "collectedOn": "2026-10-17",
+  "schemaVersion": 3,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Week 1",
+      "topic": "Social media & Python setup",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=22&assessmentId=150",
+      "sourceFile": "sources/privacy-social-media/week-01.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w01-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which sequence correctly hosts a local Git repository on GitHub?",
+          "options": [
+            {
+              "id": "A",
+              "text": "git push origin master → git remote -v → git remote add origin ..."
+            },
+            {
+              "id": "B",
+              "text": "git remote add origin ... → git remote -v → git push origin master"
+            },
+            {
+              "id": "C",
+              "text": "git remote -v → git clone → git push"
+            },
+            {
+              "id": "D",
+              "text": "git clone → git remote add → git status"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "git remote add origin ... → git remote -v → git push origin master",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "multiple-choice",
+          "prompt": "Which of the following statement(s) is/are true about Anonymous social networks?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Anonymous social networks help in providing enhanced privacy and anonymity."
+            },
+            {
+              "id": "B",
+              "text": "Anonymous social networks provide more freedom of expression."
+            },
+            {
+              "id": "C",
+              "text": "Anonymous social networks reduce the fear of judgment or social consequences."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Anonymous social networks help in providing enhanced privacy and anonymity., Anonymous social networks provide more freedom of expression., Anonymous social networks reduce the fear of judgment or social consequences.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Choose the correct option to create a virtual environment in Python",
+          "options": [
+            {
+              "id": "A",
+              "text": "python3 -m venv"
+            },
+            {
+              "id": "B",
+              "text": "python3 venv -m"
+            },
+            {
+              "id": "C",
+              "text": "virtualpython3 -m venv"
+            },
+            {
+              "id": "D",
+              "text": "virtualenv python3 -m venv myenv"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "python3 -m venv",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Why is it important to create a virtual environment in Python?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Creating a virtual environment isolates project dependencies and prevents conflicts between different projects."
+            },
+            {
+              "id": "B",
+              "text": "Creating a virtual environment enhances the performance of Python programs."
+            },
+            {
+              "id": "C",
+              "text": "Creating a virtual environment to ensure compatibility with different operating systems."
+            },
+            {
+              "id": "D",
+              "text": "Creating a virtual environment optimises memory usage in Python applications."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Creating a virtual environment isolates project dependencies and prevents conflicts between different projects.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Fill in the correct option to stage files/directories.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Modified, Unmodified"
+            },
+            {
+              "id": "B",
+              "text": "Unmodified, modified"
+            },
+            {
+              "id": "C",
+              "text": "modified, unstaged"
+            },
+            {
+              "id": "D",
+              "text": "Modified, tracked"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Unmodified, modified",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w01-q05.png",
+              "alt": "Git file lifecycle with two blank state labels (a) and (b)."
+            }
+          ]
+        },
+        {
+          "id": "w01-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which command lists all the remote addresses associated with a local repository?",
+          "options": [
+            {
+              "id": "A",
+              "text": "git remote -v"
+            },
+            {
+              "id": "B",
+              "text": "git pull origin master"
+            },
+            {
+              "id": "C",
+              "text": "Git stash"
+            },
+            {
+              "id": "D",
+              "text": "Git checkout"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "git remote -v",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following concept is closely related to the fact that infrequent, arms-length relationships are more beneficial for employment opportunities, promotions, and wages than strong ties?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Six degrees of separation"
+            },
+            {
+              "id": "B",
+              "text": "Small world phenomenon"
+            },
+            {
+              "id": "C",
+              "text": "Strength of weak ties"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Strength of weak ties",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is/are shortcomings of online social media platforms?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spread of misinformation"
+            },
+            {
+              "id": "B",
+              "text": "Cyberbullying and harassment"
+            },
+            {
+              "id": "C",
+              "text": "Addiction and time consumption"
+            },
+            {
+              "id": "D",
+              "text": "limited control over privacy"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Spread of misinformation, Cyberbullying and harassment, Addiction and time consumption, limited control over privacy",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "When a piece of content, such as a video, meme, or news article, gains attention on social media platforms, it can quickly reach a large audience within a short period. Which V of social media does it refers to?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Velocity"
+            },
+            {
+              "id": "B",
+              "text": "Veracity"
+            },
+            {
+              "id": "C",
+              "text": "Value"
+            },
+            {
+              "id": "D",
+              "text": "Volume"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Velocity",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of the Gab platform?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To promote free speech"
+            },
+            {
+              "id": "B",
+              "text": "To facilitate online shopping experience"
+            },
+            {
+              "id": "C",
+              "text": "It provides educational resources"
+            },
+            {
+              "id": "D",
+              "text": "Support for professional networking"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To promote free speech",
+          "reference": null,
+          "note": null
+        }
+      ],
+      "solutionUrl": "https://drive.google.com/file/d/1BAkwzwnEMfooAuj_Fa31eQOjAQmYnFgq/view?usp=sharing"
+    },
+    {
+      "week": 2,
+      "title": "Week 2",
+      "topic": "Social media APIs",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=23&assessmentId=151",
+      "sourceFile": "sources/privacy-social-media/week-02.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w02-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "What is the primary data format utilized by the Reddit API when returning information?",
+          "options": [
+            {
+              "id": "A",
+              "text": "JSON"
+            },
+            {
+              "id": "B",
+              "text": "XML"
+            },
+            {
+              "id": "C",
+              "text": "HTML"
+            },
+            {
+              "id": "D",
+              "text": "CSV"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "JSON",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "JSON stands",
+          "options": [
+            {
+              "id": "A",
+              "text": "JavaScript Object Notation"
+            },
+            {
+              "id": "B",
+              "text": "JavaScript Object Network"
+            },
+            {
+              "id": "C",
+              "text": "JavaScript Oriented Notation"
+            },
+            {
+              "id": "D",
+              "text": "JavaScript Oriented Namespace"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "JavaScript Object Notation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Suppose you want to retrieve the top 5 hottest posts from the subreddit \"r/technology\" using the Reddit API. Which Python library would you most likely use to achieve this?",
+          "options": [
+            {
+              "id": "A",
+              "text": "PRAW"
+            },
+            {
+              "id": "B",
+              "text": "Requests"
+            },
+            {
+              "id": "C",
+              "text": "Urllib"
+            },
+            {
+              "id": "D",
+              "text": "JSON"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "PRAW",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "You want to fetch the details of the 10 hot posts from the subreddit \"r/worldnews\" using the Reddit API in Python. Which is the correct code snippet from below options?",
+          "options": [
+            {
+              "id": "A",
+              "text": "import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').hot(limit=10) for post in posts: print(post.title)",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "import requests url = \"https://www.reddit.com/r/worldnews/new.json?limit=10\" response = requests.get(url) data = response.json() for post in data['data']['children']: print(post['data']['title'])",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').new(limit=10) for post in posts: print(post.title)",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').hot(limit=10) for post in posts: print(post.title)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "multiple-choice",
+          "prompt": "Which of the following tweet content falls in category of linguistic features?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Number of followers"
+            },
+            {
+              "id": "B",
+              "text": "Presence of negative emotion words"
+            },
+            {
+              "id": "C",
+              "text": "Presence of smiley"
+            },
+            {
+              "id": "D",
+              "text": "Presence of pronouns"
+            }
+          ],
+          "correctOptionIds": [
+            "B",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Presence of negative emotion words, Presence of pronouns",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Why do we do network analysis on social media platforms?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To analyze the performance of computer networks and improve data transmission speeds."
+            },
+            {
+              "id": "B",
+              "text": "To understand the social structures and relationships between individuals or entities in a network."
+            },
+            {
+              "id": "C",
+              "text": "To study the behavior of network protocols and optimize their efficiency."
+            },
+            {
+              "id": "D",
+              "text": "To identify and analyze patterns of diseases spreading within a population."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To understand the social structures and relationships between individuals or entities in a network.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is a recent example of misinformation spread on social media platforms?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tweet claiming that a particular brand of COVID-19 vaccine causes severe side effects, with no evidence to support the claim."
+            },
+            {
+              "id": "B",
+              "text": "Facebook post sharing information from a well-known health organization about the effectiveness of vaccination."
+            },
+            {
+              "id": "C",
+              "text": "Instagram story containing accurate information about a recent political development with credible sources cited."
+            },
+            {
+              "id": "D",
+              "text": "YouTube video providing a detailed explanation of climate change supported by scientific evidence."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Tweet claiming that a particular brand of COVID-19 vaccine causes severe side effects, with no evidence to support the claim.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Given a MongoDB collection named \"employees\" with the following document structure: \n\nWhat MongoDB query would you use to retrieve all employees with a salary greater than or equal to 60000?",
+          "options": [
+            {
+              "id": "A",
+              "text": "db.employees.find({ \"salary\": { $gte: 60000 } })",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "db.employees.find({ \"salary\": { $gt: 60000 } })",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "db.employees.find({ \"salary\": { $lte: 60000 } })",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "db.employees.find({ \"salary\": { $lt: 60000 } })",
+              "code": true
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "db.employees.find({ \"salary\": { $gte: 60000 } })",
+          "reference": null,
+          "note": null,
+          "code": "{ \"_id\": ObjectId(\"615243d88f0ae43f255874c1\"), \"name\": \"Ram\", \"department\": \"CSE\", \"age\": 35, \"salary\": 50000 }"
+        },
+        {
+          "id": "w02-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "You are developing a social media platform, and you have a database table, \"posts\" to store user posts. The \"posts\" table schema is given below: \n\nNow, you want to retrieve the 5 most recent posts made by a specific user with the user ID \"12345\". Which SQL query would you use?",
+          "options": [
+            {
+              "id": "A",
+              "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id DESC LIMIT 5;",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date ASC LIMIT 5;",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id ASC LIMIT 5;",
+              "code": true
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;",
+          "reference": null,
+          "note": null,
+          "code": "CREATE TABLE posts ( post_id INT PRIMARY KEY, user_id INT, post_content TEXT, post_date DATETIME );"
+        },
+        {
+          "id": "w02-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What is the Facebook Graph API as discussed in lecture?",
+          "options": [
+            {
+              "id": "A",
+              "text": "An API that provides access to a user's Facebook friends list."
+            },
+            {
+              "id": "B",
+              "text": "An API that allows developers to create and manage Facebook pages."
+            },
+            {
+              "id": "C",
+              "text": "An API that enables developers to integrate Facebook login into their applications for user authentication."
+            },
+            {
+              "id": "D",
+              "text": "An API that provides access to a wide range of user data, interactions, and connections on Facebook."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "An API that provides access to a wide range of user data, interactions, and connections on Facebook.",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Week 3",
+      "topic": "Misinformation & privacy",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=24&assessmentId=152",
+      "sourceFile": "sources/privacy-social-media/week-03.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w03-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Consider the below response: “To this segment, consumer privacy is very important; they feel that they have been victims of privacy invasions, they are pessimistic about the future of privacy protection, and about a third of them favour creating a general federal regulatory agency on consumer privacy.” To which of the three Westin Privacy categories is \"they\" in the above sentence most likely to fall?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fundamentalists"
+            },
+            {
+              "id": "B",
+              "text": "Pragmatists"
+            },
+            {
+              "id": "C",
+              "text": "Unconcerned"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Fundamentalists",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "multiple-choice",
+          "prompt": "Which of the following features is used by the credibility model- TweetCred?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Tweet links"
+            },
+            {
+              "id": "B",
+              "text": "Tweet Author"
+            },
+            {
+              "id": "C",
+              "text": "Tweet network"
+            },
+            {
+              "id": "D",
+              "text": "Tweet meta data"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Tweet links, Tweet Author, Tweet network, Tweet meta data",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Cronbach’s alpha",
+          "options": [
+            {
+              "id": "A",
+              "text": "determines the statistical significance of a research study."
+            },
+            {
+              "id": "B",
+              "text": "assess the reliability and internal consistency of a questionnaire."
+            },
+            {
+              "id": "C",
+              "text": "analyze the effect size of an intervention."
+            },
+            {
+              "id": "D",
+              "text": "calculate the standard deviation of a sample population."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "assess the reliability and internal consistency of a questionnaire.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Suppose we have five tweets (TW1, TW2, TW3, TW4, and TW5) with their relevances based on user feedback or relevance labels: TW1: Highly relevant tweet (Relevance = 2) TW2: Moderately relevant tweet (Relevance = 1) TW3: Not relevant tweet (Relevance = 0) TW4: Relevant tweet (Relevance = 1) TW5: Highly relevant tweet (Relevance = 2) Now, let's assume the ranking algorithm generates a ranked list of tweets: Rank 1: TW5 (Highly relevant tweet) Rank 2: TW1 (Highly relevant tweet) Rank 3: TW3 (Not relevant tweet) Rank 4: TW2 (Moderately relevant tweet) Rank 5: TW4 (Relevant tweet) What would be NDCG@5 for this ranked list of tweets?",
+          "options": [
+            {
+              "id": "A",
+              "text": "0.5"
+            },
+            {
+              "id": "B",
+              "text": ".513"
+            },
+            {
+              "id": "C",
+              "text": ".975"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": ".975",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "How many participants have changed their default settings on their social network?",
+          "options": [
+            {
+              "id": "A",
+              "text": "75%"
+            },
+            {
+              "id": "B",
+              "text": "60%"
+            },
+            {
+              "id": "C",
+              "text": "50%"
+            },
+            {
+              "id": "D",
+              "text": "25%"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "50%",
+          "reference": null,
+          "note": null,
+          "context": "Read through the report “Privacy in India: Attitudes and Awareness V 2.0” at https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf And answer the following questions [5-7]."
+        },
+        {
+          "id": "w03-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of a Focus Group Discussion (FGD) in the above report?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To conduct one-on-one interviews with participants."
+            },
+            {
+              "id": "B",
+              "text": "To collect quantitative data through surveys and questionnaires."
+            },
+            {
+              "id": "C",
+              "text": "To observe participants' behaviours in a controlled environment."
+            },
+            {
+              "id": "D",
+              "text": "To facilitate group discussions and gather qualitative insights."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To facilitate group discussions and gather qualitative insights.",
+          "reference": null,
+          "note": null,
+          "context": "Read through the report “Privacy in India: Attitudes and Awareness V 2.0” at https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf And answer the following questions [5-7]."
+        },
+        {
+          "id": "w03-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "“When you hear the word privacy, what comes to mind”. Which is the most common respondent answer according to the above report?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Information Privacy"
+            },
+            {
+              "id": "B",
+              "text": "Bodily privacy"
+            },
+            {
+              "id": "C",
+              "text": "Communication privacy"
+            },
+            {
+              "id": "D",
+              "text": "Territorial privacy"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Information Privacy",
+          "reference": null,
+          "note": null,
+          "context": "Read through the report “Privacy in India: Attitudes and Awareness V 2.0” at https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/research/privacyindia/PI_2012_Complete_Report.pdf And answer the following questions [5-7]."
+        },
+        {
+          "id": "w03-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Consider the below graph and choose the correct option:",
+          "options": [
+            {
+              "id": "A",
+              "text": "For 82% of the users, the response time was less than 2 seconds, and for 99%, the response time was under 10 seconds."
+            },
+            {
+              "id": "B",
+              "text": "For 99% of the users, the response time was less than 6 seconds, and for 100%, the response time was under 10 seconds."
+            },
+            {
+              "id": "C",
+              "text": "For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "For 82% of the users, the response time was less than 6 seconds, and for 99%, the response time was under 10 seconds.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w03-q08.png",
+              "alt": "Cumulative response-time distribution for TweetCred."
+            }
+          ]
+        },
+        {
+          "id": "w03-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "What is the Likert scale?",
+          "options": [
+            {
+              "id": "A",
+              "text": "rating scale in surveys and questionnaires"
+            },
+            {
+              "id": "B",
+              "text": "gives the score for any real-time tweets"
+            },
+            {
+              "id": "C",
+              "text": "Interannotator agreement"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "rating scale in surveys and questionnaires",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "TweetCred is",
+          "options": [
+            {
+              "id": "A",
+              "text": "a real-time web-based system to automatically evaluate the credibility of content on Twitter."
+            },
+            {
+              "id": "B",
+              "text": "a real-time app-based system to automatically evaluate the score of tweets on Twitter."
+            },
+            {
+              "id": "C",
+              "text": "a real-time app-based system to automatically assess the quality of content on Twitter."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "a real-time web-based system to automatically evaluate the credibility of content on Twitter.",
+          "reference": null,
+          "note": null
+        }
+      ],
+      "solutionUrl": "https://docs.google.com/document/d/1-4f8ikbwqzD_M8EHuh0ouryDetPo9Zmt/edit"
+    },
+    {
+      "week": 4,
+      "title": "Week 4",
+      "topic": "Privacy, pictures & data analysis",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=25&assessmentId=153",
+      "sourceFile": "sources/privacy-social-media/week-04.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w04-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "What is the critical challenge that Latanya Sweeney's research on k-anonymity addresses?",
+          "options": [
+            {
+              "id": "A",
+              "text": "make datasets larger for analysis"
+            },
+            {
+              "id": "B",
+              "text": "eliminate data from datasets"
+            },
+            {
+              "id": "C",
+              "text": "anonymise data without losing utility"
+            },
+            {
+              "id": "D",
+              "text": "ignore research utility for better privacy"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "anonymise data without losing utility",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which data structure can significantly enhance the efficiency and simplicity of your calculations?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Python numpy list"
+            },
+            {
+              "id": "B",
+              "text": "Python numpy array"
+            },
+            {
+              "id": "C",
+              "text": "Python variables"
+            },
+            {
+              "id": "D",
+              "text": "None of these"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Python numpy array",
+          "reference": null,
+          "note": null,
+          "context": "Suppose you're working on a project that involves analysing sales data for a chain of stores. You are provided with a list of daily sales figures for a particular product over some time. The task is to calculate various statistics such as the total sales, average sales, and maximum sales for that product. Answer the following questions [2-4]:"
+        },
+        {
+          "id": "w04-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Fill in the correct function calculate_total_sales(sales_list) which calculates the total sales from a list of daily sales figures using NumPy in the below code",
+          "options": [
+            {
+              "id": "A",
+              "text": "sales_array = np.array(sales_list)\ntotal_sales = np.sum(sales_array)",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "sales_array = np.list(sales_list)\ntotal_sales = np.sum(sales_array)",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "sales_array = np.array(sales_list)\ntotal_sales = np.sum(np.concatenate(sales_array,sales_list))",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "sales_array = np.array(sales_list) total_sales = np.sum(sales_array)",
+          "reference": null,
+          "note": null,
+          "code": "import numpy as np\n\ndef calculate_total_sales(sales_list):\n    # Write your code here\n    return total_sales\n\ndaily_sales = [1200, 1500, 1300, 1400, 1800, 1600]\ntotal_sales = calculate_total_sales(daily_sales)\nprint(\"Total sales:\", total_sales)",
+          "context": "Suppose you're working on a project that involves analysing sales data for a chain of stores. You are provided with a list of daily sales figures for a particular product over some time. The task is to calculate various statistics such as the total sales, average sales, and maximum sales for that product. Answer the following questions [2-4]:"
+        },
+        {
+          "id": "w04-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Fill in the correct function calculate_maximum_sales(sales_list) which calculates the maximum sales from a list of daily sales figures using NumPy in the below code",
+          "options": [
+            {
+              "id": "A",
+              "text": "sales_array = np.array(sales_list)\nmax_sales = np.max(sales_array)",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "sales_array = np.list(sales_list)\nmax_sales = np.max(sales_array)",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "sales_array = np.array(sales_list)\nmax_sales = np.max(np.concatenate(sales_array,sales_list))",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "sales_array = np.array(sales_list) max_sales = np.max(sales_array)",
+          "reference": null,
+          "note": null,
+          "code": "import numpy as np\n\ndef calculate_maximum_sales(sales_list):\n    # Write your code here\n    return max_sales\n\ndaily_sales = [1200, 1500, 1300, 1400, 1800, 1600]\nmaximum_sales = calculate_maximum_sales(daily_sales)\nprint(\"Maximum sales:\", maximum_sales)",
+          "context": "Suppose you're working on a project that involves analysing sales data for a chain of stores. You are provided with a list of daily sales figures for a particular product over some time. The task is to calculate various statistics such as the total sales, average sales, and maximum sales for that product. Answer the following questions [2-4]:"
+        },
+        {
+          "id": "w04-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "How would you extract expenses for the second half of the year (July to December)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "second_half_expenses = expenses_array[6:]",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "second_half_expenses = expenses_array[5:]",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "second_half_expenses = expenses_array[:12]",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "second_half_expenses = expenses_array[7:]",
+              "code": true
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "second_half_expenses = expenses_array[6:]",
+          "reference": null,
+          "note": null,
+          "context": "Imagine you have a NumPy array representing your monthly expenses for the past year. Each array element corresponds to the total expenses (in dollars) for a specific month. The task is to analyze and extract specific information. import numpy as np expenses_array = np.array([1200, 1500, 1300, 1400, 1800, 1600, 1400, 1250, 1350, 1500, 1700, 1900]) Answer the following questions from [5-7]:"
+        },
+        {
+          "id": "w04-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Identify the months where expenses exceeded $1600.",
+          "options": [
+            {
+              "id": "A",
+              "text": "high_expense_months = np.where(expenses_array < 1600)[0]",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "high_expense_months = np.where(expenses_array > 1600)[0]",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "high_expense_months = np.where(expenses_array > 1600))",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "high_expense_months = np.where(expenses_array > 1600)[0] + 1",
+              "code": true
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "high_expense_months = np.where(expenses_array > 1600)[0] + 1",
+          "reference": null,
+          "note": null,
+          "context": "Imagine you have a NumPy array representing your monthly expenses for the past year. Each array element corresponds to the total expenses (in dollars) for a specific month. The task is to analyze and extract specific information. import numpy as np expenses_array = np.array([1200, 1500, 1300, 1400, 1800, 1600, 1400, 1250, 1350, 1500, 1700, 1900]) Answer the following questions from [5-7]:"
+        },
+        {
+          "id": "w04-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Calculate the average expenses for the first quarter of year.",
+          "options": [
+            {
+              "id": "A",
+              "text": "first_quarter_average = np.mean(expenses_array[:4])",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "first_quarter_average = np.mean(expenses_array[:2])",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "first_quarter_average = np.mean(expenses_array[:3])",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "first_quarter_average = np.mean(expenses_array[:6])",
+              "code": true
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "first_quarter_average = np.mean(expenses_array[:3])",
+          "reference": null,
+          "note": null,
+          "context": "Imagine you have a NumPy array representing your monthly expenses for the past year. Each array element corresponds to the total expenses (in dollars) for a specific month. The task is to analyze and extract specific information. import numpy as np expenses_array = np.array([1200, 1500, 1300, 1400, 1800, 1600, 1400, 1250, 1350, 1500, 1700, 1900]) Answer the following questions from [5-7]:"
+        },
+        {
+          "id": "w04-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Choose the correct option for “result”",
+          "options": [
+            {
+              "id": "A",
+              "text": "Category | Total Revenue | Average Price\nclothing | 105 | 35.00\nelectronics | 1630 | 543.33\nhome | 270 | 90.00",
+              "code": true
+            },
+            {
+              "id": "B",
+              "text": "Category | Total Revenue | Average Price\nclothing | 1630 | 35.00\nelectronics | 105 | 543.33\nhome | 270 | 90.00",
+              "code": true
+            },
+            {
+              "id": "C",
+              "text": "Category | Total Revenue | Average Price\nclothing | 105 | 35.00\nelectronics | 270 | 90.00\nhome | 1630 | 543.33",
+              "code": true
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "None of the above",
+          "reference": null,
+          "note": null,
+          "code": "import pandas as pd\n\ndata = {\n    'Product': ['A', 'B', 'A', 'B', 'C', 'A', 'C', 'B', 'C', 'A'],\n    'Category': ['Electronics', 'Clothing', 'Electronics', 'Clothing', 'Home', 'Electronics', 'Home', 'Clothing', 'Home', 'Electronics'],\n    'Price': [500, 40, 600, 35, 100, 550, 80, 30, 90, 480]\n}\nsales_df = pd.DataFrame(data)\ngrouped = sales_df.groupby('Category')\nresult = grouped.agg({'Price': ['sum', 'mean']}).reset_index()\n# Rename the columns\nresult.columns = ['Category', 'Total Revenue', 'Average Price']\nprint(result)"
+        },
+        {
+          "id": "w04-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "What is the primary goal of k-anonymity in data privacy?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ensure that every attribute in the dataset is unique."
+            },
+            {
+              "id": "B",
+              "text": "Prevent unauthorised access to the dataset."
+            },
+            {
+              "id": "C",
+              "text": "Minimize the amount of data collected."
+            },
+            {
+              "id": "D",
+              "text": "Making it difficult to link specific individuals to their records."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Making it difficult to link specific individuals to their records.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What will be the output of the below code:",
+          "options": [
+            {
+              "id": "A",
+              "text": "A plot consisting of sine wave"
+            },
+            {
+              "id": "B",
+              "text": "A plot consisting of cosine wave"
+            },
+            {
+              "id": "C",
+              "text": "Logical error in code"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A plot consisting of sine wave",
+          "reference": null,
+          "note": null,
+          "code": "import numpy as np\nimport matplotlib.pyplot as plt\n\ntime = np.linspace(0, 2 * np.pi, 1000)\namplitude = 1.0\nfrequency = 1.0\nsine_wave = amplitude * np.sin(frequency * time)\nplt.figure(figsize=(8, 6))\nplt.plot(time, sine_wave, label='Sine Wave', color='blue')\nplt.title('Sine Wave')\nplt.xlabel('Time')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.grid(True)\nplt.show()"
+        }
+      ],
+      "solutionUrl": "https://docs.google.com/document/d/1R--5GK8JGBtXQ2Rk7u1KGhEunZiOM9vl/edit"
+    },
+    {
+      "week": 5,
+      "title": "Week 5",
+      "topic": "Policing & social media",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=26&assessmentId=154",
+      "sourceFile": "sources/privacy-social-media/week-05.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w05-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "multiple-choice",
+          "prompt": "How do Online Social Networks improve public Communication between police and residents?",
+          "options": [
+            {
+              "id": "A",
+              "text": "provide actionable information and collective action"
+            },
+            {
+              "id": "B",
+              "text": "provide mutual accountability"
+            },
+            {
+              "id": "C",
+              "text": "understand fear and victimisation effects"
+            },
+            {
+              "id": "D",
+              "text": "help to contact concerned authorities"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "provide actionable information and collective action, provide mutual accountability, understand fear and victimisation effects, help to contact concerned authorities",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "multiple-choice",
+          "prompt": "Which of the following are examples of actionable information?",
+          "options": [
+            {
+              "id": "A",
+              "text": "OSN post regarding traffic issues on the road"
+            },
+            {
+              "id": "B",
+              "text": "OSN post regarding open potholes on the road"
+            },
+            {
+              "id": "C",
+              "text": "OSN post sharing about Azaadi ka Amrit Mahotsav celebrations in the locality"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "OSN post regarding traffic issues on the road, OSN post regarding open potholes on the road",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "What type of actionable information is highlighted in (bold) the below example?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Temporal data"
+            },
+            {
+              "id": "B",
+              "text": "Spatial data"
+            },
+            {
+              "id": "C",
+              "text": "Linguistic data"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Temporal data",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w05-q03.png",
+              "alt": "Example police report with the time and day highlighted in bold."
+            }
+          ]
+        },
+        {
+          "id": "w05-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Given below are two types of communication as discussed in the lecture.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Formal and Formal"
+            },
+            {
+              "id": "B",
+              "text": "Informal and Formal"
+            },
+            {
+              "id": "C",
+              "text": "Informal and Informal"
+            },
+            {
+              "id": "D",
+              "text": "Formal and Informal"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Formal and Informal",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w05-q04.png",
+              "alt": "Two examples of communication with police."
+            }
+          ]
+        },
+        {
+          "id": "w05-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "How would you identify emotional and psychological states based on the written text?",
+          "options": [
+            {
+              "id": "A",
+              "text": "LIWC"
+            },
+            {
+              "id": "B",
+              "text": "K-means clustering"
+            },
+            {
+              "id": "C",
+              "text": "N-gram analysis"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "LIWC",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Consider a sentence \"ISRO launched Chandrayaan and conducted experiments on thermophysical properties and environment\". What is the thematic content and subject matter being discussed?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The linguistic diversity of the sentence."
+            },
+            {
+              "id": "B",
+              "text": "The emotional tone is conveyed in the sentence."
+            },
+            {
+              "id": "C",
+              "text": "The grammatical structure of the sentence."
+            },
+            {
+              "id": "D",
+              "text": "The activities and research conducted by ISRO."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The activities and research conducted by ISRO.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "What does an “n” represent in the n-gram analysis of a sentence?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The number of emotions in the analysis."
+            },
+            {
+              "id": "B",
+              "text": "The number of words in each n-gram."
+            },
+            {
+              "id": "C",
+              "text": "The number of characters in each n-gram."
+            },
+            {
+              "id": "D",
+              "text": "The number of different languages in the sentence."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The number of words in each n-gram.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "A sentiment analysis study analyses a text passage for valence and arousal values. On a scale of -1 to 1, the valence and arousal score is 0.75 and 0.85. What do these values suggest about the emotional characteristics of the text?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Negative sentiment, low emotional intensity"
+            },
+            {
+              "id": "B",
+              "text": "Positive sentiment, high emotional intensity"
+            },
+            {
+              "id": "C",
+              "text": "Negative sentiment, high emotional intensity"
+            },
+            {
+              "id": "D",
+              "text": "Positive sentiment, low emotional intensity"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Positive sentiment, high emotional intensity",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "A social media analyst is studying the engagement characteristics (likes, comments, and shares) of three different posts on a platform. The engagement counts for each post over a week are as follows: Post 1: 120 likes, 30 comments, 15 shares Post 2: 80 likes, 45 comments, 20 shares Post 3: 100 likes, 25 comments, 10 shares Calculate the mean engagement (average likes, comments, and shares) for each post and then find the standard deviation of engagement for the entire set of posts. Based on the standard deviation, which post shows the highest variability in engagement characteristics?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Post 1"
+            },
+            {
+              "id": "B",
+              "text": "Post 2"
+            },
+            {
+              "id": "C",
+              "text": "Post 3"
+            },
+            {
+              "id": "D",
+              "text": "All posts show similar variability."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Post 1",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What kind of post and sentiment is depicted in the below example? “Absolutely disgusted by the state of our local park! It's been months since we reported the broken playground equipment, and nothing has been done. Our kids deserve better!”",
+          "options": [
+            {
+              "id": "A",
+              "text": "Citizen-initiated and positive"
+            },
+            {
+              "id": "B",
+              "text": "Public authority-initiated and negative"
+            },
+            {
+              "id": "C",
+              "text": "Citizen-initiated and negative"
+            },
+            {
+              "id": "D",
+              "text": "Public authority-initiated and positive"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Citizen-initiated and negative",
+          "reference": null,
+          "note": null
+        }
+      ],
+      "solutionUrl": "https://docs.google.com/document/d/16sDb_PlvNMiEyZ5iSvcCH8L_sezs-A9W/edit"
+    },
+    {
+      "week": 6,
+      "title": "Week 6",
+      "topic": "E-crime & network analysis",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=27&assessmentId=155",
+      "sourceFile": "sources/privacy-social-media/week-06.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w06-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Consider the following scenario on a social network A is friends with B and C. B is friends with A and D. C is friends with A and D. D is friends with B and C. Calculate the betweenness centrality for A, B, C, and D. Identify the individual having the highest betweenness centrality.",
+          "options": [
+            {
+              "id": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "text": "All of them have the same betweenness centrality"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All of them have the same betweenness centrality",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "What does indegree centrality measure in the social media and network analysis context?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The level of activity a user has on the platform."
+            },
+            {
+              "id": "B",
+              "text": "The number of outgoing connections a user has with other users."
+            },
+            {
+              "id": "C",
+              "text": "A user's popularity based on their followers or incoming connections."
+            },
+            {
+              "id": "D",
+              "text": "The diversity of content shared by a user."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A user's popularity based on their followers or incoming connections.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "What does betweenness centrality depict about the node?",
+          "options": [
+            {
+              "id": "A",
+              "text": "One who is quickly approachable"
+            },
+            {
+              "id": "B",
+              "text": "Who is close to everyone"
+            },
+            {
+              "id": "C",
+              "text": "One who is most influential"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "One who is quickly approachable",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "What is link farming?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Agricultural practice that involves cultivating crops in a vertical arrangement."
+            },
+            {
+              "id": "B",
+              "text": "Rapidly growing links on a website through unethical or manipulative means."
+            },
+            {
+              "id": "C",
+              "text": "A strategy for developing social connections by attending networking events."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Rapidly growing links on a website through unethical or manipulative means.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "multiple-choice",
+          "prompt": "Spamming the index of search engines is called",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spamdexing"
+            },
+            {
+              "id": "B",
+              "text": "Spamexing"
+            },
+            {
+              "id": "C",
+              "text": "Spamming"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Spamdexing, Spamexing",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following is the best example of a clickbait headline?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Annual Financial Report 2026"
+            },
+            {
+              "id": "B",
+              "text": "Meeting Agenda for Today"
+            },
+            {
+              "id": "C",
+              "text": "You Won't Believe What Happened Next! Click Here to Claim Your Prize!"
+            },
+            {
+              "id": "D",
+              "text": "Python Programming Notes"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "You Won't Believe What Happened Next! Click Here to Claim Your Prize!",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is considered as “social etiquette” on online social media such as Twitter?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Following back"
+            },
+            {
+              "id": "B",
+              "text": "Comment on the post of an influential person"
+            },
+            {
+              "id": "C",
+              "text": "Giving likes to the post of an influential person"
+            },
+            {
+              "id": "D",
+              "text": "Saying “Thank you” to any appreciation by an influential person"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Following back",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "A psychological principle where individuals feel compelled to return favours and interactions they receive is called",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spamming"
+            },
+            {
+              "id": "B",
+              "text": "Reciprocity"
+            },
+            {
+              "id": "C",
+              "text": "Link farming"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Reciprocity",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is/are graph centrality measures?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eigen centrality"
+            },
+            {
+              "id": "B",
+              "text": "Node degree"
+            },
+            {
+              "id": "C",
+              "text": "Betweenness centrality"
+            },
+            {
+              "id": "D",
+              "text": "Closeness centrality"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Eigen centrality, Node degree, Betweenness centrality, Closeness centrality",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "multiple-choice",
+          "prompt": "Which of the following are spam targets?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "text": "S"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A, B",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "title": "Week 7",
+      "topic": "Link farming, nudges & phishing",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=28&assessmentId=156",
+      "sourceFile": "sources/privacy-social-media/week-07.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w07-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Consider the following statement: \"Hello everyone!!!, Are you enjoying psosm course --- and learning new skills.\" Choose the correct code to convert it to unpunctuated string",
+          "options": [
+            {
+              "id": "A",
+              "text": "Code snippet A",
+              "image": {
+                "src": "/questions/privacy-social-media/w07-q01-a.jpg",
+                "alt": "Python code option A for removing punctuation."
+              }
+            },
+            {
+              "id": "B",
+              "text": "Code snippet B",
+              "image": {
+                "src": "/questions/privacy-social-media/w07-q01-b.jpg",
+                "alt": "Python code option B for removing punctuation."
+              }
+            },
+            {
+              "id": "C",
+              "text": "Code snippet C",
+              "image": {
+                "src": "/questions/privacy-social-media/w07-q01-c.jpg",
+                "alt": "Python code option C for removing punctuation."
+              }
+            },
+            {
+              "id": "D",
+              "text": "None of these"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Image a7q1c.JPG (option C), verified in the saved current quiz accepted-answer section.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Consider the following code: Which of the following is the correct option?",
+          "options": [
+            {
+              "id": "A",
+              "text": "This code is used to retrieve an ascending sorted list having two tuples."
+            },
+            {
+              "id": "B",
+              "text": "This code is used to retrieve a descending sorted list having two tuples."
+            },
+            {
+              "id": "C",
+              "text": "This code retrieves two tuples in a sorted or unsorted manner."
+            },
+            {
+              "id": "D",
+              "text": "This code returns a logical error."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "This code is used to retrieve a descending sorted list having two tuples.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w07-q02.jpg",
+              "alt": "Python Counter code using most_common(2)."
+            }
+          ]
+        },
+        {
+          "id": "w07-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following are not stopwords in the following list?",
+          "options": [
+            {
+              "id": "A",
+              "text": "All of the above are stopwords."
+            },
+            {
+              "id": "B",
+              "text": "Further, again, apple"
+            },
+            {
+              "id": "C",
+              "text": "While, apple"
+            },
+            {
+              "id": "D",
+              "text": "apple"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "apple",
+          "reference": null,
+          "note": null,
+          "code": "stopwords = [\"i\", \"me\", \"my\", \"myself\", \"we\", \"our\", \"ours\", \"ourselves\", \"you\", \"your\", \"yours\", \"yourself\", \"yourselves\", \"he\", \"him\", \"his\", \"himself\", \"she\", \"her\", \"hers\", \"herself\", \"it\", \"its\", \"itself\", \"they\", \"them\", \"their\", \"theirs\", \"themselves\", \"what\", \"which\", \"who\", \"whom\", \"this\", \"that\", \"these\", \"those\", \"am\", \"is\", \"are\", \"was\", \"were\", \"be\", \"been\", \"being\", \"have\", \"has\", \"had\", \"having\", \"do\", \"does\", \"did\", \"doing\", “apple”, \"a\", \"an\", \"the\", \"and\", \"but\", \"if\", \"or\", \"because\", \"as\", \"until\", \"while\", \"of\", \"at\", \"by\", \"for\", \"with\", \"about\", \"against\", \"between\", \"into\", \"through\", \"during\", \"before\", \"after\", \"above\", \"below\", \"to\", \"from\", \"up\", \"down\", \"in\", \"out\", \"on\", \"off\", \"over\", \"under\", \"again\", \"further\", \"then\", \"once\", \"here\", \"there\", \"when\", \"where\", \"why\", \"how\", \"all\", \"any\", \"both\", \"each\", \"few\", \"more\", \"most\", \"other\", \"some\", \"such\", \"no\", \"nor\", \"not\", \"only\", \"own\", \"same\", \"so\", \"than\", \"too\", \"very\", \"s\", \"t\", \"can\", \"will\", \"just\", \"don\", \"should\", \"now\"]"
+        },
+        {
+          "id": "w07-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which elements in the below sample mail make it potentially phishing email, as discussed in the lecture?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Urgency in subject"
+            },
+            {
+              "id": "B",
+              "text": "Regrettable information in the body"
+            },
+            {
+              "id": "C",
+              "text": "Potential phishing link along with body"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All of the above",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w07-q04.jpg",
+              "alt": "Sample email claiming an eBay account will be suspended and asking for an update via a link."
+            }
+          ]
+        },
+        {
+          "id": "w07-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following is correct statement as discussed in the lecture?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Younger participants were more vulnerable to phishing attacks."
+            },
+            {
+              "id": "B",
+              "text": "Older participants were more vulnerable to phishing attacks."
+            },
+            {
+              "id": "C",
+              "text": "Younger and older participants were equally vulnerable to phishing attacks."
+            },
+            {
+              "id": "D",
+              "text": "No one is vulnerable to phishing attacks."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Younger participants were more vulnerable to phishing attacks.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "In a scientific experiment, which group refers to manipulating the independent variable?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Observational group"
+            },
+            {
+              "id": "B",
+              "text": "Comparison group"
+            },
+            {
+              "id": "C",
+              "text": "Control group"
+            },
+            {
+              "id": "D",
+              "text": "Experimental group"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Experimental group",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is/are the advantages of having privacy policies?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To help users make informed decisions with the information that is presented to them"
+            },
+            {
+              "id": "B",
+              "text": "To help individuals avoid regrettable online disclosures"
+            },
+            {
+              "id": "C",
+              "text": "Both a and b are correct"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Both a and b are correct",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Which of the following nudges is depicted in the figure below?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Timer nudge"
+            },
+            {
+              "id": "B",
+              "text": "Picture nudge"
+            },
+            {
+              "id": "C",
+              "text": "Sentiment nudge"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Picture nudge",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w07-q08.jpg",
+              "alt": "Social media post composer showing the audience for a public post."
+            }
+          ]
+        },
+        {
+          "id": "w07-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "As discussed in the lecture, which of the following is/are not a social media nudge?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Timer Nudge"
+            },
+            {
+              "id": "B",
+              "text": "Picture Nudge"
+            },
+            {
+              "id": "C",
+              "text": "Sentiment Nudge"
+            },
+            {
+              "id": "D",
+              "text": "Voice Nudge"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Voice Nudge",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following has the property of having high indegree and high outdegree on online social media?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Top Link farmers"
+            },
+            {
+              "id": "B",
+              "text": "Random social network users"
+            },
+            {
+              "id": "C",
+              "text": "Top Spammers"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Top Link farmers",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "title": "Week 8",
+      "topic": "Identity resolution & anonymous networks",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=29&assessmentId=157",
+      "sourceFile": "sources/privacy-social-media/week-08.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w08-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "multiple-choice",
+          "prompt": "What are the different approaches to profile linking?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Study and analyse common attributes (place of work, profile picture, name, etc.) across different social media platforms"
+            },
+            {
+              "id": "B",
+              "text": "Check important attributes such as the same emails, locations, and contact numbers (if available) used across multiple platforms"
+            },
+            {
+              "id": "C",
+              "text": "Only looking at the user posting behaviour on social media platforms will help in profile linking."
+            },
+            {
+              "id": "D",
+              "text": "It is not possible to find the same user profiles on different social media platforms."
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Study and analyse common attributes (place of work, profile picture, name, etc.) across different social media platforms, Check important attributes such as the same emails, locations, and contact numbers (if available) used across multiple platforms",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is/are true regarding username change on social media? S1: Changes to any profile attribute other than username do not lead to unreachability to the user profile. S2: The potential benign reasons for username change include space gain, suiting a trending event, gaining/losing anonymity, adjusting to real-life events, and avoiding boredom. S3: The malicious intentions for username change may include obscured username promotion and username squatting. S4: Search by the user’s old username results in a failed attempt to reach the user’s profile, potentially making others falsely believe that the user account has been deactivated.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only S1 and S4 are correct"
+            },
+            {
+              "id": "B",
+              "text": "Only S1, S2, and S3 are correct"
+            },
+            {
+              "id": "C",
+              "text": "S1, S2, and S4 are correct"
+            },
+            {
+              "id": "D",
+              "text": "All S1, S2, S3, S4 are correct."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All S1, S2, S3, S4 are correct.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Below is the graph of username change. Which of the following is correct inference from the graph (as discussed in the lecture)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Around 35 per cent, of the users change their profile picture at least 3 times."
+            },
+            {
+              "id": "B",
+              "text": "Around 60-70 percent of the users change their usernames atleast once."
+            },
+            {
+              "id": "C",
+              "text": "Around 35 percent of the users change their profile picture 3 times."
+            },
+            {
+              "id": "D",
+              "text": "Around 50-55 per cent of users have changed their descriptions thrice."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Around 35 per cent, of the users change their profile picture at least 3 times.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w08-q03.png",
+              "alt": "Cumulative distribution of changes to profile pictures, usernames and descriptions."
+            }
+          ]
+        },
+        {
+          "id": "w08-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Why do whisper users have a low clustering coefficient over the network?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Whisper users are likely to interact with complete strangers who are highly unlikely to interact with each other."
+            },
+            {
+              "id": "B",
+              "text": "Users interact with a large sample of other users"
+            },
+            {
+              "id": "C",
+              "text": "New users make 20% of the contribution in the whisper content."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Whisper users are likely to interact with complete strangers who are highly unlikely to interact with each other.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of Gephi software?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Video Editing"
+            },
+            {
+              "id": "B",
+              "text": "3D Modeling"
+            },
+            {
+              "id": "C",
+              "text": "Network Visualization and Analysis"
+            },
+            {
+              "id": "D",
+              "text": "Music Composition"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Network Visualization and Analysis",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "multiple-choice",
+          "prompt": "Why studying username change behaviour is/are useful for social media researchers?",
+          "options": [
+            {
+              "id": "A",
+              "text": "This is one of the unique attributes of the user"
+            },
+            {
+              "id": "B",
+              "text": "It is usually homogeneous"
+            },
+            {
+              "id": "C",
+              "text": "The number of characters and length of the username is restricted"
+            },
+            {
+              "id": "D",
+              "text": "It is the publicly available attribute"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "This is one of the unique attributes of the user, It is usually homogeneous, The number of characters and length of the username is restricted, It is the publicly available attribute",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "In the network graph of Twitter, where nodes are users, the in-degree of the node would be",
+          "options": [
+            {
+              "id": "A",
+              "text": "Number of followers on Twitter"
+            },
+            {
+              "id": "B",
+              "text": "Number of people you follow"
+            },
+            {
+              "id": "C",
+              "text": "Both a and b"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Number of followers on Twitter",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is/are anonymous social networks?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Secret"
+            },
+            {
+              "id": "B",
+              "text": "4chan"
+            },
+            {
+              "id": "C",
+              "text": "Yak yak"
+            },
+            {
+              "id": "D",
+              "text": "Blind"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Secret, 4chan, Yak yak, Blind",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "A scale-free network can be one having",
+          "options": [
+            {
+              "id": "A",
+              "text": "Power law degree distribution"
+            },
+            {
+              "id": "B",
+              "text": "Zipf’s law"
+            },
+            {
+              "id": "C",
+              "text": "Pareto principle"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All of the above",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Consider the below situation Imagine you're a student in a university, and you decide to survey to determine the number of friends each of your classmates has on social media. You ask everyone to report the number of friends they have on one popular social media platform (say Facebook). When you collect the data and calculate the average number of friends reported by your classmates, 300 friends. However, when you individually examine the number of friends reported by each of your classmates, you notice that many of them have fewer than 300 friends, perhaps ranging from 50 to 200 friends. Why did you observe such a phenomenon?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Most of the individuals have reported it wrong in the report."
+            },
+            {
+              "id": "B",
+              "text": "Few individuals have exceptionally high friend counts (outliers) that skew the average upward."
+            },
+            {
+              "id": "C",
+              "text": "There is an error in individual calculations. It is impossible to have 300 friends on average if many individuals have fewer than 300 friends."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Few individuals have exceptionally high friend counts (outliers) that skew the average upward.",
+          "reference": null,
+          "note": null
+        }
+      ],
+      "solutionUrl": "https://drive.google.com/file/d/1QmhAs1Tafgj-DD4vo5I_MWGuNkL580BW/view"
+    },
+    {
+      "week": 9,
+      "title": "Week 9",
+      "topic": "Location-based privacy",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=30&assessmentId=158",
+      "sourceFile": "sources/privacy-social-media/week-09.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w09-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is/are location-based services?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Foursquare"
+            },
+            {
+              "id": "B",
+              "text": "Yelp"
+            },
+            {
+              "id": "C",
+              "text": "Gowalla"
+            },
+            {
+              "id": "D",
+              "text": "Uber"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Foursquare, Yelp, Gowalla, Uber",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "What is the difference between Pearson and Spearman rank correlation? Hint: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient",
+          "options": [
+            {
+              "id": "A",
+              "text": "Pearson correlation assesses linear relationships, while Spearman correlation evaluates monotonic relationships."
+            },
+            {
+              "id": "B",
+              "text": "Spearman correlation is always between -1 and 1, while Pearson correlation can have values outside this range."
+            },
+            {
+              "id": "C",
+              "text": "Spearman correlation is calculated using a formula involving the sum of squared differences, whereas Pearson correlation is based on the product of z-scores."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Pearson correlation assesses linear relationships, while Spearman correlation evaluates monotonic relationships.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "You have two datasets and want to measure the strength and direction of the relationship between them. One set of data consists of the ranks or ordinal values of the observations, while the other set consists of continuous numerical data. Which correlation coefficient is most appropriate for this scenario?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spearman's rank correlation coefficient"
+            },
+            {
+              "id": "B",
+              "text": "Pearson's correlation coefficient"
+            },
+            {
+              "id": "C",
+              "text": "Either Spearman or Pearson correlation can be used interchangeably."
+            },
+            {
+              "id": "D",
+              "text": "None of the above because correlation coefficients are not applicable in this scenario."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Spearman's rank correlation coefficient",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "multiple-choice",
+          "prompt": "Which of the following are open text fields, whose validity is not enforced by the system and may carry noise/invalid locations?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Venue location"
+            },
+            {
+              "id": "B",
+              "text": "tips"
+            },
+            {
+              "id": "C",
+              "text": "User home city"
+            },
+            {
+              "id": "D",
+              "text": "dones"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Venue location, User home city",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following is correct inference from Figure 2?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or dones."
+            },
+            {
+              "id": "B",
+              "text": "The distributions are evenly balanced, with cities having a nearly equal number of mayorships, tips, or dones."
+            },
+            {
+              "id": "C",
+              "text": "The distributions are normally distributed, with no cities having an exceptionally high number of mayorships, tips, or dones."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The distributions are very skewed, with a few cities having as many as 100 mayorships, tips or dones.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w09-q05.png",
+              "alt": "Figure 2: cumulative distribution of mayorships, tips and dones per city."
+            }
+          ]
+        },
+        {
+          "id": "w09-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "What is the key difference between a scatter plot and a bar chart?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Scatter plots display categorical data, while bar charts are used for numerical data."
+            },
+            {
+              "id": "B",
+              "text": "Scatter plots show the relationship between two numerical variables, while bar charts display the frequency or distribution of categorical data."
+            },
+            {
+              "id": "C",
+              "text": "Scatter plots are only used for displaying data with a single variable, while bar charts can visualize data with multiple variables."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Scatter plots show the relationship between two numerical variables, while bar charts display the frequency or distribution of categorical data.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is publicly available data on Foursquare?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Mayorships"
+            },
+            {
+              "id": "B",
+              "text": "Tips"
+            },
+            {
+              "id": "C",
+              "text": "Dones"
+            },
+            {
+              "id": "D",
+              "text": "Checkins"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Mayorships, Tips, Dones",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Which plot is shown in the below figure?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Scatter plot"
+            },
+            {
+              "id": "B",
+              "text": "Bar chart"
+            },
+            {
+              "id": "C",
+              "text": "Bubble plot"
+            },
+            {
+              "id": "D",
+              "text": "Histogram"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Bubble plot",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w09-q08.png",
+              "alt": "Sugar and fat intake per country chart."
+            }
+          ]
+        },
+        {
+          "id": "w09-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "What is the primary characteristic of Location-Based Social Networks (LBSNs)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "They allow users to share text-based posts with their friends and followers."
+            },
+            {
+              "id": "B",
+              "text": "They provide a platform for online gaming and virtual reality experiences."
+            },
+            {
+              "id": "C",
+              "text": "They enable users to connect with others and share their physical locations and activities."
+            },
+            {
+              "id": "D",
+              "text": "They focus exclusively on professional networking and job searching."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "They enable users to connect with others and share their physical locations and activities.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "multiple-choice",
+          "prompt": "As discussed in lecture, Choose the correct inference (s) for figures below (Figure 4 and Figure 5). Here mayorships (blue), Tips (red), and Dones (green). Reference: https://cdn.iiit.ac.in/cdn/precog.iiit.ac.in/Publications_files/TP_lbsn_2012.pdf",
+          "options": [
+            {
+              "id": "A",
+              "text": "In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart."
+            },
+            {
+              "id": "B",
+              "text": "In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week)."
+            },
+            {
+              "id": "C",
+              "text": "In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres)"
+            },
+            {
+              "id": "D",
+              "text": "In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers."
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "In Figure 4, The distribution of minimum inter-activity times is very skewed towards short periods of time, with almost 50% of the users posting consecutive tips/dones 1 hour apart., In Figure 4, On average, median and maximum, users do tend to experience very long periods of time between consecutive tips and dones. For instance, around 50% of the users have an average interactivity time of at least 450 hours, whereas around 80% of the users have a maximum inter-activity time above 167 hours (roughly a week)., In Figure 5, Around 36% of the users have average and maximum displacements of 0 kilometer, indicating very short distances (within a few metres), In Figure 5, About 10% of the users have a maximum displacement of at least 6,000 kilometers.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w09-q10.png",
+              "alt": "Figures 4 and 5: time intervals and displacements between consecutive tips and dones."
+            }
+          ]
+        }
+      ],
+      "solutionUrl": "https://drive.google.com/file/d/1smiw_p5q3b0mHdhXVRORUSRUo424rRF5/view"
+    },
+    {
+      "week": 10,
+      "title": "Week 10",
+      "topic": "Location, usernames & misinformation",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=31&assessmentId=159",
+      "sourceFile": "sources/privacy-social-media/week-10.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w10-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "multiple-choice",
+          "prompt": "Which statement(s) is/are true?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The authors perform a large-scale inference study in three popular social networks: Foursquare, Google+ and Twitter."
+            },
+            {
+              "id": "B",
+              "text": "The paper is looking at different social networks not only Foursquare."
+            },
+            {
+              "id": "C",
+              "text": "The dataset used in the paper comprises many attributes including venues where the location must be defined filling the open text fields, (limited in 30 and 127 characters, respectively), and setting a pin in the map."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The authors perform a large-scale inference study in three popular social networks: Foursquare, Google+ and Twitter., The paper is looking at different social networks not only Foursquare., The dataset used in the paper comprises many attributes including venues where the location must be defined filling the open text fields, (limited in 30 and 127 characters, respectively), and setting a pin in the map.",
+          "reference": null,
+          "note": null,
+          "context": "Paper: “Beware of What You Share: Inferring Home Location in Social Networks”."
+        },
+        {
+          "id": "w10-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "What is a valid AGI?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Valid Artificial General intelligence"
+            },
+            {
+              "id": "B",
+              "text": "Valid Ambigious Geographical Information"
+            },
+            {
+              "id": "C",
+              "text": "Valid Artificial Geographical Interface"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Valid Ambigious Geographical Information",
+          "reference": null,
+          "note": null,
+          "context": "Paper: “Beware of What You Share: Inferring Home Location in Social Networks”."
+        },
+        {
+          "id": "w10-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "multiple-choice",
+          "prompt": "Given the following figure depicts the quality of valid UGI, what is the correct inference(s) from the figure ?",
+          "options": [
+            {
+              "id": "A",
+              "text": "In figure (a), the vast majority (80%) of Foursquare users and venues have location information at the city level."
+            },
+            {
+              "id": "B",
+              "text": "In figure (b), majority of users provide home location information at country level"
+            },
+            {
+              "id": "C",
+              "text": "In figure (c), 60% of the users have provided their location information at the district level"
+            },
+            {
+              "id": "D",
+              "text": "In figure (b), 80% of the users have provided location information at city level."
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "In figure (a), the vast majority (80%) of Foursquare users and venues have location information at the city level., In figure (b), 80% of the users have provided location information at city level.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w10-q03.png",
+              "alt": "Location information granularity on Foursquare, Google+ and Twitter."
+            }
+          ],
+          "context": "Paper: “Beware of What You Share: Inferring Home Location in Social Networks”."
+        },
+        {
+          "id": "w10-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "From the overall conclusion of the paper, which of the statements is true",
+          "options": [
+            {
+              "id": "A",
+              "text": "The set of people who change their handle many times is slightly larger than those who change their handle a very small number of times."
+            },
+            {
+              "id": "B",
+              "text": "The set of people who change their handle many times is slightly smaller than the set of people who change their handle very less number of times."
+            },
+            {
+              "id": "C",
+              "text": "The set of people who change their handle many times is roughly equal to the set of people who do not change their handle."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The set of people who change their handle many times is slightly smaller than the set of people who change their handle very less number of times.",
+          "reference": null,
+          "note": null,
+          "context": "Please go through the following paper, “On the dynamics of username change behavior on Twitter” https://drive.google.com/file/d/1z5NcQ4bMbZK5Rb7I21eogjz-4Kic0CGi/view?usp=drive_link Answer the following questions from 4-6"
+        },
+        {
+          "id": "w10-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "From the following figure, what is the correct inference?",
+          "options": [
+            {
+              "id": "A",
+              "text": "20% of users rarely change user names in short intervals and 80% change user names frequently after longer intervals."
+            },
+            {
+              "id": "B",
+              "text": "80% of users rarely change user names in short intervals, and 20% change user names frequently after longer intervals."
+            },
+            {
+              "id": "C",
+              "text": "35% of users choose a user name unrelated to an old one, and 65% of users reuse an old user name."
+            },
+            {
+              "id": "D",
+              "text": "20% of users frequently change user names in short intervals, and 80% change user name rarely after longer intervals."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "20% of users frequently change user names in short intervals, and 80% change user name rarely after longer intervals.",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w10-q05.png",
+              "alt": "Cumulative distribution and frequency of username changes."
+            }
+          ],
+          "context": "Please go through the following paper, “On the dynamics of username change behavior on Twitter” https://drive.google.com/file/d/1z5NcQ4bMbZK5Rb7I21eogjz-4Kic0CGi/view?usp=drive_link Answer the following questions from 4-6"
+        },
+        {
+          "id": "w10-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "What is the correct observation in the paper?",
+          "options": [
+            {
+              "id": "A",
+              "text": "This paper aims at finding how and why users change their usernames within a social network like Twitter."
+            },
+            {
+              "id": "B",
+              "text": "Most users created new usernames unrelated to the old username when they changed usernames within a social network."
+            },
+            {
+              "id": "C",
+              "text": "The authors believe that unrelated usernames over time could be credited to the absence of cognitive load to remember a past dumped username."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All of the above",
+          "reference": null,
+          "note": null,
+          "context": "Please go through the following paper, “On the dynamics of username change behavior on Twitter” https://drive.google.com/file/d/1z5NcQ4bMbZK5Rb7I21eogjz-4Kic0CGi/view?usp=drive_link Answer the following questions from 4-6"
+        },
+        {
+          "id": "w10-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is true about Boston blasts?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT"
+            },
+            {
+              "id": "B",
+              "text": "Twin blasts occurred during the Boston Marathon on April 15th, 2009 at 18:50 GMT"
+            },
+            {
+              "id": "C",
+              "text": "Four people were killed and 264 were injured in the incident"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Twin blasts occurred during the Boston Marathon on April 15th, 2013 at 18:50 GMT",
+          "reference": null,
+          "note": null,
+          "context": "Please go through the following paper, “Boston Marathon Analyzing Fake Content on Twitter” https://drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link Answer the following questions from 7-10"
+        },
+        {
+          "id": "w10-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "What can be depicted from the tweets shared below?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Both tweets contain Fake content."
+            },
+            {
+              "id": "B",
+              "text": "Figure (a) depicts a tweet from a fake charity profile."
+            },
+            {
+              "id": "C",
+              "text": "Figure (b) depicts a rumour about a child being killed in the blasts."
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "All of the above",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w10-q08.png",
+              "alt": "Two tweets about the Boston Marathon bombing, labelled (a) and (b)."
+            }
+          ],
+          "context": "Please go through the following paper, “Boston Marathon Analyzing Fake Content on Twitter” https://drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link Answer the following questions from 7-10"
+        },
+        {
+          "id": "w10-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "multiple-choice",
+          "prompt": "What are the major contributions of the figure?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The authors characterised the spread of fake content on Twitter using temporal, source and user attributes."
+            },
+            {
+              "id": "B",
+              "text": "The authors used linear regression to predict how viral a rumour would be in the future based on its current user characteristics."
+            },
+            {
+              "id": "C",
+              "text": "The authors analysed the activity and interaction graphs for the suspended user profiles created during the Boston blasts."
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The authors characterised the spread of fake content on Twitter using temporal, source and user attributes., The authors used linear regression to predict how viral a rumour would be in the future based on its current user characteristics., The authors analysed the activity and interaction graphs for the suspended user profiles created during the Boston blasts.",
+          "reference": null,
+          "note": null,
+          "context": "Please go through the following paper, “Boston Marathon Analyzing Fake Content on Twitter” https://drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link Answer the following questions from 7-10"
+        },
+        {
+          "id": "w10-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What does the following figure depict?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The figure shows the temporal distribution of tweets after the Boston blast"
+            },
+            {
+              "id": "B",
+              "text": "The figure shows the spatial distribution of tweets after the Boston blast"
+            },
+            {
+              "id": "C",
+              "text": "Both of the above"
+            },
+            {
+              "id": "D",
+              "text": "None of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The figure shows the temporal distribution of tweets after the Boston blast",
+          "reference": null,
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w10-q10.png",
+              "alt": "Number of tweets plotted against hours after the Boston Marathon bombing."
+            }
+          ],
+          "context": "Please go through the following paper, “Boston Marathon Analyzing Fake Content on Twitter” https://drive.google.com/file/d/1BwySKxMBAnCTiwyzYX907gubi99xz_Yq/view?usp=drive_link Answer the following questions from 7-10"
+        }
+      ],
+      "solutionUrl": "https://drive.google.com/file/d/1eGhKlgwTAXoyEOk6RTBZnRlqQyBVJE8P/view"
+    },
+    {
+      "week": 11,
+      "title": "Week 11",
+      "topic": "Course review",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=32&assessmentId=160",
+      "sourceFile": "sources/privacy-social-media/week-11.ax.txt",
+      "answersVerifiedOn": "2026-10-17",
+      "sourceNote": "Questions and official accepted answers captured from the current course quiz. Linked solutions and saved quiz HTML restore figures, tables and truncated text; see question-overrides.json and html-verification.json.",
+      "questions": [
+        {
+          "id": "w11-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Given below the statement. The statement is “An API is a set of rules and protocols that allows different software applications to communicate with each other, while a programming language is a formal language used to write instructions for a computer to perform specific tasks.”",
+          "options": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            },
+            {
+              "id": "C",
+              "text": "Can’t say"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "True",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "multiple-choice",
+          "prompt": "Which of the following features is supposed to be a part of tweet content on Twitter?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Presence of pronouns"
+            },
+            {
+              "id": "B",
+              "text": "No. of followers"
+            },
+            {
+              "id": "C",
+              "text": "No. of retweets"
+            },
+            {
+              "id": "D",
+              "text": "Mention of self words (I;my;mine)"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Presence of pronouns, Mention of self words (I;my;mine)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "multiple-choice",
+          "prompt": "Who among the following are most likely to engage in link farming?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Highly active users"
+            },
+            {
+              "id": "B",
+              "text": "Legitimate users"
+            },
+            {
+              "id": "C",
+              "text": "Popular users"
+            },
+            {
+              "id": "D",
+              "text": "Bloggers and experts"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Highly active users, Legitimate users, Popular users, Bloggers and experts",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is username creation behaviour?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Static behavior patterns"
+            },
+            {
+              "id": "B",
+              "text": "Occasional reuse patterns"
+            },
+            {
+              "id": "C",
+              "text": "Temporal behavior patterns"
+            },
+            {
+              "id": "D",
+              "text": "Frequent reuse patterns"
+            }
+          ],
+          "correctOptionIds": [
+            "A",
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Static behavior patterns, Temporal behavior patterns",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "multiple-choice",
+          "prompt": "Which of the following is a username reuse behaviour?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Static behavior patterns"
+            },
+            {
+              "id": "B",
+              "text": "Occasional reuse patterns"
+            },
+            {
+              "id": "C",
+              "text": "Temporal behavior patterns"
+            },
+            {
+              "id": "D",
+              "text": "Frequent reuse patterns"
+            }
+          ],
+          "correctOptionIds": [
+            "B",
+            "D"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Occasional reuse patterns, Frequent reuse patterns",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Why is it called a \"Graph\" API?",
+          "options": [
+            {
+              "id": "A",
+              "text": "it allows users to draw and create graphs and charts."
+            },
+            {
+              "id": "B",
+              "text": "it represents social connections and relationships as a graph data structure."
+            },
+            {
+              "id": "C",
+              "text": "it primarily deals with geographical mapping and location-based services."
+            },
+            {
+              "id": "D",
+              "text": "it is used exclusively for graph theory and mathematical computations."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "it represents social connections and relationships as a graph data structure.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Latanya Sweeney's research highlighted how two seemingly unrelated pieces of information can be linked to reidentify an individual. Which term best describes this concept?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Data Anonymization"
+            },
+            {
+              "id": "B",
+              "text": "Data Aggregation"
+            },
+            {
+              "id": "C",
+              "text": "Reidentification"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Reidentification",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of an API key on Twitter?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To limit the number of characters in a tweet."
+            },
+            {
+              "id": "B",
+              "text": "To verify a user's identity on the platform."
+            },
+            {
+              "id": "C",
+              "text": "To authenticate and access Twitter's APIs for development purposes."
+            },
+            {
+              "id": "D",
+              "text": "To encrypt and secure direct messages on Twitter."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To authenticate and access Twitter's APIs for development purposes.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of link farming in the context of SEO (Search Engine Optimization)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To create high-quality, relevant backlinks to improve a website's search engine ranking."
+            },
+            {
+              "id": "B",
+              "text": "To increase organic traffic by optimising on-page content and meta tags."
+            },
+            {
+              "id": "C",
+              "text": "To manipulate search engine algorithms by generating a large number of low-quality backlinks."
+            },
+            {
+              "id": "D",
+              "text": "To enhance the user experience by improving website navigation and design."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To manipulate search engine algorithms by generating a large number of low-quality backlinks.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which V of social media represents “Viral trends that spread rapidly across social media platforms.”",
+          "options": [
+            {
+              "id": "A",
+              "text": "Value"
+            },
+            {
+              "id": "B",
+              "text": "Velocity"
+            },
+            {
+              "id": "C",
+              "text": "Volume"
+            },
+            {
+              "id": "D",
+              "text": "Veracity"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Velocity",
+          "reference": null,
+          "note": null
+        }
+      ]
+    }
+  ]
+}

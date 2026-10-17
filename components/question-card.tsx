@@ -29,7 +29,12 @@ export default function QuestionCard({ q, number, source, choice, checked, showA
     <span className="question-number">{pad(number)}</span>
     <div>
       {source && <p className="question-source">{source}</p>}
+      {q.context && <p className="question-context">{q.context}</p>}
       <h2 id={`${q.id}-prompt`}>{q.prompt}</h2>
+      {q.code && <pre className="question-code"><code>{q.code}</code></pre>}
+      {q.figures?.map(figure => <a className="question-figure" key={figure.src} href={figure.src} target="_blank" rel="noreferrer" aria-label={`Open full-size figure: ${figure.alt}`}>
+        <img src={figure.src} alt={figure.alt} loading="lazy" />
+      </a>)}
       {q.contextTable && <div className="question-table"><table aria-label={`Question ${number} matching table`}><thead><tr>{q.contextTable.headers.map(h => <th key={h}>{h}</th>)}</tr></thead><tbody>{q.contextTable.rows.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>)}</tbody></table></div>}
       {multiple && !/select all/i.test(q.prompt) && <p className="choice-hint">Select all that apply.</p>}
       {numeric ? <div className="numeric-answer">
@@ -39,7 +44,7 @@ export default function QuestionCard({ q, number, source, choice, checked, showA
         const correctOption = revealed && !!q.correctOptionIds?.includes(o.id), wrongOption = revealed && selected.includes(o.id) && !correctOption;
         // Letters follow display order, which a quiz shuffles.
         return <button key={o.id} aria-pressed={selected.includes(o.id)} disabled={submitted} className={`option ${selected.includes(o.id) ? 'selected' : ''} ${correctOption ? 'correct' : ''} ${wrongOption ? 'wrong' : ''}`} onClick={() => choose(o.id)}>
-          <span className="option-letter">{String.fromCharCode(65 + i)}</span><span className="option-text">{o.text}</span>
+          <span className="option-letter">{String.fromCharCode(65 + i)}</span><span className="option-text">{o.image ? <img className="option-image" src={o.image.src} alt={o.image.alt} loading="lazy" /> : o.code ? <code className="option-code">{o.text}</code> : o.text}</span>
           {correctOption ? <span className="option-mark" aria-label="Correct answer">✓</span> : wrongOption ? <span className="option-mark" aria-label="Wrong">×</span> : null}
         </button>;
       })}</div>}

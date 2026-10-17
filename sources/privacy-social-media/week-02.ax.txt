@@ -1,0 +1,235 @@
+							168 text 1
+							169 text .
+							170 text What is the primary data format utilized by the Reddit API when returning information?
+							171 container
+								172 text 1  Point
+							173 container
+								174 radio button (disabled) JSON
+								175 text JSON
+							176 container
+								177 radio button (disabled) XML
+								178 text XML
+							179 container
+								180 radio button (disabled) HTML
+								181 text HTML
+							182 container
+								183 radio button (disabled) CSV
+								184 text CSV
+							185 container
+							187 text Accepted answer is
+							188 text JSON
+							189 text 2
+							190 text .
+							191 text JSON stands
+							192 container
+								193 text 1  Point
+							194 container
+								195 radio button (disabled) JavaScript Object Notation
+								196 text JavaScript Object Notation
+							197 container
+								198 radio button (disabled) JavaScript Object Network
+								199 text JavaScript Object Network
+							200 container
+								201 radio button (disabled) JavaScript Oriented Notation
+								202 text JavaScript Oriented Notation
+							203 container
+								204 radio button (disabled) JavaScript Oriented Namespace
+								205 text JavaScript Oriented Namespace
+							206 container
+							208 text Accepted answer is
+							209 text JavaScript Object Notation
+							210 text 3
+							211 text .
+							212 text Suppose you want to retrieve the top 5 hottest posts from the subreddit "r/technology" using the Reddit API. Which Python library would you most likely use to achieve this?
+							213 container
+								214 text 1  Point
+							215 container
+								216 radio button (disabled) PRAW
+								217 text PRAW
+							218 container
+								219 radio button (disabled) Requests
+								220 text Requests
+							221 container
+								222 radio button (disabled) Urllib
+								223 text Urllib
+							224 container
+								225 radio button (disabled) JSON
+								226 text JSON
+							227 container
+							229 text Accepted answer is
+							230 text PRAW
+							231 text 4
+							232 text .
+							233 text You want to fetch the details of the 10 hot posts from the subreddit "r/worldnews" using the Reddit API in Python. Which is the correct code snippet from below options?
+							234 container
+								235 text 1  Point
+							236 container
+								237 radio button (disabled)      import praw      reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').hot(limit=10) for post in posts:     print(post.title)
+								238 text      import praw
+								239 container
+									240 text      reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT')
+								241 text posts = reddit.subreddit('worldnews').hot(limit=10)
+								242 text for post in posts:
+								243 text     print(post.title)
+							244 container
+								245 radio button (disabled)     import requests     url = "https://www.reddit.com/r/worldnews/new.json?limit=10" response = requests.get(url) data = response.json() for post in data['data']['children']:     print(post['data']['title'])
+								246 text     import requests
+								247 text     url = "https://www.reddit.com/r/worldnews/new.json?limit=10"
+								248 text response = requests.get(url)
+								249 text data = response.json()
+								250 text for post in data['data']['children']:
+								251 text     print(post['data']['title'])
+							252 container
+								253 radio button (disabled)     import praw reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT') posts = reddit.subreddit('worldnews').new(limit=10) for post in posts:     print(post.title)
+								254 text     import praw
+								255 container
+									256 text reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT')
+								257 text posts = reddit.subreddit('worldnews').new(limit=10)
+								258 text for post in posts:
+								259 text     print(post.title)
+							260 container
+								261 radio button (disabled) None of the above
+								262 text None of the above
+							263 container
+							265 text Accepted answer is
+							266 text      import praw
+							267 container
+								268 text      reddit = praw.Reddit(client_id='MY_CLIENT_ID', client_secret='MY_CLIENT_SECRET', user_agent='MY_USER_AGENT')
+							269 text posts = reddit.subreddit('worldnews').hot(limit=10)
+							270 text for post in posts:
+							271 text     print(post.title)
+							272 text 5
+							273 text .
+							274 text Which of the following tweet content falls in category of linguistic features?
+							275 container
+								276 text 1  Point
+							277 container
+								278 Tick box (disabled) Number of followers
+								279 text Number of followers
+							280 container
+								281 Tick box (disabled) Presence of negative emotion words
+								282 text Presence of negative emotion words
+							283 container
+								284 Tick box (disabled) Presence of smiley
+								285 text Presence of smiley
+							286 container
+								287 Tick box (disabled) Presence of pronouns
+								288 text Presence of pronouns
+							289 container
+							291 text Accepted answer is
+							292 text Presence of negative emotion words, Presence of pronouns
+							293 text 6
+							294 text .
+							295 text Why do we do network analysis on social media platforms?
+							296 container
+								297 text 1  Point
+							298 container
+								299 radio button (disabled) To analyze the performance of computer networks and improve data transmission speeds.
+								300 text To analyze the performance of computer networks and improve data transmission speeds.
+							301 container
+								302 radio button (disabled) To understand the social structures and relationships between individuals or entities in a network.
+								303 text To understand the social structures and relationships between individuals or entities in a network.
+							304 container
+								305 radio button (disabled) To study the behavior of network protocols and optimize their efficiency.
+								306 text To study the behavior of network protocols and optimize their efficiency.
+							307 container
+								308 radio button (disabled) To identify and analyze patterns of diseases spreading within a population.
+								309 text To identify and analyze patterns of diseases spreading within a population.
+							310 container
+							312 text Accepted answer is
+							313 text To understand the social structures and relationships between individuals or entities in a network.
+							314 text 7
+							315 text .
+							316 text Which of the following is a recent example of misinformation spread on social media platforms?
+							317 container
+								318 text 1  Point
+							319 container
+								320 radio button (disabled) Tweet claiming that a particular brand of COVID-19 vaccine causes severe side effects, with no evidence to support the claim.
+								321 text Tweet claiming that a particular brand of COVID-19 vaccine causes severe side effects, with no evidence to support the claim.
+							322 container
+								323 radio button (disabled) Facebook post sharing information from a well-known health organization about the effectiveness of vaccination.
+								324 text Facebook post sharing information from a well-known health organization about the effectiveness of vaccination.
+							325 container
+								326 radio button (disabled) Instagram story containing accurate information about a recent political development with credible sources cited.
+								327 text Instagram story containing accurate information about a recent political development with credible sources cited.
+							328 container
+								329 radio button (disabled) YouTube video providing a detailed explanation of climate change supported by scientific evidence.
+								330 text YouTube video providing a detailed explanation of climate change supported by scientific evidence.
+							331 container
+							333 text Accepted answer is
+							334 text Tweet claiming that a particular brand of COVID-19 vaccine causes severe side effects, with no evidence to support the claim.
+							335 text 8
+							336 text .
+							337 text Given a MongoDB collection named "employees" with the following document structure:
+							338 text {
+							339 text   "_id": ObjectId("615243d88f0ae43f255874c1"),
+							340 text   "name": "Ram",
+							341 text   "department": "CSE",
+							342 text   "age": 35,
+							343 text   "salary": 50000
+							344 text }
+							345 text What MongoDB query would you use to retrieve all employees with a salary greater than or equal to 60000?
+							346 container
+								347 text 1  Point
+							348 container
+								349 radio button (disabled) db.employees.find({ "salary": { $gte: 60000 } })
+								350 text db.employees.find({ "salary": { $gte: 60000 } })
+							351 container
+								352 radio button (disabled) db.employees.find({ "salary": { $gt: 60000 } })
+								353 text db.employees.find({ "salary": { $gt: 60000 } })
+							354 container
+								355 radio button (disabled) db.employees.find({ "salary": { $lte: 60000 } })
+								356 text db.employees.find({ "salary": { $lte: 60000 } })
+							357 container
+								358 radio button (disabled) db.employees.find({ "salary": { $lt: 60000 } })
+								359 text db.employees.find({ "salary": { $lt: 60000 } })
+							360 container
+							362 text Accepted answer is
+							363 text db.employees.find({ "salary": { $gte: 60000 } })
+							364 text 9
+							365 text .
+							366 text You are developing a social media platform, and you have a database table, "posts" to store user posts. The "posts" table schema is given below:
+							367 text CREATE TABLE posts (
+							368 text     post_id INT PRIMARY KEY,
+							369 text     user_id INT,
+							370 text     post_content TEXT,
+							371 text     post_date DATETIME
+							372 text );
+							373 text Now, you want to retrieve the 5 most recent posts made by a specific user with the user ID "12345". Which SQL query would you use?
+							374 container
+								375 text 1  Point
+							376 container
+								377 radio button (disabled) SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;
+								378 text SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;
+							379 container
+								380 radio button (disabled) SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id DESC LIMIT 5;
+								381 text SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id DESC LIMIT 5;
+							382 container
+								383 radio button (disabled) SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date ASC LIMIT 5;
+								384 text SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date ASC LIMIT 5;
+							385 container
+								386 radio button (disabled) SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id ASC LIMIT 5;
+								387 text SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_id ASC LIMIT 5;
+							388 container
+							390 text Accepted answer is
+							391 text SELECT * FROM posts WHERE user_id = 12345 ORDER BY post_date DESC LIMIT 5;
+							392 text 10
+							393 text .
+							394 text What is the Facebook Graph API as discussed in lecture?
+							395 container
+								396 text 1  Point
+							397 container
+								398 radio button (disabled) An API that provides access to a user's Facebook friends list.
+								399 text An API that provides access to a user's Facebook friends list.
+							400 container
+								401 radio button (disabled) An API that allows developers to create and manage Facebook pages.
+								402 text An API that allows developers to create and manage Facebook pages.
+							403 container
+								404 radio button (disabled) An API that enables developers to integrate Facebook login into their applications for user authentication.
+								405 text An API that enables developers to integrate Facebook login into their applications for user authentication.
+							406 container
+								407 radio button (disabled) An API that provides access to a wide range of user data, interactions, and connections on Facebook.
+								408 text An API that provides access to a wide range of user data, interactions, and connections on Facebook.
+							409 container
+							411 text Accepted answer is
+							412 text An API that provides access to a wide range of user data, interactions, and connections on Facebook.
