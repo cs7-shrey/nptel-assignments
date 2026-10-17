@@ -1,0 +1,370 @@
+{
+  "course": "Privacy and Security in Online Social Media",
+  "checkedOn": "2026-10-17",
+  "status": "incomplete-source-audit",
+  "scope": {
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "questions": 110
+  },
+  "localImageReferences": 19,
+  "localImagesMissingOrInvalid": 0,
+  "weeks": [
+    {
+      "week": 1,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 5,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w01-q05.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "37d80274fb19b9035279c412bfdf81d5ecb8f4a725e0bc96a5be7745af76a7f0"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "questions": 10,
+      "localImages": []
+    },
+    {
+      "week": 3,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 8,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w03-q08.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "372da2bd13f92c94c0b15754d32ba0d3b0609e55dae9c54a8d69dcf5c67a79cb"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "questions": 10,
+      "localImages": []
+    },
+    {
+      "week": 5,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 3,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w05-q03.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "b395648c53de4126b13e53d2f6303fcc90dddf4612a04cdc0fa3e407ab3ff7bb"
+        },
+        {
+          "question": 4,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w05-q04.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "8fa87468793a4bb36dec8bb24ba20e6c1eefcb1b8470537e11add226f8022da5"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 10,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w06-q10.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "172f7072fe0e642bfc6f31f7693541db942e684870e0de07e33dbd58e14e2bad"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 1,
+          "part": "option-A",
+          "src": "/questions/privacy-social-media/w07-q01-a.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "40b40c85fb268afed3578a24d1fbeff421419d93036b530a45e5ef4e39939ddd"
+        },
+        {
+          "question": 1,
+          "part": "option-B",
+          "src": "/questions/privacy-social-media/w07-q01-b.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "46965302b904f511912a6588d2de42e24c04f26623571b28fccd210f0fec50e8"
+        },
+        {
+          "question": 1,
+          "part": "option-C",
+          "src": "/questions/privacy-social-media/w07-q01-c.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "c96d477364ae1660f469c096354afb41986b94143cf8ce5ffbc07a06c248c470"
+        },
+        {
+          "question": 2,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w07-q02.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "b605b4ac3bfa96fc470a5e317c1abb60c08296502ee4d86b116f77ddc30e1226"
+        },
+        {
+          "question": 4,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w07-q04.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "a5647f331e55a31d2f982c20f46be4fb17de489189c25c01d5650ed89b0531d3"
+        },
+        {
+          "question": 8,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w07-q08.jpg",
+          "exists": true,
+          "decodes": true,
+          "sha256": "eea40e49813dbc3f83680666f2987f56178324554b669694d341b7f0af2dbb79"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 3,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w08-q03.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "927eb5e587981bbd99aa8897084832260203855f62ac273531c7f5e87a2eb844"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 5,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w09-q05.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "7f1e332d03896d99323a01f93ac92e55ca5c48be630b4ac45a48a41884e5e382"
+        },
+        {
+          "question": 8,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w09-q08.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "47c404c38df1baab9d52bc48f5466543778940c4943f77f3574ba447df0d8f04"
+        },
+        {
+          "question": 10,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w09-q10.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "61a3ff120b052d4d8bbeaf290e52725b014575828384db00862f0f5b1c95a8a5"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "questions": 10,
+      "localImages": [
+        {
+          "question": 3,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w10-q03.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "671cad25e9a9d0b21f940922103b4ff273958d475f52dfffa6e1666078c759fd"
+        },
+        {
+          "question": 5,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w10-q05.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "878fbab3c10ef2368d2fb14112ec5039bdad2879f6d23190508dc89b701a8f52"
+        },
+        {
+          "question": 8,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w10-q08.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "cbdceab0e26c523269cff69fd6b6c85ee0dba6c5648871b5c051c868b1a5417f"
+        },
+        {
+          "question": 10,
+          "part": "prompt",
+          "src": "/questions/privacy-social-media/w10-q10.png",
+          "exists": true,
+          "decodes": true,
+          "sha256": "cc59ebba6d44c27633937f1a784139c6a61d3e2fc30915ee23c84305a8577fef"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "questions": 10,
+      "localImages": []
+    }
+  ],
+  "sourceEvidence": {
+    "week1": "Live Elements image selector returned one image, w1q5.JPG, corresponding to local Q5 Git lifecycle figure.",
+    "week2": "Recursively expanded live Elements DOM contains all ten question rows and no images.",
+    "week3": "Recursively expanded live Elements DOM contains all ten question rows and one image, a3q8.JPG, corresponding to local Q8 TweetCred graph.",
+    "savedPages": {
+      "7": {
+        "questions": 10,
+        "imageReferences": [
+          {
+            "question": 1,
+            "part": "option-A",
+            "src": "./week-07_files/a7q1a.JPG",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 1,
+            "part": "option-B",
+            "src": "./week-07_files/a7q1b.JPG",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 1,
+            "part": "option-C",
+            "src": "./week-07_files/a7q1c.JPG",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 2,
+            "part": "prompt",
+            "src": "./week-07_files/a7q2.JPG",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 4,
+            "part": "prompt",
+            "src": "./week-07_files/a7q4.JPG",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 8,
+            "part": "prompt",
+            "src": "./week-07_files/a7q7.JPG",
+            "saved": false,
+            "alt": ""
+          },
+          {
+            "question": 8,
+            "part": "prompt",
+            "src": "./week-07_files/a7q8.JPG",
+            "saved": true,
+            "alt": ""
+          }
+        ]
+      },
+      "9": {
+        "questions": 10,
+        "imageReferences": [
+          {
+            "question": 5,
+            "part": "prompt",
+            "src": "./week-09_files/Screenshot (216).png",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 8,
+            "part": "prompt",
+            "src": "./week-09_files/Screenshot (217).png",
+            "saved": true,
+            "alt": ""
+          },
+          {
+            "question": 10,
+            "part": "prompt",
+            "src": "./week-09_files/Screenshot (218).png",
+            "saved": true,
+            "alt": ""
+          }
+        ]
+      }
+    },
+    "documents": "Linked solution figures inspected for Weeks 1, 3, 4, 5, 8, 9 and 10. This supplements but does not replace a complete current-quiz DOM audit.",
+    "week6": {
+      "status": "verified-and-fixed",
+      "questionRows": 10,
+      "imageElements": 1,
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs141?unitId=27&assessmentId=155",
+      "imageUrl": "https://storage.googleapis.com/swayam-node1-production.appspot.com/assets/img/noc23_cs69/w6q10.JPG",
+      "detail": "Recursively expanded live assignment DOM contained ten question rows with exactly one image: Q10 spam-target network diagram. No collapsed descendants remained in the expanded course container. Original image restored in data and import overrides.",
+      "websiteVerification": {
+        "url": "http://127.0.0.1:3000/privacy-social-media/week-6",
+        "imageLoaded": true,
+        "naturalWidth": 602,
+        "naturalHeight": 439
+      }
+    }
+  },
+  "findings": [
+    {
+      "week": 7,
+      "question": 8,
+      "status": "unresolved-source-reference",
+      "detail": "Saved quiz has both a7q7.JPG and a7q8.JPG. a7q8.JPG is present in site; a7q7.JPG was not saved by browser. Cannot yet distinguish broken source asset from omitted content."
+    },
+    {
+      "week": 8,
+      "question": 3,
+      "status": "incorrect-alt-text",
+      "detail": "Image is present, but alt text calls it a cumulative distribution. It is a stacked bar chart of profile-field changes."
+    },
+    {
+      "week": 10,
+      "question": 9,
+      "status": "wording-discrepancy",
+      "detail": "Quiz says contributions of the figure; linked solution says contributions of the paper and supplies no figure. Current quiz DOM image inventory remains unverified."
+    },
+    {
+      "week": 6,
+      "question": 10,
+      "status": "fixed-missing-image",
+      "detail": "Restored the original spam-target network diagram, previously absent from the website."
+    }
+  ],
+  "remaining": "Full live DOM comparison for Weeks 4, 5, 7, 8, 10 and 11; resolve Week 7 Q8 extra reference; visually compare all Week 4 Q8 image options to transcribed tables. Helium returned blank captures and timed out despite recovery attempts.",
+  "websiteChanged": true
+}

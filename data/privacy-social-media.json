@@ -2139,7 +2139,13 @@
           "answerSource": "course-accepted-answer",
           "sourceAnswerText": "A, B",
           "reference": null,
-          "note": null
+          "note": null,
+          "figures": [
+            {
+              "src": "/questions/privacy-social-media/w06-q10.jpg",
+              "alt": "Directed social-network diagram showing nodes A, B, C and S, with following relationships and labels for spam targets and spam followers."
+            }
+          ]
         }
       ]
     },
