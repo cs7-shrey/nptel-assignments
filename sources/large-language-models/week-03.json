@@ -1,0 +1,73 @@
+{
+  "week": 3,
+  "title": "Week 3: Assignment 3",
+  "topic": "Neural networks & PyTorch",
+  "due": "2025-02-12",
+  "questions": [
+    {
+      "prompt": "State whether the following statement is True/False.\nThe Perceptron learning algorithm can solve problems with non-linearly separable data.",
+      "options": ["True", "False"],
+      "accepted": ["False"]
+    },
+    {
+      "prompt": "In backpropagation, which method is used to compute the gradients?",
+      "options": ["Gradient descent", "Chain rule of derivatives", "Matrix factorization", "Linear regression"],
+      "accepted": ["Chain rule of derivatives"]
+    },
+    {
+      "prompt": "Which activation function outputs values in the range [-1, 1]?",
+      "options": ["ReLU", "Tanh", "Sigmoid", "Linear"],
+      "accepted": ["Tanh"]
+    },
+    {
+      "prompt": "What is the primary goal of regularization in machine learning?",
+      "options": [
+        "To improve the computational efficiency of the model",
+        "To reduce overfitting",
+        "To increase the number of layers in a network",
+        "To minimize the loss function directly"
+      ],
+      "accepted": ["To reduce overfitting"]
+    },
+    {
+      "prompt": "Which of the following is a regularization technique where we randomly deactivate neurons during training?",
+      "options": ["Early stopping", "L1 regularization", "Dropout", "Weight decay"],
+      "accepted": ["Dropout"]
+    },
+    {
+      "prompt": "Which activation function has the vanishing gradient problem for large positive or negative inputs?",
+      "options": ["ReLU", "Sigmoid", "GELU", "Swish"],
+      "accepted": ["Sigmoid"]
+    },
+    {
+      "prompt": "Which activation function is defined as: f(x)=x\u00b7\u03c3(x), where \u03c3(x) is the sigmoid function?",
+      "options": ["Swish", "ReLU", "GELU", "SwiGLU"],
+      "accepted": ["Swish"]
+    },
+    {
+      "prompt": "What does the backpropagation algorithm compute in a neural network?",
+      "options": [
+        "Loss function value at each epoch",
+        "Gradients of the loss function with respect to weights of the network",
+        "Activation values of the output layer",
+        "Output of each neuron"
+      ],
+      "accepted": ["Gradients of the loss function with respect to weights of the network"]
+    },
+    {
+      "prompt": "Which type of regularization encourages sparsity in the weights?",
+      "options": ["L1 regularization", "L2 regularization", "Dropout", "Early stopping"],
+      "accepted": ["L1 regularization"]
+    },
+    {
+      "prompt": "What is the main purpose of using hidden layers in an MLP?",
+      "options": [
+        "Helps to the network bigger",
+        "Enables us to handle linearly separable data",
+        "Learn complex and nonlinear relationships in the data",
+        "Minimize the computational complexity"
+      ],
+      "accepted": ["Learn complex and nonlinear relationships in the data"]
+    }
+  ]
+}

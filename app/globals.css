@@ -910,6 +910,7 @@ a {
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--option-bg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 12px;
   line-height: 1.7;
   white-space: pre-wrap;
@@ -1019,21 +1020,6 @@ a {
   line-height: 1.6;
   overflow-wrap: anywhere;
   margin: -4px 0 18px;
-}
-.question-code {
-  margin: 0 0 20px;
-  padding: 14px 16px;
-  overflow-x: auto;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 12.5px;
-  line-height: 1.65;
-  color: var(--ink);
-  background: var(--option-bg);
-  border: 1px solid var(--option-line);
-  border-radius: 8px;
-}
-.question-code code {
-  font: inherit;
 }
 @media print {
   .check-answer {

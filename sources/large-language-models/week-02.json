@@ -1,0 +1,53 @@
+{
+  "week": 2,
+  "title": "Week 2: Assignment 2",
+  "topic": "Statistical language models",
+  "due": "2025-02-05",
+  "questions": [
+    {
+      "prompt": "A 5-gram model is a ______ order Markov Model.",
+      "options": ["Constant", "Five", "Six", "Four"],
+      "accepted": ["Four"]
+    },
+    {
+      "prompt": "For a given corpus, the count of occurrence of the unigram \"stay\" is 300. If the Maximum Likelihood Estimation (MLE) for the bigram \"stay curious\" is 0.4, what is the count of occurrence of the bigram \"stay curious\"?",
+      "options": ["123", "300", "750", "120"],
+      "accepted": ["120"]
+    },
+    {
+      "prompt": "Which of the following are governing principles for Probabilistic Language Models?",
+      "options": ["Chain Rule of Probability", "Markov Assumption", "Fourier Transform", "Gradient Descent"],
+      "accepted": ["Chain Rule of Probability", "Markov Assumption"]
+    },
+    {
+      "prompt": "For Question 4 to 5, consider the following corpus:\n<s> the sunset is nice </s>\n<s> people watch the sunset </s>\n<s> they enjoy the beautiful sunset </s>\n\nAssuming a bi-gram language model, calculate the probability of the sentence:\n<s> people watch the beautiful sunset </s>\nIgnore the unigram probability of P(<s>) in your calculation.",
+      "options": ["2/27", "1/27", "2/9", "1/6"],
+      "accepted": ["2/27"]
+    },
+    {
+      "prompt": "Assuming a bi-gram language model, calculate the perplexity of the sentence:\n<s> people watch the beautiful sunset </s>\nDo not consider <s> and </s> in the count of words of the sentence.",
+      "options": ["27^(1/4)", "27^(1/5)", "9^(1/6)", "(27/2)^(1/5)"],
+      "accepted": ["(27/2)^(1/5)"]
+    },
+    {
+      "prompt": "What is the main intuition behind Kneser-Ney smoothing?",
+      "options": [
+        "Assign higher probability to frequent words.",
+        "Use continuation probability to better model words appearing in a novel context.",
+        "Normalize probabilities by word length.",
+        "Minimize perplexity for unseen words."
+      ],
+      "accepted": ["Use continuation probability to better model words appearing in a novel context."]
+    },
+    {
+      "prompt": "In perplexity-based evaluation of a language model, what does a lower perplexity score indicate?",
+      "options": ["Worse model performance", "Better language model performance", "Increased vocabulary size", "More sparse data"],
+      "accepted": ["Better language model performance"]
+    },
+    {
+      "prompt": "Which of the following is a limitation of statistical language models like n-grams?",
+      "options": ["Fixed context size", "High memory requirements for large vocabularies", "Difficulty in generalizing to unseen data", "All of the above"],
+      "accepted": ["All of the above"]
+    }
+  ]
+}

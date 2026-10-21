@@ -1,0 +1,74 @@
+{
+  "week": 6,
+  "title": "Week 6: Assignment 6",
+  "topic": "Transformer architecture",
+  "due": "2025-03-05",
+  "questions": [
+    {
+      "prompt": "What is the key advantage of multi-head attention?",
+      "options": [
+        "It uses a single attention score for the entire sequence",
+        "It allows attending to different parts of the input sequence simultaneously",
+        "It eliminates the need for normalization",
+        "It reduces the model size"
+      ],
+      "accepted": ["It allows attending to different parts of the input sequence simultaneously"]
+    },
+    {
+      "prompt": "What is the role of the residual connection in the Transformer architecture?",
+      "options": ["Improve gradient flow during backpropagation", "Normalize input embeddings", "Reduce computational complexity", "Prevent overfitting"],
+      "accepted": ["Improve gradient flow during backpropagation"]
+    },
+    {
+      "prompt": "Which of the following elements addresses the lack of sequence information in self-attention?",
+      "options": ["Non-linear transformations", "Positional encoding", "Masked decoding", "Residual connections"],
+      "accepted": ["Positional encoding"]
+    },
+    {
+      "prompt": "For Rotary Position Embedding (RoPE), which of the following statements are true?",
+      "options": [
+        "Combines relative and absolute positional information",
+        "Applies a multiplicative rotation matrix to encode positions",
+        "Eliminates the need for positional encodings",
+        "All of the above"
+      ],
+      "accepted": ["Combines relative and absolute positional information", "Applies a multiplicative rotation matrix to encode positions"]
+    },
+    {
+      "prompt": "Consider a sequence of tokens of length 4: [w₁,w₂,w₃,w₄]. Using masked self-attention, compute the attention weights for token w3, assuming the unmasked attention scores are: [5.2, 1.3]",
+      "options": [
+        "[0.6234, 0.023, 0.3424, 0.0112]",
+        "[0.2957, 0.7043, 0, 0]",
+        "[0.9362, 0.0466, 0.0171, 0]",
+        "[0.5061, 0.437, 0, 0.0569]"
+      ],
+      "accepted": ["[0.9362, 0.0466, 0.0171, 0]"],
+      "note": "The export prints only two unmasked attention scores ([5.2, 1.3]) although the accepted weights cover three unmasked positions; the accepted answer is reproduced as printed."
+    },
+    {
+      "prompt": "______ maps the values of a feature in the range [0,1].",
+      "options": ["Standardization", "Normalization", "Transformation", "Scaling"],
+      "accepted": ["Normalization"]
+    },
+    {
+      "prompt": "How does masked self-attention help in autoregressive models?",
+      "options": [
+        "By attending to all tokens, including future ones.",
+        "By focusing only on past tokens to prevent information leakage.",
+        "By ignoring positional information in the sequence.",
+        "By disabling the attention mechanism entirely."
+      ],
+      "accepted": ["By focusing only on past tokens to prevent information leakage."]
+    },
+    {
+      "prompt": "For a transformer with d_model = 512, calculate the positional encoding for position p = 10 and dimensions 2 and 3 using the sinusoidal formula:\nPE(p, 2i) = sin(p / 10000^(2i/d_model))    PE(p, 2i+1) = cos(p / 10000^(2i/d_model))",
+      "options": [
+        "sin(10/10000^(1/256)), cos(10/10000^(1/256))",
+        "cos(10/10000^(1/512)), sin(10/10000^(1/512))",
+        "cos(10/10000^(4/512)), sin(10/10000^(7/256))",
+        "sin(10/10000^(2/512)), cos(10/10000^(3/512))"
+      ],
+      "accepted": ["sin(10/10000^(1/256)), cos(10/10000^(1/256))"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "week": 5,
+  "title": "Week 5: Assignment 5",
+  "topic": "RNNs, LSTMs & attention",
+  "due": "2025-02-26",
+  "questions": [
+    {
+      "prompt": "Which of the following is a disadvantage of Recurrent Neural Networks (RNNs)?",
+      "options": [
+        "Can only process fixed-length inputs.",
+        "Symmetry in how inputs are processed.",
+        "Difficulty accessing information from many steps back.",
+        "Weights are not reused across timesteps."
+      ],
+      "accepted": ["Difficulty accessing information from many steps back."]
+    },
+    {
+      "prompt": "Why are RNNs preferred over fixed-window neural models?",
+      "options": [
+        "They have a smaller parameter size.",
+        "They can process sequences of arbitrary length.",
+        "They eliminate the need for embedding layers.",
+        "None of the above."
+      ],
+      "accepted": ["They can process sequences of arbitrary length."]
+    },
+    {
+      "prompt": "What is the primary purpose of the cell state in an LSTM?",
+      "options": [
+        "Store short-term information.",
+        "Control the gradient flow across timesteps.",
+        "Store long-term information.",
+        "Perform the activation function."
+      ],
+      "accepted": ["Store long-term information."]
+    },
+    {
+      "prompt": "In training an RNN, what technique is used to calculate gradients over multiple timesteps?",
+      "options": ["Backpropagation through Time (BPTT)", "Stochastic Gradient Descent (SGD)", "Dropout Regularization", "Layer Normalization"],
+      "accepted": ["Backpropagation through Time (BPTT)"]
+    },
+    {
+      "prompt": "Consider a simple RNN:\nInput vector size: 3\nHidden state size: 4\nOutput vector size: 2\nNumber of timesteps: 5\n\nHow many parameters are there in total, including the bias terms?",
+      "options": ["210", "190", "90", "42"],
+      "accepted": ["42"]
+    },
+    {
+      "prompt": "What is the time complexity for processing a sequence of length 'N' by an RNN, if the input embedding dimension, hidden state dimension, and output vector dimension are all 'd'?",
+      "options": ["O(N)", "O(N²d)", "O(Nd)", "O(Nd²)"],
+      "accepted": ["O(Nd²)"]
+    },
+    {
+      "prompt": "Which of the following is true about Seq2Seq models?\n(i) Seq2Seq models are always conditioned on the source sentence.\n(ii) The encoder compresses the input sequence into a fixed-size vector representation.\n(iii) Seq2Seq models cannot handle variable-length sequences.",
+      "options": ["(i) and (ii)", "(ii) only", "(iii) only", "(i), (ii), and (iii)"],
+      "accepted": ["(i) and (ii)"]
+    },
+    {
+      "prompt": "Given the following encoder and decoder hidden states, compute the attention scores. (Use dot product as the scoring function)\n\nEncoder hidden states: h₁ = [1,2], h₂ = [3,4], h₃ = [5,6]\nDecoder hidden state: s = [0.5, 1]",
+      "options": [
+        "0.00235, 0.04731, 0.9503",
+        "0.0737, 0.287, 0.6393",
+        "0.9503, 0.0137, 0.035",
+        "0.6393, 0.0737, 0.287"
+      ],
+      "accepted": ["0.00235, 0.04731, 0.9503"]
+    }
+  ]
+}

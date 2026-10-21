@@ -1,0 +1,72 @@
+{
+  "week": 4,
+  "title": "Week 4: Assignment 4",
+  "topic": "Word representation & tokenization",
+  "due": "2025-02-19",
+  "questions": [
+    {
+      "prompt": "What is the main drawback of representing words as one-hot vectors?",
+      "options": [
+        "They cannot capture semantic similarity between words.",
+        "They are computationally inefficient.",
+        "They cannot incorporate word order effectively.",
+        "They are not robust to unseen words."
+      ],
+      "accepted": ["They cannot capture semantic similarity between words."]
+    },
+    {
+      "prompt": "What is the key concept underlying Word2Vec?",
+      "options": ["Ontological semantics", "Decompositional semantics", "Distributional semantics", "Morphological analysis"],
+      "accepted": ["Distributional semantics"]
+    },
+    {
+      "prompt": "Why is sub-sampling frequent words beneficial in Word2Vec?",
+      "options": [
+        "It increases the computational cost.",
+        "It helps reduce the noise from high-frequency words.",
+        "It helps eliminate redundancy.",
+        "It prevents the model from learning embeddings for common words."
+      ],
+      "accepted": ["It helps reduce the noise from high-frequency words."]
+    },
+    {
+      "prompt": "Which word relations cannot be captured by word2vec?",
+      "options": ["Polysemy", "Antonymy", "Analogy", "All of these"],
+      "accepted": ["Polysemy", "Antonymy"]
+    },
+    {
+      "prompt": "Consider the following word-word matrix:",
+      "image": {
+        "src": "/large-language-models/week-04-matrix.png",
+        "alt": "Word-word co-occurrence matrix with rows w1 to w5 and seven word columns; for example row w2 is 4, 2, 4, 1, 6, 2, 0 and row w5 is 3, 5, 1, 0, 1, 2, 1.",
+        "width": 2040,
+        "height": 555
+      },
+      "continuation": "Compute the cosine similarity between w2 and w5.",
+      "options": ["0.516", "0.881", "0.705", "0.641"],
+      "accepted": ["0.641"]
+    },
+    {
+      "prompt": "Consider the following word-word matrix:",
+      "image": {
+        "src": "/large-language-models/week-04-matrix.png",
+        "alt": "Word-word co-occurrence matrix with rows w1 to w5 and seven word columns; for example row w2 is 4, 2, 4, 1, 6, 2, 0 and row w5 is 3, 5, 1, 0, 1, 2, 1.",
+        "width": 2040,
+        "height": 555
+      },
+      "continuation": "Which word is most similar to w1 based on cosine similarity?",
+      "options": ["w2", "w3", "w4", "w5"],
+      "accepted": ["w5"]
+    },
+    {
+      "prompt": "What is the difference between CBOW and Skip-Gram in Word2Vec?",
+      "options": [
+        "CBOW predicts the context word given the target word, while Skip-Gram predicts the target word given the context words.",
+        "CBOW predicts the target word given the context words, while Skip-Gram predicts the context words given the target word.",
+        "CBOW is used for generating word vectors, while Skip-Gram is not.",
+        "Skip-Gram uses a thesaurus, while CBOW does not."
+      ],
+      "accepted": ["CBOW predicts the target word given the context words, while Skip-Gram predicts the context words given the target word."]
+    }
+  ]
+}

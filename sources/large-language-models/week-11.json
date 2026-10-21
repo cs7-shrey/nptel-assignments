@@ -1,0 +1,120 @@
+{
+  "week": 11,
+  "title": "Week 11: Assignment 11",
+  "topic": "Multiplicative models & hierarchies",
+  "due": "2025-04-09",
+  "questions": [
+    {
+      "prompt": "What is the main modification that SimplE makes to DistMult-like models to handle asymmetric relations?",
+      "options": [
+        "Replacing entity embeddings with random fixed vectors",
+        "Introducing separate entity embeddings for subject and object roles, along with inverse relations",
+        "Restricting the rank of the relation tensor to 1",
+        "Using negative sampling for half of the triple set"
+      ],
+      "accepted": ["Introducing separate entity embeddings for subject and object roles, along with inverse relations"]
+    },
+    {
+      "prompt": "Which statements correctly characterize the basic DistMult approach for knowledge graph completion?",
+      "options": [
+        "Each relation r is parameterized by a full D×D matrix that can capture asymmetric relations.",
+        "The relation embedding is a diagonal matrix, leading to a multiplicative interaction of entity embeddings.",
+        "DistMult struggles with non-symmetric relations because scores r, (i, j) = e_i^T M_r e_j is inherently symmetric in i and j.",
+        "DistMult's performance is typically tested only on fully symmetric KGs."
+      ],
+      "accepted": [
+        "The relation embedding is a diagonal matrix, leading to a multiplicative interaction of entity embeddings.",
+        "DistMult struggles with non-symmetric relations because scores r, (i, j) = e_i^T M_r e_j is inherently symmetric in i and j."
+      ]
+    },
+    {
+      "prompt": "Which statements about the ComplEx extension of DistMult are true?",
+      "options": [
+        "It uses complex-valued embeddings to better capture asymmetric or anti-symmetric relations.",
+        "It replaces the multiplication in DistMult with element-wise addition of real-valued vectors.",
+        "For a perfectly symmetric relation, one could set the imaginary part of the relation embedding to zero.",
+        "ComplEx requires each entity vector to be unit norm in the complex plane."
+      ],
+      "accepted": [
+        "It uses complex-valued embeddings to better capture asymmetric or anti-symmetric relations.",
+        "For a perfectly symmetric relation, one could set the imaginary part of the relation embedding to zero."
+      ]
+    },
+    {
+      "prompt": "Which best describes the main advantage of using a factorized representation (e.g., DistMult, ComplEx) for large KGs?",
+      "options": [
+        "It enforces that every relation in the KG be perfectly symmetric.",
+        "It ensures each entity is stored as a one-hot vector, simplifying nearest-neighbour queries.",
+        "It collapses the entire KG into a single scalar value.",
+        "It significantly reduces parameters and enables generalization to unseen triples by capturing low-rank structure."
+      ],
+      "accepted": ["It significantly reduces parameters and enables generalization to unseen triples by capturing low-rank structure."]
+    },
+    {
+      "prompt": "Which statement best describes the reshaping of a 3D KG tensor X \u2208 R^(|E|\u00d7|R|\u00d7|E|) into a matrix factorization problem?",
+      "options": [
+        "One axis remains for subject, one axis remains for object, and relations are combined into a single expanded axis.",
+        "The subject dimension is repeated to match the relation dimension, resulting in a 2D matrix.",
+        "Each subject-relation pair is collapsed into a single dimension, while objects remain as separate entities.",
+        "The entire KG is vectorized into a 1D array and then factorized with an SVD approach."
+      ],
+      "accepted": ["Each subject-relation pair is collapsed into a single dimension, while objects remain as separate entities."]
+    },
+    {
+      "prompt": "Which key property of hierarchical relationships (e.g. is-a, transitivity) motivates the exploration of specialized embedding methods over standard Euclidean KG embeddings?",
+      "options": [
+        "Symmetry in the relation (A, is-a, B) implying (B, is-a, A)",
+        "Frequent presence of cycles in hierarchical graphs",
+        "Transitivity in the form (camel, is-a, mammal) and (mammal, is-a, animal) \u2192 (camel, is-a, animal)",
+        "The high dimensionality of the entity embeddings"
+      ],
+      "accepted": ["Transitivity in the form (camel, is-a, mammal) and (mammal, is-a, animal) \u2192 (camel, is-a, animal)"]
+    },
+    {
+      "prompt": "Which of the following statements correctly describe hyperbolic (Poincar\u00e9) embeddings for hierarchical data?",
+      "options": [
+        "They map nodes onto a disk (or ball) such that large branching factors can be represented with lower distortion than in Euclidean space.",
+        "Distance grows slowly near the center and becomes infinite near the boundary, making it naturally suited for tree-like structures.",
+        "They require each node to be embedded on the surface of the Poincar\u00e9 disk of radius 1.",
+        "They can achieve arbitrarily low distortion embeddings for trees with the same dimension as Euclidean space."
+      ],
+      "accepted": [
+        "They map nodes onto a disk (or ball) such that large branching factors can be represented with lower distortion than in Euclidean space.",
+        "Distance grows slowly near the center and becomes infinite near the boundary, making it naturally suited for tree-like structures."
+      ]
+    },
+    {
+      "prompt": "Why might a partial-order-based approach (like order embeddings) be beneficial for modeling \"is-a\" relationships compared to purely distance-based approaches?",
+      "options": [
+        "They explicitly encode the ancestor-descendant relation as a coordinate-wise inequality or containment.",
+        "They can represent negative correlations (i.e., sibling vs. ancestor) more easily than distance metrics.",
+        "They inherently guarantee transitive closure of the hierarchy in the learned embedding space.",
+        "They do not rely on pairwise distances but use a notion of coordinate-wise ordering or interval containment."
+      ],
+      "accepted": [
+        "They explicitly encode the ancestor-descendant relation as a coordinate-wise inequality or containment.",
+        "They do not rely on pairwise distances but use a notion of coordinate-wise ordering or interval containment."
+      ]
+    },
+    {
+      "prompt": "Which statement about box embeddings in hierarchical modeling is most accurate?",
+      "options": [
+        "Each entity or type is assigned a single real-valued vector, ignoring bounding volumes.",
+        "Containment I_x \u2282 I_y across all dimensions encodes x \u227a y.",
+        "They rely on spherical distances around a central node to measure tree depth.",
+        "They cannot be used to represent set intersections or partial overlap."
+      ],
+      "accepted": ["Containment I_x \u2282 I_y across all dimensions encodes x \u227a y."]
+    },
+    {
+      "prompt": "What is a key challenge with axis-aligned open-cone (order) embeddings for hierarchical KG data?",
+      "options": [
+        "They enforce that all sibling categories have identical cone apices, which causes overlap.",
+        "They require symmetrical relationships for all edges.",
+        "They do not allow partial orders to be extended to total orders.",
+        "The volume (measure) of cones is the same regardless of how \"broad\" or \"narrow\" the cone is, making sub-categories indistinguishable by volume."
+      ],
+      "accepted": ["The volume (measure) of cones is the same regardless of how \"broad\" or \"narrow\" the cone is, making sub-categories indistinguishable by volume."]
+    }
+  ]
+}
