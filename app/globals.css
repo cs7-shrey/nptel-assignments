@@ -345,9 +345,52 @@ a {
   background: var(--side-hover);
   outline: none;
 }
-.subject-menu svg {
+.subject-list a svg {
   flex-shrink: 0;
   color: var(--green);
+}
+/* Search sits inside the menu, so it is only present while the subject list is open. */
+.subject-search {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 4px;
+  padding: 5px 5px 9px;
+  border-bottom: 1px solid var(--line);
+}
+.subject-search svg {
+  flex: none;
+  color: var(--muted);
+}
+.subject-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 13px;
+  color: var(--ink);
+  background: var(--side);
+  border: 1px solid var(--side-line);
+  border-radius: 5px;
+}
+.subject-search input::placeholder {
+  color: var(--muted);
+}
+.subject-search input:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 1px;
+}
+.subject-list {
+  max-height: 300px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+.subject-empty {
+  margin: 0;
+  padding: 10px 8px;
+  font-size: 13px;
+  color: var(--muted);
 }
 @keyframes menu-in {
   from {
