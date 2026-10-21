@@ -1,38 +1,65 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { courses, weekPath } from '@/lib/courses';
-import type { Subject } from '@/lib/courses';
+import { subjectGroups, weekPath } from '@/lib/courses';
+import type { Subject, SubjectGroup } from '@/lib/courses';
 
-// The menu lists subjects alphabetically; its search box only exists while the menu is open.
-const alphabetical = [...courses].sort((a, b) => a.course.localeCompare(b.course));
+// A course that runs in more than one year expands to a year picker before it opens.
+const firstWeek = (s: Subject) => weekPath(s, s.weeks[0].week);
+const latest = (group: SubjectGroup) => group.members[group.members.length - 1];
+const LAST_YEARS_KEY = 'recall:last-years';
 
 // Switching subjects remounts the course layout, which also closes the menu.
 export default function SubjectSwitcher({ course }: { course: Subject }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
+  const [lastYears, setLastYears] = useState<Record<string, string>>({});
+  const [expanded, setExpanded] = useState<string | null>(null);
   const root = useRef<HTMLDivElement>(null);
   const button = useRef<HTMLButtonElement>(null);
   const search = useRef<HTMLInputElement>(null);
 
   const matches = useMemo(() => {
     const term = query.trim().toLowerCase();
-    if (!term) return alphabetical;
-    return alphabetical.filter(c => c.course.toLowerCase().includes(term) || c.courseId.toLowerCase().includes(term));
+    if (!term) return subjectGroups;
+    return subjectGroups.filter(g => g.label.toLowerCase().includes(term) ||
+      g.members.some(m => m.courseId.toLowerCase().includes(term) || m.course.toLowerCase().includes(term) || m.year === term));
   }, [query]);
 
   function close() { setOpen(false); setQuery(''); }
 
+  // Each multi-year course remembers the year that was last opened and pre-selects it.
   useEffect(() => {
-    if (!open) return;
+    try {
+      const saved = JSON.parse(localStorage.getItem(LAST_YEARS_KEY) ?? '{}');
+      if (saved && typeof saved === 'object' && !Array.isArray(saved)) setLastYears(saved);
+    } catch { /* Storage is optional. */ }
+  }, []);
+  useEffect(() => {
+    const family = course.family;
+    if (!family) return;
+    setLastYears(prev => {
+      if (prev[family] === course.slug) return prev;
+      const next = { ...prev, [family]: course.slug };
+      try { localStorage.setItem(LAST_YEARS_KEY, JSON.stringify(next)); } catch { /* Storage is optional. */ }
+      return next;
+    });
+  }, [course.family, course.slug]);
+
+  useEffect(() => {
+    if (!open) { setExpanded(null); return; }
+    // The subject that is currently open starts expanded, so its chosen year is visible.
+    const current = subjectGroups.find(g => g.members.some(m => m.slug === course.slug));
+    setExpanded(current && current.members.length > 1 ? current.label : null);
     search.current?.focus();
-    const items = () => [...root.current!.querySelectorAll<HTMLElement>('.subject-menu a')];
+    // Arrow keys step through subjects; the year picker is reached with Tab or a click.
+    const subjects = () => [...root.current!.querySelectorAll<HTMLElement>('.subject-link')];
     function onPointerDown(e: PointerEvent) { if (!root.current?.contains(e.target as Node)) close(); }
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape') { close(); button.current?.focus(); return; }
       if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
       e.preventDefault();
-      const list = items();
+      const list = subjects();
       if (!list.length) return;
       const fromSearch = document.activeElement === search.current;
       const i = fromSearch ? (e.key === 'ArrowDown' ? -1 : list.length) : list.indexOf(document.activeElement as HTMLElement);
@@ -55,17 +82,38 @@ export default function SubjectSwitcher({ course }: { course: Subject }) {
           onKeyDown={e => {
             if (e.key === 'Enter' && matches.length) {
               e.preventDefault();
-              (root.current!.querySelector('.subject-menu a') as HTMLAnchorElement | null)?.click();
+              (root.current!.querySelector('.subject-link') as HTMLElement | null)?.click();
             }
           }} />
       </div>
-      {matches.length ? <ul className="subject-list">{matches.map(c => {
-        const current = c.slug === course.slug;
-        return <li key={c.slug}>
-          <Link href={weekPath(c, c.weeks[0].week)} aria-current={current ? 'true' : undefined} onClick={e => { if (current) { e.preventDefault(); close(); } }}>
-            <span>{c.course}</span>
-            {current && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>}
-          </Link>
+      {matches.length ? <ul className="subject-list">{matches.map(group => {
+        const active = group.members.find(m => m.slug === course.slug);
+        const multiYear = group.members.length > 1;
+        const isExpanded = multiYear && expanded === group.label;
+        const remembered = group.members.find(m => m.slug === lastYears[group.label]);
+        const defaultSlug = (remembered ?? latest(group)).slug;
+        const first = group.members[0];
+        const check = <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>;
+        return <li className={`subject-group ${isExpanded ? 'open' : ''}`} key={group.label}>
+          {multiYear
+            ? <button type="button" className="subject-link subject-toggle" aria-expanded={isExpanded} aria-controls={`years-${first.slug}`} onClick={() => setExpanded(label => label === group.label ? null : group.label)}>
+              <span>{group.label}</span>
+              <span className="subject-row-icons">
+                {active && check}
+                <svg className={`subject-chevron ${isExpanded ? 'open' : ''}`} width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </span>
+            </button>
+            : <Link className="subject-link" href={firstWeek(first)} aria-current={active ? 'true' : undefined} onClick={e => { if (active) { e.preventDefault(); close(); } }}>
+              <span>{group.label}</span>
+              {active && check}
+            </Link>}
+          {isExpanded && <div className="subject-years" id={`years-${first.slug}`} role="group" aria-label={`Year for ${group.label}`}>{group.members.map(m => {
+            const current = m.slug === course.slug;
+            const isDefault = m.slug === defaultSlug;
+            return <Link key={m.slug} className={`subject-year ${isDefault ? 'is-default' : ''}`} href={firstWeek(m)} aria-current={current ? 'true' : undefined}
+              aria-label={`${group.label}, ${m.year}${isDefault ? ' (last opened)' : ''}`} title={isDefault ? 'Last opened' : undefined}
+              onClick={e => { if (current) { e.preventDefault(); close(); } }}>{m.year}</Link>;
+          })}</div>}
         </li>;
       })}</ul> : <p className="subject-empty" role="status">No subjects found.</p>}
     </div>}

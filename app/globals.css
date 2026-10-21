@@ -330,7 +330,7 @@ a {
 [data-theme="dark"] .subject-menu {
   box-shadow: 0 8px 24px #00000080;
 }
-.subject-menu a {
+.subject-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -340,14 +340,43 @@ a {
   font-size: 13px;
   font-weight: 500;
 }
-.subject-menu a:hover,
-.subject-menu a:focus-visible {
+.subject-link:hover,
+.subject-link:focus-visible {
   background: var(--side-hover);
   outline: none;
 }
-.subject-list a svg {
+.subject-link svg {
   flex-shrink: 0;
   color: var(--green);
+}
+.subject-group + .subject-group {
+  margin-top: 2px;
+}
+/* Year picker for a course that runs in more than one year. */
+.subject-years {
+  display: flex;
+  gap: 6px;
+  padding: 0 10px 5px;
+}
+.subject-year {
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  background: var(--side);
+  border: 1px solid var(--side-line);
+  border-radius: 999px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.subject-year:hover {
+  color: var(--ink);
+  border-color: var(--option-hover-line);
+}
+.subject-year[aria-current] {
+  color: var(--active-text);
+  background: var(--active-bg);
+  border-color: var(--active-bg);
 }
 /* Search sits inside the menu, so it is only present while the subject list is open. */
 .subject-search {
