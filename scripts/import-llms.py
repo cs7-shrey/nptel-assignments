@@ -63,7 +63,7 @@ for n in range(1, 13):
     ))
 
 result = dict(
-    course='Introduction to Large Language Models (LLMs)',
+    course='Introduction to Large Language Models (LLMs) \u00b7 2025',
     courseId=course_id,
     collectedOn='2026-10-21',
     schemaVersion=2,

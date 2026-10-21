@@ -8,7 +8,8 @@ Switch subjects from the course name in the sidebar:
 - Responsible & Safe AI Systems (`noc26_cs145`): 141 questions across Weeks 1–12.
 - Privacy and Security in Online Social Media (`noc26_cs141`): 110 questions across Weeks 1–11; Weeks 0 and 12 are excluded.
 - VLSI Design Flow: RTL to GDS (`noc23_ee137`): 120 questions across Weeks 1–12.
-- Introduction to Large Language Models (LLMs) (`noc25_cs45`): 109 questions across Weeks 1–12, with 7–10 per week.
+- Introduction to Large Language Models (LLMs) · 2025 (`noc25_cs45`): 109 questions across Weeks 1–12, with 7–10 per week.
+- Introduction to Large Language Models (LLMs) · 2026 (`noc26_cs171`): 109 questions across Weeks 1–12, with 7–10 per week and 18 multi-select.
 
 Every week has its own URL, such as `/responsible-safe-ai/week-3`; `/<subject>/all` puts every week's questions on one page, `/<subject>` opens its first week, and `/` reopens the last week, all-questions page, or quiz you visited (Psychology Week 0 on a first visit). Each course keeps its own answers and checked questions, so switching subjects preserves progress. Existing Psychology progress is restored without migration steps.
 
@@ -30,7 +31,7 @@ Pick a week and click a single-choice option to check it against the course key.
 
 ## Data
 
-`data/assignments.json` contains Psychology, `data/responsible-safe-ai.json` contains Responsible AI, `data/privacy-social-media.json` contains Privacy and Security in Online Social Media, `data/vlsi-design-flow.json` contains VLSI Design Flow, and `data/large-language-models.json` contains Introduction to Large Language Models. All retain source provenance. `/assignments.json` returns `{ "courses": [...] }`; use `/assignments.json?course=noc26_cs145` (or `noc26_hs206`, `noc26_cs141`, `noc23_ee137`, `noc25_cs45`) for one course. An unknown course returns 404.
+`data/assignments.json` contains Psychology, `data/responsible-safe-ai.json` contains Responsible AI, `data/privacy-social-media.json` contains Privacy and Security in Online Social Media, `data/vlsi-design-flow.json` contains VLSI Design Flow, `data/large-language-models.json` contains the 2025 Introduction to Large Language Models export, and `data/large-language-models-2026.json` contains its 2026 question bank. All retain source provenance. `/assignments.json` returns `{ "courses": [...] }`; use `/assignments.json?course=noc26_cs145` (or `noc26_hs206`, `noc26_cs141`, `noc23_ee137`, `noc25_cs45`, `noc26_cs171`) for one course. An unknown course returns 404.
 
 Each week contains `week`, `title`, `topic`, `sourceUrl`, `sourceFile`, `sourceNote`, and `questions`. Each question includes its stable `id`, display `number`, original `sourceNumber`, `prompt`, `options` (`id` and `text`), `correctOptionIds`, `answerStatus`, and answer provenance. Question types are `single-choice`, `multiple-choice`, and `numeric`. Numeric questions use `correctNumericAnswer` and an empty options array. An optional `contextTable` holds matching-question tables; optional `context`, `code`, `figures`, `image`, and `continuation` fields carry passages, code listings, figures, and text that follows a figure; options may include `code` or an `image`. Unreleased answers have null answer fields and `answerStatus: "not-released"`.
 
@@ -64,14 +65,21 @@ VLSI Design Flow, collected 17 October 2026:
 - Six questions reference a figure and three include a Verilog or SDC listing. Figures were cropped from the export into `public/vlsi-design-flow/`; code listings are stored as text and shown in a code block. The Week 5 ROBDD question renders its formula as `f = ab(a' + b')`.
 - Source spelling and wording are retained, including `create_toggle` as a distractor and `Starling Netlist` in the LVS question. Only whitespace and stray marks were normalized.
 
-Introduction to Large Language Models, collected 21 October 2026:
+Introduction to Large Language Models · 2025, collected 21 October 2026:
 
 - Weeks 1–12 contain 7–10 questions each (109 in total), with official accepted answers. Assignments ran from 5 February to 16 April 2025. Week counts and multi-select keys follow the export.
 - The source is a twelve-page PDF export of the closed assignments (`sources/large-language-models/assignments-jan-2025.pdf`). Questions, options, and accepted answers were transcribed page by page into `sources/large-language-models/week-NN.json`; saved submission state and account details are excluded.
 - The export mixes question types: 87 single-choice, 21 multiple-choice, and one numeric question (Week 7's `numpy.einsum` question, answer 23). Week 4's word-word matrix is shared by two questions and is served as an image from `public/large-language-models/`; Week 7's einsum call is stored as a code listing.
 - Source quirks are kept: Week 6 Q5 prints only two unmasked attention scores although its accepted weights cover three positions, and that is recorded in the question's `note`. The Jan 2025 course code is `noc25_cs45`; the assignment export itself does not print a course code.
 
-Sources are stored locally under `sources/`, with the Privacy sources under `sources/privacy-social-media/`, the VLSI export and its per-week transcript under `sources/vlsi-design-flow/`, and the LLM export and transcript under `sources/large-language-models/`. Raw browser saves are ignored by Git and are not served by the app. Sanitized question-image copies are retained for Weeks 7 and 12 of Psychology; Privacy figures and options are served from `public/questions/privacy-social-media/`, the VLSI figures from `public/vlsi-design-flow/`, and the LLM matrix from `public/large-language-models/`. Source spelling and wording are retained, with whitespace and blank markers normalized.
+Introduction to Large Language Models · 2026, collected 21 October 2026:
+
+- Weeks 1–12 contain 7–10 questions each (109 in total), 18 of them multi-select. The bank was supplied as a standalone HTML practice lab.
+- Only its questions and answer key were imported — the practice lab's selector, timer-free test flow, scoring screens and review UI are not part of the app; the existing Recall week, all-weeks and quiz views are used instead.
+- The source of record is `sources/large-language-models-2026/question-bank.json`, a verbatim extraction of the HTML's `Q` array together with its `weekNames` topics. `scripts/import-llms-2026.py` groups it into weeks and derives option ids from the stored answer indices.
+- Answers are the practice lab's key, recorded as `answerSource: "practice-lab-answer-key"`. `scripts/llms-2026.test.mjs` re-checks every bank row against the generated data. The 2026 course code is `noc26_cs171`.
+
+Sources are stored locally under `sources/`, with the Privacy sources under `sources/privacy-social-media/`, the VLSI export and its per-week transcript under `sources/vlsi-design-flow/`, and the LLM sources under `sources/large-language-models/` (2025 export) and `sources/large-language-models-2026/` (2026 question bank). Raw browser saves are ignored by Git and are not served by the app. Sanitized question-image copies are retained for Weeks 7 and 12 of Psychology; Privacy figures and options are served from `public/questions/privacy-social-media/`, the VLSI figures from `public/vlsi-design-flow/`, and the LLM matrix from `public/large-language-models/`. Source spelling and wording are retained, with whitespace and blank markers normalized.
 
 ## Rebuild data and verify
 
@@ -83,13 +91,14 @@ python3 scripts/import-responsible-ai.py
 python3 scripts/import-privacy-social-media.py
 python3 scripts/import-vlsi.py
 python3 scripts/import-llms.py
+python3 scripts/import-llms-2026.py
 npm test
 npm run build
 ```
 
 The importers use Python's standard library. `sources/quiz-verification.json` records live course checks for Weeks 6 and 11. Tests check completeness, valid answer references, the known source discrepancies, and absence of saved account/submission metadata.
 
-Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, week-only resets, the all-weeks mix (every question kept, stable per seed, reset all), Privacy image/table/code completeness and quiz isolation, VLSI completeness, figure assets, and code listings, and LLM completeness, multi-select keys, the numeric einsum answer, and the shared matrix figure.
+Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, week-only resets, the all-weeks mix (every question kept, stable per seed, reset all), Privacy image/table/code completeness and quiz isolation, VLSI completeness, figure assets, and code listings, the 2025 LLM export (multi-select keys, the numeric einsum answer, the shared matrix figure), and the 2026 LLM bank (every supplied row reproduced exactly, multi-select keys, no practice-lab UI state).
 
 To add another subject, add its dataset to `data/`, register it with a URL slug in `lib/courses.ts`, and include its source provenance and checks. `/all` and the week routes follow from the new slug.
 

@@ -3,6 +3,7 @@ import responsibleAI from '@/data/responsible-safe-ai.json';
 import privacySocialMedia from '@/data/privacy-social-media.json';
 import vlsi from '@/data/vlsi-design-flow.json';
 import largeLanguageModels from '@/data/large-language-models.json';
+import largeLanguageModels2026 from '@/data/large-language-models-2026.json';
 import type { Course } from './study';
 
 export type Subject = Course & { slug: string };
@@ -14,6 +15,7 @@ export const courses: Subject[] = [
   { slug: 'privacy-social-media', ...privacySocialMedia },
   { slug: 'vlsi-design-flow', ...vlsi },
   { slug: 'large-language-models', ...largeLanguageModels },
+  { slug: 'large-language-models-2026', ...largeLanguageModels2026 },
 ];
 export const findCourse = (slug: string) => courses.find(c => c.slug === slug);
 export const weekSlug = (week: number) => `week-${week}`;

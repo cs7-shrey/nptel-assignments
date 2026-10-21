@@ -7,7 +7,7 @@ const llm = JSON.parse(readFileSync(new URL('../data/large-language-models.json'
 const questions = llm.weeks.flatMap(w => w.questions);
 
 test('Introduction to LLMs includes all twelve assignments', () => {
-  assert.equal(llm.course, 'Introduction to Large Language Models (LLMs)');
+  assert.equal(llm.course, 'Introduction to Large Language Models (LLMs) \u00b7 2025');
   assert.equal(llm.courseId, 'noc25_cs45');
   assert.deepEqual(llm.weeks.map(w => w.week), Array.from({ length: 12 }, (_, i) => i + 1));
   assert.deepEqual(llm.weeks.map(w => w.questions.length), [10, 8, 10, 7, 8, 8, 8, 10, 10, 10, 10, 10]);
