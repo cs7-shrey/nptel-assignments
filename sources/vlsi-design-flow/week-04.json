@@ -1,0 +1,85 @@
+{
+  "week": 4,
+  "title": "Week 4: Assignment 4",
+  "topic": "RTL synthesis & logic optimization",
+  "due": "2023-08-23",
+  "questions": [
+    {
+      "prompt": "Which of the following tasks is typically not a part of RTL synthesis?",
+      "options": ["Parsing", "Model checking", "Elaboration", "Translation to logic gates"],
+      "accepted": "Model checking"
+    },
+    {
+      "prompt": "How will a parameterized module (with a parameter named WIDTH) and having a port named A (with size WIDTH) be processed during elaboration in RTL synthesis?",
+      "options": [
+        "Only one module with a fixed size for port A will be created for all WIDTH values.",
+        "Port A will be eliminated from the parameterized module.",
+        "Separate modules with different size of port A for each distinct value of WIDTH will be created.",
+        "The parameterized module will be ignored during elaboration."
+      ],
+      "accepted": "Separate modules with different size of port A for each distinct value of WIDTH will be created."
+    },
+    {
+      "prompt": "Which of the following Verilog construct is typically non-synthesizable?",
+      "options": ["assign statement", "always block", "case statement", "$display statement"],
+      "accepted": "$display statement"
+    },
+    {
+      "prompt": "Level-sensitive always block will be synthesized to:",
+      "options": [
+        "Flip-flop or latches",
+        "Flip-flop or combinational circuit elements",
+        "Combinational circuit elements or latches",
+        "Only latches"
+      ],
+      "accepted": "Combinational circuit elements or latches"
+    },
+    {
+      "prompt": "What will be the synthesis result of the following Verilog code?",
+      "code": "module top2(in1, clk, out1);\ninput in1, clk;\noutput out1;\nreg reg1, reg2, reg3, out1;\n\nalways @ (posedge clk)\nbegin\n    reg1 <= in1;\n    reg2 <= reg1;\n    reg3 <= reg2;\n    out1 <= reg3;\nend\nendmodule",
+      "options": ["4-bit Ripple counter", "4-bit Shift register", "One flip-flop", "4-bit ripple carry adder"],
+      "accepted": "4-bit Shift register"
+    },
+    {
+      "prompt": "What will be the synthesis result of the following piece of Verilog code:",
+      "code": "always @(*) begin\n    if (en==1'b1) out2 = c;\n    else out2 = out2;\nend",
+      "options": ["One AND gate", "One D-Latch", "One D flip-flop", "One Full-Adder"],
+      "accepted": "One D-Latch"
+    },
+    {
+      "prompt": "What is the primary motivation for resource sharing in RTL synthesis:",
+      "options": [
+        "Save area",
+        "Increase the maximum operable frequency of the circuit.",
+        "Increase the testability of the circuit.",
+        "Improve the reusability of the circuit."
+      ],
+      "accepted": "Save area"
+    },
+    {
+      "prompt": "An implicant of an incompletely specified Boolean function is a cube whose all corners are on:",
+      "options": ["either ON-set or OFF-set", "either ON-set or DC-set", "either OFF-set or DC-set", "Only ON-set"],
+      "accepted": "either ON-set or DC-set"
+    },
+    {
+      "prompt": "Which of the following statements is incorrect regarding two-level logic minimization",
+      "options": [
+        "The prime cover consists of only prime implicants.",
+        "There exists a minimum cover consisting of only prime implicants.",
+        "There exists a minimum cover consisting of only essential prime implicants.",
+        "All the essential prime implicants must be included in a prime cover."
+      ],
+      "accepted": "There exists a minimum cover consisting of only essential prime implicants."
+    },
+    {
+      "prompt": "Which of the following statements is incorrect about the two-level heuristic minimizer",
+      "options": [
+        "The cover size obtained using a heuristic minimizer can exceed the minimum cover.",
+        "Two-level heuristic minimizer typically produces solutions quicker than two-level exact minimization for large problems.",
+        "A heuristic minimizer typically tries to obtain a minimal cover by applying operators iteratively until the solution improves.",
+        "The cover produced by a heuristic minimizer is guaranteed to be the minimum cover."
+      ],
+      "accepted": "The cover produced by a heuristic minimizer is guaranteed to be the minimum cover."
+    }
+  ]
+}

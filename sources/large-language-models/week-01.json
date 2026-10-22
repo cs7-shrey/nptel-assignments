@@ -1,0 +1,79 @@
+{
+  "week": 1,
+  "title": "Week 1: Assignment 1",
+  "topic": "Introduction to NLP & LLMs",
+  "due": "2025-02-05",
+  "questions": [
+    {
+      "prompt": "Based on Distributional Semantics, which of the following statements is/are true?\n(i) The meaning of a word is defined by its relationship to other words.\n(ii) The meaning of a word does not rely on its surrounding context.",
+      "options": [
+        "Both (i) and (ii) are correct",
+        "Only (i) is correct",
+        "Only (ii) is correct",
+        "Neither (i) nor (ii) is correct"
+      ],
+      "accepted": ["Neither (i) nor (ii) is correct"]
+    },
+    {
+      "prompt": "Which of the following words have multiple senses?",
+      "options": ["light", "order", "letter", "buffalo"],
+      "accepted": ["light", "order", "letter", "buffalo"]
+    },
+    {
+      "prompt": "Consider the following sentences:\nSentence 1: Amit forgot to set an alarm last night.\nSentence 2: Amit woke up late today.\n\nDoes Sentence 1 entail Sentence 2?",
+      "options": ["True", "False"],
+      "accepted": ["False"]
+    },
+    {
+      "prompt": "What issues can be observed in the following text?\nOn a much-needed #vacation in beautiful Goa. Workin' & chillin' by d waves!",
+      "options": ["Idioms", "Non-standard English", "Tricky Entity Names", "Neologisms"],
+      "accepted": ["Non-standard English", "Neologisms"]
+    },
+    {
+      "prompt": "Consider the following sentences:\nSentence 1: The bats flew out of the cave at sunset.\nSentence 2: Rohan bought a new bat to practice cricket.\n\nQuestion: Does the word \"bat\" have the same meaning in both sentences?",
+      "options": ["Yes", "No"],
+      "accepted": ["No"]
+    },
+    {
+      "prompt": "Which of the following statements is/are true?",
+      "options": [
+        "Apple is a hypernymy of fruit.",
+        "Leaf is a meronymy of tree.",
+        "Flower is a holonymy of petal.",
+        "Parrot is a hyponym of bird."
+      ],
+      "accepted": ["Leaf is a meronymy of tree.", "Flower is a holonymy of petal.", "Parrot is a hyponym of bird."]
+    },
+    {
+      "prompt": "______ deals with word formation and internal structure of words",
+      "options": ["Pragmatics", "Discourse", "Semantics", "Morphology"],
+      "accepted": ["Morphology"]
+    },
+    {
+      "prompt": "Consider the following sentences:\nSentence 1: Priya told Meera that she had completed the report on time.\nSentence 2: Meera was impressed by her dedication.\n\nWhich of the following statements is/are true?",
+      "options": [
+        "In Sentence 1, \"she\" refers to Meera.",
+        "In Sentence 1, \"she\" refers to Priya.",
+        "In Sentence 2, \"her\" refers to Priya.",
+        "In Sentence 2, \"her\" refers to Meera."
+      ],
+      "accepted": ["In Sentence 1, \"she\" refers to Priya.", "In Sentence 2, \"her\" refers to Priya."]
+    },
+    {
+      "prompt": "In semantic role labeling, we determine the semantic role of each argument with respect to the ______ of the sentence.",
+      "options": ["noun phrase", "subject", "predicate", "adjunct"],
+      "accepted": ["predicate"]
+    },
+    {
+      "prompt": "Which of the following statements is/are true?\n(i) Artificial Intelligence (AI) is a sub-field of Machine Learning.\n(ii) LLMs are deep neural networks for processing text.\n(iii) Generative AI (GenAI) involves only Large Language Models (LLMs).",
+      "options": [
+        "Only (i) and (ii) are correct",
+        "Only (ii) is correct",
+        "Only (i) and (iii) are correct",
+        "All of (i), (ii), and (iii) are correct",
+        "Neither (i), (ii), or (iii) is correct"
+      ],
+      "accepted": ["Only (ii) is correct"]
+    }
+  ]
+}

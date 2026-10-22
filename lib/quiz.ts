@@ -1,3 +1,4 @@
+import { shuffle } from './shuffle.ts';
 import { hasAnswer, restoreProgress } from './study.ts';
 import type { Course, Progress, Question } from './study.ts';
 
@@ -8,14 +9,6 @@ export const quizKey = (courseId: string) => `recall:quiz:${courseId}`;
 // Only questions with a released key can be revealed, so only those are quizzed.
 export const quizzable = (course: Course, weeks: number[]) =>
   course.weeks.filter(w => weeks.includes(w.week)).flatMap(w => w.questions.filter(hasAnswer));
-
-function shuffle<T>(items: T[], random: () => number) {
-  for (let i = items.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [items[i], items[j]] = [items[j], items[i]];
-  }
-  return items;
-}
 
 // "All of the given" and similar only read right as the last option, so they stay put.
 const pinned = (text: string) => /^(all|none|both) of the (given|above)/i.test(text.trim());
@@ -28,7 +21,8 @@ export function createQuiz(course: Course, weeks: number[], max: number | null, 
   const pool = shuffle(quizzable(course, weeks), random).slice(0, max ?? undefined);
   return {
     weeks: [...weeks].sort((a, b) => a - b), max, questionIds: pool.map(q => q.id),
-    optionOrder: Object.fromEntries(pool.filter(q => q.options.length > 1).map(q => [q.id, shuffleOptions(q, random)])), choices: {}, checked: {},
+    optionOrder: Object.fromEntries(pool.filter(q => q.options.length > 1).map(q => [q.id, shuffleOptions(q, random)])),
+    choices: {}, checked: {},
   };
 }
 

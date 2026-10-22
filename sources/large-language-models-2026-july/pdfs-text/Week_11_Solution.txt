@@ -1,0 +1,179 @@
+Introduction to Large Language Models 
+Assignment- 11 
+TYPE OF QUESTION: MCQ 
+Number of questions: 10    Total mark: 10 X 1 = 10 
+ 
+QUESTION 1: [1 mark] 
+Which statements correctly characterise the DistMult model for knowledge graph completion? 
+a. Each relation is parameterised by a full D x D matrix, which lets it capture asymmetric 
+relations. 
+b. The relation is represented by a diagonal matrix, so the score is a multiplicative interaction of 
+the entity embeddings. 
+c. Because the diagonal form makes the score symmetric in the subject and object, it cannot 
+distinguish a relation from its inverse. 
+d. DistMult can only be evaluated on knowledge graphs whose relations are all symmetric. 
+Correct Answers: b, c 
+Explanation: 
+(b) True: DistMult restricts the bilinear form to a diagonal relation matrix, so the score reduces to 
+the element-wise product of the subject, relation and object vectors summed over dimensions. 
+(c) True: that product is unchanged when the subject and object are swapped, so DistMult assigns 
+the same plausibility to (s, r, o) and (o, r, s). It therefore cannot model relations such as parent_of. 
+(a) is false and in fact describes the general bilinear model that DistMult simplifies. (d) is false: 
+DistMult is trained and evaluated on ordinary benchmarks such as FB15k-237, it simply performs 
+poorly on their asymmetric relations. 
+ 
+QUESTION 2: [1 mark] 
+In DistMult the score of a triple is the sum over dimensions of the element-wise product of the 
+subject, relation and object embeddings. Given 
+ 
+s = [1, 2, 0],   r = [2, -1, 3],   o = [3, 1, 4] 
+ 
+what are the scores of (s, r, o) and of the reversed triple (o, r, s)? 
+a. 4 and 4 
+b. 4 and -4 
+c. 4 and 12 
+d. 6 and 4 
+Correct Answer: a 
+Explanation: 
+score(s, r, o) = (1)(2)(3) + (2)(-1)(1) + (0)(3)(4) = 6 - 2 + 0 = 4. 
+Reversing the triple reorders the three factors in each term but multiplication is commutative, so 
+every term is unchanged and the score is again 4. 
+This is the symmetry problem in concrete form: no choice of embeddings can make DistMult score a 
+relation higher in one direction than the other. 
+ 
+QUESTION 3: [1 mark] 
+Which statements about the ComplEx extension of DistMult are true? 
+a. It moves the embeddings into the complex domain and takes the complex conjugate of the 
+object embedding in the score. 
+b. It replaces multiplicative interaction with element-wise addition of real-valued vectors. 
+c. Setting the imaginary part of a relation embedding to zero recovers a symmetric, DistMult-like 
+score. 
+d. Every entity embedding must have unit norm for the model to be valid. 
+Correct Answers: a, c 
+Explanation: 
+(a) True: the conjugation is what breaks the symmetry. Swapping the subject and object now 
+changes the sign of the imaginary contribution, so the two directions of a relation can be scored 
+differently. 
+(c) True: with a purely real relation embedding the imaginary terms cancel and the score becomes 
+symmetric again, which means DistMult is a special case of ComplEx. 
+(b) is false - the interaction stays multiplicative. (d) is false: normalisation is a common training 
+choice, not a requirement of the model. 
+ 
+QUESTION 4: [1 mark] 
+What is the main modification SimplE makes to DistMult-style models in order to handle asymmetric 
+relations? 
+a. It replaces the entity embeddings with fixed random vectors. 
+b. It gives every entity two embeddings, one for its subject role and one for its object role, and 
+learns an embedding for each inverse relation. 
+c. It constrains the relation tensor to rank one. 
+d. It samples negatives for only half of the training triples. 
+Correct Answer: b 
+Explanation: 
+With separate head and tail embeddings, the vectors used when an entity appears as a subject differ 
+from those used when it appears as an object, so the score is no longer forced to be symmetric. 
+SimplE then ties the two directions together by averaging the score of (s, r, o) with the score of (o, 
+r_inverse, s), which is what keeps the two role embeddings from being learned independently and 
+losing the connection between them. 
+ 
+QUESTION 5: [1 mark] 
+What is the main advantage of a factorised representation such as DistMult or ComplEx for a large 
+knowledge graph? 
+a. It forces every relation in the graph to be symmetric. 
+b. It stores each entity as a one-hot vector, which simplifies nearest-neighbour search. 
+c. It collapses the graph into a single scalar summary. 
+d. It replaces the full adjacency tensor with low-rank factors, which cuts the parameter count 
+and lets the model generalise to unseen triples. 
+Correct Answer: d 
+Explanation: 
+The full tensor over subjects, relations and objects has |E| x |R| x |E| entries, which is impossible to 
+store for a graph with millions of entities. Representing entities and relations by low-dimensional 
+vectors reduces this to roughly (|E| + |R|) x d parameters. 
+The low-rank constraint is not just a compression trick: it forces the model to share structure across 
+triples, and that sharing is what allows it to score a triple it never saw during training. 
+ 
+QUESTION 6: [1 mark] 
+How is a 3D knowledge graph tensor of shape |E| x |R| x |E| commonly reshaped into a matrix 
+factorisation problem? 
+a. The entire tensor is flattened into a 1D array and factorised with SVD. 
+b. Each subject-relation pair is collapsed into a single index along one axis, while the objects 
+remain along the other axis. 
+c. The subject dimension is repeated until it matches the relation dimension. 
+d. The relation axis is discarded and the remaining two axes are factorised. 
+Correct Answer: b 
+Explanation: 
+Unfolding the tensor this way produces a matrix of shape (|E| x |R|) by |E|, where each row is a 
+query of the form (subject, relation, ?) and each column an object. Standard matrix factorisation 
+then applies directly. 
+(d) would throw away the relation type and conflate distinct facts. (a) loses all structure, which is 
+exactly what the factorisation is meant to exploit. 
+ 
+QUESTION 7: [1 mark] 
+Which property of hierarchical relations motivates specialised embedding geometries rather than 
+standard Euclidean KG embeddings? 
+a. Symmetry: (A, is-a, B) implying (B, is-a, A) 
+b. The frequent presence of cycles in a taxonomy 
+c. Transitivity: (camel, is-a, mammal) and (mammal, is-a, animal) implying (camel, is-a, animal) 
+d. The high dimensionality of the entity embeddings 
+Correct Answer: c 
+Explanation: 
+A taxonomy is a partial order, and its defining property is transitivity. A model such as DistMult 
+scores each triple independently and has no mechanism that makes the third triple plausible once 
+the first two are, so the transitive closure has to be memorised rather than inferred. 
+(a) is the opposite of what holds - is-a is antisymmetric. (b) is false for a well-formed taxonomy, 
+which is acyclic. 
+ 
+QUESTION 8: [1 mark] 
+Which statements about hyperbolic (Poincare ball) embeddings for hierarchical data are correct? 
+a. The volume available grows exponentially with radius, which matches the exponential growth 
+in the number of nodes at each level of a tree. 
+b. Distances grow slowly near the centre and increase sharply towards the boundary, so depth in 
+a hierarchy maps naturally onto radius. 
+c. Every node must be placed exactly on the boundary of the unit ball. 
+d. They give arbitrarily low distortion for any graph, not only tree-like ones. 
+Correct Answers: a, b 
+Explanation: 
+A tree with branching factor b has roughly b^k nodes at depth k. Euclidean space of fixed dimension 
+cannot accommodate that growth without crowding, which is the source of the distortion. 
+Hyperbolic space expands exponentially with radius, so the tree fits with far less distortion, often in 
+only two dimensions. 
+(c) is false: points lie strictly inside the ball, since the boundary is at infinite distance. (d) overclaims - 
+the advantage is specific to hierarchical or tree-like structure, and a dense graph with many cycles 
+gains nothing. 
+ 
+QUESTION 9: [1 mark] 
+Why can a partial-order approach such as order embeddings suit 'is-a' relations better than a purely 
+distance-based one? 
+a. It encodes the ancestor-descendant relation directly as a coordinate-wise inequality or 
+containment. 
+b. It guarantees the full transitive closure of the hierarchy is recovered without any training. 
+c. It represents sibling and ancestor pairs as negatively correlated vectors. 
+d. It replaces symmetric pairwise distance with an asymmetric notion of ordering, which 
+matches the asymmetry of is-a. 
+Correct Answers: a, d 
+Explanation: 
+A distance is symmetric by definition, so it can say that two concepts are related but not which one 
+subsumes the other. Order embeddings instead require every coordinate of the child to dominate 
+the corresponding coordinate of the parent, an asymmetric condition that reads off the direction of 
+the relation. 
+(b) is too strong: the ordering is transitive by construction in the geometry, but the model still has to 
+be trained for the embeddings to actually satisfy the constraints on held-out pairs. (c) is not what 
+these methods do. 
+ 
+QUESTION 10: [1 mark] 
+Which limitation of axis-aligned cone embeddings do box embeddings address? 
+a. Cones cannot represent containment at all, whereas boxes can. 
+b. A cone has the same measure regardless of how broad or narrow it is, so the size of a category 
+cannot be read off its region, whereas a box has a finite volume that can. 
+c. Cones require all sibling categories to share an apex. 
+d. Cones cannot be trained with gradient descent. 
+Correct Answer: b 
+Explanation: 
+An axis-aligned cone extends infinitely, so its measure carries no information about how general or 
+specific the concept is, and the intersection of two cones is degenerate in the same way. That blocks 
+any probabilistic reading of the geometry. 
+A box is bounded by a lower and an upper corner, so it has a finite volume. Containment along every 
+dimension still encodes is-a, but the volume now reflects the breadth of the category, and the 
+intersection of two boxes is itself a box, which allows partial overlap and conjunction to be 
+represented. 
+(a) is false - cones do encode containment, that part works fine. 
+ 

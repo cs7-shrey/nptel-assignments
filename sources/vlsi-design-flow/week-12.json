@@ -1,0 +1,88 @@
+{
+  "week": 12,
+  "title": "Week 12: Assignment 12",
+  "topic": "Clock tree synthesis, routing & signoff",
+  "due": "2023-10-18",
+  "questions": [
+    {
+      "prompt": "Which of the following is a type of symmetric clock tree architecture?",
+      "options": ["B-tree", "H-tree", "S-tree", "P-tree"],
+      "accepted": "H-tree"
+    },
+    {
+      "prompt": "Which of the following statements does NOT explain the advantages of employing a mesh architecture over tree architecture for a global clock distribution network?",
+      "options": [
+        "It allows us to obtain a very small skew in the clock distribution network.",
+        "It has a decreased impact of process-induced variations.",
+        "It is more robust to failure due to open circuit defects.",
+        "It has less short-circuit power dissipation in the drivers of the clock network."
+      ],
+      "accepted": "It has less short-circuit power dissipation in the drivers of the clock network."
+    },
+    {
+      "prompt": "Clock skews are considered useful skews under which of the following conditions?",
+      "options": [
+        "Skew can improve the testability of the circuit.",
+        "Skew can increase the system's maximum operable frequency.",
+        "Skew can reduce the defect in the manufactured circuit.",
+        "Skew can enhance the manufacturability of the circuit."
+      ],
+      "accepted": "Skew can increase the system's maximum operable frequency."
+    },
+    {
+      "prompt": "Global Routing is the planning phase for which of the following tasks?",
+      "options": ["ECO", "Signoff", "Tape out", "Detailed Routing"],
+      "accepted": "Detailed Routing"
+    },
+    {
+      "prompt": "Global routing attempts to route each net with:",
+      "options": ["Maximum overflow", "Overflow of Zero", "Maximum congestion", "Maximum wirelength"],
+      "accepted": "Overflow of Zero"
+    },
+    {
+      "prompt": "Which of the following techniques is employed to tackle via defects",
+      "options": [
+        "Addition of redundant vias",
+        "Addition of integrated clock gating (ICG) cells",
+        "Addition of spare cells",
+        "Addition of redundant IO cells"
+      ],
+      "accepted": "Addition of redundant vias"
+    },
+    {
+      "prompt": "Why do we need to make the metal density uniform over the layout by inserting dummy metal fills?",
+      "options": [
+        "To improve the timing of the circuit",
+        "To reduce switching power dissipation in the circuit",
+        "To tackle signal integrity issues in the circuit",
+        "To improve the manufacturability of the circuit"
+      ],
+      "accepted": "To improve the manufacturability of the circuit"
+    },
+    {
+      "prompt": "LVS compares the following:",
+      "options": [
+        "Layout and Schematic (Starling Netlist)",
+        "Inductance and Capacitances",
+        "Logic, Voltage, and Slack",
+        "Logic and Slack"
+      ],
+      "accepted": "Layout and Schematic (Starling Netlist)"
+    },
+    {
+      "prompt": "Which of the following task is NOT a signoff verification task?",
+      "options": ["Behavior Synthesis", "Static Timing Analysis", "Signal Integrity Checks", "Power Integrity Checks"],
+      "accepted": "Behavior Synthesis"
+    },
+    {
+      "prompt": "For IC design, what do we mean by \u201ctape out\u201d?",
+      "options": [
+        "Measuring the size of an IC using tape",
+        "Taking backup of netlist on a magnetic tape",
+        "Handing over the final IC layout to the foundry for fabrication",
+        "Adding magnetic tape to the IC design"
+      ],
+      "accepted": "Handing over the final IC layout to the foundry for fabrication"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+Introduction to Large Language Models 
+Assignment- 5 
+TYPE OF QUESTION: MCQ 
+Number of questions: 8    Total mark: 7 X 1 + 1 X 3 = 10 
+ 
+QUESTION 1: [1 mark] 
+State True or False. 
+Lowering the temperature parameter during decoding flattens the output probability distribution 
+and increases the diversity of the generated text. 
+a. True 
+b. False 
+Correct Answer: b 
+Solution: Lowering the temperature sharpens the distribution and makes generation more 
+deterministic. It is raising the temperature that flattens the distribution and increases diversity. 
+ 
+QUESTION 2: [3 marks] 
+Given the following encoder and decoder hidden states, compute the attention weights. (Use dot 
+product as the scoring function.) 
+ 
+Encoder hidden states: h1 = [3, 1], h2 = [1, 4], h3 = [2, 2] 
+Decoder hidden state: s = [1, 1] 
+a. 0.212, 0.576, 0.212 
+b. 0.576, 0.212, 0.212 
+c. 0.333, 0.333, 0.333 
+d. 0.155, 0.422, 0.423 
+Correct Answer: a 
+Solution: e1 = 3(1) + 1(1) = 4 
+e2 = 1(1) + 4(1) = 5 
+e3 = 2(1) + 2(1) = 4 
+alpha1 = e^4 / (e^4 + e^5 + e^4) = 54.598 / 257.609 = 0.212 
+alpha2 = e^5 / (e^4 + e^5 + e^4) = 148.413 / 257.609 = 0.576 
+alpha3 = e^4 / (e^4 + e^5 + e^4) = 54.598 / 257.609 = 0.212 
+ 
+QUESTION 3: [1 mark] 
+What is the primary cause of the vanishing gradient problem in a vanilla RNN? 
+a. Repeated multiplication by the recurrent weight matrix and by activation derivatives smaller 
+than 1 across many timesteps 
+b. The absence of any non-linear activation function in the recurrence 
+c. The use of a fixed-size input window at every timestep 
+d. The inability of the network to process variable-length sequences 
+Correct Answer: a 
+Solution: Backpropagation through time multiplies the same Jacobian at every step. When the 
+relevant terms have magnitude below 1, the product shrinks exponentially with sequence length, so 
+gradients from distant timesteps effectively disappear. 
+ 
+QUESTION 4: [1 mark] 
+Which gate in an LSTM controls how much of the current cell state is exposed as the hidden state at 
+that timestep? 
+a. Forget gate 
+b. Input gate 
+c. Output gate 
+d. Cell candidate gate 
+Correct Answer: c 
+Solution: The output gate filters the (tanh-squashed) cell state to produce the hidden state h_t. The 
+forget gate decides what to retain from the previous cell state, and the input gate decides how much 
+of the new candidate to write in. 
+ 
+QUESTION 5: [1 mark] 
+Which limitation of the basic encoder-decoder Seq2Seq model does the attention mechanism 
+directly address? 
+a. The encoder cannot process variable-length inputs. 
+b. The whole source sequence has to be compressed into a single fixed-length context vector. 
+c. The decoder cannot condition on its own previously generated tokens. 
+d. The model requires the source and target sequences to be of equal length. 
+Correct Answer: b 
+Solution: Attention lets the decoder build a fresh, weighted context vector over all encoder hidden 
+states at every decoding step, removing the information bottleneck of a single fixed-length summary 
+vector. 
+ 
+QUESTION 6: [1 mark] 
+Which of the following is a correct statement about the encoder-decoder architecture? 
+a. The encoder emits one output token per timestep during decoding. 
+b. The decoder produces a summary representation of the input sequence. 
+c. The decoder generates each output conditioned on the encoder representation and on its 
+own previously generated tokens. 
+d. The encoder retains only the first token of the input sequence. 
+Correct Answer: c 
+Solution: Decoding is autoregressive and conditional: at each step the decoder combines 
+information from the encoder with everything it has generated so far. 
+ 
+QUESTION 7: [1 mark] 
+Why are RNNs preferred over fixed-window feed-forward neural language models? 
+a. They always have a larger number of parameters. 
+b. They can process sequences of arbitrary length and share the same weights across timesteps. 
+c. They remove the need for a word embedding layer. 
+d. None of the above. 
+Correct Answer: b 
+Solution: Please refer to lecture slides. 
+ 
+QUESTION 8: [1 mark] 
+Which of the following statements about Seq2Seq models are true? 
+(i) The generation of the target sequence is conditioned on the source sequence. 
+(ii) In the basic model, the encoder compresses the input into a fixed-size vector representation. 
+(iii) The input and output sequences must have the same length. 
+a. (i) and (ii) 
+b. (ii) only 
+c. (iii) only 
+d. (i), (ii) and (iii) 
+Correct Answer: a 
+Solution: Seq2Seq models were designed precisely to map an input sequence of one length to an 
+output sequence of a different length, so (iii) is false. 
+ 

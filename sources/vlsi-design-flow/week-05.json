@@ -1,0 +1,99 @@
+{
+  "week": 5,
+  "title": "Week 5: Assignment 5",
+  "topic": "Logic optimization & formal verification",
+  "due": "2023-08-30",
+  "questions": [
+    {
+      "prompt": "Which of the following statements is correct for multilevel logic?",
+      "options": [
+        "A multilevel logic representation will always produce a minimum delay between the input and the output.",
+        "As the number of levels in a multilevel logic increases, the delay between the input and the output decreases.",
+        "A multilevel logic can be transformed to explore various delay-area trade-offs.",
+        "A multilevel logic representation cannot be transformed into a two-level logic representation."
+      ],
+      "accepted": "A multilevel logic can be transformed to explore various delay-area trade-offs."
+    },
+    {
+      "prompt": "Which of the following statements about the algebraic model in multilevel logic optimization is incorrect?",
+      "options": [
+        "An algebraic model neglects some Boolean properties of the local functions.",
+        "An algebraic model treats a variable and its complement as separate variables.",
+        "Efficient algorithms can be designed to carry out division in an algebraic model.",
+        "An algebraic model can reduce the Boolean expression (a + a') to 1"
+      ],
+      "accepted": "An algebraic model can reduce the Boolean expression (a + a') to 1"
+    },
+    {
+      "prompt": "A minterm is found to be Don't Care (DC) during logic optimization. Which of the following statements best describes the behavior of the logic synthesis tool?",
+      "options": [
+        "A logic synthesis tool will implement a circuit that can produce either 0 or 1 for this minterm, depending on which of these values reduces the cost.",
+        "A logic synthesis tool will implement a circuit that always produces 0 for this minterm.",
+        "A logic synthesis tool will implement a circuit that always produces 1 for this minterm.",
+        "A logic synthesis tool will implement a circuit that always produces high impedance (Z value) for this minterm."
+      ],
+      "accepted": "A logic synthesis tool will implement a circuit that can produce either 0 or 1 for this minterm, depending on which of these values reduces the cost."
+    },
+    {
+      "prompt": "Which of the following statements is incorrect for a typical sequential circuit implementation of a finite state machine (FSM)",
+      "options": [
+        "The combination of the Q-pin value of flip-flops represents states.",
+        "The transition function is implemented using combinational logic.",
+        "Reducing the number of states in an FSM can never reduce the size of the circuit implementation.",
+        "State minimization and optimal state encoding can reduce the size of the circuit implementation."
+      ],
+      "accepted": "Reducing the number of states in an FSM can never reduce the size of the circuit implementation."
+    },
+    {
+      "prompt": "Which of the following statements is incorrect about state minimization in a finite state machine (FSM)",
+      "options": [
+        "State minimization attempts to derive an FSM with the minimum number of states and exhibiting the same behavior as the original FSM.",
+        "State minimization can reduce the number of flip-flops in FSM implementation.",
+        "State minimization relies on retaining any one of the equivalent states and removing others.",
+        "State minimization will change the functionality/behavior of an FSM and should not be done."
+      ],
+      "accepted": "State minimization will change the functionality/behavior of an FSM and should not be done."
+    },
+    {
+      "prompt": "Which of the following state encoding schemes for a finite state machine (FSM) reserves one bit for each state?",
+      "options": ["One-hot Encoding", "Binary Encoding", "Gray Encoding", "Zero-shot Encoding"],
+      "accepted": "One-hot Encoding"
+    },
+    {
+      "prompt": "Which of the following pairs of states are equivalent in the finite state machine (FSM) whose state diagram is shown below?",
+      "image": {
+        "src": "/vlsi-design-flow/week-05-question-07.png",
+        "alt": "State diagram with states sA, sB and sC: sA to sB labelled B/0, sB to sA labelled A/0, sB to itself labelled B/1, sA to sC labelled A/1, sC to sA labelled A/1, and sC to sB labelled B/0.",
+        "width": 736,
+        "height": 608
+      },
+      "options": ["sA and sB", "sA and sC", "sB and sC", "None of the states are equivalent"],
+      "accepted": "sA and sC"
+    },
+    {
+      "prompt": "Formal verification techniques rely on the following:",
+      "options": ["Simulation", "Mathematical Proof", "Random Guesses", "Statistical Inference"],
+      "accepted": "Mathematical Proof"
+    },
+    {
+      "prompt": "A Reduced Ordered Binary Decision Diagram (ROBDD) of a Boolean function:",
+      "options": [
+        "Is a canonical representation",
+        "Is the same as a truth table",
+        "Always represents a Boolean function compactly.",
+        "Has size independent of the variable order"
+      ],
+      "accepted": "Is a canonical representation"
+    },
+    {
+      "prompt": "What can we say about the Reduced Ordered Binary Decision Diagram (ROBDD) representation of a Boolean function f = ab(a' + b') (where a and b are Boolean variables)?",
+      "options": [
+        "It will contain one non-terminal vertex and two leaf terminals.",
+        "It will contain two non-terminal vertex and two leaf terminals.",
+        "It will contain only one leaf terminal with the label 1",
+        "It will contain only one leaf terminal with the label 0"
+      ],
+      "accepted": "It will contain only one leaf terminal with the label 0"
+    }
+  ]
+}

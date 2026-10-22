@@ -1,0 +1,99 @@
+{
+  "week": 6,
+  "title": "Week 6: Assignment 6",
+  "topic": "Formal verification & technology library",
+  "due": "2023-09-06",
+  "questions": [
+    {
+      "prompt": "Assume that a given Boolean function y = f(x1, x2, x3, ..., xn) where x1, x2, ..., xn are Boolean variables. Which of the following statements describes the satisfiability problem correctly?",
+      "options": [
+        "It determines if y can be evaluated to 0 by any assignment of variables {x1, x2, x3, ..., xn}.",
+        "It determines if y can be evaluated to 0 by some assignment of variables {x1, x2, x3, ..., xn}.",
+        "It determines if y can be evaluated to 1 by any assignment of variables {x1, x2, x3, ..., xn}.",
+        "It determines if y can be evaluated to 1 by all assignments of variables {x1, x2, x3, ..., xn}."
+      ],
+      "accepted": "It determines if y can be evaluated to 1 by any assignment of variables {x1, x2, x3, ..., xn}."
+    },
+    {
+      "prompt": "Assume that a given Boolean function y = f(x1, x2, x3, ..., xn) where {x1, x2, x3, ..., xn} are Boolean variables. In the worst case, how many input combinations need to be tried by a SAT solver?",
+      "options": [
+        "Constant number of combinations",
+        "Linear in the number of variables n",
+        "Polynomial in the number of variables n",
+        "Exponential in the number of variables n"
+      ],
+      "accepted": "Exponential in the number of variables n"
+    },
+    {
+      "prompt": "Given a set of states S for a finite state machine (FSM), the problem of obtaining a set of states, S', that can be reached in one step from S is known as:",
+      "options": ["Image computation", "Pre-image computation", "State encoding", "State minimization"],
+      "accepted": "Image computation"
+    },
+    {
+      "prompt": "Which of the following statements is incorrect for Bounded Model Checking (BMC)",
+      "options": [
+        "BMC tries to obtain a counterexample of a finite length n (n is the number of clock cycles from the initial state).",
+        "BMC lacks completeness because it considers counterexamples of a finite length.",
+        "BMC is useful in finding bugs if a bug can be obtained in a few clock cycles from the initial state.",
+        "BMC uses exhaustive simulation to find counterexamples of infinite length n (n is the number of clock cycles from the initial state)"
+      ],
+      "accepted": "BMC uses exhaustive simulation to find counterexamples of infinite length n (n is the number of clock cycles from the initial state)"
+    },
+    {
+      "prompt": "Which of the following tasks is not a part of Combinational Equivalence Checking (CEC):",
+      "options": ["Port and register matching", "Dynamic power analysis", "Miter creation", "Establishing equivalence of miters"],
+      "accepted": "Dynamic power analysis"
+    },
+    {
+      "prompt": "In which of the following cases port matching can fail during Combinational Equivalence Checking (CEC):",
+      "options": [
+        "When some buffers are added to the netlist",
+        "When a NAND gate is optimized using Boolean algebra.",
+        "When the size of an inverter is increased to fix load violation",
+        "When an extra port is added to a design"
+      ],
+      "accepted": "When an extra port is added to a design"
+    },
+    {
+      "prompt": "Technology libraries are typically stored in which of the following formats:",
+      "options": [
+        "Standard Parasitic Exchange Format (SPEF)",
+        "Synopsys Liberty Format",
+        "Synopsys Design Constraint (SDC) Format",
+        "Value Change Dump (VCD) Format"
+      ],
+      "accepted": "Synopsys Liberty Format"
+    },
+    {
+      "prompt": "The slew of the signal shown below computed using a 20-80 threshold is:",
+      "image": {
+        "src": "/vlsi-design-flow/week-06-question-08.png",
+        "alt": "Slew graph: voltage against time in picoseconds, with the signal rising from 0 V at 10 ps to 1 V at 20 ps and the vertical axis marked V-infinity = 1 V.",
+        "width": 824,
+        "height": 552
+      },
+      "options": ["2 ps", "4 ps", "6 ps", "8 ps"],
+      "accepted": "6 ps"
+    },
+    {
+      "prompt": "The Non-linear Delay Model (NLDM) models the delay of a combinational circuit element as a function of:",
+      "options": [
+        "Voltage and Temperature",
+        "Process Parameter and Input Slew",
+        "Input Slew and Output Load",
+        "Voltage and driving resistance"
+      ],
+      "accepted": "Input Slew and Output Load"
+    },
+    {
+      "prompt": "The setup time of a flip-flop in a technology library is modelled as a function of which two variables?",
+      "options": [
+        "The voltage at the D-pin and Load at the Q-pin",
+        "Input Slew at the D-pin and Input Slew at the Clock Pin",
+        "Temperature and Input Slew at the D-pin",
+        "Input Slew at the D-pin and Load at the Q-pin"
+      ],
+      "accepted": "Input Slew at the D-pin and Input Slew at the Clock Pin"
+    }
+  ]
+}

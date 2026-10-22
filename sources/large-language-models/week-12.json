@@ -1,0 +1,105 @@
+{
+  "week": 12,
+  "title": "Week 12: Assignment 12",
+  "topic": "Responsible LLMs & wrap-up",
+  "due": "2025-04-16",
+  "questions": [
+    {
+      "prompt": "Which statements correctly characterize \"bias\" in the context of LLMs?\n1. Bias can generate objectionable or stereotypical views in model outputs.\n2. Bias is always intentionally introduced by malicious data curators.\n3. Bias can cause harmful real-world impacts such as reinforcing discrimination.\n4. Bias only affects low-resource languages; high-resource languages are unaffected.",
+      "options": ["1 and 2", "1 and 3", "2 and 4", "1, 3, and 4"],
+      "accepted": ["1 and 3"]
+    },
+    {
+      "prompt": "The Stereotype Score (ss) refers to:",
+      "options": [
+        "The frequency with which a language model rejects biased associations.",
+        "The measure of how often a model's predictions are meaningless as opposed to meaningful.",
+        "A ratio of positive sentiment to negative sentiment in model outputs.",
+        "The proportion of examples in which a model chooses a stereotypical association over an anti-stereotypical one."
+      ],
+      "accepted": ["The proportion of examples in which a model chooses a stereotypical association over an anti-stereotypical one."]
+    },
+    {
+      "prompt": "Which of the following are prominent sources of bias in LLMs?\n1. Improper selection of training data leading to skewed distributions.\n2. Reliance on older datasets causing \"temporal bias.\"\n3. Overemphasis on low-resource languages causing \"linguistic inversion.\"\n4. Unequal focus on high-resource languages resulting in \"cultural bias.\"",
+      "options": ["1 and 2 only", "2 and 3 only", "1, 2, and 4", "1, 3, and 4"],
+      "accepted": ["1, 2, and 4"]
+    },
+    {
+      "prompt": "In the context of bias mitigation based on adversarial triggers, which best describes the goal of prepending specially chosen tokens to prompts?",
+      "options": [
+        "To directly fine-tune the model parameters to remove bias",
+        "To override all prior knowledge in a model, effectively \"resetting\" it",
+        "To exploit the model's distributional patterns, thereby neutralizing or flipping biased associations in generated text",
+        "To randomly shuffle the tokens so that the model becomes more robust"
+      ],
+      "accepted": ["To exploit the model's distributional patterns, thereby neutralizing or flipping biased associations in generated text"]
+    },
+    {
+      "prompt": "Which of the following best describes the \"regard\" metric?",
+      "options": [
+        "It is a measure of how well a model can explain its internal decision process.",
+        "It is a measurement of a model's perplexity on demographically sensitive text.",
+        "It is the proportion of times a model self-corrects discriminatory language.",
+        "It is a classification label reflecting the attitude towards a demographic group in the generated text."
+      ],
+      "accepted": ["It is a classification label reflecting the attitude towards a demographic group in the generated text."]
+    },
+    {
+      "prompt": "Which of the following steps compose the approach for improving response safety via in-context learning?",
+      "options": [
+        "Retrieving safety demonstrations similar to the user query.",
+        "Fine-tuning the model with additional labeled data after generation.",
+        "Providing retrieved demonstrations as examples in the prompt to guide the model's response generation.",
+        "Sampling multiple outputs from LLMs and choosing the majority opinion."
+      ],
+      "accepted": [
+        "Retrieving safety demonstrations similar to the user query.",
+        "Providing retrieved demonstrations as examples in the prompt to guide the model's response generation."
+      ]
+    },
+    {
+      "prompt": "Which statement(s) is/are correct about how high-resource (HRL) vs. low-resource languages (LRL) affect model training?",
+      "options": [
+        "LRLs typically have higher performance metrics due to smaller population sizes.",
+        "HRLs get more data, so the model might overfit to HRL cultural perspectives.",
+        "LRLs are often under-represented, leading to potential underestimation of their cultural nuances.",
+        "The dominance of HRLs can cause a reinforcing cycle that perpetuates imbalance."
+      ],
+      "accepted": [
+        "HRLs get more data, so the model might overfit to HRL cultural perspectives.",
+        "LRLs are often under-represented, leading to potential underestimation of their cultural nuances.",
+        "The dominance of HRLs can cause a reinforcing cycle that perpetuates imbalance."
+      ]
+    },
+    {
+      "prompt": "The \"Responsible LLM\" concept is stated to address:",
+      "options": [
+        "Only the bias in LLMs",
+        "A set of concerns including explainability, fairness, robustness, and security",
+        "Balancing training costs with carbon footprint",
+        "Implementation of purely rule-based safety filters"
+      ],
+      "accepted": ["A set of concerns including explainability, fairness, robustness, and security"]
+    },
+    {
+      "prompt": "Within the StereoSet framework, the icat metric specifically refers to:",
+      "options": [
+        "The ratio of anti-stereotypical associations to neutral associations",
+        "The percentage of times a model refuses to generate content deemed hateful",
+        "A measure of domain coverage across different demographic groups",
+        "A balanced metric capturing both a model's language modeling ability and the tendency to avoid stereotypical bias"
+      ],
+      "accepted": ["A balanced metric capturing both a model's language modeling ability and the tendency to avoid stereotypical bias"]
+    },
+    {
+      "prompt": "Bias due to improper selection of training data typically arises in LLMs when:",
+      "options": [
+        "Data are selected exclusively from curated, balanced sources with equal representation",
+        "The language model sees only real-time social media feeds without any historical texts",
+        "The training corpus over-represents some topics or groups, creating a skewed distribution",
+        "All data are automatically filtered to remove any demographic markers"
+      ],
+      "accepted": ["The training corpus over-represents some topics or groups, creating a skewed distribution"]
+    }
+  ]
+}

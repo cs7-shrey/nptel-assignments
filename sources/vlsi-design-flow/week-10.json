@@ -1,0 +1,84 @@
+{
+  "week": 10,
+  "title": "Week 10: Assignment 10",
+  "topic": "ATPG, BIST & physical design",
+  "due": "2023-10-04",
+  "questions": [
+    {
+      "prompt": "The non-controlling value of a two-input XOR gate is:",
+      "options": ["0", "1", "Both 0 and 1", "Neither 0 nor 1"],
+      "accepted": "Both 0 and 1"
+    },
+    {
+      "prompt": "For the circuit shown below, the test pattern to detect SA1 at G3/X1 is:",
+      "image": {
+        "src": "/vlsi-design-flow/week-10-question-02.png",
+        "alt": "Circuit with inputs A and B driving NAND gate G1, inputs C and D driving NOR gate G2, and both gate outputs feeding NAND gate G3, whose output is Z. A stuck-at-1 fault is marked on G3 input X1.",
+        "width": 1400,
+        "height": 910
+      },
+      "options": ["A=1 B=1 C=0 D=1", "A=0 B=0 C=0 D=1", "A=1 B=1 C=0 D=0", "A=0 B=1 C=0 D=1"],
+      "accepted": "A=1 B=1 C=0 D=1"
+    },
+    {
+      "prompt": "Which of the following components is typically NOT a part of Built-In Self-Test (BIST) infrastructure?",
+      "options": ["Random Test Pattern Generator", "Test Response Analyzer", "JPEG Encoder", "BIST controller"],
+      "accepted": "JPEG Encoder"
+    },
+    {
+      "prompt": "The patterns obtained using Linear Feedback Shift Register (LFSR) are:",
+      "options": [
+        "Finite, repeatable, and pseudo-random",
+        "Infinite, repeatable, and truly random",
+        "Finite, non-repeatable, and truly random",
+        "Infinite, non-repeatable, and pseudo-random"
+      ],
+      "accepted": "Finite, repeatable, and pseudo-random"
+    },
+    {
+      "prompt": "What is aliasing in signature analysis from the perspective of Built-In Self-Test (BIST)",
+      "options": [
+        "Matching of signature of \u201cgood\u201d circuit and \u201cfaulty\u201d circuit",
+        "Matching of signature of the designer and the signature of the engineer who is fabricating",
+        "Overlapping of frequency components in automatic test equipment",
+        "Distortion in the outline of the image of the chip taken during testing"
+      ],
+      "accepted": "Matching of signature of \u201cgood\u201d circuit and \u201cfaulty\u201d circuit"
+    },
+    {
+      "prompt": "What is the primary purpose of ion implantation in integrated circuit fabrication?",
+      "options": ["Etching the photoresist", "Doping the semiconductor", "Applying a coating of metal", "Growing a thick layer of oxide"],
+      "accepted": "Doping the semiconductor"
+    },
+    {
+      "prompt": "A metal interconnect line in an integrated circuit has a sheet resistance of 0.06 Ohms per square. The length of the interconnect is 10 microns and the width is 0.01 microns. What is the resistance of the interconnect?",
+      "options": ["0.6 Ohms", "6 Ohms", "60 Ohms", "600 Ohms"],
+      "accepted": "60 Ohms"
+    },
+    {
+      "prompt": "The lateral capacitance between two adjacent interconnects running parallelly in the same layer will increase under which of the following conditions?",
+      "options": [
+        "The dielectric constant of the insulator between them is decreased.",
+        "The sidewall area of the interconnects is increased.",
+        "The distance between the interconnects is increased.",
+        "The overlapping length between them is decreased."
+      ],
+      "accepted": "The sidewall area of the interconnects is increased."
+    },
+    {
+      "prompt": "Which of the following phenomenon is typically NOT a manifestation of signal integrity issues in an integrated circuit?",
+      "options": [
+        "Increase in delay from the base delay.",
+        "Decrease in delay from the base delay.",
+        "Introduction of a defect in a manufactured chip.",
+        "Glitches in a signal within an integrated circuit."
+      ],
+      "accepted": "Introduction of a defect in a manufactured chip."
+    },
+    {
+      "prompt": "Which of the following files contain the information about the available layers and vias, their properties for a given technology",
+      "options": ["Verilog design files", "Testbench", "SDC files", "LEF files"],
+      "accepted": "LEF files"
+    }
+  ]
+}

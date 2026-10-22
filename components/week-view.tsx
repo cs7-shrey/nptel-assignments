@@ -4,6 +4,7 @@ import { weekPath } from '@/lib/courses';
 import { hasAnswer, isChecked, isCorrect, resetWeekProgress } from '@/lib/study';
 import QuestionCard from './question-card';
 import { useDesk } from './study-desk';
+import WeekSummary from './week-summary';
 
 export default function WeekView({ weekId }: { weekId: number }) {
   const { course, progress, setProgress, showAnswers, setShowAnswers } = useDesk();
@@ -22,6 +23,7 @@ export default function WeekView({ weekId }: { weekId: number }) {
         <label className="answer-toggle"><input type="checkbox" role="switch" checked={showAnswers} onChange={e => setShowAnswers(e.target.checked)} /><span className="switch" aria-hidden="true" />Show answers</label>
       </div> : <p className="pending">Answer key not released yet.</p>}
     </header>
+    <WeekSummary key={`${course.courseId}:${week.week}`} course={course} week={week} />
     <div id="questions" tabIndex={-1} className="questions">{week.questions.map(q =>
       <QuestionCard key={q.id} q={q} number={q.number} choice={choices[q.id]} checked={checked} showAnswers={showAnswers}
         onChange={choice => setProgress(p => ({ ...p, choices: { ...p.choices, [q.id]: choice } }))}

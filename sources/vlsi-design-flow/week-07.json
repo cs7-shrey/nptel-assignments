@@ -1,0 +1,101 @@
+{
+  "week": 7,
+  "title": "Week 7: Assignment 7",
+  "topic": "Static timing analysis",
+  "due": "2023-09-13",
+  "questions": [
+    {
+      "prompt": "In a typical synchronous design, when will the data launched by a flip-flop at a given clock edge be captured by the adjacent flip-flop in its fanout?",
+      "options": ["At the same clock edge", "At the next clock edge", "At the next-to-next clock edge", "Will never be captured"],
+      "accepted": "At the next clock edge"
+    },
+    {
+      "prompt": "The arrival time of the data at the capture flip-flop does NOT depend on the following:",
+      "options": [
+        "Setup time of the capture flip-flop",
+        "Clock-to-Q delay of the launch flip-flop",
+        "Data path delay",
+        "Delay on the clock path of the launch flip-flop"
+      ],
+      "accepted": "Setup time of the capture flip-flop"
+    },
+    {
+      "prompt": "The hold requirement constraint does NOT depend on the following quantities in a typical synchronous circuit?",
+      "options": [
+        "Clock Period",
+        "Data Path Delay",
+        "Delay on the clock path of the launch flip-flop",
+        "Delay on the clock path of the capture flip-flop"
+      ],
+      "accepted": "Clock Period"
+    },
+    {
+      "prompt": "The delay calculation for a given stage performed during Static Timing Analysis will NOT depend on the following:",
+      "options": [
+        "Interconnect model",
+        "Driver model of the driving cell",
+        "Yield model for the technology",
+        "Receiver model of the driver cell"
+      ],
+      "accepted": "Yield model for the technology"
+    },
+    {
+      "prompt": "Which of the following is NOT considered in creating scenarios for multi-mode multi-corner (MMMC) analysis?",
+      "options": ["PVT corners", "RC corners", "Floorplan Corners", "Design Modes"],
+      "accepted": "Floorplan Corners"
+    },
+    {
+      "prompt": "We have defined a late derating factor of 1.1. For the early analysis, which of the following quantities should be multiplied by the above derating factor to make the analysis more pessimistic?",
+      "options": [
+        "Data path delay",
+        "Clock-to-Q delay of the launch flip-flop",
+        "Delay of the clock launch path",
+        "Delay of the clock capture path"
+      ],
+      "accepted": "Delay of the clock capture path"
+    },
+    {
+      "prompt": "Consider the AND gate shown below:",
+      "image": {
+        "src": "/vlsi-design-flow/week-07-question-07.png",
+        "alt": "A three-input AND gate with inputs A, B, C and output Z, followed by a table of arc delays and output slews (A to Z: 10 ps, 20 ps; B to Z: 20 ps, 5 ps; C to Z: 30 ps, 10 ps) and a table of pin arrival times (A: 5 ps, B: 6 ps, C: 12 ps).",
+        "width": 1460,
+        "height": 985
+      },
+      "options": [
+        "Arrival Time = 42 ps Output Slew = 10 ps",
+        "Arrival Time = 15 ps Output Slew = 20 ps",
+        "Arrival Time = 42 ps Output Slew = 20 ps",
+        "Arrival Time = 15 ps Output Slew = 10 ps"
+      ],
+      "accepted": "Arrival Time = 42 ps Output Slew = 20 ps"
+    },
+    {
+      "prompt": "For the same question above, what will be the arrival time and the output slew at the pin Z when Path Based Analysis (PBA) is performed for the setup check or late-mode check through the arc B \u2192 Z?",
+      "options": [
+        "Arrival Time = 26 ps Output Slew = 20 ps",
+        "Arrival Time = 26 ps Output Slew = 5 ps",
+        "Arrival Time = 42 ps Output Slew = 10 ps",
+        "Arrival Time = 42 ps Output Slew = 5 ps"
+      ],
+      "accepted": "Arrival Time = 26 ps Output Slew = 5 ps"
+    },
+    {
+      "prompt": "Consider the following synchronous circuit:",
+      "image": {
+        "src": "/vlsi-design-flow/week-07-question-09.png",
+        "alt": "Synchronous circuit with input A driving inverter G1 into flip-flop FF1, FF1 output through inverter G2 into flip-flop FF2, and FF2 output through inverter G3 to output Z, with a common CLK to both flip-flops and feedback from Z to A.",
+        "width": 1284,
+        "height": 516
+      },
+      "continuation": "The following attributes are valid for the flip-flops FF1 and FF2: setup time = 45 ps, hold time = 10 ps, and CLK-to-Q delay = 20 ps. The delay of each inverter is 10 ps. Assume that the period of the clock is 1000 ps. What is the setup slack at the timing end-point FF2/D?",
+      "options": ["685 ps", "1001 ps", "0 ps", "-10 ps"],
+      "accepted": "685 ps"
+    },
+    {
+      "prompt": "For the same question above, what is the hold slack at the timing end-point FF2/D?",
+      "options": ["-70 ps", "80 ps", "-80 ps", "70 ps"],
+      "accepted": "80 ps"
+    }
+  ]
+}

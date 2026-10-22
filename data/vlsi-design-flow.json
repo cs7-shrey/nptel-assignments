@@ -1,0 +1,4249 @@
+{
+  "course": "VLSI Design Flow: RTL to GDS",
+  "courseId": "noc23_ee137",
+  "collectedOn": "2026-10-17",
+  "schemaVersion": 2,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Week 1",
+      "topic": "Basic concepts of ICs",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 1: Assignment 1 page of the course export (due 2023-08-09). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w01-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes Moore's prediction or Moore's law:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Every action has an equal and opposite reaction."
+            },
+            {
+              "id": "B",
+              "text": "The number of components in an IC can never be increased."
+            },
+            {
+              "id": "C",
+              "text": "The number of components in an IC realized at minimum cost will double every year or every two years."
+            },
+            {
+              "id": "D",
+              "text": "The sizes of transistors in ICs realized at minimum cost will remain constant."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The number of components in an IC realized at minimum cost will double every year or every two years.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "What is the purpose of masks in photolithography:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Define shapes/patterns that need to be obtained on the wafer."
+            },
+            {
+              "id": "B",
+              "text": "Isolate multiple layers of interconnect."
+            },
+            {
+              "id": "C",
+              "text": "Etch silicon during chemical etching."
+            },
+            {
+              "id": "D",
+              "text": "Oxidize silicon after photolithography."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Define shapes/patterns that need to be obtained on the wafer.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Multiple dies are fabricated on a single silicon wafer."
+            },
+            {
+              "id": "B",
+              "text": "Silicon wafers are sliced out from silicon ingots."
+            },
+            {
+              "id": "C",
+              "text": "We get silicon ingots from a silicon die."
+            },
+            {
+              "id": "D",
+              "text": "We obtain a chip after packaging a die."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "We get silicon ingots from a silicon die.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect:",
+          "options": [
+            {
+              "id": "A",
+              "text": "The semiconductor manufacturing plant where integrated circuits are fabricated is called a semiconductor foundry."
+            },
+            {
+              "id": "B",
+              "text": "Fabless design companies design integrated circuits."
+            },
+            {
+              "id": "C",
+              "text": "Setting up a semiconductor foundry requires a huge investment."
+            },
+            {
+              "id": "D",
+              "text": "Designing integrated circuits is done in semiconductor foundries."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Designing integrated circuits is done in semiconductor foundries.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which among the following design styles require maximum design effort:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Standard cell-based design"
+            },
+            {
+              "id": "B",
+              "text": "Full-custom design"
+            },
+            {
+              "id": "C",
+              "text": "Gate array-based design"
+            },
+            {
+              "id": "D",
+              "text": "FPGA-based design"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Full-custom design",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which among the following is a variable cost in standard cell-based design:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Design cost"
+            },
+            {
+              "id": "B",
+              "text": "Cost of mask"
+            },
+            {
+              "id": "C",
+              "text": "Cost of design tools"
+            },
+            {
+              "id": "D",
+              "text": "Cost of die"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Cost of die",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following representation of a design has the highest degree of abstraction:",
+          "options": [
+            {
+              "id": "A",
+              "text": "As RTL in Verilog"
+            },
+            {
+              "id": "B",
+              "text": "As an algorithm in the programming language C"
+            },
+            {
+              "id": "C",
+              "text": "As connection of logic gates in Verilog"
+            },
+            {
+              "id": "D",
+              "text": "As the layout of transistors and interconnects."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "As an algorithm in the programming language C",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "For which of the following figures of merit, dedicated hardware can be better than the same function implemented as software running on a general-purpose processor:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Risk due to bug"
+            },
+            {
+              "id": "B",
+              "text": "Development time"
+            },
+            {
+              "id": "C",
+              "text": "Speed"
+            },
+            {
+              "id": "D",
+              "text": "Flexibility in implementation and customization"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Speed",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "What is the purpose of carrying out hardware-software partitioning for a system?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It gets rid of all the software in the system."
+            },
+            {
+              "id": "B",
+              "text": "It chooses an optimal combination of hardware and software to implement the system."
+            },
+            {
+              "id": "C",
+              "text": "It gets rid of all the hardware in the system."
+            },
+            {
+              "id": "D",
+              "text": "It compiles the software of the system."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It chooses an optimal combination of hardware and software to implement the system.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w01-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the purpose of behavior synthesis in VLSI design flow?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It converts an algorithm to an equivalent design in RTL."
+            },
+            {
+              "id": "B",
+              "text": "It converts an algorithm to a binary executable."
+            },
+            {
+              "id": "C",
+              "text": "It converts an algorithm into sequences of zeros and ones."
+            },
+            {
+              "id": "D",
+              "text": "It converts an algorithm to an assembly language code."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It converts an algorithm to an equivalent design in RTL.",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Week 2",
+      "topic": "VLSI design flow & TCL",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 2: Assignment 2 page of the course export (due 2023-08-09). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w02-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the purpose of logic synthesis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It converts an RTL to an equivalent netlist (interconnection of logic gates)"
+            },
+            {
+              "id": "B",
+              "text": "It converts an RTL to an equivalent algorithm in C"
+            },
+            {
+              "id": "C",
+              "text": "It converts an RTL to a technology library in Liberty"
+            },
+            {
+              "id": "D",
+              "text": "It converts an RTL to a constraint in SDC"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It converts an RTL to an equivalent netlist (interconnection of logic gates)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following information is typically NOT needed by a logic synthesis tool:",
+          "options": [
+            {
+              "id": "A",
+              "text": "RTL design [in Verilog or VHDL]"
+            },
+            {
+              "id": "B",
+              "text": "Constraints [in Synopsys Design Constraint (SDC) format]"
+            },
+            {
+              "id": "C",
+              "text": "Simulation output [in Value Change Dump (VCD) format]"
+            },
+            {
+              "id": "D",
+              "text": "Technology Library [in Liberty format]"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Simulation output [in Value Change Dump (VCD) format]",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "What is the interface of a library cell or cell instance of a design called",
+          "options": [
+            {
+              "id": "A",
+              "text": "Via"
+            },
+            {
+              "id": "B",
+              "text": "Pin"
+            },
+            {
+              "id": "C",
+              "text": "Jack"
+            },
+            {
+              "id": "D",
+              "text": "Port"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Pin",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the purpose of physical design in VLSI design flow?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It creates a library for a given netlist"
+            },
+            {
+              "id": "B",
+              "text": "It creates an algorithm for a given netlist"
+            },
+            {
+              "id": "C",
+              "text": "It creates a testbench for a given netlist"
+            },
+            {
+              "id": "D",
+              "text": "It creates a layout for a given netlist"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It creates a layout for a given netlist",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is not a part of the physical design:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Placement"
+            },
+            {
+              "id": "B",
+              "text": "Routing"
+            },
+            {
+              "id": "C",
+              "text": "Clock tree synthesis"
+            },
+            {
+              "id": "D",
+              "text": "RTL synthesis"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "RTL synthesis",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the purpose of verification in VLSI design flow?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It ensures that the design makes a customer happy"
+            },
+            {
+              "id": "B",
+              "text": "It ensures that the design works as per the given functionality"
+            },
+            {
+              "id": "C",
+              "text": "It ensures that the design attracts many customers"
+            },
+            {
+              "id": "D",
+              "text": "It ensures that the design makes a lot of profit"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It ensures that the design works as per the given functionality",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is not a kind of design verification task:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Floorplanning"
+            },
+            {
+              "id": "B",
+              "text": "Static Timing Analysis"
+            },
+            {
+              "id": "C",
+              "text": "Combinational Equivalence Checking"
+            },
+            {
+              "id": "D",
+              "text": "RTL Simulation"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Floorplanning",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the purpose of the manufacturing test?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It ensures that the design is made as per the functionality"
+            },
+            {
+              "id": "B",
+              "text": "It ensures that the yield of the process is high"
+            },
+            {
+              "id": "C",
+              "text": "It ensures that no one can make a pirated chip out of the manufactured chip"
+            },
+            {
+              "id": "D",
+              "text": "It checks whether the manufactured chip has a fatal defect."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It checks whether the manufactured chip has a fatal defect.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Yield for a chip reduces when:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Defect density is decreased by better process control"
+            },
+            {
+              "id": "B",
+              "text": "Probability of introducing random defects during fabrication is decreased"
+            },
+            {
+              "id": "C",
+              "text": "The area of a die is increased"
+            },
+            {
+              "id": "D",
+              "text": "The area of a die is decreased"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The area of a die is increased",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w02-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following techniques is NOT a resolution enhancement technique:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Optical proximity correction"
+            },
+            {
+              "id": "B",
+              "text": "Dummy metal fill"
+            },
+            {
+              "id": "C",
+              "text": "Double-patterning"
+            },
+            {
+              "id": "D",
+              "text": "Multi-patterning"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Dummy metal fill",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Week 3",
+      "topic": "Verilog & RTL simulation",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 3: Assignment 3 page of the course export (due 2023-08-09). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w03-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "How will the number -8'd4 (in Verilog) be internally represented as bits?",
+          "options": [
+            {
+              "id": "A",
+              "text": "1111 1111"
+            },
+            {
+              "id": "B",
+              "text": "1111 1110"
+            },
+            {
+              "id": "C",
+              "text": "1111 1100"
+            },
+            {
+              "id": "D",
+              "text": "1111 0000"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "1111 1100",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following data types can store value during Verilog simulation?",
+          "options": [
+            {
+              "id": "A",
+              "text": "wire"
+            },
+            {
+              "id": "B",
+              "text": "wand"
+            },
+            {
+              "id": "C",
+              "text": "wor"
+            },
+            {
+              "id": "D",
+              "text": "reg"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "reg",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "The variable A contains the bit sequence {1011}. The variable Y is obtained by applying the reduction operator: Y=|A. What will be the final value of Y?",
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "X"
+            },
+            {
+              "id": "D",
+              "text": "Z"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "1",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following statements about non-blocking assignments in Verilog is incorrect?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The execution of the next statement is done after the current non-blocking assignment is fully executed"
+            },
+            {
+              "id": "B",
+              "text": "The symbol for non-blocking assignment is <="
+            },
+            {
+              "id": "C",
+              "text": "The execution of the next statement is not blocked until the current non-blocking assignment is executed"
+            },
+            {
+              "id": "D",
+              "text": "The RHS of a non-blocking assignment can be a Verilog expression"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The execution of the next statement is done after the current non-blocking assignment is fully executed",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect about a Verilog function?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A function can have one or more inputs"
+            },
+            {
+              "id": "B",
+              "text": "A function will have one output"
+            },
+            {
+              "id": "C",
+              "text": "A function can call another function"
+            },
+            {
+              "id": "D",
+              "text": "A function can call another task"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A function can call another task",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is typically NOT performed by a testbench in simulation-based RTL verification:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Interact with the simulator"
+            },
+            {
+              "id": "B",
+              "text": "Applies stimulus"
+            },
+            {
+              "id": "C",
+              "text": "Observes the response"
+            },
+            {
+              "id": "D",
+              "text": "Perform logic synthesis"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Perform logic synthesis",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect about code coverage:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Help identify sections of DUV's source code that did not execute during verification."
+            },
+            {
+              "id": "B",
+              "text": "Help perform timing analysis of the design"
+            },
+            {
+              "id": "C",
+              "text": "Helps monitor the progress of the verification effort"
+            },
+            {
+              "id": "D",
+              "text": "Helps assess the quality of verification"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Help perform timing analysis of the design",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "An event-based RTL simulator keeps the events ordered in the event queue according to:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Speed of the processor on which simulation is run"
+            },
+            {
+              "id": "B",
+              "text": "Randomly"
+            },
+            {
+              "id": "C",
+              "text": "Simulation time of the event"
+            },
+            {
+              "id": "D",
+              "text": "Delay of circuit elements in the synthesized netlist"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Simulation time of the event",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Which of the following Verilog constructs is processed last in the stratified Verilog event queue",
+          "options": [
+            {
+              "id": "A",
+              "text": "continuous assign statement"
+            },
+            {
+              "id": "B",
+              "text": "blocking assignment"
+            },
+            {
+              "id": "C",
+              "text": "LHS of non-blocking assignment"
+            },
+            {
+              "id": "D",
+              "text": "RHS of non-blocking assignment"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "LHS of non-blocking assignment",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w03-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect about race in RTL simulation",
+          "options": [
+            {
+              "id": "A",
+              "text": "Race in RTL simulation signifies that the circuit is operating very fast"
+            },
+            {
+              "id": "B",
+              "text": "Due to race, we can obtain different results when the order of execution of two or more statements is changed (as permitted by IEEE standard)"
+            },
+            {
+              "id": "C",
+              "text": "Races in RTL simulation can be difficult to debug"
+            },
+            {
+              "id": "D",
+              "text": "Races can be avoided by following some guidelines in RTL coding"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Race in RTL simulation signifies that the circuit is operating very fast",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Week 4",
+      "topic": "RTL synthesis & logic optimization",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 4: Assignment 4 page of the course export (due 2023-08-23). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w04-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is typically not a part of RTL synthesis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Parsing"
+            },
+            {
+              "id": "B",
+              "text": "Model checking"
+            },
+            {
+              "id": "C",
+              "text": "Elaboration"
+            },
+            {
+              "id": "D",
+              "text": "Translation to logic gates"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Model checking",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "How will a parameterized module (with a parameter named WIDTH) and having a port named A (with size WIDTH) be processed during elaboration in RTL synthesis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only one module with a fixed size for port A will be created for all WIDTH values."
+            },
+            {
+              "id": "B",
+              "text": "Port A will be eliminated from the parameterized module."
+            },
+            {
+              "id": "C",
+              "text": "Separate modules with different size of port A for each distinct value of WIDTH will be created."
+            },
+            {
+              "id": "D",
+              "text": "The parameterized module will be ignored during elaboration."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Separate modules with different size of port A for each distinct value of WIDTH will be created.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following Verilog construct is typically non-synthesizable?",
+          "options": [
+            {
+              "id": "A",
+              "text": "assign statement"
+            },
+            {
+              "id": "B",
+              "text": "always block"
+            },
+            {
+              "id": "C",
+              "text": "case statement"
+            },
+            {
+              "id": "D",
+              "text": "$display statement"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "$display statement",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Level-sensitive always block will be synthesized to:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Flip-flop or latches"
+            },
+            {
+              "id": "B",
+              "text": "Flip-flop or combinational circuit elements"
+            },
+            {
+              "id": "C",
+              "text": "Combinational circuit elements or latches"
+            },
+            {
+              "id": "D",
+              "text": "Only latches"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Combinational circuit elements or latches",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "What will be the synthesis result of the following Verilog code?",
+          "code": "module top2(in1, clk, out1);\ninput in1, clk;\noutput out1;\nreg reg1, reg2, reg3, out1;\n\nalways @ (posedge clk)\nbegin\n    reg1 <= in1;\n    reg2 <= reg1;\n    reg3 <= reg2;\n    out1 <= reg3;\nend\nendmodule",
+          "options": [
+            {
+              "id": "A",
+              "text": "4-bit Ripple counter"
+            },
+            {
+              "id": "B",
+              "text": "4-bit Shift register"
+            },
+            {
+              "id": "C",
+              "text": "One flip-flop"
+            },
+            {
+              "id": "D",
+              "text": "4-bit ripple carry adder"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "4-bit Shift register",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "What will be the synthesis result of the following piece of Verilog code:",
+          "code": "always @(*) begin\n    if (en==1'b1) out2 = c;\n    else out2 = out2;\nend",
+          "options": [
+            {
+              "id": "A",
+              "text": "One AND gate"
+            },
+            {
+              "id": "B",
+              "text": "One D-Latch"
+            },
+            {
+              "id": "C",
+              "text": "One D flip-flop"
+            },
+            {
+              "id": "D",
+              "text": "One Full-Adder"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "One D-Latch",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "What is the primary motivation for resource sharing in RTL synthesis:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Save area"
+            },
+            {
+              "id": "B",
+              "text": "Increase the maximum operable frequency of the circuit."
+            },
+            {
+              "id": "C",
+              "text": "Increase the testability of the circuit."
+            },
+            {
+              "id": "D",
+              "text": "Improve the reusability of the circuit."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Save area",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "An implicant of an incompletely specified Boolean function is a cube whose all corners are on:",
+          "options": [
+            {
+              "id": "A",
+              "text": "either ON-set or OFF-set"
+            },
+            {
+              "id": "B",
+              "text": "either ON-set or DC-set"
+            },
+            {
+              "id": "C",
+              "text": "either OFF-set or DC-set"
+            },
+            {
+              "id": "D",
+              "text": "Only ON-set"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "either ON-set or DC-set",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect regarding two-level logic minimization",
+          "options": [
+            {
+              "id": "A",
+              "text": "The prime cover consists of only prime implicants."
+            },
+            {
+              "id": "B",
+              "text": "There exists a minimum cover consisting of only prime implicants."
+            },
+            {
+              "id": "C",
+              "text": "There exists a minimum cover consisting of only essential prime implicants."
+            },
+            {
+              "id": "D",
+              "text": "All the essential prime implicants must be included in a prime cover."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "There exists a minimum cover consisting of only essential prime implicants.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w04-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect about the two-level heuristic minimizer",
+          "options": [
+            {
+              "id": "A",
+              "text": "The cover size obtained using a heuristic minimizer can exceed the minimum cover."
+            },
+            {
+              "id": "B",
+              "text": "Two-level heuristic minimizer typically produces solutions quicker than two-level exact minimization for large problems."
+            },
+            {
+              "id": "C",
+              "text": "A heuristic minimizer typically tries to obtain a minimal cover by applying operators iteratively until the solution improves."
+            },
+            {
+              "id": "D",
+              "text": "The cover produced by a heuristic minimizer is guaranteed to be the minimum cover."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The cover produced by a heuristic minimizer is guaranteed to be the minimum cover.",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "title": "Week 5",
+      "topic": "Logic optimization & formal verification",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 5: Assignment 5 page of the course export (due 2023-08-30). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w05-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is correct for multilevel logic?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A multilevel logic representation will always produce a minimum delay between the input and the output."
+            },
+            {
+              "id": "B",
+              "text": "As the number of levels in a multilevel logic increases, the delay between the input and the output decreases."
+            },
+            {
+              "id": "C",
+              "text": "A multilevel logic can be transformed to explore various delay-area trade-offs."
+            },
+            {
+              "id": "D",
+              "text": "A multilevel logic representation cannot be transformed into a two-level logic representation."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A multilevel logic can be transformed to explore various delay-area trade-offs.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following statements about the algebraic model in multilevel logic optimization is incorrect?",
+          "options": [
+            {
+              "id": "A",
+              "text": "An algebraic model neglects some Boolean properties of the local functions."
+            },
+            {
+              "id": "B",
+              "text": "An algebraic model treats a variable and its complement as separate variables."
+            },
+            {
+              "id": "C",
+              "text": "Efficient algorithms can be designed to carry out division in an algebraic model."
+            },
+            {
+              "id": "D",
+              "text": "An algebraic model can reduce the Boolean expression (a + a') to 1"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "An algebraic model can reduce the Boolean expression (a + a') to 1",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "A minterm is found to be Don't Care (DC) during logic optimization. Which of the following statements best describes the behavior of the logic synthesis tool?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A logic synthesis tool will implement a circuit that can produce either 0 or 1 for this minterm, depending on which of these values reduces the cost."
+            },
+            {
+              "id": "B",
+              "text": "A logic synthesis tool will implement a circuit that always produces 0 for this minterm."
+            },
+            {
+              "id": "C",
+              "text": "A logic synthesis tool will implement a circuit that always produces 1 for this minterm."
+            },
+            {
+              "id": "D",
+              "text": "A logic synthesis tool will implement a circuit that always produces high impedance (Z value) for this minterm."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A logic synthesis tool will implement a circuit that can produce either 0 or 1 for this minterm, depending on which of these values reduces the cost.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect for a typical sequential circuit implementation of a finite state machine (FSM)",
+          "options": [
+            {
+              "id": "A",
+              "text": "The combination of the Q-pin value of flip-flops represents states."
+            },
+            {
+              "id": "B",
+              "text": "The transition function is implemented using combinational logic."
+            },
+            {
+              "id": "C",
+              "text": "Reducing the number of states in an FSM can never reduce the size of the circuit implementation."
+            },
+            {
+              "id": "D",
+              "text": "State minimization and optimal state encoding can reduce the size of the circuit implementation."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Reducing the number of states in an FSM can never reduce the size of the circuit implementation.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect about state minimization in a finite state machine (FSM)",
+          "options": [
+            {
+              "id": "A",
+              "text": "State minimization attempts to derive an FSM with the minimum number of states and exhibiting the same behavior as the original FSM."
+            },
+            {
+              "id": "B",
+              "text": "State minimization can reduce the number of flip-flops in FSM implementation."
+            },
+            {
+              "id": "C",
+              "text": "State minimization relies on retaining any one of the equivalent states and removing others."
+            },
+            {
+              "id": "D",
+              "text": "State minimization will change the functionality/behavior of an FSM and should not be done."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "State minimization will change the functionality/behavior of an FSM and should not be done.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following state encoding schemes for a finite state machine (FSM) reserves one bit for each state?",
+          "options": [
+            {
+              "id": "A",
+              "text": "One-hot Encoding"
+            },
+            {
+              "id": "B",
+              "text": "Binary Encoding"
+            },
+            {
+              "id": "C",
+              "text": "Gray Encoding"
+            },
+            {
+              "id": "D",
+              "text": "Zero-shot Encoding"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "One-hot Encoding",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following pairs of states are equivalent in the finite state machine (FSM) whose state diagram is shown below?",
+          "image": {
+            "src": "/vlsi-design-flow/week-05-question-07.png",
+            "alt": "State diagram with states sA, sB and sC: sA to sB labelled B/0, sB to sA labelled A/0, sB to itself labelled B/1, sA to sC labelled A/1, sC to sA labelled A/1, and sC to sB labelled B/0.",
+            "width": 736,
+            "height": 608
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "sA and sB"
+            },
+            {
+              "id": "B",
+              "text": "sA and sC"
+            },
+            {
+              "id": "C",
+              "text": "sB and sC"
+            },
+            {
+              "id": "D",
+              "text": "None of the states are equivalent"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "sA and sC",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Formal verification techniques rely on the following:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Simulation"
+            },
+            {
+              "id": "B",
+              "text": "Mathematical Proof"
+            },
+            {
+              "id": "C",
+              "text": "Random Guesses"
+            },
+            {
+              "id": "D",
+              "text": "Statistical Inference"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Mathematical Proof",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "A Reduced Ordered Binary Decision Diagram (ROBDD) of a Boolean function:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Is a canonical representation"
+            },
+            {
+              "id": "B",
+              "text": "Is the same as a truth table"
+            },
+            {
+              "id": "C",
+              "text": "Always represents a Boolean function compactly."
+            },
+            {
+              "id": "D",
+              "text": "Has size independent of the variable order"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Is a canonical representation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w05-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "What can we say about the Reduced Ordered Binary Decision Diagram (ROBDD) representation of a Boolean function f = ab(a' + b') (where a and b are Boolean variables)?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It will contain one non-terminal vertex and two leaf terminals."
+            },
+            {
+              "id": "B",
+              "text": "It will contain two non-terminal vertex and two leaf terminals."
+            },
+            {
+              "id": "C",
+              "text": "It will contain only one leaf terminal with the label 1"
+            },
+            {
+              "id": "D",
+              "text": "It will contain only one leaf terminal with the label 0"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It will contain only one leaf terminal with the label 0",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "title": "Week 6",
+      "topic": "Formal verification & technology library",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 6: Assignment 6 page of the course export (due 2023-09-06). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w06-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Assume that a given Boolean function y = f(x1, x2, x3, ..., xn) where x1, x2, ..., xn are Boolean variables. Which of the following statements describes the satisfiability problem correctly?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It determines if y can be evaluated to 0 by any assignment of variables {x1, x2, x3, ..., xn}."
+            },
+            {
+              "id": "B",
+              "text": "It determines if y can be evaluated to 0 by some assignment of variables {x1, x2, x3, ..., xn}."
+            },
+            {
+              "id": "C",
+              "text": "It determines if y can be evaluated to 1 by any assignment of variables {x1, x2, x3, ..., xn}."
+            },
+            {
+              "id": "D",
+              "text": "It determines if y can be evaluated to 1 by all assignments of variables {x1, x2, x3, ..., xn}."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It determines if y can be evaluated to 1 by any assignment of variables {x1, x2, x3, ..., xn}.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Assume that a given Boolean function y = f(x1, x2, x3, ..., xn) where {x1, x2, x3, ..., xn} are Boolean variables. In the worst case, how many input combinations need to be tried by a SAT solver?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Constant number of combinations"
+            },
+            {
+              "id": "B",
+              "text": "Linear in the number of variables n"
+            },
+            {
+              "id": "C",
+              "text": "Polynomial in the number of variables n"
+            },
+            {
+              "id": "D",
+              "text": "Exponential in the number of variables n"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Exponential in the number of variables n",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Given a set of states S for a finite state machine (FSM), the problem of obtaining a set of states, S', that can be reached in one step from S is known as:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Image computation"
+            },
+            {
+              "id": "B",
+              "text": "Pre-image computation"
+            },
+            {
+              "id": "C",
+              "text": "State encoding"
+            },
+            {
+              "id": "D",
+              "text": "State minimization"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Image computation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following statements is incorrect for Bounded Model Checking (BMC)",
+          "options": [
+            {
+              "id": "A",
+              "text": "BMC tries to obtain a counterexample of a finite length n (n is the number of clock cycles from the initial state)."
+            },
+            {
+              "id": "B",
+              "text": "BMC lacks completeness because it considers counterexamples of a finite length."
+            },
+            {
+              "id": "C",
+              "text": "BMC is useful in finding bugs if a bug can be obtained in a few clock cycles from the initial state."
+            },
+            {
+              "id": "D",
+              "text": "BMC uses exhaustive simulation to find counterexamples of infinite length n (n is the number of clock cycles from the initial state)"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "BMC uses exhaustive simulation to find counterexamples of infinite length n (n is the number of clock cycles from the initial state)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is not a part of Combinational Equivalence Checking (CEC):",
+          "options": [
+            {
+              "id": "A",
+              "text": "Port and register matching"
+            },
+            {
+              "id": "B",
+              "text": "Dynamic power analysis"
+            },
+            {
+              "id": "C",
+              "text": "Miter creation"
+            },
+            {
+              "id": "D",
+              "text": "Establishing equivalence of miters"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Dynamic power analysis",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "In which of the following cases port matching can fail during Combinational Equivalence Checking (CEC):",
+          "options": [
+            {
+              "id": "A",
+              "text": "When some buffers are added to the netlist"
+            },
+            {
+              "id": "B",
+              "text": "When a NAND gate is optimized using Boolean algebra."
+            },
+            {
+              "id": "C",
+              "text": "When the size of an inverter is increased to fix load violation"
+            },
+            {
+              "id": "D",
+              "text": "When an extra port is added to a design"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "When an extra port is added to a design",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Technology libraries are typically stored in which of the following formats:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Standard Parasitic Exchange Format (SPEF)"
+            },
+            {
+              "id": "B",
+              "text": "Synopsys Liberty Format"
+            },
+            {
+              "id": "C",
+              "text": "Synopsys Design Constraint (SDC) Format"
+            },
+            {
+              "id": "D",
+              "text": "Value Change Dump (VCD) Format"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Synopsys Liberty Format",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "The slew of the signal shown below computed using a 20-80 threshold is:",
+          "image": {
+            "src": "/vlsi-design-flow/week-06-question-08.png",
+            "alt": "Slew graph: voltage against time in picoseconds, with the signal rising from 0 V at 10 ps to 1 V at 20 ps and the vertical axis marked V-infinity = 1 V.",
+            "width": 824,
+            "height": 552
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "2 ps"
+            },
+            {
+              "id": "B",
+              "text": "4 ps"
+            },
+            {
+              "id": "C",
+              "text": "6 ps"
+            },
+            {
+              "id": "D",
+              "text": "8 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "6 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "The Non-linear Delay Model (NLDM) models the delay of a combinational circuit element as a function of:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Voltage and Temperature"
+            },
+            {
+              "id": "B",
+              "text": "Process Parameter and Input Slew"
+            },
+            {
+              "id": "C",
+              "text": "Input Slew and Output Load"
+            },
+            {
+              "id": "D",
+              "text": "Voltage and driving resistance"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Input Slew and Output Load",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w06-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "The setup time of a flip-flop in a technology library is modelled as a function of which two variables?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The voltage at the D-pin and Load at the Q-pin"
+            },
+            {
+              "id": "B",
+              "text": "Input Slew at the D-pin and Input Slew at the Clock Pin"
+            },
+            {
+              "id": "C",
+              "text": "Temperature and Input Slew at the D-pin"
+            },
+            {
+              "id": "D",
+              "text": "Input Slew at the D-pin and Load at the Q-pin"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Input Slew at the D-pin and Input Slew at the Clock Pin",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "title": "Week 7",
+      "topic": "Static timing analysis",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 7: Assignment 7 page of the course export (due 2023-09-13). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w07-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "In a typical synchronous design, when will the data launched by a flip-flop at a given clock edge be captured by the adjacent flip-flop in its fanout?",
+          "options": [
+            {
+              "id": "A",
+              "text": "At the same clock edge"
+            },
+            {
+              "id": "B",
+              "text": "At the next clock edge"
+            },
+            {
+              "id": "C",
+              "text": "At the next-to-next clock edge"
+            },
+            {
+              "id": "D",
+              "text": "Will never be captured"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "At the next clock edge",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "The arrival time of the data at the capture flip-flop does NOT depend on the following:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Setup time of the capture flip-flop"
+            },
+            {
+              "id": "B",
+              "text": "Clock-to-Q delay of the launch flip-flop"
+            },
+            {
+              "id": "C",
+              "text": "Data path delay"
+            },
+            {
+              "id": "D",
+              "text": "Delay on the clock path of the launch flip-flop"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Setup time of the capture flip-flop",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "The hold requirement constraint does NOT depend on the following quantities in a typical synchronous circuit?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Clock Period"
+            },
+            {
+              "id": "B",
+              "text": "Data Path Delay"
+            },
+            {
+              "id": "C",
+              "text": "Delay on the clock path of the launch flip-flop"
+            },
+            {
+              "id": "D",
+              "text": "Delay on the clock path of the capture flip-flop"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Clock Period",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The delay calculation for a given stage performed during Static Timing Analysis will NOT depend on the following:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Interconnect model"
+            },
+            {
+              "id": "B",
+              "text": "Driver model of the driving cell"
+            },
+            {
+              "id": "C",
+              "text": "Yield model for the technology"
+            },
+            {
+              "id": "D",
+              "text": "Receiver model of the driver cell"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Yield model for the technology",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following is NOT considered in creating scenarios for multi-mode multi-corner (MMMC) analysis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "PVT corners"
+            },
+            {
+              "id": "B",
+              "text": "RC corners"
+            },
+            {
+              "id": "C",
+              "text": "Floorplan Corners"
+            },
+            {
+              "id": "D",
+              "text": "Design Modes"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Floorplan Corners",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "We have defined a late derating factor of 1.1. For the early analysis, which of the following quantities should be multiplied by the above derating factor to make the analysis more pessimistic?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Data path delay"
+            },
+            {
+              "id": "B",
+              "text": "Clock-to-Q delay of the launch flip-flop"
+            },
+            {
+              "id": "C",
+              "text": "Delay of the clock launch path"
+            },
+            {
+              "id": "D",
+              "text": "Delay of the clock capture path"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Delay of the clock capture path",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Consider the AND gate shown below:",
+          "image": {
+            "src": "/vlsi-design-flow/week-07-question-07.png",
+            "alt": "A three-input AND gate with inputs A, B, C and output Z, followed by a table of arc delays and output slews (A to Z: 10 ps, 20 ps; B to Z: 20 ps, 5 ps; C to Z: 30 ps, 10 ps) and a table of pin arrival times (A: 5 ps, B: 6 ps, C: 12 ps).",
+            "width": 1460,
+            "height": 985
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Arrival Time = 42 ps Output Slew = 10 ps"
+            },
+            {
+              "id": "B",
+              "text": "Arrival Time = 15 ps Output Slew = 20 ps"
+            },
+            {
+              "id": "C",
+              "text": "Arrival Time = 42 ps Output Slew = 20 ps"
+            },
+            {
+              "id": "D",
+              "text": "Arrival Time = 15 ps Output Slew = 10 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Arrival Time = 42 ps Output Slew = 20 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "For the same question above, what will be the arrival time and the output slew at the pin Z when Path Based Analysis (PBA) is performed for the setup check or late-mode check through the arc B → Z?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Arrival Time = 26 ps Output Slew = 20 ps"
+            },
+            {
+              "id": "B",
+              "text": "Arrival Time = 26 ps Output Slew = 5 ps"
+            },
+            {
+              "id": "C",
+              "text": "Arrival Time = 42 ps Output Slew = 10 ps"
+            },
+            {
+              "id": "D",
+              "text": "Arrival Time = 42 ps Output Slew = 5 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Arrival Time = 26 ps Output Slew = 5 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Consider the following synchronous circuit:",
+          "image": {
+            "src": "/vlsi-design-flow/week-07-question-09.png",
+            "alt": "Synchronous circuit with input A driving inverter G1 into flip-flop FF1, FF1 output through inverter G2 into flip-flop FF2, and FF2 output through inverter G3 to output Z, with a common CLK to both flip-flops and feedback from Z to A.",
+            "width": 1284,
+            "height": 516
+          },
+          "continuation": "The following attributes are valid for the flip-flops FF1 and FF2: setup time = 45 ps, hold time = 10 ps, and CLK-to-Q delay = 20 ps. The delay of each inverter is 10 ps. Assume that the period of the clock is 1000 ps. What is the setup slack at the timing end-point FF2/D?",
+          "options": [
+            {
+              "id": "A",
+              "text": "685 ps"
+            },
+            {
+              "id": "B",
+              "text": "1001 ps"
+            },
+            {
+              "id": "C",
+              "text": "0 ps"
+            },
+            {
+              "id": "D",
+              "text": "-10 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "685 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w07-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "For the same question above, what is the hold slack at the timing end-point FF2/D?",
+          "options": [
+            {
+              "id": "A",
+              "text": "-70 ps"
+            },
+            {
+              "id": "B",
+              "text": "80 ps"
+            },
+            {
+              "id": "C",
+              "text": "-80 ps"
+            },
+            {
+              "id": "D",
+              "text": "70 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "80 ps",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "title": "Week 8",
+      "topic": "Constraints & technology mapping",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 8: Assignment 8 page of the course export (due 2023-09-20). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w08-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The SDC command to define a primary clock is",
+          "options": [
+            {
+              "id": "A",
+              "text": "create_toggle"
+            },
+            {
+              "id": "B",
+              "text": "create_period"
+            },
+            {
+              "id": "C",
+              "text": "create_clock"
+            },
+            {
+              "id": "D",
+              "text": "start_clock"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "create_clock",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "The SDC command to define delay at the input port is",
+          "options": [
+            {
+              "id": "A",
+              "text": "set_delay -my_port"
+            },
+            {
+              "id": "B",
+              "text": "set_input_delay"
+            },
+            {
+              "id": "C",
+              "text": "set_output_delay"
+            },
+            {
+              "id": "D",
+              "text": "set_delay -my_input"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "set_input_delay",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "The SDC command to add extra margin to the timing requirements is",
+          "options": [
+            {
+              "id": "A",
+              "text": "set_clock_uncertainty"
+            },
+            {
+              "id": "B",
+              "text": "set_my_margin"
+            },
+            {
+              "id": "C",
+              "text": "set_extra_margin"
+            },
+            {
+              "id": "D",
+              "text": "set_design_extra_margin"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "set_clock_uncertainty",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The setup check is done at the output port when which of the following constraints is applied at that port?",
+          "options": [
+            {
+              "id": "A",
+              "text": "set_input_delay"
+            },
+            {
+              "id": "B",
+              "text": "set_output_delay"
+            },
+            {
+              "id": "C",
+              "text": "set_false_path"
+            },
+            {
+              "id": "D",
+              "text": "set_input_transition"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "set_output_delay",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following statements BEST describes the purpose of technology mapping in logic synthesis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is minimized."
+            },
+            {
+              "id": "B",
+              "text": "It converts a given generic gate netlist to a netlist consisting of standard cells such that an arbitrary functionality is realized, and the given cost is minimized."
+            },
+            {
+              "id": "C",
+              "text": "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is maximized."
+            },
+            {
+              "id": "D",
+              "text": "It converts a given generic gate netlist to a netlist consisting of transistors such that an arbitrary functionality is realized, and the given cost is minimized."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It converts a given generic gate netlist to a netlist consisting of standard cells such that functionality is preserved, and the given cost is minimized.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following optimization techniques is typically NOT targeted for improving timing:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sizing"
+            },
+            {
+              "id": "B",
+              "text": "Power Gating"
+            },
+            {
+              "id": "C",
+              "text": "Restructuring"
+            },
+            {
+              "id": "D",
+              "text": "Retiming"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Power Gating",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following optimization techniques involves changing logic circuit elements across a flip-flop:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Reading"
+            },
+            {
+              "id": "B",
+              "text": "Retiming"
+            },
+            {
+              "id": "C",
+              "text": "Restructuring"
+            },
+            {
+              "id": "D",
+              "text": "Fanout optimization"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Retiming",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Consider the following synchronous circuit:",
+          "image": {
+            "src": "/vlsi-design-flow/week-08-question-08.png",
+            "alt": "Synchronous circuit with input A driving inverter G1 into flip-flop FF1, FF1 output through inverter G2 into flip-flop FF2, and FF2 output through inverter G3 to output Z, both flip-flops clocked by CLK, with feedback from Z to A.",
+            "width": 1296,
+            "height": 672
+          },
+          "continuation": "The following attributes are valid for the flip-flops FF1 and FF2: setup time = 45 ps, hold time = 10 ps, and CLK-to-Q delay = 20 ps. The delay of each inverter is 50 ps. Ignore the wire delay. Assume that we have defined the following constraints in the SDC file (all time units are in picoseconds):",
+          "code": "create_clock -name CLK -period 1000 [get_ports CLK]\nset_input_delay -clock [get_clocks CLK] 150 [get_ports A]\nset_output_delay -clock [get_clocks CLK] 125 [get_ports Z]",
+          "options": [
+            {
+              "id": "A",
+              "text": "755 ps"
+            },
+            {
+              "id": "B",
+              "text": "700 ps"
+            },
+            {
+              "id": "C",
+              "text": "850 ps"
+            },
+            {
+              "id": "D",
+              "text": "905 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "755 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "For the question above, what is the hold slack at the timing end-point FF1/D?",
+          "options": [
+            {
+              "id": "A",
+              "text": "200 ps"
+            },
+            {
+              "id": "B",
+              "text": "190 ps"
+            },
+            {
+              "id": "C",
+              "text": "0 ps"
+            },
+            {
+              "id": "D",
+              "text": "-190 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "190 ps",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w08-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "For the question above, what is the setup slack at the timing end-point port Z?",
+          "options": [
+            {
+              "id": "A",
+              "text": "600 ps"
+            },
+            {
+              "id": "B",
+              "text": "900 ps"
+            },
+            {
+              "id": "C",
+              "text": "805 ps"
+            },
+            {
+              "id": "D",
+              "text": "905 ps"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "805 ps",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "title": "Week 9",
+      "topic": "Power analysis & design for test",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 9: Assignment 9 page of the course export (due 2023-09-27). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w09-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The power dissipated in a CMOS circuit when it is not performing active computation is known as:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Switching power dissipation"
+            },
+            {
+              "id": "B",
+              "text": "Dynamic power dissipation"
+            },
+            {
+              "id": "C",
+              "text": "Static power dissipation"
+            },
+            {
+              "id": "D",
+              "text": "Short circuit power dissipation"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Static power dissipation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "The switching power dissipation of a CMOS combinational circuit element increases under which of the following conditions:",
+          "options": [
+            {
+              "id": "A",
+              "text": "The period of the clock is decreased."
+            },
+            {
+              "id": "B",
+              "text": "The supply voltage is decreased."
+            },
+            {
+              "id": "C",
+              "text": "The activity at the input of the circuit element is decreased."
+            },
+            {
+              "id": "D",
+              "text": "The capacitive load driven by that circuit element is decreased."
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The period of the clock is decreased.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "The internal power in a technology library's non-linear power model (NLPM) is typically defined as a function of which of the following quantities?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Switching activity and supply voltage"
+            },
+            {
+              "id": "B",
+              "text": "Input slew and output load"
+            },
+            {
+              "id": "C",
+              "text": "Clock frequency and supply voltage"
+            },
+            {
+              "id": "D",
+              "text": "Switching activity and output load"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Input slew and output load",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Which of the following is NOT a technique to estimate a signal's activity in power analysis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vector-based Technique"
+            },
+            {
+              "id": "B",
+              "text": "Probabilistic Technique"
+            },
+            {
+              "id": "C",
+              "text": "Resizing Technique"
+            },
+            {
+              "id": "D",
+              "text": "Vector-less Technique"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Resizing Technique",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Which of the following techniques is typically NOT a technique to reduce power dissipation in a circuit?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Clock Gating"
+            },
+            {
+              "id": "B",
+              "text": "Redundant Via Insertion"
+            },
+            {
+              "id": "C",
+              "text": "Power Gating"
+            },
+            {
+              "id": "D",
+              "text": "Dynamic Voltage Frequency Scaling (DVFS)"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Redundant Via Insertion",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following statements best describes the problem of using a simple AND gate for clock gating?",
+          "options": [
+            {
+              "id": "A",
+              "text": "In some cases, it can cause the output of the AND gate to get stuck to one, and the circuit will go into a metastable state."
+            },
+            {
+              "id": "B",
+              "text": "It can create glitches at the output of the AND gate, and this glitch can trigger a flip-flop in its fanout."
+            },
+            {
+              "id": "C",
+              "text": "It cannot switch off the power supply and not be able to save any power."
+            },
+            {
+              "id": "D",
+              "text": "It can cause a significant voltage drop in the supply lines, increasing the delay of other circuit elements."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It can create glitches at the output of the AND gate, and this glitch can trigger a flip-flop in its fanout.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Which of the following is NOT the purpose of employing a fault model in design for test (DFT) tasks?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It allows us to analyze the impact of a defect using logic or circuit analysis techniques."
+            },
+            {
+              "id": "B",
+              "text": "It helps us reduce the number of defects during integrated circuit fabrication."
+            },
+            {
+              "id": "C",
+              "text": "It allows us to derive test patterns algorithmically for detecting a given fault."
+            },
+            {
+              "id": "D",
+              "text": "It helps us transform the problem of defect detection into the problem of fault detection."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It helps us reduce the number of defects during integrated circuit fabrication.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "From the perspective of design for test (DFT), which of the following statements best describes a test vector:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Any input pattern, or sequence of input patterns, that produces a 1 for a faulty circuit and a fault-free circuit"
+            },
+            {
+              "id": "B",
+              "text": "Any input pattern, or sequence of input patterns, that produces a 0 for a faulty circuit and a fault-free circuit"
+            },
+            {
+              "id": "C",
+              "text": "Any input pattern, or sequence of input patterns, that produces a matching output response for a faulty circuit and a fault-free circuit"
+            },
+            {
+              "id": "D",
+              "text": "Any input pattern, or sequence of input patterns, that produces a different output response for a faulty circuit and a fault-free circuit"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Any input pattern, or sequence of input patterns, that produces a different output response for a faulty circuit and a fault-free circuit",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "In scan-based testing methodology, we replace a D flip-flop with a scan cell. What is the motivation for this:",
+          "options": [
+            {
+              "id": "A",
+              "text": "It decreases the delay and area of the circuit."
+            },
+            {
+              "id": "B",
+              "text": "It increases the manufacturability of the circuit."
+            },
+            {
+              "id": "C",
+              "text": "It increases the controllability and observability of a circuit."
+            },
+            {
+              "id": "D",
+              "text": "It increases the performance and reliability of a circuit."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It increases the controllability and observability of a circuit.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w09-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "In scan-based testing methodology, what is the correct value at the SE (scan enable) port for the shift and capture mode, respectively?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Shift SE=0, Capture SE=0"
+            },
+            {
+              "id": "B",
+              "text": "Shift SE=0, Capture SE=1"
+            },
+            {
+              "id": "C",
+              "text": "Shift SE=1, Capture SE=0"
+            },
+            {
+              "id": "D",
+              "text": "Shift SE=1, Capture SE=1"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Shift SE=1, Capture SE=0",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "title": "Week 10",
+      "topic": "ATPG, BIST & physical design",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 10: Assignment 10 page of the course export (due 2023-10-04). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w10-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "The non-controlling value of a two-input XOR gate is:",
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "Both 0 and 1"
+            },
+            {
+              "id": "D",
+              "text": "Neither 0 nor 1"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Both 0 and 1",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "For the circuit shown below, the test pattern to detect SA1 at G3/X1 is:",
+          "image": {
+            "src": "/vlsi-design-flow/week-10-question-02.png",
+            "alt": "Circuit with inputs A and B driving NAND gate G1, inputs C and D driving NOR gate G2, and both gate outputs feeding NAND gate G3, whose output is Z. A stuck-at-1 fault is marked on G3 input X1.",
+            "width": 1400,
+            "height": 910
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "A=1 B=1 C=0 D=1"
+            },
+            {
+              "id": "B",
+              "text": "A=0 B=0 C=0 D=1"
+            },
+            {
+              "id": "C",
+              "text": "A=1 B=1 C=0 D=0"
+            },
+            {
+              "id": "D",
+              "text": "A=0 B=1 C=0 D=1"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "A=1 B=1 C=0 D=1",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following components is typically NOT a part of Built-In Self-Test (BIST) infrastructure?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Random Test Pattern Generator"
+            },
+            {
+              "id": "B",
+              "text": "Test Response Analyzer"
+            },
+            {
+              "id": "C",
+              "text": "JPEG Encoder"
+            },
+            {
+              "id": "D",
+              "text": "BIST controller"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "JPEG Encoder",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The patterns obtained using Linear Feedback Shift Register (LFSR) are:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Finite, repeatable, and pseudo-random"
+            },
+            {
+              "id": "B",
+              "text": "Infinite, repeatable, and truly random"
+            },
+            {
+              "id": "C",
+              "text": "Finite, non-repeatable, and truly random"
+            },
+            {
+              "id": "D",
+              "text": "Infinite, non-repeatable, and pseudo-random"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Finite, repeatable, and pseudo-random",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "What is aliasing in signature analysis from the perspective of Built-In Self-Test (BIST)",
+          "options": [
+            {
+              "id": "A",
+              "text": "Matching of signature of “good” circuit and “faulty” circuit"
+            },
+            {
+              "id": "B",
+              "text": "Matching of signature of the designer and the signature of the engineer who is fabricating"
+            },
+            {
+              "id": "C",
+              "text": "Overlapping of frequency components in automatic test equipment"
+            },
+            {
+              "id": "D",
+              "text": "Distortion in the outline of the image of the chip taken during testing"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Matching of signature of “good” circuit and “faulty” circuit",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "What is the primary purpose of ion implantation in integrated circuit fabrication?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Etching the photoresist"
+            },
+            {
+              "id": "B",
+              "text": "Doping the semiconductor"
+            },
+            {
+              "id": "C",
+              "text": "Applying a coating of metal"
+            },
+            {
+              "id": "D",
+              "text": "Growing a thick layer of oxide"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Doping the semiconductor",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "A metal interconnect line in an integrated circuit has a sheet resistance of 0.06 Ohms per square. The length of the interconnect is 10 microns and the width is 0.01 microns. What is the resistance of the interconnect?",
+          "options": [
+            {
+              "id": "A",
+              "text": "0.6 Ohms"
+            },
+            {
+              "id": "B",
+              "text": "6 Ohms"
+            },
+            {
+              "id": "C",
+              "text": "60 Ohms"
+            },
+            {
+              "id": "D",
+              "text": "600 Ohms"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "60 Ohms",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "The lateral capacitance between two adjacent interconnects running parallelly in the same layer will increase under which of the following conditions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "The dielectric constant of the insulator between them is decreased."
+            },
+            {
+              "id": "B",
+              "text": "The sidewall area of the interconnects is increased."
+            },
+            {
+              "id": "C",
+              "text": "The distance between the interconnects is increased."
+            },
+            {
+              "id": "D",
+              "text": "The overlapping length between them is decreased."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The sidewall area of the interconnects is increased.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Which of the following phenomenon is typically NOT a manifestation of signal integrity issues in an integrated circuit?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Increase in delay from the base delay."
+            },
+            {
+              "id": "B",
+              "text": "Decrease in delay from the base delay."
+            },
+            {
+              "id": "C",
+              "text": "Introduction of a defect in a manufactured chip."
+            },
+            {
+              "id": "D",
+              "text": "Glitches in a signal within an integrated circuit."
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Introduction of a defect in a manufactured chip.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w10-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "Which of the following files contain the information about the available layers and vias, their properties for a given technology",
+          "options": [
+            {
+              "id": "A",
+              "text": "Verilog design files"
+            },
+            {
+              "id": "B",
+              "text": "Testbench"
+            },
+            {
+              "id": "C",
+              "text": "SDC files"
+            },
+            {
+              "id": "D",
+              "text": "LEF files"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "LEF files",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "title": "Week 11",
+      "topic": "Chip planning & placement",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 11: Assignment 11 page of the course export (due 2023-10-11). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w11-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following tasks is NOT a part of hierarchical design implementation methodologies:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Partitioning"
+            },
+            {
+              "id": "B",
+              "text": "Budgeting"
+            },
+            {
+              "id": "C",
+              "text": "Top-level Assembly"
+            },
+            {
+              "id": "D",
+              "text": "Post-silicon validation"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Post-silicon validation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following statements does NOT describe the advantages of hierarchical design implementation methodologies compared to flat design implementation methodologies for physical design:",
+          "options": [
+            {
+              "id": "A",
+              "text": "The physical implementation tools need to handle smaller problems for various blocks."
+            },
+            {
+              "id": "B",
+              "text": "Different teams can concurrently implement multiple blocks."
+            },
+            {
+              "id": "C",
+              "text": "Overall design time can reduce due to the parallel implementation of blocks."
+            },
+            {
+              "id": "D",
+              "text": "The final figures of merit can suffer in hierarchical design implementation."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "The final figures of merit can suffer in hierarchical design implementation.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Which of the following functions is typically NOT provided by an I/O cell in an integrated circuit:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Arithmetic operation"
+            },
+            {
+              "id": "B",
+              "text": "Increase drive capability"
+            },
+            {
+              "id": "C",
+              "text": "Voltage transformation"
+            },
+            {
+              "id": "D",
+              "text": "Protection against Electrostatic Discharge (ESD)"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Arithmetic operation",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "The advantage of creating standard cell rows oriented in alternating 180-degree rotation is:",
+          "options": [
+            {
+              "id": "A",
+              "text": "It allows us to obtain the correct logical functionality."
+            },
+            {
+              "id": "B",
+              "text": "It allows us to share the power and ground lines for adjacent rows."
+            },
+            {
+              "id": "C",
+              "text": "It removes glitches in the circuit induced by signal integrity issues."
+            },
+            {
+              "id": "D",
+              "text": "It eases the task of clock gating and power gating to save switching power dissipation."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It allows us to share the power and ground lines for adjacent rows.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "The IR drop in the power lines can be reduced typically by",
+          "options": [
+            {
+              "id": "A",
+              "text": "Increasing the resistance of the power supply lines."
+            },
+            {
+              "id": "B",
+              "text": "Using the higher levels of metal layers."
+            },
+            {
+              "id": "C",
+              "text": "Decreasing the width of the power supply lines."
+            },
+            {
+              "id": "D",
+              "text": "Using lower levels of metal layers."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Using the higher levels of metal layers.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "The phenomenon of transport of metal mass in the direction opposite to current flow due to the flow of unidirectional current is known as:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Implantation"
+            },
+            {
+              "id": "B",
+              "text": "Diffusion"
+            },
+            {
+              "id": "C",
+              "text": "Electromigration"
+            },
+            {
+              "id": "D",
+              "text": "Ionization"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Electromigration",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "A capacitor or cell inserted between the power and ground lines to mitigate the problem of IR drop hotspots is known as",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dying Capacitor (Dead cell)"
+            },
+            {
+              "id": "B",
+              "text": "Demanding Capacitor (Dem cell)"
+            },
+            {
+              "id": "C",
+              "text": "Supplying Capacitor (Super cell)"
+            },
+            {
+              "id": "D",
+              "text": "Decoupling Capacitor (Decap Cell)"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Decoupling Capacitor (Decap Cell)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "Why do we need to carry out legalization after global placement during standard cell placement?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To avoid legal proceedings against designer"
+            },
+            {
+              "id": "B",
+              "text": "To remove overlap among standard cells"
+            },
+            {
+              "id": "C",
+              "text": "To make incremental changes in the functionality"
+            },
+            {
+              "id": "D",
+              "text": "To reduce static power dissipation"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To remove overlap among standard cells",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "The reduction in the wirelength of the scan chains after placement is typically accomplished by which of the following tasks:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Scan Chain Minimization"
+            },
+            {
+              "id": "B",
+              "text": "Scan Chain Reordering"
+            },
+            {
+              "id": "C",
+              "text": "Scan Chain Resizing"
+            },
+            {
+              "id": "D",
+              "text": "Scan Chain Retiming"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Scan Chain Reordering",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w11-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "The extra cells that we put in an integrated circuit in anticipation of later use are known as:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Spare Cell"
+            },
+            {
+              "id": "B",
+              "text": "Base cell"
+            },
+            {
+              "id": "C",
+              "text": "Pad Cell"
+            },
+            {
+              "id": "D",
+              "text": "IO Cell"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Spare Cell",
+          "reference": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "title": "Week 12",
+      "topic": "Clock tree synthesis, routing & signoff",
+      "sourceUrl": "https://onlinecourses.nptel.ac.in/e-learning/course/noc23_ee137",
+      "sourceFile": "sources/vlsi-design-flow/Assignment_5.pdf",
+      "sourceNote": "Questions and accepted answers transcribed from the Week 12: Assignment 12 page of the course export (due 2023-10-18). Saved submission state and account details from the export are excluded.",
+      "questions": [
+        {
+          "id": "w12-q01",
+          "number": 1,
+          "sourceNumber": 1,
+          "type": "single-choice",
+          "prompt": "Which of the following is a type of symmetric clock tree architecture?",
+          "options": [
+            {
+              "id": "A",
+              "text": "B-tree"
+            },
+            {
+              "id": "B",
+              "text": "H-tree"
+            },
+            {
+              "id": "C",
+              "text": "S-tree"
+            },
+            {
+              "id": "D",
+              "text": "P-tree"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "H-tree",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q02",
+          "number": 2,
+          "sourceNumber": 2,
+          "type": "single-choice",
+          "prompt": "Which of the following statements does NOT explain the advantages of employing a mesh architecture over tree architecture for a global clock distribution network?",
+          "options": [
+            {
+              "id": "A",
+              "text": "It allows us to obtain a very small skew in the clock distribution network."
+            },
+            {
+              "id": "B",
+              "text": "It has a decreased impact of process-induced variations."
+            },
+            {
+              "id": "C",
+              "text": "It is more robust to failure due to open circuit defects."
+            },
+            {
+              "id": "D",
+              "text": "It has less short-circuit power dissipation in the drivers of the clock network."
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "It has less short-circuit power dissipation in the drivers of the clock network.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q03",
+          "number": 3,
+          "sourceNumber": 3,
+          "type": "single-choice",
+          "prompt": "Clock skews are considered useful skews under which of the following conditions?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Skew can improve the testability of the circuit."
+            },
+            {
+              "id": "B",
+              "text": "Skew can increase the system's maximum operable frequency."
+            },
+            {
+              "id": "C",
+              "text": "Skew can reduce the defect in the manufactured circuit."
+            },
+            {
+              "id": "D",
+              "text": "Skew can enhance the manufacturability of the circuit."
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Skew can increase the system's maximum operable frequency.",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q04",
+          "number": 4,
+          "sourceNumber": 4,
+          "type": "single-choice",
+          "prompt": "Global Routing is the planning phase for which of the following tasks?",
+          "options": [
+            {
+              "id": "A",
+              "text": "ECO"
+            },
+            {
+              "id": "B",
+              "text": "Signoff"
+            },
+            {
+              "id": "C",
+              "text": "Tape out"
+            },
+            {
+              "id": "D",
+              "text": "Detailed Routing"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Detailed Routing",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q05",
+          "number": 5,
+          "sourceNumber": 5,
+          "type": "single-choice",
+          "prompt": "Global routing attempts to route each net with:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Maximum overflow"
+            },
+            {
+              "id": "B",
+              "text": "Overflow of Zero"
+            },
+            {
+              "id": "C",
+              "text": "Maximum congestion"
+            },
+            {
+              "id": "D",
+              "text": "Maximum wirelength"
+            }
+          ],
+          "correctOptionIds": [
+            "B"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Overflow of Zero",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q06",
+          "number": 6,
+          "sourceNumber": 6,
+          "type": "single-choice",
+          "prompt": "Which of the following techniques is employed to tackle via defects",
+          "options": [
+            {
+              "id": "A",
+              "text": "Addition of redundant vias"
+            },
+            {
+              "id": "B",
+              "text": "Addition of integrated clock gating (ICG) cells"
+            },
+            {
+              "id": "C",
+              "text": "Addition of spare cells"
+            },
+            {
+              "id": "D",
+              "text": "Addition of redundant IO cells"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Addition of redundant vias",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q07",
+          "number": 7,
+          "sourceNumber": 7,
+          "type": "single-choice",
+          "prompt": "Why do we need to make the metal density uniform over the layout by inserting dummy metal fills?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To improve the timing of the circuit"
+            },
+            {
+              "id": "B",
+              "text": "To reduce switching power dissipation in the circuit"
+            },
+            {
+              "id": "C",
+              "text": "To tackle signal integrity issues in the circuit"
+            },
+            {
+              "id": "D",
+              "text": "To improve the manufacturability of the circuit"
+            }
+          ],
+          "correctOptionIds": [
+            "D"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "To improve the manufacturability of the circuit",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q08",
+          "number": 8,
+          "sourceNumber": 8,
+          "type": "single-choice",
+          "prompt": "LVS compares the following:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Layout and Schematic (Starling Netlist)"
+            },
+            {
+              "id": "B",
+              "text": "Inductance and Capacitances"
+            },
+            {
+              "id": "C",
+              "text": "Logic, Voltage, and Slack"
+            },
+            {
+              "id": "D",
+              "text": "Logic and Slack"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Layout and Schematic (Starling Netlist)",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q09",
+          "number": 9,
+          "sourceNumber": 9,
+          "type": "single-choice",
+          "prompt": "Which of the following task is NOT a signoff verification task?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Behavior Synthesis"
+            },
+            {
+              "id": "B",
+              "text": "Static Timing Analysis"
+            },
+            {
+              "id": "C",
+              "text": "Signal Integrity Checks"
+            },
+            {
+              "id": "D",
+              "text": "Power Integrity Checks"
+            }
+          ],
+          "correctOptionIds": [
+            "A"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Behavior Synthesis",
+          "reference": null,
+          "note": null
+        },
+        {
+          "id": "w12-q10",
+          "number": 10,
+          "sourceNumber": 10,
+          "type": "single-choice",
+          "prompt": "For IC design, what do we mean by “tape out”?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Measuring the size of an IC using tape"
+            },
+            {
+              "id": "B",
+              "text": "Taking backup of netlist on a magnetic tape"
+            },
+            {
+              "id": "C",
+              "text": "Handing over the final IC layout to the foundry for fabrication"
+            },
+            {
+              "id": "D",
+              "text": "Adding magnetic tape to the IC design"
+            }
+          ],
+          "correctOptionIds": [
+            "C"
+          ],
+          "correctNumericAnswer": null,
+          "answerStatus": "official",
+          "answerSource": "course-accepted-answer",
+          "sourceAnswerText": "Handing over the final IC layout to the foundry for fabrication",
+          "reference": null,
+          "note": null
+        }
+      ]
+    }
+  ]
+}

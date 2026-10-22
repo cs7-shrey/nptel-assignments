@@ -1,0 +1,108 @@
+{
+  "week": 1,
+  "title": "Week 1: Assignment 1",
+  "topic": "Basic concepts of ICs",
+  "due": "2023-08-09",
+  "questions": [
+    {
+      "prompt": "Which of the following statements best describes Moore's prediction or Moore's law:",
+      "options": [
+        "Every action has an equal and opposite reaction.",
+        "The number of components in an IC can never be increased.",
+        "The number of components in an IC realized at minimum cost will double every year or every two years.",
+        "The sizes of transistors in ICs realized at minimum cost will remain constant."
+      ],
+      "accepted": "The number of components in an IC realized at minimum cost will double every year or every two years."
+    },
+    {
+      "prompt": "What is the purpose of masks in photolithography:",
+      "options": [
+        "Define shapes/patterns that need to be obtained on the wafer.",
+        "Isolate multiple layers of interconnect.",
+        "Etch silicon during chemical etching.",
+        "Oxidize silicon after photolithography."
+      ],
+      "accepted": "Define shapes/patterns that need to be obtained on the wafer."
+    },
+    {
+      "prompt": "Which of the following statements is incorrect:",
+      "options": [
+        "Multiple dies are fabricated on a single silicon wafer.",
+        "Silicon wafers are sliced out from silicon ingots.",
+        "We get silicon ingots from a silicon die.",
+        "We obtain a chip after packaging a die."
+      ],
+      "accepted": "We get silicon ingots from a silicon die."
+    },
+    {
+      "prompt": "Which of the following statements is incorrect:",
+      "options": [
+        "The semiconductor manufacturing plant where integrated circuits are fabricated is called a semiconductor foundry.",
+        "Fabless design companies design integrated circuits.",
+        "Setting up a semiconductor foundry requires a huge investment.",
+        "Designing integrated circuits is done in semiconductor foundries."
+      ],
+      "accepted": "Designing integrated circuits is done in semiconductor foundries."
+    },
+    {
+      "prompt": "Which among the following design styles require maximum design effort:",
+      "options": [
+        "Standard cell-based design",
+        "Full-custom design",
+        "Gate array-based design",
+        "FPGA-based design"
+      ],
+      "accepted": "Full-custom design"
+    },
+    {
+      "prompt": "Which among the following is a variable cost in standard cell-based design:",
+      "options": [
+        "Design cost",
+        "Cost of mask",
+        "Cost of design tools",
+        "Cost of die"
+      ],
+      "accepted": "Cost of die"
+    },
+    {
+      "prompt": "Which of the following representation of a design has the highest degree of abstraction:",
+      "options": [
+        "As RTL in Verilog",
+        "As an algorithm in the programming language C",
+        "As connection of logic gates in Verilog",
+        "As the layout of transistors and interconnects."
+      ],
+      "accepted": "As an algorithm in the programming language C"
+    },
+    {
+      "prompt": "For which of the following figures of merit, dedicated hardware can be better than the same function implemented as software running on a general-purpose processor:",
+      "options": [
+        "Risk due to bug",
+        "Development time",
+        "Speed",
+        "Flexibility in implementation and customization"
+      ],
+      "accepted": "Speed"
+    },
+    {
+      "prompt": "What is the purpose of carrying out hardware-software partitioning for a system?",
+      "options": [
+        "It gets rid of all the software in the system.",
+        "It chooses an optimal combination of hardware and software to implement the system.",
+        "It gets rid of all the hardware in the system.",
+        "It compiles the software of the system."
+      ],
+      "accepted": "It chooses an optimal combination of hardware and software to implement the system."
+    },
+    {
+      "prompt": "Which of the following statements best describes the purpose of behavior synthesis in VLSI design flow?",
+      "options": [
+        "It converts an algorithm to an equivalent design in RTL.",
+        "It converts an algorithm to a binary executable.",
+        "It converts an algorithm into sequences of zeros and ones.",
+        "It converts an algorithm to an assembly language code."
+      ],
+      "accepted": "It converts an algorithm to an equivalent design in RTL."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "week": 2,
+  "title": "Week 2: Assignment 2",
+  "topic": "VLSI design flow & TCL",
+  "due": "2023-08-09",
+  "questions": [
+    {
+      "prompt": "Which of the following statements best describes the purpose of logic synthesis?",
+      "options": [
+        "It converts an RTL to an equivalent netlist (interconnection of logic gates)",
+        "It converts an RTL to an equivalent algorithm in C",
+        "It converts an RTL to a technology library in Liberty",
+        "It converts an RTL to a constraint in SDC"
+      ],
+      "accepted": "It converts an RTL to an equivalent netlist (interconnection of logic gates)"
+    },
+    {
+      "prompt": "Which of the following information is typically NOT needed by a logic synthesis tool:",
+      "options": [
+        "RTL design [in Verilog or VHDL]",
+        "Constraints [in Synopsys Design Constraint (SDC) format]",
+        "Simulation output [in Value Change Dump (VCD) format]",
+        "Technology Library [in Liberty format]"
+      ],
+      "accepted": "Simulation output [in Value Change Dump (VCD) format]"
+    },
+    {
+      "prompt": "What is the interface of a library cell or cell instance of a design called",
+      "options": [
+        "Via",
+        "Pin",
+        "Jack",
+        "Port"
+      ],
+      "accepted": "Pin"
+    },
+    {
+      "prompt": "Which of the following statements best describes the purpose of physical design in VLSI design flow?",
+      "options": [
+        "It creates a library for a given netlist",
+        "It creates an algorithm for a given netlist",
+        "It creates a testbench for a given netlist",
+        "It creates a layout for a given netlist"
+      ],
+      "accepted": "It creates a layout for a given netlist"
+    },
+    {
+      "prompt": "Which of the following tasks is not a part of the physical design:",
+      "options": [
+        "Placement",
+        "Routing",
+        "Clock tree synthesis",
+        "RTL synthesis"
+      ],
+      "accepted": "RTL synthesis"
+    },
+    {
+      "prompt": "Which of the following statements best describes the purpose of verification in VLSI design flow?",
+      "options": [
+        "It ensures that the design makes a customer happy",
+        "It ensures that the design works as per the given functionality",
+        "It ensures that the design attracts many customers",
+        "It ensures that the design makes a lot of profit"
+      ],
+      "accepted": "It ensures that the design works as per the given functionality"
+    },
+    {
+      "prompt": "Which of the following tasks is not a kind of design verification task:",
+      "options": [
+        "Floorplanning",
+        "Static Timing Analysis",
+        "Combinational Equivalence Checking",
+        "RTL Simulation"
+      ],
+      "accepted": "Floorplanning"
+    },
+    {
+      "prompt": "Which of the following statements best describes the purpose of the manufacturing test?",
+      "options": [
+        "It ensures that the design is made as per the functionality",
+        "It ensures that the yield of the process is high",
+        "It ensures that no one can make a pirated chip out of the manufactured chip",
+        "It checks whether the manufactured chip has a fatal defect."
+      ],
+      "accepted": "It checks whether the manufactured chip has a fatal defect."
+    },
+    {
+      "prompt": "Yield for a chip reduces when:",
+      "options": [
+        "Defect density is decreased by better process control",
+        "Probability of introducing random defects during fabrication is decreased",
+        "The area of a die is increased",
+        "The area of a die is decreased"
+      ],
+      "accepted": "The area of a die is increased"
+    },
+    {
+      "prompt": "Which of the following techniques is NOT a resolution enhancement technique:",
+      "options": [
+        "Optical proximity correction",
+        "Dummy metal fill",
+        "Double-patterning",
+        "Multi-patterning"
+      ],
+      "accepted": "Dummy metal fill"
+    }
+  ]
+}

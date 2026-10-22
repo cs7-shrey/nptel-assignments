@@ -1,0 +1,73 @@
+{
+  "week": 7,
+  "title": "Week 7: Assignment 7",
+  "topic": "Pre-training strategies & HuggingFace",
+  "due": "2025-03-12",
+  "questions": [
+    {
+      "prompt": "Which of the following best describes how ELMo's architecture captures different linguistic properties?",
+      "options": [
+        "The model explicitly assigns specific linguistic functions to each layer.",
+        "The lower layers capture syntactic information, while higher layers capture semantic information.",
+        "All layers capture the similar properties.",
+        "ELMo uses a fixed, non-trainable weighting scheme for combining layer-wise representations."
+      ],
+      "accepted": ["The lower layers capture syntactic information, while higher layers capture semantic information."]
+    },
+    {
+      "prompt": "BERT and BART models differ in their architectures. While BERT is (i)______ model, BART is (ii)______ one. Select the correct choices for (i) and (ii).",
+      "options": [
+        "i: Decoder-only, ii: Encoder-only",
+        "i: Encoder-decoder, ii: Encoder-only",
+        "i: Encoder-only, ii: Encoder-decoder",
+        "i: Decoder-only, ii: Encoder-decoder"
+      ],
+      "accepted": ["i: Encoder-only, ii: Encoder-decoder"]
+    },
+    {
+      "prompt": "The pre-training objective for the T5 model is based on:",
+      "options": ["Next sentence prediction", "Masked language modeling", "Span corruption and reconstruction", "Predicting the next token"],
+      "accepted": ["Span corruption and reconstruction"]
+    },
+    {
+      "prompt": "Which of the following datasets was used to pretrain the T5 model?",
+      "options": ["Wikipedia", "BookCorpus", "Common Crawl", "C4"],
+      "accepted": ["C4"]
+    },
+    {
+      "prompt": "Which of the following special tokens are introduced in BERT to handle sentence pairs?",
+      "options": ["[MASK] and [CLS]", "[SEP] and [CLS]", "[CLS] and [NEXT]", "[SEP] and [MASK]"],
+      "accepted": ["[SEP] and [CLS]"]
+    },
+    {
+      "prompt": "ELMo and BERT represent two different pre-training strategies for language models. Which of the following statement(s) about these approaches is/are true?",
+      "options": [
+        "ELMo uses a bi-directional LSTM to pre-train word representations, while BERT uses a transformer encoder with masked language modeling.",
+        "ELMo provides context-independent word representations, whereas BERT provides context-dependent representations.",
+        "Pre-training of both ELMo and BERT involve next token prediction.",
+        "Both ELMo and BERT produce word embeddings that can be fine-tuned for downstream tasks."
+      ],
+      "accepted": [
+        "ELMo uses a bi-directional LSTM to pre-train word representations, while BERT uses a transformer encoder with masked language modeling.",
+        "Both ELMo and BERT produce word embeddings that can be fine-tuned for downstream tasks."
+      ]
+    },
+    {
+      "prompt": "Decoder-only models are essentially trained based on probabilistic language modelling. Which of the following correctly represents the training objective of GPT-style models?",
+      "options": [
+        "P(y | x) where x is the input sequence and y is the gold output sequence",
+        "P(x | y) where x is the input sequence and y is the gold output sequence",
+        "P(w_t | w_1:t-1), where w_t represents the token at position t, and w_1:t-1 is the sequence of tokens from position 1 to t-1",
+        "P(w_t | w_1:t+1), where w_t represents the token at position t, and w_1:t+1 is the sequence of tokens from position 1 to t+1"
+      ],
+      "accepted": ["P(w_t | w_1:t-1), where w_t represents the token at position t, and w_1:t-1 is the sequence of tokens from position 1 to t-1"]
+    },
+    {
+      "prompt": "In the previous week, we saw the usage of einsum function in numpy as a generalized operation for performing tensor multiplications. Now, consider two matrices:\nA = [[1, 5], [3, 7]]\nB = [[2, -1], [4, 2]]\n\nThen, what is the output of the following numpy operation?",
+      "code": "numpy.einsum('ij, ij -> ', A, B)",
+      "numeric": true,
+      "options": [],
+      "accepted": ["23"]
+    }
+  ]
+}

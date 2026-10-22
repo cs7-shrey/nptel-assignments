@@ -1,0 +1,93 @@
+{
+  "week": 9,
+  "title": "Week 9: Assignment 9",
+  "topic": "Power analysis & design for test",
+  "due": "2023-09-27",
+  "questions": [
+    {
+      "prompt": "The power dissipated in a CMOS circuit when it is not performing active computation is known as:",
+      "options": [
+        "Switching power dissipation",
+        "Dynamic power dissipation",
+        "Static power dissipation",
+        "Short circuit power dissipation"
+      ],
+      "accepted": "Static power dissipation"
+    },
+    {
+      "prompt": "The switching power dissipation of a CMOS combinational circuit element increases under which of the following conditions:",
+      "options": [
+        "The period of the clock is decreased.",
+        "The supply voltage is decreased.",
+        "The activity at the input of the circuit element is decreased.",
+        "The capacitive load driven by that circuit element is decreased."
+      ],
+      "accepted": "The period of the clock is decreased."
+    },
+    {
+      "prompt": "The internal power in a technology library's non-linear power model (NLPM) is typically defined as a function of which of the following quantities?",
+      "options": [
+        "Switching activity and supply voltage",
+        "Input slew and output load",
+        "Clock frequency and supply voltage",
+        "Switching activity and output load"
+      ],
+      "accepted": "Input slew and output load"
+    },
+    {
+      "prompt": "Which of the following is NOT a technique to estimate a signal's activity in power analysis?",
+      "options": ["Vector-based Technique", "Probabilistic Technique", "Resizing Technique", "Vector-less Technique"],
+      "accepted": "Resizing Technique"
+    },
+    {
+      "prompt": "Which of the following techniques is typically NOT a technique to reduce power dissipation in a circuit?",
+      "options": ["Clock Gating", "Redundant Via Insertion", "Power Gating", "Dynamic Voltage Frequency Scaling (DVFS)"],
+      "accepted": "Redundant Via Insertion"
+    },
+    {
+      "prompt": "Which of the following statements best describes the problem of using a simple AND gate for clock gating?",
+      "options": [
+        "In some cases, it can cause the output of the AND gate to get stuck to one, and the circuit will go into a metastable state.",
+        "It can create glitches at the output of the AND gate, and this glitch can trigger a flip-flop in its fanout.",
+        "It cannot switch off the power supply and not be able to save any power.",
+        "It can cause a significant voltage drop in the supply lines, increasing the delay of other circuit elements."
+      ],
+      "accepted": "It can create glitches at the output of the AND gate, and this glitch can trigger a flip-flop in its fanout."
+    },
+    {
+      "prompt": "Which of the following is NOT the purpose of employing a fault model in design for test (DFT) tasks?",
+      "options": [
+        "It allows us to analyze the impact of a defect using logic or circuit analysis techniques.",
+        "It helps us reduce the number of defects during integrated circuit fabrication.",
+        "It allows us to derive test patterns algorithmically for detecting a given fault.",
+        "It helps us transform the problem of defect detection into the problem of fault detection."
+      ],
+      "accepted": "It helps us reduce the number of defects during integrated circuit fabrication."
+    },
+    {
+      "prompt": "From the perspective of design for test (DFT), which of the following statements best describes a test vector:",
+      "options": [
+        "Any input pattern, or sequence of input patterns, that produces a 1 for a faulty circuit and a fault-free circuit",
+        "Any input pattern, or sequence of input patterns, that produces a 0 for a faulty circuit and a fault-free circuit",
+        "Any input pattern, or sequence of input patterns, that produces a matching output response for a faulty circuit and a fault-free circuit",
+        "Any input pattern, or sequence of input patterns, that produces a different output response for a faulty circuit and a fault-free circuit"
+      ],
+      "accepted": "Any input pattern, or sequence of input patterns, that produces a different output response for a faulty circuit and a fault-free circuit"
+    },
+    {
+      "prompt": "In scan-based testing methodology, we replace a D flip-flop with a scan cell. What is the motivation for this:",
+      "options": [
+        "It decreases the delay and area of the circuit.",
+        "It increases the manufacturability of the circuit.",
+        "It increases the controllability and observability of a circuit.",
+        "It increases the performance and reliability of a circuit."
+      ],
+      "accepted": "It increases the controllability and observability of a circuit."
+    },
+    {
+      "prompt": "In scan-based testing methodology, what is the correct value at the SE (scan enable) port for the shift and capture mode, respectively?",
+      "options": ["Shift SE=0, Capture SE=0", "Shift SE=0, Capture SE=1", "Shift SE=1, Capture SE=0", "Shift SE=1, Capture SE=1"],
+      "accepted": "Shift SE=1, Capture SE=0"
+    }
+  ]
+}
