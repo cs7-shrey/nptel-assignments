@@ -1,0 +1,116 @@
+Introduction to Large Language Models 
+Assignment - 7 
+Number of Questions: 8 
+Total Marks: 6 × 1 + 2 × 2 = 10 
+QUESTION 1: [1 mark] 
+Which of the following statements correctly differentiates the pre-training paradigms of BERT 
+and T5? 
+A. BERT uses masked language modeling with bidirectional attention, whereas T5 utilizes a 
+span corruption objective within an encoder-decoder architecture. 
+B. BERT uses next-token prediction, whereas T5 uses next-sentence prediction. 
+C. BERT is an encoder-decoder model, whereas T5 is a decoder-only model. 
+D. BERT uses span corruption on C4, whereas T5 is trained on BookCorpus using a causal 
+decoder. 
+Correct Answer: A 
+Solution: BERT is an encoder-only architecture trained with Masked Language Modeling 
+(MLM) and Next Sentence Prediction (NSP). In contrast, T5 follows a sequence-to-sequence 
+encoder-decoder setup trained to reconstruct corrupted contiguous spans using sentinel tokens. 
+QUESTION 2: [1 mark] 
+Which attention mechanism and masking scheme are natively employed during the auto-
+regressive generation phase in a Transformer decoder to prevent attending to future token 
+positions? 
+A. Bidirectional attention with a fully-visible mask 
+B. Causal (autoregressive) self-attention with a lower-triangular mask 
+C. Prefix-LM mask allowing unrestricted visibility across all generated tokens 
+D. Cross-attention with a diagonal identity mask 
+Correct Answer: B 
+Solution: Auto-regressive decoders utilize causal self-attention enforced via a lower-triangular 
+mask (causal mask), which masks future positions with negative infinity so that tokens can only 
+attend to previous and current positions. 
+QUESTION 3: [1 mark] 
+Which of the following pre-training corpora was curated specifically for pre-training the T5 model 
+to provide a cleaner, highly-filtered alternative to raw web scrapes? 
+A. BookCorpus 
+B. Wikipedia-100M 
+C. Colossal Clean Crawled Corpus (C4) 
+D. OpenWebText 
+Correct Answer: C 
+Solution: The C4 (Colossal Clean Crawled Corpus) dataset was introduced by Raffel et al. 
+specifically for T5 to mitigate noisy, boilerplate, and low-quality text present in raw Common 
+Crawl dumps. 
+QUESTION 4: [1 mark] 
+In the ELMo task-specific combination formula, what is the primary function of the softmax-
+normalized scalar weights sjtask? 
+A. They rescale the output embedding dimensionality to match downstream architectures. 
+B. They determine the relative task-specific importance and contribution of each internal bi-
+LSTM layer representation. 
+C. They prevent gradient explosion during the character-CNN convolution step. 
+D. They linearly combine the forward and backward language model losses during 
+unsupervised pre-training. 
+Correct Answer: B 
+Solution: In ELMo's downstream adaptation formula ELMoktask = γtask Σj sjtask hk,jLM, the 
+parameters sjtask are softmax-normalized weights that enable downstream tasks to learn the 
+relative contribution of each representation layer (e.g., lower syntactic layers versus higher 
+semantic layers). 
+QUESTION 5: [1 mark] 
+Which model architecture family is natively suited for sequence-to-sequence tasks such as 
+Machine Translation and Abstractive Summarization without requiring structural 
+modifications or prompt-based workarounds? 
+A. Encoder-only models (e.g., BERT, RoBERTa) 
+B. Encoder-Decoder models (e.g., BART, T5) 
+C. Character-level CNNs with unidirectional LSTMs 
+D. Pure classifier heads with static word embeddings 
+Correct Answer: B 
+Solution: Sequence-to-sequence encoder-decoder architectures naturally map arbitrary input 
+sequences x to target output sequences y (modeling P(y|x)) through a bidirectional encoder and 
+an autoregressive decoder. 
+QUESTION 6: [1 mark] 
+What major modifications were introduced in the GPT-2 architecture and training recipe 
+compared to the original GPT-1? 
+A. Relocating layer normalization to the input of each sub-block (pre-LN) and adding a layer 
+norm after the final self-attention block. 
+B. Expanding the vocabulary size to ~50,257 and increasing the context window to 1024 
+tokens. 
+C. Scaling residual layer weights at initialization by a factor of 1/√(2N). 
+D. All of the above. 
+Correct Answer: D 
+Solution: GPT-2 introduced pre-layer normalization, added a final layer norm, modified residual 
+initialization scaling, expanded context length to 1024, and broadened its BPE vocabulary to 
+50,257 tokens. 
+QUESTION 7: [2 marks] 
+Which of the following statement(s) regarding token representations and pre-training objectives 
+is/are TRUE? 
+A. ELMo employs a character-level CNN at the input layer to handle out-of-vocabulary 
+(OOV) tokens and capture morphological subword patterns. 
+B. BERT generates dynamic, context-dependent token representations using Masked 
+Language Modeling and Next Sentence Prediction. 
+C. Standard autoregressive decoder-only models maximize the bidirectional context 
+likelihood ∏t=1T P(wt | w1, ..., wT). 
+D. BART incorporates a bidirectional encoder with an autoregressive decoder and trains on 
+various noising schemes including token deletion and sentence permutation. 
+Correct Answer: A, B, D 
+Solution: 
+• (A) is True: ELMo's character-level CNN constructs word vectors from character sequences, 
+eliminating out-of-vocabulary tokens. 
+• (B) is True: BERT computes bidirectional contextual embeddings via masked language 
+modeling and sentence pair conditioning. 
+• (C) is False: Decoder-only models are autoregressive and factorize probabilities causally: ∏t=1T 
+P(wt | w1:t-1). 
+• (D) is True: BART uses multiple corruption strategies including sentence shuffling, token 
+masking, span deletion, and text infilling. 
+QUESTION 8: (Numerical Question) [2 marks] 
+The einsum function in NumPy is used as a generalized operation for tensor contractions. 
+Consider the two matrices: 
+Matrix A Matrix B 
+&bmatrix; 4    -2 
+3     1 &bmatrix; 
+&bmatrix; 5     2 
+-3     6 &bmatrix; 
+What is the scalar output of the following NumPy operation? 
+numpy.einsum('ij,ji->', A, B) 
+Correct Answer: 38 
+Solution: The Einstein summation subscript 'ij,ji->' represents the contraction Σi Σj Aij Bji, which 
+evaluates to: 
+(A00 × B00) + (A01 × B10) + (A10 × B01) + (A11 × B11) 
+= (4 × 5) + (-2 × -3) + (3 × 2) + (1 × 6) 
+= 20 + 6 + 6 + 6 = 38 

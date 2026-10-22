@@ -83,6 +83,16 @@ Introduction to Large Language Models · 2026, collected 21 October 2026:
 
 Sources are stored locally under `sources/`, with the Privacy sources under `sources/privacy-social-media/`, the VLSI export and its per-week transcript under `sources/vlsi-design-flow/`, and the LLM sources under `sources/large-language-models/` (2025 export) and `sources/large-language-models-2026/` (2026 question bank). Raw browser saves are ignored by Git and are not served by the app. Sanitized question-image copies are retained for Weeks 7 and 12 of Psychology; Privacy figures and options are served from `public/questions/privacy-social-media/`, the VLSI figures from `public/vlsi-design-flow/`, and the LLM matrix from `public/large-language-models/`. Source spelling and wording are retained, with whitespace and blank markers normalized.
 
+## AI theory summaries
+
+Each week page has a summary box directly below the week heading and topic. It is generated on demand from that week's question text, context, code, figures' alt text, and options using the Gemini API. The prompt explicitly asks for a deep explanation of the underlying theory and forbids answering the questions or naming a correct option; answer-key fields are deliberately left out of the request. Generation uses the model's high thinking level, streams the response, and sets `store: false`.
+
+Open **Settings** (the gear beside the theme toggle) or visit `/settings` to add one or more Gemini API keys. Each key has a name, a key, and a model; the active key is used for summaries. Free AI Studio keys and free-tier models such as Gemini 3.8 Flash work, and a custom model id can be entered. The settings page links to the [Google AI Studio API keys console](https://aistudio.google.com/apikey), can test a key, and can clear cached summaries.
+
+Keys are stored only in this browser under `recall:gemini-keys` and are sent directly from the browser to `generativelanguage.googleapis.com`; they never pass through a Recall server. Anyone with access to the browser profile can read a saved key.
+
+Summaries are cached per course and week under `recall:summary:<courseId>:week-<n>:v1`. The card shows the model and generation date, can be expanded or collapsed in place, and can be regenerated. **Maximize** opens a floating, nearly full-screen reading card with a close X; expand/collapse remains an inline control. The summary box appears only on week pages — the all-weeks and quiz views are unchanged. Free-tier rate limits and data-use terms are set by Google.
+
 ## Rebuild data and verify
 
 PDF text was extracted with `pdftotext -layout`. To recreate the aggregate from the extracted sources and curated current-quiz transcriptions:
@@ -102,6 +112,8 @@ The importers use Python's standard library. `sources/quiz-verification.json` re
 
 Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, week-only resets, the all-weeks mix (every question kept, stable per seed, reset all), Privacy image/table/code completeness and quiz isolation, VLSI completeness, figure assets, and code listings, the 2025 LLM export (multi-select keys, the numeric einsum answer, the shared matrix figure), and the 2026 LLM bank (every supplied row reproduced exactly, multi-select keys, no practice-lab UI state).
 
+`scripts/gemini.test.mjs` checks that the summary prompt includes the week's question text and options but never answer-key fields, that the stream reader accumulates text and ignores thought summaries, that the request asks for high thinking with `store: false`, and that API errors map to actionable messages.
+
 To add another subject, add its dataset to `data/`, register it with a URL slug in `lib/courses.ts`, and include its source provenance and checks. `/all` and the week routes follow from the new slug.
 
-Built with Next.js App Router, TypeScript, and locally bundled DM Sans and Manrope fonts. No external service is required at runtime; Vercel Web Analytics reports page views when deployed on Vercel.
+Built with Next.js App Router, TypeScript, and locally bundled DM Sans and Manrope fonts. The study app needs no external service at runtime; the optional AI theory summaries call Gemini directly from the browser with the reader's own API key. Vercel Web Analytics reports page views when deployed on Vercel.

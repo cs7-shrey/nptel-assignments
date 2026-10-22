@@ -11,6 +11,7 @@ import { pad } from './question-card';
 import CalculatorLauncher from './calculator-launcher';
 import SubjectSwitcher from './subject-switcher';
 import ThemeToggle from './theme-toggle';
+import { GearIcon } from './icons';
 
 type Desk = {
   course: Subject;
@@ -88,6 +89,9 @@ export default function StudyDesk({ course, children }: { course: Subject; child
           </Link>
         </div>
         <ThemeToggle />
+        <Link href="/settings" className="sidebar-settings" aria-label="Settings" title="Settings">
+          <GearIcon size={16} />
+        </Link>
       </aside>
       <main>
         {children}

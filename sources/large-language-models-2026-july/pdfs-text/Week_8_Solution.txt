@@ -1,0 +1,173 @@
+Introduction to Large Language Models 
+Assignment- 8 
+TYPE OF QUESTION: MCQ 
+Number of questions: 10    Total mark: 10 X 1 = 10 
+ 
+QUESTION 1: [1 mark] 
+Which of the following statements about instruction tuning of a pretrained language model are 
+true? 
+a) The prompt tokens are masked out of the next-token loss, so only the response tokens are 
+supervised. 
+b) It updates the parameters of the base model. 
+c) It requires a separately trained reward model. 
+d) Training on several different phrasings of the same task improves generalisation to unseen 
+instructions. 
+Correct Answers: a, b, d 
+Explanation: 
+(a) True: in a decoder-only model the instruction and response are concatenated, but cross-entropy 
+is computed only over the response tokens. The prompt serves as conditioning context; the model is 
+not being trained to predict the instruction itself. 
+(b) True: instruction tuning is supervised fine-tuning, so the weights of the base model are updated. 
+This distinguishes it from pure prompting. 
+(c) False: a reward model belongs to the preference-optimisation stage (RLHF). Instruction tuning 
+needs only (instruction, response) pairs. 
+(d) True: multiple templates expose the model to varied phrasings of the same underlying task, so it 
+learns to follow instructions in general rather than memorising a few fixed formats. 
+ 
+QUESTION 2: [1 mark] 
+In prompt tuning, which parameters are updated during training? 
+a) All the weights of the pretrained model 
+b) Only the continuous prompt embeddings prepended to the input, while the model stays 
+frozen 
+c) Only the final layer normalisation and the output head 
+d) The merge rules of the tokenizer 
+Correct Answer: b 
+Explanation: 
+Prompt tuning learns a small set of soft prompt vectors that are prepended to the input 
+embeddings, and back-propagates only into those vectors. The backbone is frozen, so one copy of 
+the model can serve many tasks by swapping in a different learned prompt. 
+(a) describes full fine-tuning. (c) describes a different parameter-efficient variant. (d) is unrelated - 
+the tokenizer is fixed. 
+ 
+QUESTION 3: [1 mark] 
+Which capability does Tree-of-Thought (ToT) prompting add over Chain-of-Thought (CoT) 
+prompting? 
+a) It fine-tunes the model on reasoning traces before inference. 
+b) It maintains several candidate reasoning branches and can backtrack from unpromising ones. 
+c) It removes the need for any prompt design. 
+d) It guarantees that the final answer is factually correct. 
+Correct Answer: b 
+Explanation: 
+CoT produces a single linear reasoning chain; if an early step is wrong, the whole chain is wrong. ToT 
+frames reasoning as search over a tree of partial thoughts, evaluating branches and abandoning 
+weak ones, which recovers from bad intermediate steps. 
+(a) is false - ToT is an inference-time procedure with no weight updates. (c) is false: ToT still needs a 
+thought generator and an evaluator prompt. (d) is false - no prompting strategy guarantees 
+correctness. 
+ 
+QUESTION 4: [1 mark] 
+Which of the following is NOT captured by the POSIX metric for prompt sensitivity? 
+a) Diversity in the responses produced under intent-preserving prompt variations 
+b) Entropy of the distribution of response frequencies 
+c) The wall-clock time taken to generate a response 
+d) Variance in the log-likelihood assigned to the same response across prompt variations 
+Correct Answer: c 
+Explanation: 
+POSIX quantifies how much a model's output distribution shifts when a prompt is rephrased without 
+changing its intent. It is built from response diversity, response entropy and the relative change in 
+log-likelihood of the same response under different intent-aligned prompts. 
+Inference latency is a systems property and has no bearing on how sensitive the model's output 
+distribution is to prompt phrasing, so (c) is not part of POSIX. 
+ 
+QUESTION 5: [1 mark] 
+Which conclusion about prompt sensitivity is supported by POSIX measurements across model 
+families? 
+a) Prompt sensitivity decreases monotonically with parameter count. 
+b) A larger model within the same family can still be more prompt sensitive than a smaller one. 
+c) Prompt sensitivity is zero for any instruction-tuned model. 
+d) All models of the same parameter count have identical prompt sensitivity. 
+Correct Answer: b 
+Explanation: 
+The reported results show, for example, that a 13B model in a family is not guaranteed to be less 
+prompt sensitive than the 7B model from the same family. Scale alone therefore does not resolve 
+prompt sensitivity, which is why it must be measured separately from accuracy. 
+(c) is false - instruction tuning reduces but does not eliminate sensitivity. (d) is false, since sensitivity 
+also depends on the training data and the tuning recipe. 
+ 
+QUESTION 6: [1 mark] 
+Why is alignment performed on top of instruction tuning rather than stopping at instruction tuning? 
+a) Instruction tuning does not allow the model to follow any instructions at all. 
+b) Instruction tuning can still yield fluent, instruction-following responses that humans judge 
+harmful or unacceptable. 
+c) Instruction tuning destroys the model's performance on downstream tasks. 
+d) Alignment is needed only for models below a few billion parameters. 
+Correct Answer: b 
+Explanation: 
+Instruction tuning teaches the model what form a good answer takes, but the supervised targets do 
+not encode human judgements about which of several plausible answers is preferable or safe. A 
+model can obey the instruction literally and still produce a harmful response. 
+Alignment methods such as RLHF add exactly that missing signal by learning from human preference 
+comparisons. 
+ 
+QUESTION 7: [1 mark] 
+A reward model r(x, y) is trained on preference triples (x, y_w, y_l), where y_w is the preferred 
+response and y_l the rejected one. Using the Bradley-Terry formulation, the training objective 
+maximises: 
+a) log sigma( r(x, y_l) - r(x, y_w) ) 
+b) log sigma( r(x, y_w) - r(x, y_l) ) 
+c) the entropy of the policy distribution 
+d) the KL divergence between the policy and the reference model 
+Correct Answer: b 
+Explanation: 
+The Bradley-Terry model expresses the probability that y_w is preferred over y_l as sigma( r(x, y_w) - 
+r(x, y_l) ). Maximum likelihood estimation on the observed human preferences therefore maximises 
+the log of that sigmoid, which is option (b). 
+(a) has the sign reversed and would train the model to prefer the rejected response. (c) and (d) 
+belong to the policy optimisation stage, not to reward model training. 
+ 
+QUESTION 8: [1 mark] 
+In RLHF the policy is optimised for reward while a KL penalty against a reference policy is applied. 
+What is the primary purpose of that KL term? 
+a) To make each gradient update cheaper to compute 
+b) To keep the optimised policy close to the reference model, so it does not drift into degenerate 
+high-reward behaviour 
+c) To increase the entropy of the sampled responses 
+d) To remove annotator bias from the preference dataset 
+Correct Answer: b 
+Explanation: 
+The learned reward model is only an approximation of human preference, so a policy left free to 
+maximise it will find inputs where the proxy is wrong - reward hacking - and lose the fluency 
+acquired during pretraining and instruction tuning. Penalising KL divergence from the reference 
+policy bounds how far the distribution can move while still exploiting the reward signal. 
+(a) is false: the penalty adds computation rather than saving it. (c) is a side effect at best, not the 
+purpose. (d) is false - a KL term cannot correct bias present in the preference data. 
+ 
+QUESTION 9: [1 mark] 
+Which of the following statements about REINFORCE-style policy optimisation for language models 
+are true? 
+a) The log-derivative trick yields an unbiased estimator of the policy gradient from sampled 
+responses. 
+b) Weighting the token-level log-probabilities by an advantage rather than the raw return 
+reduces gradient variance. 
+c) Importance ratios are clipped when several updates are taken on samples drawn from an 
+older policy. 
+d) The reward function must be differentiable with respect to the model parameters. 
+Correct Answers: a, b, c 
+Explanation: 
+(a) True: rewriting the gradient using grad log pi lets the gradient of an expectation be estimated by 
+sampling, which is the foundation of policy gradient methods. 
+(b) True: the raw return has high variance. Subtracting a value baseline to form an advantage keeps 
+the estimator unbiased while substantially reducing its variance. 
+(c) True: reusing samples from an old policy requires importance weighting, and clipping those ratios 
+is what keeps the updates stable - the core idea of PPO. 
+(d) False: this is precisely why policy gradients are used. The reward may be a discrete or non-
+differentiable human or model score, and the log-derivative trick avoids differentiating it. 
+ 
+QUESTION 10: [1 mark] 
+Let ratio_t = pi_new(a_t | s_t) / pi_old(a_t | s_t), where pi_new is the policy being optimised and 
+pi_old the policy the samples were drawn from, and let epsilon > 0 be the clipping parameter. When 
+the token-level advantage A_t is negative, the PPO-CLIP objective at step t reduces to maximising: 
+a) min( ratio_t, 1 + epsilon ) A_t 
+b) max( ratio_t, 1 - epsilon ) A_t 
+c) min( ratio_t, 1 - epsilon ) A_t 
+d) max( ratio_t, 1 + epsilon ) A_t 
+Correct Answer: b 
+Explanation: 
+The PPO-CLIP objective is min( ratio_t * A_t , clip(ratio_t, 1 - epsilon, 1 + epsilon) * A_t ). 
+With A_t negative, multiplying by A_t reverses the order, so the minimum over the two products 
+corresponds to the maximum over the two ratios: A_t * max( ratio_t, clip(ratio_t, 1 - epsilon, 1 + 
+epsilon) ), which simplifies to A_t * max( ratio_t, 1 - epsilon ). 
+Intuitively, a negative advantage means the action was worse than average and its probability should 
+fall, but the clip stops the ratio from being pushed below 1 - epsilon in a single update. This is the 
+mirror image of the positive-advantage case, where the objective is min( ratio_t, 1 + epsilon ) A_t. 
+ 

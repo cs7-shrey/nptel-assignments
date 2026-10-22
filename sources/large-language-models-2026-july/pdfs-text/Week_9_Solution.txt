@@ -1,0 +1,173 @@
+Introduction to Large Language Models 
+Assignment- 9 
+TYPE OF QUESTION: MCQ 
+Number of questions: 10    Total mark: 10 X 1 = 10 
+ 
+QUESTION 1: [1 mark] 
+Which statement best explains why a knowledge graph (KG) is a more flexible representation than a 
+traditional relational knowledge base? 
+a. A KG needs no schema at all, whereas a relational knowledge base always does. 
+b. A KG stores entities as nodes joined by typed edges, so heterogeneous relations and multi-
+hop traversal are represented directly. 
+c. A KG stores every fact as a hypergraph, which removes all redundancy. 
+d. A KG makes textual sources unnecessary because it stores every possible fact. 
+Correct Answer: b 
+Explanation: 
+A relational knowledge base fixes the facts into tables with predefined columns, so a new kind of 
+relation usually means a new table or schema change. A KG represents each fact as a (subject, 
+relation, object) triple, which lets new relation types be added as new edge labels and lets queries 
+follow chains of edges for inference. 
+(a) overstates the point: knowledge graphs commonly do have an ontology or schema, it is simply 
+more permissive. (c) and (d) are false - a KG is neither restricted to hypergraphs nor complete. 
+ 
+QUESTION 2: [1 mark] 
+Entity and relation alignment across knowledge graphs in different languages is a hard problem. 
+Which of the following genuinely contribute to effective alignment? 
+a. Transliteration and cross-lingual string matching over entity labels 
+b. Comparing the neighbourhood structure of candidate entities in the two graphs 
+c. Requiring that every alias of an entity appears identically in both graphs 
+d. Matching relations purely on the lexical similarity of their names, ignoring context 
+Correct Answers: a, b 
+Explanation: 
+(a) True: names often survive translation in transliterated form, so string-level matching over labels 
+is a useful first signal. 
+(b) True: structure disambiguates what labels cannot. If two candidates share neighbours that are 
+themselves already aligned, that is strong evidence they denote the same entity. 
+(c) False: the whole point of alignment is to link differing surface forms, not to force them to be 
+identical. 
+(d) False: lexically similar relation names can mean different things across languages, so context and 
+the types of entities they connect must be considered. 
+ 
+QUESTION 3: [1 mark] 
+Which of the following are learned jointly in an end-to-end differentiable KGQA system, as opposed 
+to a semantic parsing approach? 
+a. A dense representation of the natural language question 
+b. Embeddings of the entities and relations in the graph 
+c. A hand-specified logical form for each question template 
+d. The scoring mechanism that selects which node answers the question 
+Correct Answers: a, b, d 
+Explanation: 
+A differentiable KGQA model encodes the question, encodes the graph, and learns to score 
+candidate answer nodes, with gradients flowing through all three. Nothing in the pipeline is 
+symbolic. 
+(c) belongs to semantic parsing, which converts the question into an explicit logical form and 
+executes it against the graph. That route is more interpretable but needs grammars or annotated 
+logical forms; the differentiable route is trainable end to end but harder to inspect. 
+ 
+QUESTION 4: [1 mark] 
+Which statements correctly describe the local closed-world assumption used when generating 
+negatives for KG training? 
+a. Triples not present in the graph are treated as false during training. 
+b. It is strictly correct, because knowledge graphs are complete by construction. 
+c. Some sampled negatives are in fact missing true triples, so the training signal carries label 
+noise. 
+d. It removes the need for a separate validation split. 
+Correct Answers: a, c 
+Explanation: 
+Knowledge graphs record only positive facts, so training needs an assumption to manufacture 
+negatives. The local closed-world assumption supplies one: anything not stated is taken as false. 
+(b) is precisely what the assumption is not - KGs are known to be incomplete, which is the reason KG 
+completion exists as a task. (c) follows directly: a corrupted triple may happen to be a true fact that 
+is simply absent from the graph. (d) is unrelated to how negatives are formed. 
+ 
+QUESTION 5: [1 mark] 
+A KG completion model is trained with a softmax over entities to model P(o | s, r). Which of the 
+following statements about replacing the full softmax with a sampled one are correct? 
+a. The exact denominator requires scoring every entity in the graph, which is prohibitively 
+expensive for large KGs. 
+b. The true object must be kept in the sampled denominator, otherwise the estimate is biased. 
+c. Sampling negatives uniformly tends to produce easy negatives, giving a high-variance training 
+signal. 
+d. Sampled softmax removes the need to learn entity embeddings. 
+Correct Answers: a, b, c 
+Explanation: 
+(a) True: the normaliser runs over the whole entity set, so its cost grows with the size of the graph 
+and dominates training. 
+(b) True: the sampled denominator is meant to approximate the full one, and dropping the true 
+object from it systematically distorts the ratio. 
+(c) True: a randomly drawn entity is usually obviously wrong, so most sampled negatives carry little 
+gradient signal. Many samples are then needed before a useful, borderline negative appears, which 
+is why hard or self-adversarial negative sampling was introduced. 
+(d) False: the embeddings are exactly what is being learned; only the normalisation is approximated. 
+ 
+QUESTION 6: [1 mark] 
+A model is trained with the pairwise hinge loss max{ 0, m + f(s', r, o') - f(s, r, o) }, where (s, r, o) is a 
+positive triple, (s', r, o') a sampled negative, m > 0 the margin, and a higher f means a more plausible 
+triple. The loss is strictly positive when: 
+a. f(s, r, o) >= f(s', r, o') + m 
+b. f(s, r, o) < f(s', r, o') + m 
+c. f(s', r, o') >= f(s, r, o) + m 
+d. only when m = 0 
+Correct Answer: b 
+Explanation: 
+The hinge is active whenever m + f(negative) - f(positive) > 0, that is whenever the positive triple fails 
+to outscore the negative by at least the margin m. 
+(a) is the complementary condition and gives exactly zero loss - the constraint is already satisfied, so 
+that pair contributes no gradient. (c) is a strictly stronger violation, and it is covered by (b) rather 
+than being the boundary. (d) is false, since the loss behaves this way for any positive margin. 
+ 
+QUESTION 7: [1 mark] 
+For a single test query, a KG completion model ranks the correct entity 4th out of 100 candidates. 
+What are hits@1, hits@5 and the reciprocal rank for this query? 
+a. 0, 1, 0.25 
+b. 1, 1, 4 
+c. 0, 0, 0.25 
+d. 0, 1, 4 
+Correct Answer: a 
+Explanation: 
+hits@K is 1 when the correct entity falls within the top K of the ranked list and 0 otherwise. Rank 4 is 
+outside the top 1, so hits@1 = 0, and inside the top 5, so hits@5 = 1. 
+The reciprocal rank is 1 / rank = 1 / 4 = 0.25. Averaging that quantity over all test queries gives the 
+MRR, which is why MRR rewards moving the correct answer from rank 4 to rank 2 far more than 
+from rank 40 to rank 20. 
+ 
+QUESTION 8: [1 mark] 
+Which statements about filtered evaluation for KG completion are correct? 
+a. Candidate entities that form known true triples in the training or validation data are removed 
+from the ranked list before the test entity is scored. 
+b. It avoids penalising the model for placing a different, genuinely correct answer above the 
+held-out one. 
+c. It can only ever lower the reported score compared with the raw setting. 
+d. It changes ranking metrics such as MRR and hits@K. 
+Correct Answers: a, b, d 
+Explanation: 
+Many KG relations are one-to-many. For the query (Delhi, located_in, ?) several objects are correct, 
+and some of them appear in the training set. Unfiltered ranking counts those as errors ahead of the 
+test answer, which understates model quality. 
+(c) is the reverse of what happens: removing known-correct distractors can only move the test entity 
+up the list, so filtered scores are at least as high as raw scores. 
+ 
+QUESTION 9: [1 mark] 
+Why can TransE not represent a non-trivial symmetric relation? 
+a. Because the norm of every relation embedding in TransE is constrained to 1. 
+b. Because symmetry would require both s + r ≈ o and o + r ≈ s, which forces r ≈ 0 and collapses 
+the relation. 
+c. Because the subject and object embeddings would have to be orthogonal. 
+d. Because TransE uses complex-valued embeddings that cannot encode symmetry. 
+Correct Answer: b 
+Explanation: 
+TransE scores a triple by the distance ‖ s + r - o ‖, so a valid triple satisfies s + r ≈ o. If the relation is 
+symmetric, the reverse triple must also be valid, giving o + r ≈ s. Adding the two conditions gives 2r ≈ 
+0, so the only symmetric relation TransE can represent is the zero vector, which then makes every 
+pair of identical entities equally plausible. 
+(d) is false - TransE embeddings are real-valued; it is RotatE that moves to the complex plane, which 
+is precisely how it recovers symmetry. 
+ 
+QUESTION 10: [1 mark] 
+Which of the following is the RotatE scoring function? 
+a. f(s, r, o) = ‖ s + r - o ‖ 
+b. f(s, r, o) = ‖ s ⊙ r - o ‖, where every component of r has modulus 1 
+c. f(s, r, o) = s^T M_r o, with M_r a full matrix 
+d. f(s, r, o) = - < s, r, o >, the real part of a three-way inner product 
+Correct Answer: b 
+Explanation: 
+RotatE embeds entities and relations in the complex plane and treats a relation as an element-wise 
+rotation. Constraining each component of r to modulus 1 means the operation changes only the 
+phase, so the relation is a pure rotation and the score is the distance between the rotated subject 
+and the object. 
+This is what buys the extra expressiveness: a relation is symmetric exactly when r ⊙ r = 1, that is 
+when every rotation angle is 0 or pi; an inverse relation is the rotation in the opposite direction; and 
+composition is the sum of the angles. 
+(a) is TransE, (c) is the general bilinear form used by RESCAL, and (d) is the ComplEx-style trilinear 
+score. 
+ 

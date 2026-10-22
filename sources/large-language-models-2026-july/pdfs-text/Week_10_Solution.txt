@@ -1,0 +1,179 @@
+Introduction to Large Language Models 
+Assignment- 10 
+TYPE OF QUESTION: MCQ 
+Number of questions: 10    Total mark: 10 X 1 = 10 
+ 
+QUESTION 1: [1 mark] 
+In LoRA, the update to a frozen weight matrix W of shape d x k is parameterised as delta_W = B A, 
+with B of shape d x r and A of shape r x k. For d = k = 4096 and rank r = 8, how many trainable 
+parameters does this adapter introduce for that one matrix? 
+a. 65,536 
+b. 32,768 
+c. 16,777,216 
+d. 8,192 
+Correct Answer: a 
+Explanation: 
+A holds r x k = 8 x 4096 = 32,768 parameters and B holds d x r = 4096 x 8 = 32,768, giving 65,536 in 
+total. 
+The frozen matrix itself has 4096 x 4096 = 16,777,216 parameters, which is option (c). The adapter is 
+therefore about 0.39 percent of the size of the layer it adapts, which is the whole point of the 
+method. 
+ 
+QUESTION 2: [1 mark] 
+Where do prefix tuning and adapters inject their task-specific parameters in a Transformer? 
+a. Prefix tuning inserts bottleneck feed-forward modules inside each block, while adapters 
+prepend trainable vectors to the input. 
+b. Prefix tuning prepends trainable key and value vectors at every layer, while adapters insert 
+small bottleneck modules inside the blocks. 
+c. Both modify only the final output projection, differing in how they initialise it. 
+d. Both work purely by altering the attention mask. 
+Correct Answer: b 
+Explanation: 
+Prefix tuning learns continuous vectors that act as extra keys and values the existing tokens can 
+attend to, added at the input of every layer, with the backbone frozen. Adapters instead add a small 
+down-projection, non-linearity and up-projection inside each block, usually after the attention or 
+feed-forward sub-layer, wrapped in a residual connection. 
+Option (a) is the same description with the two methods swapped, which is the trap in this question. 
+ 
+QUESTION 3: [1 mark] 
+Which of the following statements about extensions of LoRA are correct? 
+a. QLoRA trains low-rank adapters on top of a base model quantised to 4 bits. 
+b. DyLoRA trains over a range of ranks so that a rank can be selected afterwards without 
+retraining. 
+c. AdaLoRA distributes a parameter budget across modules by importance instead of fixing one 
+rank everywhere. 
+d. LoRA adapters cannot be folded back into the base weights, so they always add inference 
+latency. 
+Correct Answers: a, b, c 
+Explanation: 
+(a) True: QLoRA keeps the frozen base model in 4-bit precision and back-propagates through it into 
+the adapters, which is what allows large models to be fine-tuned on a single GPU. 
+(b) True: DyLoRA trains the decomposition so that its leading blocks are usable on their own, making 
+the rank a choice at deployment time rather than at training time. 
+(c) True: AdaLoRA prunes rank where it contributes little and reallocates it where the gradients 
+suggest it matters. 
+(d) False: because delta_W = B A has the same shape as W, the product can be added into W once 
+training is finished, giving exactly the original inference cost. Keeping it separate is a convenience for 
+swapping tasks, not a requirement. 
+ 
+QUESTION 4: [1 mark] 
+Why does unstructured magnitude pruning often fail to deliver a wall-clock speedup even at high 
+sparsity? 
+a. Because it removes entire attention heads and so changes the output dimension. 
+b. Because the surviving weights are scattered irregularly, and dense kernels cannot exploit that 
+sparsity without specialised hardware or sparse formats. 
+c. Because the pruned model must be retrained from random initialisation. 
+d. Because only bias terms are eligible for removal. 
+Correct Answer: b 
+Explanation: 
+Unstructured pruning zeroes individual weights wherever they happen to be small, so the matrix 
+keeps its original shape and the zeros sit at arbitrary positions. A standard dense matrix multiply still 
+performs the same number of operations. Memory can be saved with a sparse storage format, but 
+throughput usually improves only with structured patterns, such as removing whole heads, channels 
+or the 2:4 pattern that some accelerators support directly. 
+(a) describes structured pruning, which is the approach that does translate into speedups. 
+ 
+QUESTION 5: [1 mark] 
+What distinguishes quantization-aware training (QAT) from post-training quantization (PTQ)? 
+a. QAT simulates the quantisation error during training so the weights adapt to it, while PTQ 
+quantises an already trained model using a small calibration set. 
+b. QAT is applied only to activations and PTQ only to weights. 
+c. PTQ requires more compute than QAT because it retrains every layer. 
+d. PTQ can only be applied to models below one billion parameters. 
+Correct Answer: a 
+Explanation: 
+In QAT, fake quantisation nodes are inserted in the forward pass so the loss reflects the rounding 
+error, letting the weights move to values that survive quantisation. The cost is a full training or fine-
+tuning run. 
+PTQ skips that: a few hundred representative examples are pushed through the model to observe 
+activation ranges, and those statistics set the scale and zero-point of each tensor. It is far cheaper, 
+which is why it is the default for very large models, and it usually loses a little more accuracy at low 
+bit widths. 
+ 
+QUESTION 6: [1 mark] 
+In QLoRA, what does double quantization actually quantise a second time? 
+a. The attention weights, taken down to 1 bit in a second pass. 
+b. The gradients, before they are accumulated into the optimiser state. 
+c. The quantisation constants themselves, that is the per-block scale factors produced by the 
+first quantisation. 
+d. Portions of the model that are reverted to FP16 whenever accuracy drops. 
+Correct Answer: c 
+Explanation: 
+Block-wise quantisation stores one scale factor per block of weights. With small blocks, those 
+constants become a real fraction of the memory footprint. Double quantisation quantises the 
+constants too, recovering roughly half a bit per parameter on average. 
+It is a pure memory optimisation on top of the 4-bit NF4 representation and does not touch the 
+adapters, which stay in higher precision throughout. 
+ 
+QUESTION 7: [1 mark] 
+Which of the following statements about knowledge distillation for language models are correct? 
+a. Word-level distillation trains the student to match the teacher's output distribution at each 
+token position. 
+b. Sequence-level distillation trains the student on sequences generated by the teacher rather 
+than on per-token distributions alone. 
+c. The two can be combined so the student learns both local token probabilities and global 
+sequence structure. 
+d. Sequence-level distillation requires the teacher to emit a chain-of-thought explanation for 
+every example. 
+Correct Answers: a, b, c 
+Explanation: 
+(a) True: the usual objective is the KL divergence between teacher and student distributions at every 
+position, which transfers far more information than the one-hot target alone. 
+(b) True: sequence-level distillation approximates the sequence distribution by decoding from the 
+teacher and training the student on those outputs as if they were gold data. 
+(c) True: combining both is common and lets the student pick up token-level calibration as well as 
+the teacher's preferred sequence structure. 
+(d) False: chain-of-thought distillation is one particular variant, not a requirement of sequence-level 
+distillation. 
+ 
+QUESTION 8: [1 mark] 
+In mechanistic interpretability, what is meant by a circuit? 
+a. A pipeline that collects and batches training examples for an autoregressive model 
+b. A recurrent module inserted into a Transformer to give it additional memory 
+c. A subgraph of the network - particular heads, neurons and connections - hypothesised to 
+implement a specific behaviour 
+d. An external tool used to adjust parameters after training has finished 
+Correct Answer: c 
+Explanation: 
+A circuit is a claim about mechanism: that some identifiable set of components, connected through 
+the residual stream, is doing a particular computation. The claim is then tested by intervening on 
+those components, for instance by ablating a head and checking that the behaviour disappears while 
+unrelated behaviours survive. 
+ 
+QUESTION 9: [1 mark] 
+In-context copying of the pattern [A][B] ... [A] -> [B] is attributed to induction heads. Which 
+description matches the mechanism? 
+a. A single head that attends to punctuation to segment the sequence into repeated units 
+b. A previous-token head that writes information about the preceding token, composed with a 
+later head that attends to the token following the earlier occurrence of A and copies it 
+c. A feed-forward sub-layer that raises the probability of any token seen earlier in the context 
+d. A head that masks future positions so that repeated tokens cannot be attended to 
+Correct Answer: b 
+Explanation: 
+The mechanism needs two layers. A head in the earlier layer copies information about token A into 
+the residual stream at the position of B, so that position is effectively tagged as following A. A head 
+in the later layer, at the second occurrence of A, matches that tag, attends to the position holding B, 
+and copies B into the output. 
+This composition is the standard example of how a behaviour can require two heads working 
+together, and the sharp rise in induction head strength is what coincides with the in-context learning 
+phase change observed during training. 
+ 
+QUESTION 10: [1 mark] 
+In the transformer circuits framing, what do the QK and OV circuits respectively determine for an 
+attention head? 
+a. QK determines where the head attends; OV determines what is read from the attended 
+position and written to the output. 
+b. QK determines what is written to the output; OV determines where the head attends. 
+c. Both determine how positional information is encoded. 
+d. Both are normalisation terms that keep the attention scores in a fixed range. 
+Correct Answer: a 
+Explanation: 
+The QK circuit, W_Q^T W_K, produces the attention pattern: it decides, for each destination 
+position, which source positions are read. The OV circuit, W_O W_V, decides what effect the 
+attended source position has on the residual stream at the destination. 
+Splitting a head this way is useful because the two can be studied separately. An induction head, for 
+example, has a QK circuit that matches the previous-occurrence pattern and an OV circuit that acts 
+close to a copy operation. 
+Option (d) confuses these with the 1/sqrt(d_k) scaling, and converting the final residual vector into 
+vocabulary logits is the job of the unembedding matrix, not the OV circuit. 
+ 
