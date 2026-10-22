@@ -2,12 +2,13 @@
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { allPath, allSlug, findWeek, LAST_VISIT_COOKIE, quizPath, weekPath } from '@/lib/courses';
+import { allPath, allSlug, findWeek, LAST_VISIT_COOKIE, lastWeekKey, quizPath, weekPath } from '@/lib/courses';
 import type { Subject } from '@/lib/courses';
 import { progressKey, restoreProgress } from '@/lib/study';
 import type { Progress } from '@/lib/study';
 import Footer from './footer';
 import { pad } from './question-card';
+import CalculatorLauncher from './calculator-launcher';
 import SubjectSwitcher from './subject-switcher';
 import ThemeToggle from './theme-toggle';
 
@@ -57,6 +58,8 @@ export default function StudyDesk({ course, children }: { course: Subject; child
   useEffect(() => {
     const path = onQuiz ? quizPath(course) : onAll ? allPath(course) : currentWeek !== undefined ? weekPath(course, currentWeek) : null;
     if (path) document.cookie = `${LAST_VISIT_COOKIE}=${path}; path=/; max-age=31536000; samesite=lax`;
+    // Reopening this subject from the picker returns to the week it was left on.
+    if (currentWeek !== undefined) try { localStorage.setItem(lastWeekKey(course.courseId), String(currentWeek)); } catch { /* Storage is optional. */ }
     document.querySelector('.week-button[aria-current]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
   }, [course, currentWeek, onQuiz, onAll]);
 
@@ -90,6 +93,7 @@ export default function StudyDesk({ course, children }: { course: Subject; child
         {children}
         <Footer />
       </main>
+      <CalculatorLauncher />
     </div>
   </DeskContext>;
 }

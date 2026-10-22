@@ -1,11 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { subjectGroups, weekPath } from '@/lib/courses';
+import { courses, lastWeekKey, subjectGroups, weekPath } from '@/lib/courses';
 import type { Subject, SubjectGroup } from '@/lib/courses';
 
 // A course that runs in more than one year expands to a year picker before it opens.
-const firstWeek = (s: Subject) => weekPath(s, s.weeks[0].week);
 const latest = (group: SubjectGroup) => group.members[group.members.length - 1];
 const LAST_YEARS_KEY = 'recall:last-years';
 
@@ -14,10 +13,14 @@ export default function SubjectSwitcher({ course }: { course: Subject }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [lastYears, setLastYears] = useState<Record<string, string>>({});
+  const [lastWeeks, setLastWeeks] = useState<Record<string, number>>({});
   const [expanded, setExpanded] = useState<string | null>(null);
   const root = useRef<HTMLDivElement>(null);
   const button = useRef<HTMLButtonElement>(null);
   const search = useRef<HTMLInputElement>(null);
+
+  // Each subject reopens on the week it was last left on, and multi-year courses pre-select the year last opened.
+  const openPath = (s: Subject) => weekPath(s, lastWeeks[s.courseId] ?? s.weeks[0].week);
 
   const matches = useMemo(() => {
     const term = query.trim().toLowerCase();
@@ -34,6 +37,16 @@ export default function SubjectSwitcher({ course }: { course: Subject }) {
       const saved = JSON.parse(localStorage.getItem(LAST_YEARS_KEY) ?? '{}');
       if (saved && typeof saved === 'object' && !Array.isArray(saved)) setLastYears(saved);
     } catch { /* Storage is optional. */ }
+  }, []);
+  useEffect(() => {
+    const next: Record<string, number> = {};
+    for (const c of courses) {
+      try {
+        const week = Number(localStorage.getItem(lastWeekKey(c.courseId)));
+        if (Number.isInteger(week) && c.weeks.some(w => w.week === week)) next[c.courseId] = week;
+      } catch { /* Storage is optional. */ }
+    }
+    setLastWeeks(next);
   }, []);
   useEffect(() => {
     const family = course.family;
@@ -93,7 +106,7 @@ export default function SubjectSwitcher({ course }: { course: Subject }) {
         const remembered = group.members.find(m => m.slug === lastYears[group.label]);
         const defaultSlug = (remembered ?? latest(group)).slug;
         const first = group.members[0];
-        const check = <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>;
+        const check = <svg className="subject-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>;
         return <li className={`subject-group ${isExpanded ? 'open' : ''}`} key={group.label}>
           {multiYear
             ? <button type="button" className="subject-link subject-toggle" aria-expanded={isExpanded} aria-controls={`years-${first.slug}`} onClick={() => setExpanded(label => label === group.label ? null : group.label)}>
@@ -103,14 +116,14 @@ export default function SubjectSwitcher({ course }: { course: Subject }) {
                 <svg className={`subject-chevron ${isExpanded ? 'open' : ''}`} width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </span>
             </button>
-            : <Link className="subject-link" href={firstWeek(first)} aria-current={active ? 'true' : undefined} onClick={e => { if (active) { e.preventDefault(); close(); } }}>
+            : <Link className="subject-link" href={openPath(first)} aria-current={active ? 'true' : undefined} onClick={e => { if (active) { e.preventDefault(); close(); } }}>
               <span>{group.label}</span>
               {active && check}
             </Link>}
           {isExpanded && <div className="subject-years" id={`years-${first.slug}`} role="group" aria-label={`Year for ${group.label}`}>{group.members.map(m => {
             const current = m.slug === course.slug;
             const isDefault = m.slug === defaultSlug;
-            return <Link key={m.slug} className={`subject-year ${isDefault ? 'is-default' : ''}`} href={firstWeek(m)} aria-current={current ? 'true' : undefined}
+            return <Link key={m.slug} className={`subject-year ${isDefault ? 'is-default' : ''}`} href={openPath(m)} aria-current={current ? 'true' : undefined}
               aria-label={`${group.label}, ${m.year}${isDefault ? ' (last opened)' : ''}`} title={isDefault ? 'Last opened' : undefined}
               onClick={e => { if (current) { e.preventDefault(); close(); } }}>{m.year}</Link>;
           })}</div>}

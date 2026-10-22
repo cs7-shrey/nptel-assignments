@@ -33,6 +33,8 @@ export const subjectGroups: SubjectGroup[] = (() => {
 export const findCourse = (slug: string) => courses.find(c => c.slug === slug);
 export const weekSlug = (week: number) => `week-${week}`;
 export const weekPath = (course: Subject, week: number) => `/${course.slug}/${weekSlug(week)}`;
+// The week each subject was last left on, so the subject picker can reopen it instead of week 1.
+export const lastWeekKey = (courseId: string) => `recall:last-week:${courseId}`;
 export const findWeek = (course: Subject, segment: string | null) => course.weeks.find(w => weekSlug(w.week) === segment);
 // Every week's questions on one page; the slug can't collide with "week-<n>".
 export const allSlug = 'all';

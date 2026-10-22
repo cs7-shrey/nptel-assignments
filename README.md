@@ -23,6 +23,8 @@ npm run dev
 
 Open http://127.0.0.1:3000. Dependencies are already installed in this checkout.
 
+The subject picker remembers the week each course was last on, and a course that runs in more than one year (Introduction to LLMs) expands in place to a year picker that pre-selects the year opened last. The top-right calculator button opens a draggable scientific calculator powered by mathjs.
+
 Pick a week and click a single-choice option to check it against the course key. For multiple-choice questions, select all your choices and click **Check answer**; only the exact full set counts as correct. Numeric questions accept equivalent number formats and use **Check answer** too. **Show answers** reveals the whole week at once, and **Reset** clears the current week. Progress is stored locally under `recall:<courseId>` and is never submitted to the course.
 
 **All weeks** (`/<subject>/all`, first entry in the sidebar) shows every question in the subject on one page, mixed across weeks instead of grouped by week. Each card keeps its week label, and the order is seeded per course, so a reload draws the same mix until **Shuffle** is pressed. It reads and writes the same answers as the week pages, so a question answered here shows up in its week and the shared score counts both. **Reset all** clears the whole subject.
