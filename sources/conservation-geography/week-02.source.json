@@ -1,0 +1,127 @@
+{
+  "week": 2,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=22&assessmentId=203",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Mount Fuji is an example of",
+      "type": "single-choice",
+      "options": [
+        "Shield volcano",
+        "Stratovolcano",
+        "Caldera",
+        "Flood basalt province"
+      ],
+      "acceptedAnswer": "Stratovolcano"
+    },
+    {
+      "number": 2,
+      "prompt": "The main source of magma is",
+      "type": "single-choice",
+      "options": [
+        "Crust",
+        "Mantle",
+        "Outer core",
+        "Inner core"
+      ],
+      "acceptedAnswer": "Mantle"
+    },
+    {
+      "number": 3,
+      "prompt": "Which of these is not a method of absolute dating?",
+      "type": "single-choice",
+      "options": [
+        "radioisotope dating",
+        "thermoluminescence dating",
+        "inclusion study",
+        "fission track dating"
+      ],
+      "acceptedAnswer": "inclusion study"
+    },
+    {
+      "number": 4,
+      "prompt": "What are planetesimals?",
+      "type": "single-choice",
+      "options": [
+        "Fully formed gas giants",
+        "Fragments of continental crust",
+        "Small bodies formed from gas and dust that can accrete into planets",
+        "Layers of volcanic ash within a mountain"
+      ],
+      "acceptedAnswer": "Small bodies formed from gas and dust that can accrete into planets"
+    },
+    {
+      "number": 5,
+      "prompt": "Hawaiian volcanoes are an example of",
+      "type": "single-choice",
+      "options": [
+        "Shield volcano",
+        "Stratovolcano",
+        "Caldera",
+        "Flood basalt province"
+      ],
+      "acceptedAnswer": "Shield volcano"
+    },
+    {
+      "number": 6,
+      "prompt": "Which of these is true about P waves?",
+      "type": "single-choice",
+      "options": [
+        "They are longitudinal in nature",
+        "They are transverse in nature",
+        "They cannot move through gases",
+        "They cannot move through liquids"
+      ],
+      "acceptedAnswer": "They are longitudinal in nature"
+    },
+    {
+      "number": 7,
+      "prompt": "Assemblage of fossils are unique to the time that they lived in, and so can be used to age rocks across a wide geographic distribution. This is known as",
+      "type": "single-choice",
+      "options": [
+        "Principle of fossil succession",
+        "Principle of original horizontality",
+        "Principle of superposition",
+        "Principle of cross-cutting relationships"
+      ],
+      "acceptedAnswer": "Principle of fossil succession"
+    },
+    {
+      "number": 8,
+      "prompt": "Which set contains only terrestrial planets?",
+      "type": "single-choice",
+      "options": [
+        "Jupiter, Saturn, Uranus, Neptune",
+        "Earth, Jupiter, Mars, Saturn",
+        "Mercury, Venus, Uranus, Neptune",
+        "Mercury, Venus, Earth, Mars"
+      ],
+      "acceptedAnswer": "Mercury, Venus, Earth, Mars"
+    },
+    {
+      "number": 9,
+      "prompt": "Within a depositional basin, strata are laterally continuous in all directions till the edge of the basin. This is known as",
+      "type": "single-choice",
+      "options": [
+        "Principle of superposition",
+        "Principle of original horizontality",
+        "Principle of lateral continuity",
+        "Principle of inclusions"
+      ],
+      "acceptedAnswer": "Principle of lateral continuity"
+    },
+    {
+      "number": 10,
+      "prompt": "Deccan traps are an example of",
+      "type": "single-choice",
+      "options": [
+        "Shield volcano",
+        "Stratovolcano",
+        "Caldera",
+        "Flood basalt province"
+      ],
+      "acceptedAnswer": "Flood basalt province"
+    }
+  ]
+}

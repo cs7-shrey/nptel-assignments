@@ -42,7 +42,8 @@ test('image answers, table options, long answers and shared passages remain comp
   assert.match(find('w10-q07').context, /Boston Marathon/);
   assert.match(find('w04-q08').options[0].text, /electronics \| 1630 \| 543.33/);
   const images = questions.flatMap(q => [...(q.figures ?? []), ...q.options.flatMap(o => o.image ? [o.image] : [])]);
-  assert.equal(images.length, 18);
+  assert.equal(images.length, 19);
+  assert.equal(find('w06-q10').figures[0].src, '/questions/privacy-social-media/w06-q10.jpg');
   for (const image of images) {
     assert(image.alt.length > 10);
     assert(image.src.startsWith('/questions/privacy-social-media/'));

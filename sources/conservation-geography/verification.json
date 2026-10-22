@@ -1,0 +1,105 @@
+{
+  "checkedOn": "2026-10-22",
+  "courseId": "noc26_ge82",
+  "weeks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "questionCount": 130,
+  "officialAnswerCount": 130,
+  "unavailableAnswerWeeks": [],
+  "textSource": "Current Chrome assignment pages; official accepted answers, not selected responses.",
+  "sourceImageAudit": "Complete: inspected the rendered question sections in Chrome for every week, including answer choices. All 13 assignments contain ten question rows and no img, svg, canvas, picture, or inline CSS url() media elements in their question sections.",
+  "checks": {
+    "tests": 18,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "subjectSelector": "verified",
+    "showAnswers": "10 correct indicators in Week 1",
+    "quizSelection": "130 graded questions, including all 10 from Week 0 (validated by quiz tests)",
+    "practiceWeek": "All 10 official accepted answers verified after the authorized practice submission"
+  },
+  "imageAudit": {
+    "method": "Chrome Elements DOM search with positive-control question count and verified current assignment title",
+    "questionSelector": ".question-row",
+    "mediaSelector": "section img, section svg, section canvas, section picture, section [style*=\"url(\"]",
+    "weeks": [
+      {
+        "week": 0,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 1,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 2,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 3,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 4,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 5,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 6,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 7,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 8,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 9,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 10,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 11,
+        "questionRows": 10,
+        "mediaElements": 0
+      },
+      {
+        "week": 12,
+        "questionRows": 10,
+        "mediaElements": 0
+      }
+    ]
+  }
+}

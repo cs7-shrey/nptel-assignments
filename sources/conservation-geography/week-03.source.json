@@ -1,0 +1,127 @@
+{
+  "week": 3,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=28&assessmentId=204",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Mudrock is an example of",
+      "type": "single-choice",
+      "options": [
+        "siliciclastic rock",
+        "carbonate rock",
+        "evaporite rock",
+        "phosphatic rock"
+      ],
+      "acceptedAnswer": "siliciclastic rock"
+    },
+    {
+      "number": 2,
+      "prompt": "Carbonation is an example of",
+      "type": "single-choice",
+      "options": [
+        "chemical weathering",
+        "physical weathering",
+        "biological weathering",
+        "none of the above"
+      ],
+      "acceptedAnswer": "chemical weathering"
+    },
+    {
+      "number": 3,
+      "prompt": "“green or black coloured inosilicate minerals forming prism or needle-like crystals” is a description of",
+      "type": "single-choice",
+      "options": [
+        "amphiboles",
+        "feldspar",
+        "mica",
+        "pyroxene"
+      ],
+      "acceptedAnswer": "amphiboles"
+    },
+    {
+      "number": 4,
+      "prompt": "Hydrolysis is an example of",
+      "type": "single-choice",
+      "options": [
+        "chemical weathering",
+        "physical weathering",
+        "biological weathering",
+        "none of the above"
+      ],
+      "acceptedAnswer": "chemical weathering"
+    },
+    {
+      "number": 5,
+      "prompt": "Which of these is an example of exogenic process?",
+      "type": "single-choice",
+      "options": [
+        "volcanism",
+        "earthquake",
+        "plate tectonics",
+        "deposition"
+      ],
+      "acceptedAnswer": "deposition"
+    },
+    {
+      "number": 6,
+      "prompt": "Which statement best explains why streak is often more useful than surface colour for mineral identification?",
+      "type": "single-choice",
+      "options": [
+        "Streak measures the density of the mineral",
+        "Surface colour never changes in minerals",
+        "Streak shows the colour of the powdered mineral and may reduce the effect of minor impurities",
+        "Streak reveals the age of the mineral"
+      ],
+      "acceptedAnswer": "Streak shows the colour of the powdered mineral and may reduce the effect of minor impurities"
+    },
+    {
+      "number": 7,
+      "prompt": "Which factor is listed as an independent control over landform development?",
+      "type": "single-choice",
+      "options": [
+        "Mineral streak",
+        "Crystal habit",
+        "Knife-blade hardness",
+        "Stability of sea level"
+      ],
+      "acceptedAnswer": "Stability of sea level"
+    },
+    {
+      "number": 8,
+      "prompt": "Sandstone is an example of",
+      "type": "single-choice",
+      "options": [
+        "siliciclastic rock",
+        "carbonate rock",
+        "evaporite rock",
+        "phosphatic rock"
+      ],
+      "acceptedAnswer": "siliciclastic rock"
+    },
+    {
+      "number": 9,
+      "prompt": "“tendency to break in given directions producing relatively plane surfaces” is known as",
+      "type": "single-choice",
+      "options": [
+        "cleavage",
+        "fracture",
+        "lustre",
+        "streak"
+      ],
+      "acceptedAnswer": "cleavage"
+    },
+    {
+      "number": 10,
+      "prompt": "Slow cooling of magma results in",
+      "type": "single-choice",
+      "options": [
+        "smooth grained sedimentary rocks",
+        "coarse grained sedimentary rocks",
+        "smooth grained igneous rocks",
+        "coarse grained igneous rocks"
+      ],
+      "acceptedAnswer": "coarse grained igneous rocks"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "week": 9,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=64&assessmentId=215",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Sex ratio is calculated as:",
+      "type": "single-choice",
+      "options": [
+        "Female population divided by male population multiplied by 1000",
+        "Male population divided by female population multiplied by 1000",
+        "Total population divided by female population multiplied by 1000",
+        "Working population divided by dependent population multiplied by 1000"
+      ],
+      "acceptedAnswer": "Female population divided by male population multiplied by 1000"
+    },
+    {
+      "number": 2,
+      "prompt": "Which of these is commonly observed during humanising of nature?",
+      "type": "single-choice",
+      "options": [
+        "environmental determinism",
+        "possibilism",
+        "neodeterminism",
+        "stop and go determinism"
+      ],
+      "acceptedAnswer": "possibilism"
+    },
+    {
+      "number": 3,
+      "prompt": "The age dependency ratio compares dependent population with:",
+      "type": "single-choice",
+      "options": [
+        "total female population",
+        "working-age population",
+        "urban population",
+        "migrant population"
+      ],
+      "acceptedAnswer": "working-age population"
+    },
+    {
+      "number": 4,
+      "prompt": "The logistic growth equation curve is",
+      "type": "single-choice",
+      "options": [
+        "I-shaped",
+        "J-shaped",
+        "S-shaped",
+        "U-shaped"
+      ],
+      "acceptedAnswer": "S-shaped"
+    },
+    {
+      "number": 5,
+      "prompt": "Which of these is a positive check according to Malthus?",
+      "type": "single-choice",
+      "options": [
+        "late marriage",
+        "war",
+        "celibacy",
+        "moral restraint"
+      ],
+      "acceptedAnswer": "war"
+    },
+    {
+      "number": 6,
+      "prompt": "Economic development is often measured in terms of:",
+      "type": "single-choice",
+      "options": [
+        "age dependency ratio",
+        "total land area",
+        "GDP per capita",
+        "sex ratio"
+      ],
+      "acceptedAnswer": "GDP per capita"
+    },
+    {
+      "number": 7,
+      "prompt": "Which of these is not a pillar of sustainability?",
+      "type": "single-choice",
+      "options": [
+        "environmental sustainability",
+        "economic sustainability",
+        "trans-boundary sustainability",
+        "social sustainability"
+      ],
+      "acceptedAnswer": "trans-boundary sustainability"
+    },
+    {
+      "number": 8,
+      "prompt": "The demographic transition sees a society move from",
+      "type": "single-choice",
+      "options": [
+        "high birth rate, low death rate to low birth rate, high death rate",
+        "low birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, low death rate",
+        "high birth rate, high death rate to low birth rate, high death rate"
+      ],
+      "acceptedAnswer": "high birth rate, high death rate to low birth rate, low death rate"
+    },
+    {
+      "number": 9,
+      "prompt": "Which of these is a preventive check according to Malthus?",
+      "type": "single-choice",
+      "options": [
+        "foresight",
+        "vice",
+        "misery",
+        "flood"
+      ],
+      "acceptedAnswer": "foresight"
+    },
+    {
+      "number": 10,
+      "prompt": "Which population group is generally treated as the working population?",
+      "type": "single-choice",
+      "options": [
+        "0-15 years",
+        "15-64 years",
+        "65 years and above",
+        "0-15 and 65 years and above"
+      ],
+      "acceptedAnswer": "15-64 years"
+    }
+  ]
+}

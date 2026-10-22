@@ -1,6 +1,7 @@
 import psychology from '@/data/assignments.json';
 import responsibleAI from '@/data/responsible-safe-ai.json';
 import privacySocialMedia from '@/data/privacy-social-media.json';
+import conservationGeography from '@/data/conservation-geography.json';
 import type { Course } from './study';
 
 export type Subject = Course & { slug: string };
@@ -10,6 +11,7 @@ export const courses: Subject[] = [
   { slug: 'psychology-of-learning', ...psychology },
   { slug: 'responsible-safe-ai', ...responsibleAI },
   { slug: 'privacy-social-media', ...privacySocialMedia },
+  { slug: 'conservation-geography', ...conservationGeography },
 ];
 export const findCourse = (slug: string) => courses.find(c => c.slug === slug);
 export const weekSlug = (week: number) => `week-${week}`;
