@@ -2,9 +2,14 @@ import { after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   buildSummaryPrompt,
+  clearCachedSummaries,
+  countCachedSummaries,
   generateWeekSummary,
   GeminiError,
+  loadCachedSummary,
+  saveCachedSummary,
   SUMMARY_SYSTEM_PROMPT,
+  summaryStorageKey,
   testGeminiKey,
 } from '../lib/gemini.ts';
 
@@ -131,6 +136,56 @@ test('the stream reader accumulates output, ignores thoughts, and sends high thi
   assert.equal(request.body.store, false);
   assert.equal(request.body.generation_config.thinking_level, 'high');
   assert.equal(request.body.generation_config.max_output_tokens, 65536);
+});
+
+test('completed summaries round-trip through local storage', () => {
+  const data = new Map();
+  const storage = {
+    get length() {
+      return data.size;
+    },
+    key: (index) => [...data.keys()][index] ?? null,
+    getItem: (key) => data.get(key) ?? null,
+    setItem: (key, value) => {
+      data.set(key, String(value));
+    },
+    removeItem: (key) => {
+      data.delete(key);
+    },
+  };
+  const originalWindow = globalThis.window;
+  globalThis.window = { localStorage: storage };
+  try {
+    const cached = {
+      text: '## Theory\n\nA saved summary.',
+      model: 'gemini-3.8-flash',
+      generatedAt: '2026-10-23T00:00:00.000Z',
+    };
+    assert.equal(loadCachedSummary('noc26_cs145', 3), null);
+    assert.equal(saveCachedSummary('noc26_cs145', 3, cached), true);
+    assert.deepEqual(loadCachedSummary('noc26_cs145', 3), cached);
+    assert.ok(data.has(summaryStorageKey('noc26_cs145', 3)));
+    assert.equal(countCachedSummaries(), 1);
+
+    // Another course is a separate entry, and clearing removes both.
+    saveCachedSummary('other-course', 3, cached);
+    assert.equal(countCachedSummaries(), 2);
+    assert.equal(clearCachedSummaries(), 2);
+    assert.equal(loadCachedSummary('noc26_cs145', 3), null);
+    assert.equal(countCachedSummaries(), 0);
+
+    // Malformed or empty entries are ignored.
+    data.set(summaryStorageKey('bad-course', 1), '{not json');
+    assert.equal(loadCachedSummary('bad-course', 1), null);
+    data.set(
+      summaryStorageKey('empty-course', 1),
+      JSON.stringify({ text: '   ', model: 'x', generatedAt: '' }),
+    );
+    assert.equal(loadCachedSummary('empty-course', 1), null);
+  } finally {
+    if (originalWindow === undefined) delete globalThis.window;
+    else globalThis.window = originalWindow;
+  }
 });
 
 test('a non-streaming JSON response also yields summary text', async () => {

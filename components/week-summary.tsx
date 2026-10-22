@@ -19,6 +19,7 @@ import {
 } from '@/lib/gemini';
 import type { CachedSummary, GeminiConfig } from '@/lib/gemini';
 import {
+  CheckIcon,
   ChevronDownIcon,
   CloseIcon,
   ExternalLinkIcon,
@@ -76,6 +77,8 @@ export default function WeekSummary({ course, week }: Props) {
   const [maximized, setMaximized] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [overflowing, setOverflowing] = useState(false);
+  const [savedLocally, setSavedLocally] = useState(false);
+  const [saveFailed, setSaveFailed] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -98,7 +101,10 @@ export default function WeekSummary({ course, week }: Props) {
     abortRef.current?.abort();
     abortRef.current = null;
     setConfig(loadGeminiConfig());
-    setSummary(loadCachedSummary(course.courseId, week.week));
+    const cached = loadCachedSummary(course.courseId, week.week);
+    setSummary(cached);
+    setSavedLocally(!!cached);
+    setSaveFailed(false);
     setStatus('idle');
     setStreamed('');
     setError('');
@@ -110,7 +116,10 @@ export default function WeekSummary({ course, week }: Props) {
     function refresh(event: StorageEvent) {
       if (event.key === GEMINI_KEYS_STORAGE_KEY) setConfig(loadGeminiConfig());
       if (event.key === summaryStorageKey(course.courseId, week.week)) {
-        setSummary(loadCachedSummary(course.courseId, week.week));
+        const cached = loadCachedSummary(course.courseId, week.week);
+        setSummary(cached);
+        setSavedLocally(!!cached);
+        setSaveFailed(false);
       }
     }
     window.addEventListener('storage', refresh);
@@ -201,7 +210,9 @@ export default function WeekSummary({ course, week }: Props) {
         generatedAt: new Date().toISOString(),
       };
       setSummary(cached);
-      saveCachedSummary(course.courseId, week.week, cached);
+      const persisted = saveCachedSummary(course.courseId, week.week, cached);
+      setSavedLocally(persisted);
+      setSaveFailed(!persisted);
       setStatus('idle');
     } catch (caught) {
       if (isAbortError(caught)) {
@@ -234,6 +245,12 @@ export default function WeekSummary({ course, week }: Props) {
     : '';
 
   const loader = <ThinkingLoader elapsed={elapsed} />;
+  const saveWarning = hasSummary && saveFailed ? (
+    <p className="summary-save-warning" role="alert">
+      This summary is only in memory. Your browser blocked local storage, so
+      it may disappear on reload. Allow site data for Recall to keep it.
+    </p>
+  ) : null;
 
   return (
     <section className="week-summary" aria-labelledby={titleId}>
@@ -409,7 +426,18 @@ export default function WeekSummary({ course, week }: Props) {
 
               {!streaming && hasSummary && (
                 <div className="summary-toolbar">
-                  <span className="summary-meta">{meta}</span>
+                  <span className="summary-meta">
+                    {meta}
+                    {savedLocally && (
+                      <span
+                        className="summary-saved"
+                        title="Stored in this browser’s local storage"
+                      >
+                        <CheckIcon size={11} />
+                        Saved locally
+                      </span>
+                    )}
+                  </span>
                   <div className="summary-actions">
                     <button
                       className="summary-action"
@@ -436,6 +464,7 @@ export default function WeekSummary({ course, week }: Props) {
                   </div>
                 </div>
               )}
+              {!streaming && saveWarning}
             </>
           )}
         </div>
@@ -506,9 +535,14 @@ export default function WeekSummary({ course, week }: Props) {
               </div>
             </div>
           )}
+          {!streaming && saveWarning}
         </div>
         <div className="summary-dialog-foot">
-          <span>{streaming ? 'Generating…' : meta || 'Explains theory, not answers'}</span>
+          <span>
+            {streaming
+              ? 'Generating…'
+              : `${meta || 'Explains theory, not answers'}${savedLocally ? ' · saved locally' : ''}`}
+          </span>
           <div className="summary-dialog-actions">
             {activeKey && !streaming && (
               <button className="secondary-button" onClick={generate}>

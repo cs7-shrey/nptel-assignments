@@ -765,13 +765,18 @@ a {
 .footer {
   margin-top: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 9px 16px;
   padding-top: 24px;
   padding-bottom: 40px;
   font-size: 13px;
   color: var(--muted);
+  text-align: center;
+}
+.footer-credit {
+  line-height: 1.6;
 }
 .heart {
   color: var(--orange);
@@ -786,6 +791,40 @@ a {
 }
 .footer a:hover {
   text-decoration-color: currentColor;
+}
+/* A small GitHub pill next to the credit. */
+.footer .footer-contribute {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+.footer .footer-contribute:hover {
+  background: var(--option-bg);
+  border-color: var(--option-hover-line);
+}
+.footer .footer-contribute svg {
+  flex: none;
+  color: var(--muted);
+}
+.footer .footer-contribute:hover svg {
+  color: var(--ink);
+}
+[data-theme="dark"] .footer .footer-contribute {
+  background: #272725;
+  border-color: #3a3a37;
 }
 
 @keyframes enter {
@@ -1695,9 +1734,34 @@ a {
   border-top: 1px solid var(--line);
 }
 .summary-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 9px;
   font-size: 11px;
   line-height: 1.5;
   color: var(--muted);
+}
+.summary-saved {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--correct-text);
+}
+.summary-saved svg {
+  flex: none;
+}
+.summary-save-warning {
+  margin: 12px 0 0;
+  padding: 9px 11px;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--pending);
+  background: var(--option-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
 }
 .summary-actions {
   display: flex;

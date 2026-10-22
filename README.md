@@ -112,7 +112,7 @@ The importers use Python's standard library. `sources/quiz-verification.json` re
 
 Tests also cover Responsible AI completeness, exact-set and numeric grading, legacy Psychology progress, per-course storage keys, week-only resets, the all-weeks mix (every question kept, stable per seed, reset all), Privacy image/table/code completeness and quiz isolation, VLSI completeness, figure assets, and code listings, the 2025 LLM export (multi-select keys, the numeric einsum answer, the shared matrix figure), and the 2026 LLM bank (every supplied row reproduced exactly, multi-select keys, no practice-lab UI state).
 
-`scripts/gemini.test.mjs` checks that the summary prompt includes the week's question text and options but never answer-key fields, that the stream reader accumulates text and ignores thought summaries, that the request asks for high thinking with `store: false`, and that API errors map to actionable messages.
+`scripts/gemini.test.mjs` checks that the summary prompt includes the week's question text and options but never answer-key fields, that the stream reader accumulates text and ignores thought summaries, that the request asks for high thinking with `store: false`, that completed summaries round-trip through local storage per course and week, and that API errors map to actionable messages.
 
 To add another subject, add its dataset to `data/`, register it with a URL slug in `lib/courses.ts`, and include its source provenance and checks. `/all` and the week routes follow from the new slug.
 
