@@ -1,0 +1,127 @@
+{
+  "week": 7,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=52&assessmentId=211",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Which soils are generally sandy, saline, low in moisture and commonly found in Rajasthan and Gujarat?",
+      "type": "single-choice",
+      "options": [
+        "Forest soils",
+        "Arid soils",
+        "Peaty soils",
+        "Red and yellow soils"
+      ],
+      "acceptedAnswer": "Arid soils"
+    },
+    {
+      "number": 2,
+      "prompt": "Cryofracturing is an example of",
+      "type": "single-choice",
+      "options": [
+        "chemical weathering",
+        "physical weathering",
+        "biological weathering",
+        "none of the above"
+      ],
+      "acceptedAnswer": "physical weathering"
+    },
+    {
+      "number": 3,
+      "prompt": "Bangar is a type of",
+      "type": "single-choice",
+      "options": [
+        "black cotton soil",
+        "alluvial soil",
+        "saline soil",
+        "red and yellow soil"
+      ],
+      "acceptedAnswer": "alluvial soil"
+    },
+    {
+      "number": 4,
+      "prompt": "\"the diversity that exists within an ecosystem\" is",
+      "type": "single-choice",
+      "options": [
+        "alpha (α) biodiversity",
+        "beta (β) biodiversity",
+        "gamma (γ) biodiversity",
+        "delta (δ) biodiversity"
+      ],
+      "acceptedAnswer": "alpha (α) biodiversity"
+    },
+    {
+      "number": 5,
+      "prompt": "A climax caused by wildfires is an example of",
+      "type": "single-choice",
+      "options": [
+        "climatic climax",
+        "edaphic climax",
+        "disclimax",
+        "catastrophic climax"
+      ],
+      "acceptedAnswer": "catastrophic climax"
+    },
+    {
+      "number": 6,
+      "prompt": "For more biodiversity, the level of disturbance should be",
+      "type": "single-choice",
+      "options": [
+        "less",
+        "intermediate",
+        "more",
+        "none of these"
+      ],
+      "acceptedAnswer": "intermediate"
+    },
+    {
+      "number": 7,
+      "prompt": "\"the diversity that exists among different geographies\" is",
+      "type": "single-choice",
+      "options": [
+        "alpha (α) biodiversity",
+        "beta (β) biodiversity",
+        "gamma (γ) biodiversity",
+        "delta (δ) biodiversity"
+      ],
+      "acceptedAnswer": "gamma (γ) biodiversity"
+    },
+    {
+      "number": 8,
+      "prompt": "Vertical arrangement of soil horizons is called",
+      "type": "single-choice",
+      "options": [
+        "soil texture",
+        "soil structure",
+        "soil profile",
+        "soil science"
+      ],
+      "acceptedAnswer": "soil profile"
+    },
+    {
+      "number": 9,
+      "prompt": "Carbonation is an example of",
+      "type": "single-choice",
+      "options": [
+        "chemical weathering",
+        "physical weathering",
+        "biological weathering",
+        "none of the above"
+      ],
+      "acceptedAnswer": "chemical weathering"
+    },
+    {
+      "number": 10,
+      "prompt": "Which soil property refers to the arrangement of solid soil parts and pore spaces between them?",
+      "type": "single-choice",
+      "options": [
+        "Soil fertility",
+        "Soil texture",
+        "Soil horizon",
+        "Soil structure"
+      ],
+      "acceptedAnswer": "Soil structure"
+    }
+  ]
+}

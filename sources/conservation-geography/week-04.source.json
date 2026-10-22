@@ -1,0 +1,127 @@
+{
+  "week": 4,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=34&assessmentId=205",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Carbon sequestration in geological sites is an option for",
+      "type": "single-choice",
+      "options": [
+        "mitigation",
+        "adaptation",
+        "both of these",
+        "none of these"
+      ],
+      "acceptedAnswer": "mitigation"
+    },
+    {
+      "number": 2,
+      "prompt": "To reduce the effect of altitude, isobars are generally drawn after converting pressure values to",
+      "type": "single-choice",
+      "options": [
+        "surface temperature level",
+        "cloud base level",
+        "tropopause level",
+        "sea level"
+      ],
+      "acceptedAnswer": "sea level"
+    },
+    {
+      "number": 3,
+      "prompt": "Because of climate change, Mudumalai Tiger Reserve is suffering from frequent droughts. The management has built several artificial water holes for animals, and fills them up regularly with tankers. In the context of climate change, such an action would be called",
+      "type": "single-choice",
+      "options": [
+        "adaptation",
+        "mitigation",
+        "deceleration",
+        "maladaptation"
+      ],
+      "acceptedAnswer": "adaptation"
+    },
+    {
+      "number": 4,
+      "prompt": "Surplus seed and sperm banking is an adaptation option to facilitate",
+      "type": "single-choice",
+      "options": [
+        "resistance to climate changes",
+        "resilience to climate changes",
+        "response to climate changes",
+        "none of these"
+      ],
+      "acceptedAnswer": "resilience to climate changes"
+    },
+    {
+      "number": 5,
+      "prompt": "Flights of jet planes typically occur in",
+      "type": "single-choice",
+      "options": [
+        "Troposphere",
+        "Stratosphere",
+        "Mesosphere",
+        "Thermosphere"
+      ],
+      "acceptedAnswer": "Stratosphere"
+    },
+    {
+      "number": 6,
+      "prompt": "Heat movement through horizontal movement of air is called",
+      "type": "single-choice",
+      "options": [
+        "convection",
+        "radiation",
+        "advection",
+        "conduction"
+      ],
+      "acceptedAnswer": "advection"
+    },
+    {
+      "number": 7,
+      "prompt": "The classical period for taking averages for climate is",
+      "type": "single-choice",
+      "options": [
+        "10 years",
+        "20 years",
+        "30 years",
+        "40 years"
+      ],
+      "acceptedAnswer": "30 years"
+    },
+    {
+      "number": 8,
+      "prompt": "Noctilucent clouds are present in which layer?",
+      "type": "single-choice",
+      "options": [
+        "Troposphere",
+        "Stratosphere",
+        "Mesosphere",
+        "Thermosphere"
+      ],
+      "acceptedAnswer": "Mesosphere"
+    },
+    {
+      "number": 9,
+      "prompt": "Atmospheric pressure is mainly caused by",
+      "type": "single-choice",
+      "options": [
+        "horizontal movement of clouds",
+        "the weight of air above the point of measurement",
+        "absorption of ultraviolet radiation",
+        "seasonal movement of pressure belts"
+      ],
+      "acceptedAnswer": "the weight of air above the point of measurement"
+    },
+    {
+      "number": 10,
+      "prompt": "Which of these air masses is generally warm and moist?",
+      "type": "single-choice",
+      "options": [
+        "cP",
+        "cT",
+        "mP",
+        "mT"
+      ],
+      "acceptedAnswer": "mT"
+    }
+  ]
+}

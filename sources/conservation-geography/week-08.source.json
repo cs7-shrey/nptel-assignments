@@ -1,0 +1,127 @@
+{
+  "week": 8,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=58&assessmentId=214",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "Which of the following is listed as an ex-situ conservation method?",
+      "type": "single-choice",
+      "options": [
+        "Wildlife sanctuary",
+        "National park",
+        "Seed bank",
+        "Biosphere reserve"
+      ],
+      "acceptedAnswer": "Seed bank"
+    },
+    {
+      "number": 2,
+      "prompt": "Which factor makes smaller populations especially vulnerable due to mating among close relatives?",
+      "type": "single-choice",
+      "options": [
+        "Habitat displacement",
+        "Eutrophication",
+        "Inbreeding depression",
+        "Carbon storage"
+      ],
+      "acceptedAnswer": "Inbreeding depression"
+    },
+    {
+      "number": 3,
+      "prompt": "Which type of species plays a much greater ecological role than expected from its abundance?",
+      "type": "single-choice",
+      "options": [
+        "Umbrella species",
+        "Flagship species",
+        "Least concern species",
+        "Keystone species"
+      ],
+      "acceptedAnswer": "Keystone species"
+    },
+    {
+      "number": 4,
+      "prompt": "A species found only in a single lake is rare mainly because of",
+      "type": "single-choice",
+      "options": [
+        "high birth rate",
+        "limited geographical range",
+        "high adaptability",
+        "large home range"
+      ],
+      "acceptedAnswer": "limited geographical range"
+    },
+    {
+      "number": 5,
+      "prompt": "Which of the following is a disadvantage of ex-situ conservation?",
+      "type": "single-choice",
+      "options": [
+        "It always protects the natural habitat of the species",
+        "Captive-bred individuals may find reintroduction difficult",
+        "It prevents all inbreeding risks automatically",
+        "It can be planned for all species at the same time"
+      ],
+      "acceptedAnswer": "Captive-bred individuals may find reintroduction difficult"
+    },
+    {
+      "number": 6,
+      "prompt": "In the species-area relationship, what does “S” represent?",
+      "type": "single-choice",
+      "options": [
+        "Size of the habitat",
+        "Species richness",
+        "Survival rate",
+        "Stochastic pressure"
+      ],
+      "acceptedAnswer": "Species richness"
+    },
+    {
+      "number": 7,
+      "prompt": "In the Clear Lake example, DDD concentration increased from water to plankton, fish, and piscivorous birds. This illustrates",
+      "type": "single-choice",
+      "options": [
+        "ecological redundancy",
+        "habitat selection",
+        "biomagnification",
+        "ex-situ management"
+      ],
+      "acceptedAnswer": "biomagnification"
+    },
+    {
+      "number": 8,
+      "prompt": "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+      "type": "single-choice",
+      "options": [
+        "very high",
+        "medium",
+        "very low",
+        "non-existent"
+      ],
+      "acceptedAnswer": "medium"
+    },
+    {
+      "number": 9,
+      "prompt": "The acronym HIPPO does not include",
+      "type": "single-choice",
+      "options": [
+        "habitat loss",
+        "invasive species",
+        "pollination",
+        "pollution"
+      ],
+      "acceptedAnswer": "pollination"
+    },
+    {
+      "number": 10,
+      "prompt": "The elephant has a home range of several square kilometres, regulates the ecosystem by its habit of destructive feeding, and people can relate to this animal which is important for conservation. Given this background, the elephant can be called as",
+      "type": "single-choice",
+      "options": [
+        "umbrella species",
+        "keystone species",
+        "flagship species",
+        "all of the above"
+      ],
+      "acceptedAnswer": "all of the above"
+    }
+  ]
+}

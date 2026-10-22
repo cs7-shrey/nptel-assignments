@@ -1,0 +1,127 @@
+{
+  "week": 10,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=70&assessmentId=218",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "When forests are cleared, carbon may be released not only from removed wood but also from",
+      "type": "single-choice",
+      "options": [
+        "ocean sediments",
+        "glaciers",
+        "soil organic matter",
+        "desert sand"
+      ],
+      "acceptedAnswer": "soil organic matter"
+    },
+    {
+      "number": 2,
+      "prompt": "Hydrogen for nuclear fusion comes under the category of",
+      "type": "single-choice",
+      "options": [
+        "potential resources",
+        "actual resources",
+        "reserve resources",
+        "stock resources"
+      ],
+      "acceptedAnswer": "stock resources"
+    },
+    {
+      "number": 3,
+      "prompt": "In the Rondonia rainforest example, road construction mainly contributed to forest loss by",
+      "type": "single-choice",
+      "options": [
+        "increasing rainfall in cleared patches",
+        "allowing easier human access into forest areas",
+        "preventing agricultural plots from forming",
+        "converting cropland back into forest"
+      ],
+      "acceptedAnswer": "allowing easier human access into forest areas"
+    },
+    {
+      "number": 4,
+      "prompt": "Oil that has not been drilled can be categorised under",
+      "type": "single-choice",
+      "options": [
+        "potential resources",
+        "actual resources",
+        "reserve resources",
+        "stock resources"
+      ],
+      "acceptedAnswer": "potential resources"
+    },
+    {
+      "number": 5,
+      "prompt": "Although cropland uses a smaller share of agricultural land than livestock, it contributes more to",
+      "type": "single-choice",
+      "options": [
+        "global calorie supply",
+        "mineral extraction",
+        "groundwater recharge",
+        "built-up land expansion"
+      ],
+      "acceptedAnswer": "global calorie supply"
+    },
+    {
+      "number": 6,
+      "prompt": "Low concentration ores come in the category of",
+      "type": "single-choice",
+      "options": [
+        "potential resources",
+        "actual resources",
+        "reserve resources",
+        "stock resources"
+      ],
+      "acceptedAnswer": "reserve resources"
+    },
+    {
+      "number": 7,
+      "prompt": "“those resources that have been surveyed but we lack the technology to use them” is a definition of",
+      "type": "single-choice",
+      "options": [
+        "potential resources",
+        "actual resources",
+        "reserve resources",
+        "stock resources"
+      ],
+      "acceptedAnswer": "stock resources"
+    },
+    {
+      "number": 8,
+      "prompt": "Which of these is the largest source of nitrogen oxides in the atmosphere?",
+      "type": "single-choice",
+      "options": [
+        "electricity generation",
+        "mobile sources",
+        "industrial processes",
+        "waste disposal"
+      ],
+      "acceptedAnswer": "mobile sources"
+    },
+    {
+      "number": 9,
+      "prompt": "Timber from forests that is being harvested can be categorised under",
+      "type": "single-choice",
+      "options": [
+        "potential resources",
+        "actual resources",
+        "reserve resources",
+        "stock resources"
+      ],
+      "acceptedAnswer": "actual resources"
+    },
+    {
+      "number": 10,
+      "prompt": "Which of these is the largest source of ammonia (NH3) in the atmosphere?",
+      "type": "single-choice",
+      "options": [
+        "animal manure",
+        "mineral fertiliser",
+        "crops and their decomposition",
+        "human waste"
+      ],
+      "acceptedAnswer": "animal manure"
+    }
+  ]
+}

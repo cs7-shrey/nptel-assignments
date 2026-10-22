@@ -1,0 +1,127 @@
+{
+  "week": 12,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=82&assessmentId=221",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "“The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards.” is a definition for",
+      "type": "single-choice",
+      "options": [
+        "hazard",
+        "exposure",
+        "vulnerability",
+        "disaster"
+      ],
+      "acceptedAnswer": "vulnerability"
+    },
+    {
+      "number": 2,
+      "prompt": "The time of flight for LiDAR is 0.00001 sec. Find the distance of the object from the instrument.",
+      "type": "single-choice",
+      "options": [
+        "500 m",
+        "1000 m",
+        "1500 m",
+        "2000 m"
+      ],
+      "acceptedAnswer": "1500 m"
+    },
+    {
+      "number": 3,
+      "prompt": "Which application of photogrammetry focuses on understanding what is happening in an area rather than measuring quantities?",
+      "type": "single-choice",
+      "options": [
+        "Metric application",
+        "Radiometric application",
+        "Interpretive application",
+        "Fiducial application"
+      ],
+      "acceptedAnswer": "Interpretive application"
+    },
+    {
+      "number": 4,
+      "prompt": "“A process, phenomenon or human activity that may cause loss of life, injury or other health impacts, property damage, social and economic disruption or environmental degradation.” is a definition for",
+      "type": "single-choice",
+      "options": [
+        "hazard",
+        "exposure",
+        "vulnerability",
+        "disaster"
+      ],
+      "acceptedAnswer": "hazard"
+    },
+    {
+      "number": 5,
+      "prompt": "IMU stands for",
+      "type": "single-choice",
+      "options": [
+        "Imperial metering unit",
+        "Inertial metering unit",
+        "Imperial measurement unit",
+        "Inertial measurement unit"
+      ],
+      "acceptedAnswer": "Inertial measurement unit"
+    },
+    {
+      "number": 6,
+      "prompt": "Which application of photogrammetry is involved when the area of forest cover or the size of plantation pits is calculated?",
+      "type": "single-choice",
+      "options": [
+        "Interpretive application",
+        "Metric application",
+        "Oblique application",
+        "Passive application"
+      ],
+      "acceptedAnswer": "Metric application"
+    },
+    {
+      "number": 7,
+      "prompt": "Which component is essential in a GIS along with hardware and software?",
+      "type": "single-choice",
+      "options": [
+        "Mirror system",
+        "Humanware",
+        "Shutter speed",
+        "Focal length"
+      ],
+      "acceptedAnswer": "Humanware"
+    },
+    {
+      "number": 8,
+      "prompt": "Which of these uses revealed willingness to pay?",
+      "type": "single-choice",
+      "options": [
+        "market price method",
+        "replacement cost method",
+        "damage cost avoided method",
+        "contingent valuation method"
+      ],
+      "acceptedAnswer": "market price method"
+    },
+    {
+      "number": 9,
+      "prompt": "Which camera-axis orientation is intentionally tilted between vertical and horizontal?",
+      "type": "single-choice",
+      "options": [
+        "True vertical",
+        "Near vertical",
+        "Oblique",
+        "Fiducial"
+      ],
+      "acceptedAnswer": "Oblique"
+    },
+    {
+      "number": 10,
+      "prompt": "Which platform normally uses cameras placed at ground level with a horizontal camera orientation?",
+      "type": "single-choice",
+      "options": [
+        "Space-borne platform",
+        "Air-borne platform",
+        "Ground-borne platform",
+        "Orbital platform"
+      ],
+      "acceptedAnswer": "Ground-borne platform"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "week": 6,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=46&assessmentId=210",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "The Western Ghats act as a water divide because",
+      "type": "single-choice",
+      "options": [
+        "they prevent all rivers from reaching the sea",
+        "water on opposite sides flows in different directions",
+        "they cause all rivers to become seasonal",
+        "they convert rivers into lakes"
+      ],
+      "acceptedAnswer": "water on opposite sides flows in different directions"
+    },
+    {
+      "number": 2,
+      "prompt": "A river network that follows the structure and slope of the land is best described as",
+      "type": "single-choice",
+      "options": [
+        "discordant",
+        "antecedent",
+        "accordant",
+        "centripetal"
+      ],
+      "acceptedAnswer": "accordant"
+    },
+    {
+      "number": 3,
+      "prompt": "A tree-like river network in which smaller streams join a main channel is called",
+      "type": "single-choice",
+      "options": [
+        "trellis drainage",
+        "dendritic drainage",
+        "centripetal drainage",
+        "rectangular drainage"
+      ],
+      "acceptedAnswer": "dendritic drainage"
+    },
+    {
+      "number": 4,
+      "prompt": "A river system that does not match the present structure and relief of the landscape is called",
+      "type": "single-choice",
+      "options": [
+        "discordant drainage",
+        "dendritic drainage",
+        "radial drainage",
+        "parallel drainage"
+      ],
+      "acceptedAnswer": "discordant drainage"
+    },
+    {
+      "number": 5,
+      "prompt": "The Himalayas are primarily comprised of",
+      "type": "single-choice",
+      "options": [
+        "sedimentary rocks",
+        "igneous rocks",
+        "metamorphic rocks",
+        "b and c"
+      ],
+      "acceptedAnswer": "sedimentary rocks"
+    },
+    {
+      "number": 6,
+      "prompt": "Which pair of rivers is described as flowing westwards into the Arabian Sea?",
+      "type": "single-choice",
+      "options": [
+        "Ganga and Yamuna",
+        "Mahanadi and Godavari",
+        "Narmada and Tapi",
+        "Krishna and Kaveri"
+      ],
+      "acceptedAnswer": "Narmada and Tapi"
+    },
+    {
+      "number": 7,
+      "prompt": "Which of these are factors determining the climate of India?",
+      "type": "single-choice",
+      "options": [
+        "distance from the sea",
+        "altitude",
+        "relief",
+        "all of these"
+      ],
+      "acceptedAnswer": "all of these"
+    },
+    {
+      "number": 8,
+      "prompt": "Peninsular rivers usually have fixed courses mainly because",
+      "type": "single-choice",
+      "options": [
+        "they flow through newly formed mountains",
+        "they carry very high sediment loads",
+        "they are controlled only by monsoon winds",
+        "their courses are cut into older, harder rocks"
+      ],
+      "acceptedAnswer": "their courses are cut into older, harder rocks"
+    },
+    {
+      "number": 9,
+      "prompt": "In Koeppen classification, which is polar frost temperature?",
+      "type": "single-choice",
+      "options": [
+        "C",
+        "D",
+        "F",
+        "T"
+      ],
+      "acceptedAnswer": "F"
+    },
+    {
+      "number": 10,
+      "prompt": "Which of these are factors determining the climate of India?",
+      "type": "single-choice",
+      "options": [
+        "the latitudinal extent",
+        "the Himalayas forming a climatic divide",
+        "distribution of land and water",
+        "all of these"
+      ],
+      "acceptedAnswer": "all of these"
+    }
+  ]
+}

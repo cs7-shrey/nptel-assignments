@@ -1,0 +1,127 @@
+{
+  "week": 11,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=76&assessmentId=220",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "“the ability to produce a good using fewer inputs than another producer” is",
+      "type": "single-choice",
+      "options": [
+        "comparative advantage",
+        "absolute advantage",
+        "production advantage",
+        "resource advantage"
+      ],
+      "acceptedAnswer": "absolute advantage"
+    },
+    {
+      "number": 2,
+      "prompt": "Which of these is / are example(s) of mitigation measures to mitigate impacts of linear infrastructure on wildlife?",
+      "type": "single-choice",
+      "options": [
+        "bridge underpasses",
+        "box culverts",
+        "pipe culverts",
+        "all of these"
+      ],
+      "acceptedAnswer": "all of these"
+    },
+    {
+      "number": 3,
+      "prompt": "Which mode of connection is described as requiring more money and technology to construct than roads?",
+      "type": "single-choice",
+      "options": [
+        "Shipping lines",
+        "Railways",
+        "Inland waterways",
+        "Footpaths"
+      ],
+      "acceptedAnswer": "Railways"
+    },
+    {
+      "number": 4,
+      "prompt": "Which of these is a factor governing barrier effect of roads?",
+      "type": "single-choice",
+      "options": [
+        "road edge features",
+        "time of day and year",
+        "species diversity in the surroundings",
+        "all of these"
+      ],
+      "acceptedAnswer": "all of these"
+    },
+    {
+      "number": 5,
+      "prompt": "Which of these is a factor governing barrier effect of roads?",
+      "type": "single-choice",
+      "options": [
+        "traffic intensity",
+        "speed of vehicles",
+        "driver sensitivity",
+        "all of these"
+      ],
+      "acceptedAnswer": "all of these"
+    },
+    {
+      "number": 6,
+      "prompt": "“the ability to produce a good at a lower opportunity cost than another producer” is a definition of",
+      "type": "single-choice",
+      "options": [
+        "real advantage",
+        "monetary advantage",
+        "comparative advantage",
+        "opportunity advantage"
+      ],
+      "acceptedAnswer": "comparative advantage"
+    },
+    {
+      "number": 7,
+      "prompt": "Dust released from ships can help reveal ship movement because dust particles act as:",
+      "type": "single-choice",
+      "options": [
+        "Fuel particles",
+        "Noise absorbers",
+        "Nuclei for condensation",
+        "Ocean-current markers"
+      ],
+      "acceptedAnswer": "Nuclei for condensation"
+    },
+    {
+      "number": 8,
+      "prompt": "Which of the following is identified as a way in which roads disturb wildlife at night?",
+      "type": "single-choice",
+      "options": [
+        "They reduce wind movement",
+        "They increase soil moisture",
+        "They create silent zones",
+        "They cause light pollution through headlamps"
+      ],
+      "acceptedAnswer": "They cause light pollution through headlamps"
+    },
+    {
+      "number": 9,
+      "prompt": "Which statement best describes why young male tigers or leopards may need to move away from their natal area?",
+      "type": "single-choice",
+      "options": [
+        "To avoid seasonal flooding",
+        "To reduce conflict and avoid inbreeding",
+        "To follow shipping routes",
+        "To increase road density"
+      ],
+      "acceptedAnswer": "To reduce conflict and avoid inbreeding"
+    },
+    {
+      "number": 10,
+      "prompt": "Oxford can best be categorised as",
+      "type": "single-choice",
+      "options": [
+        "mining town",
+        "garrison town",
+        "educational town",
+        "religious town"
+      ],
+      "acceptedAnswer": "educational town"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "week": 5,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=40&assessmentId=206",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "What type of sediment is commonly found over abyssal plains?",
+      "type": "single-choice",
+      "options": [
+        "Coral fragments and gravel",
+        "Basalt blocks and volcanic ash",
+        "Sand and large pebbles",
+        "Clay and silt"
+      ],
+      "acceptedAnswer": "Clay and silt"
+    },
+    {
+      "number": 2,
+      "prompt": "Which of these is the largest habitat on the Earth?",
+      "type": "single-choice",
+      "options": [
+        "continental shelf",
+        "continental slope",
+        "guyot",
+        "abyssal plain"
+      ],
+      "acceptedAnswer": "abyssal plain"
+    },
+    {
+      "number": 3,
+      "prompt": "Which of these are the largest mountain ranges on Earth?",
+      "type": "single-choice",
+      "options": [
+        "oceanic deep / trench",
+        "mid-oceanic ridge",
+        "seamount",
+        "atoll"
+      ],
+      "acceptedAnswer": "mid-oceanic ridge"
+    },
+    {
+      "number": 4,
+      "prompt": "Which factor helps explain why continental shelves are often highly productive?",
+      "type": "single-choice",
+      "options": [
+        "They are the deepest parts of the ocean floor",
+        "They are completely isolated from runoff",
+        "They receive both light and nutrients",
+        "They lack sediments and organisms"
+      ],
+      "acceptedAnswer": "They receive both light and nutrients"
+    },
+    {
+      "number": 5,
+      "prompt": "What is tidal range?",
+      "type": "single-choice",
+      "options": [
+        "The horizontal movement of water parallel to the beach",
+        "The difference between sea level at high tide and low tide",
+        "The speed at which waves approach the coast",
+        "The movement of cold water from deep ocean layers"
+      ],
+      "acceptedAnswer": "The difference between sea level at high tide and low tide"
+    },
+    {
+      "number": 6,
+      "prompt": "Which process converts ice and snow directly into water vapour?",
+      "type": "single-choice",
+      "options": [
+        "Condensation",
+        "Precipitation",
+        "Snowmelt",
+        "Sublimation"
+      ],
+      "acceptedAnswer": "Sublimation"
+    },
+    {
+      "number": 7,
+      "prompt": "Which group of factors affects the density of ocean water with depth?",
+      "type": "single-choice",
+      "options": [
+        "Runoff, tides and beach slope",
+        "Hydrostatic pressure, salinity and temperature",
+        "Wind speed, wave height and latitude only",
+        "Sediment size, coral growth and river mouths"
+      ],
+      "acceptedAnswer": "Hydrostatic pressure, salinity and temperature"
+    },
+    {
+      "number": 8,
+      "prompt": "“deep valleys, often cutting across continental shelves and slopes” is a description of",
+      "type": "single-choice",
+      "options": [
+        "oceanic deep / trench",
+        "mid-oceanic ridge",
+        "guyot",
+        "submarine canyon"
+      ],
+      "acceptedAnswer": "submarine canyon"
+    },
+    {
+      "number": 9,
+      "prompt": "Continental shelf has a gradient of",
+      "type": "single-choice",
+      "options": [
+        "0-1 degree",
+        "1-2 degree",
+        "2-5 degree",
+        "5-10 degree"
+      ],
+      "acceptedAnswer": "0-1 degree"
+    },
+    {
+      "number": 10,
+      "prompt": "Equal salinity curves are called",
+      "type": "single-choice",
+      "options": [
+        "isopycnal curves",
+        "isohaline curves",
+        "isotherm curves",
+        "isobuoyant curves"
+      ],
+      "acceptedAnswer": "isohaline curves"
+    }
+  ]
+}

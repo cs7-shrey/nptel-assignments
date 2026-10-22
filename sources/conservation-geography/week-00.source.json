@@ -1,0 +1,127 @@
+{
+  "week": 0,
+  "url": "https://onlinecourses.nptel.ac.in/e-learning/course/noc26_ge82?unitId=187&assessmentId=201",
+  "collectedOn": "2026-10-22",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "The geographical area within which a species can naturally be found is its:",
+      "type": "single-choice",
+      "options": [
+        "Tolerance",
+        "Abundance",
+        "Range",
+        "Affluence"
+      ],
+      "acceptedAnswer": "Range"
+    },
+    {
+      "number": 2,
+      "prompt": "Excess nitrogen fertilizer enters a pond, causes algal growth, and later creates oxygen-poor conditions. This process shows disturbance in:",
+      "type": "single-choice",
+      "options": [
+        "Political geography",
+        "Biogeochemical cycles",
+        "Cartographic methods",
+        "Habitat selection"
+      ],
+      "acceptedAnswer": "Biogeochemical cycles"
+    },
+    {
+      "number": 3,
+      "prompt": "The discipline of Demography is most closely related to:",
+      "type": "single-choice",
+      "options": [
+        "Phytogeography",
+        "Zoogeography",
+        "Population Geography",
+        "Economic Geography"
+      ],
+      "acceptedAnswer": "Population Geography"
+    },
+    {
+      "number": 4,
+      "prompt": "A dam traps sediment upstream, reducing the amount of silt reaching a delta. The likely result is:",
+      "type": "single-choice",
+      "options": [
+        "Expansion of the ozone layer",
+        "Increase in coral shell formation",
+        "Change in the geomorphology of the delta",
+        "Increase in ultraviolet radiation"
+      ],
+      "acceptedAnswer": "Change in the geomorphology of the delta"
+    },
+    {
+      "number": 5,
+      "prompt": "The quantum of human impacts can be written as",
+      "type": "single-choice",
+      "options": [
+        "I = P + A + T",
+        "I = P X A + T",
+        "I = P X A X T",
+        "I = P + A X T"
+      ],
+      "acceptedAnswer": "I = P X A X T"
+    },
+    {
+      "number": 6,
+      "prompt": "A large continuous forest is split by a highway into two smaller patches, each too small to support wide-ranging animals. This is:",
+      "type": "single-choice",
+      "options": [
+        "Habitat degradation",
+        "Habitat displacement",
+        "Habitat loss",
+        "Habitat fragmentation"
+      ],
+      "acceptedAnswer": "Habitat fragmentation"
+    },
+    {
+      "number": 7,
+      "prompt": "Increased atmospheric carbon dioxide dissolves into oceans and makes survival difficult for organisms with calcium carbonate shells. This is mainly due to:",
+      "type": "single-choice",
+      "options": [
+        "Nitrogen fixation",
+        "Ozone formation",
+        "Ocean acidification",
+        "Soil waterlogging"
+      ],
+      "acceptedAnswer": "Ocean acidification"
+    },
+    {
+      "number": 8,
+      "prompt": "The Trinity explosion of 1945 is taken as the beginning of the",
+      "type": "single-choice",
+      "options": [
+        "Holocene",
+        "Cenocene",
+        "Anthropocene",
+        "Eocene"
+      ],
+      "acceptedAnswer": "Anthropocene"
+    },
+    {
+      "number": 9,
+      "prompt": "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+      "type": "single-choice",
+      "options": [
+        "translocation",
+        "migration",
+        "dispersal",
+        "drifting"
+      ],
+      "acceptedAnswer": "dispersal"
+    },
+    {
+      "number": 10,
+      "prompt": "Sustainable harvest of resources falls under the category of:",
+      "type": "single-choice",
+      "options": [
+        "conservation",
+        "preservation",
+        "environmentalism",
+        "none of the above"
+      ],
+      "acceptedAnswer": "conservation"
+    }
+  ]
+}
